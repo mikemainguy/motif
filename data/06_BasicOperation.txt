@@ -1,0 +1,349 @@
+Basic Operation.
+
+In this section, we'll take a look at the fundamental operating conventions of the MOTIF ES. Here, you'll learn the basics Ð how to select modes, call up the various functions, change settings, and edit parameter values. Take time to familiarize yourself with these nuts-and-bolts operations, and you'll be on your way to mastering the instrument. 
+Before reading further, familiarize yourself with the basic terms used with the MOTIF ES in the chart below.
+
+<Table>
+Term.	Description.	Page.
+Voice.	Musical instrument voices.	158.
+Performance.	A program in which multiple Voices are combined in a layer.	158.
+Song.	Music data consisting of MIDI events.	166.
+Pattern.	Rhythm pattern data which consist of MIDI events used for looped playback.	167.
+Sampling.	The function that lets you record the audio data (such as your own voice and CD playback sound) and play those sounds just like any other synthesizer's Voice.	172.
+Master.	A program which lets you register the settings in each mode Ð Voice, Performance, Song, and Pattern.	136.
+File.	A collection of settings for storing and managing your created data.	186.
+
+Modes.
+Mode Structure.
+This synthesizer is organized into various modes, each covering a different set of operations and functions.
+Keep in mind that there are two basic types of modes, depending on the status of the tone generator block.  The first type includes the Voice and Performance modes, and the internal tone generator is used in single timbre operation -- meaning that only one Voice, or one channel of MIDI data is used.  The second type includes the Song and Pattern modes, and the internal tone generator is used in multi-timbral operation -- meaning that several Voices, or multiple MIDI channels are used.  Along with each of these types are sub modes -- the Sampling mode and the Utility mode.  Remember that the particular displays and parameters in these two modes differ depending on which type of mode (Voice/Performance or Song/Pattern) was active before calling up the sub-mode. In addition to the above mentioned, there are two special modes. The Master mode lets you memorize your desired settings in each mode (Voice/Performance/Song/Pattern) and recall them instantly anytime you need them with a single button. The File mode lets you manage your created data. 
+
+<Figure>
+Keyboard Playback mode (single timbre tone generator)
+Voice mode.
+	Voice Play mode.
+	Voice Edit mode.
+	Voice Job mode.
+	Voice Store mode.
+Performance mode.
+	Performance Play mode.
+	Performance Edit mode.
+	Performance Job mode.
+	Performance Store mode.
+
+Keyboard Playback mode.
+(multi-timbral tone generator)
+Song mode.
+	Song Play mode.
+	Song Record mode.
+	Song Edit mode.
+	Song Job mode.
+	Song Mixing mode.
+		Song Mixing Edit mode.
+		Song Mixing Job mode.
+		Song Mixing Store mode.
+Pattern mode.
+	Pattern Play mode
+	Pattern Record mode
+	Pattern Edit mode
+	Pattern Job mode
+	Pattern Mixing mode
+		Pattern Mixing Edit mode
+		Pattern Mixing Job mode
+		Pattern Mixing Store mode
+Mixing Voice mode).
+	Mixing Voice Edit mode.
+	Mixing Voice Job mode.
+	Mixing Voice Store mode.
+Utility mode.
+	Utility Job mode.
+
+Master mode.
+	Master Play mode.
+	Master Edit mode.
+	Master Job mode.
+	Master Store mode.
+File mode.
+
+
+Mode table.
+The functions of each mode and how to enter each mode are as follows: 
+
+<Table>
+Mode.		Function.	How to enter the mode.
+Voice mode.	Voice Play mode.	Playing a Voice.	[VOICE]
+	Voice Edit mode.	Editing/Creating a Voice.	[VOICE] -> [EDIT]
+	Voice Job mode.	Initializing a Voice, etc.	[VOICE] -> [JOB]
+	Voice Store mode.	Storing a Voice to internal memory.	[VOICE] -> [STORE]
+Performance mode.	Performance Play mode.	Playing a Performance.	[PERFORM]
+	Performance Edit mode.	Editing/Creating a Performance.	[PERFORM] -> [EDIT]
+	Performance Job mode.	Initializing a Performance, etc.	[PERFORM] -> [JOB]
+	Performance Store mode.	Storing a Performance to internal memory.	[PERFORM] -> [STORE]
+Song mode.	Song Play mode.	Playing a Song	[SONG]
+	Song Record mode.	Recording a Song.	[SONG] -> [REC] 
+	Song Edit mode.	Editing a Song MIDI events.	[SONG] -> [EDIT]
+	Song Job mode.	Converting and transforming Song data.	[SONG] -> [JOB]
+	Song Mixing mode.	Setting tone generator parameters.	[SONG] -> [MIXING]
+	Song Mixing Edit mode.	Setting tone generator parameters in detail.	[SONG] -> [MIXING] -> [EDIT]
+	Song Mixing Job mode.	Initializing a Song Mixing, etc.	[SONG] -> [MIXING] -> [JOB]
+	Song Mixing Store mode.	Storing a Song Mixing internal memory.	[SONG] -> [MIXING] -> [STORE]
+Pattern mode.	Pattern Play mode.	Playing a Pattern.	[PATTERN]
+	Pattern Record mode.	Recording a Pattern.	[PATTERN] -> [REC]
+	Pattern Edit mode.	Editing a Pattern MIDI events.	[PATTERN] -> [EDIT]
+	Pattern Job mode.	Converting and transforming Pattern data.	[PATTERN] -> [JOB]
+	Pattern Mixing mode.	Setting tone generator parameters.	[PATTERN] -> [MIXING]
+	Pattern Mixing Edit mode.	Setting tone generator parameters in detail.	[PATTERN] -> [MIXING] -> [EDIT]
+	Pattern Mixing Job mode.	Initializing a Pattern Mixing, etc.	[PATTERN] -> [MIXING] -> [JOB]
+	Pattern Mixing Store mode.	Storing a Pattern Mixing internal memory.	[PATTERN] -> [MIXING] -> [STORE]
+(Mixing Voice mode).	Mixing Voice Edit mode.	Editing/Creating a Voice dedicated for Song/Pattern.	[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED.
+	Mixing Voice Job mode.	Initializing a Mixing Voice, etc.	[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED -> [JOB]
+	Mixing Voice Store mode.	Storing a Mixing Voice to internal memory.	[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED -> [STORE]
+Sampling mode.	Sampling Record mode.	Recording a Sample.	[INTEGRATED SAMPLING]
+	Sampling Edit mode.	Editing a sample.	[INTEGRATED SAMPLING] -> [EDIT]
+	Sampling job mode.	Converting and transforming Sample data.	[INTEGRATED SAMPLING] -> [JOB]
+Utility mode.	Utility mode.	Setting System related parameters.	[UTILITY]
+	Utility Job mode	Resetting the User Memory to the Initial Factory Settings.	[UTILITY] -> [JOB]
+Master mode.	Master Play mode.	Playing a Master.	[MASTER]
+	Master Edit mode.	Editing/Creating a Master.	[MASTER] -> [EDIT]
+	Master Job mode	Initializing a Master, etc.	[MASTER] -> [JOB]
+	Master Store mode.	Storing a Master to internal memory.	[MASTER] -> [STORE]
+File mode.	File mode.	Managing Files and Folders (Directories).	[FILE]
+
+
+How to leave the current display.
+For most operations or displays (except for the File mode, Song/Pattern Record mode, and Remote Control mode), pressing the [EXIT] button will let you leave the current display and return you to the previous one. You can return back to any of the modes -- Voice Play, Performance Play, Song Play, Pattern Play, and Master Play -- by pressing the [EXIT] button several times in the respective mode. 
+
+
+Functions and Sub-Functions.
+Each mode described above contains various displays, with various functions and parameters. To navigate your way through these displays and select a desired function, use the [F1] to [F6] buttons and the [SF1] to [SF5] buttons. When you select a mode, the available displays or menus appear directly above the buttons at the bottom of the display (as shown below).
+Using the Function buttons [F1] to [F6]
+<Figure>
+These functions can be selected via the corresponding button ([F1] to [F6]).
+In this example, press the [F5] button to go to the LFO display.
+
+Depending on the currently selected mode, up to six functions are available and can be called up with the [F1] - [F6] buttons. Keep in mind that the available functions differ depending on the selected mode.
+
+
+Using the Sub-Function buttons [SF1] to [SF5]
+<Figure>
+These functions can be selected via the corresponding button ([SF1] to [SF5]).
+In this example, press the [SF5] button to go to the OTHER display.
+
+Depending on the currently selected mode, up to five functions (sub-functions) are available and can be called up with the [SF1] to [SF5] buttons. Keep in mind that the available functions differ depending on the selected mode. (Some displays may not have any sub-functions for these buttons.)
+
+
+Selecting a Program.
+In order to play the MOTIF ES you'll need to call up one of its programs, i.e., a Voice, Performance, Song, Pattern, or Master. These programs can be selected in each Play mode via the same procedure. 
+
+Using the [INC/YES], [DEC/NO] buttons and the data dial.
+The [INC/YES] and [DEC/NO] buttons let you step up or down through the program numbers in any of the Play modes (Voice, Performance, Song, Pattern, and Master).
+Rotating the data dial to the right (clockwise) increases the program number, while rotating it to the left (counter-clockwise) decreases it. This control works in the same way as the [INC/YES] and [DEC/NO] buttons, but lets you scroll through the programs more quickly.
+<Figure>
+Decreases number.
+Increases number.
+
+
+Using the [GROUP], [NUMBER] buttons.
+As shown below, you can select a program number by pressing any of the GROUP [A] to [H] buttons and pressing any of the NUMBER [1] to [16] buttons. 
+<Figure>
+The explanations here apply when these four button (CATEGORY SEARCH, SECTION, TRACK SELECT, MUTE) indicators are off.
+
+NOTE.	
+The convenient Category Search function (page 62) lets you easily locate and select the Voices you want by type.
+
+The Voice program numbers and the corresponding Group/Numbers are listed below. 
+
+<Table>
+Program Number.	Group.	Number.		Program Number.	Group.	Number.		Program Number.	Group.	Number.		Program Number.	Group.	Number.
+001	A	1		033	C	1		065	E	1		097	G	1
+002	A	2		034	C	2		066	E	2		098	G	2
+003	A	3		035	C	3		067	E	3		099	G	3
+004	A	4		036	C	4		068	E	4		100	G	4
+005	A	5		037	C	5		069	E	5		101	G	5
+006	A	6		038	C	6		070	E	6		102	G	6
+007	A	7		039	C	7		071	E	7		103	G	7
+008	A	8		040	C	8		072	E	8		104	G	8
+009	A	9		041	C	9		073	E	9		105	G	9
+010	A	10		042	C	10		074	E	10		106	G	10
+011	A	11		043	C	11		075	E	11		107	G	11
+012	A	12		044	C	12		076	E	12		108	G	12
+013	A	13		045	C	13		077	E	13		109	G	13
+014	A	14		046	C	14		078	E	14		110	G	14
+015	A	15		047	C	15		079	E	15		111	G	15
+016	A	16		048	C	16		080	E	16		112	G	16
+017	B	1		049	D	1		081	F	1		113	H	1
+018	B	2		050	D	2		082	F	2		114	H	2
+019	B	3		051	D	3		083	F	3		115	H	3
+020	B	4		052	D	4		084	F	4		116	H	4
+021	B	5		053	D	5		085	F	5		117	H	5
+022	B	6		054	D	6		086	F	6		118	H	6
+023	B	7		055	D	7		087	F	7		119	H	7
+024	B	8		056	D	8		088	F	8		120	H	8
+025	B	9		057	D	9		089	F	9		121	H	9
+026	B	10		058	D	10		090	F	10		122	H	10
+027	B	11		059	D	11		091	F	11		123	H	11
+028	B	12		060	D	12		092	F	12		124	H	12
+029	B	13		061	D	13		093	F	13		125	H	13
+030	B	14		062	D	14		094	F	14		126	H	14
+031	B	15		063	D	15		095	F	15		127	H	15
+032	B	16		064	D	16		096	F	16		128	H	16
+
+NOTE.	
+When selecting a Voice, it is necessary to press one of the [BANK] buttons before pressing the [GROUP] and [NUMBER] buttons. 
+NOTE.	
+The amount of numbers differ depending on the program. For example, while the selected number range of the Normal Voice, Performance, and Master is 001 to 128, the selected number range of the Song and Pattern is 001 to 064. 
+
+
+Moving the Cursor and Setting Parameters.
+<Figure>
+Moving the cursor.
+Use these four buttons to navigate the display, moving the cursor around the various selectable items and parameters in the screen. When selected, the relevant item is highlighted (the cursor appears as a dark block with inverse characters). You can change the value of the item (parameter) at which the cursor is located by using the data dial, [INC/YES] and [DEC/NO] buttons.
+Changing (editing) parameter values.
+Rotating the data dial to the right (clockwise) increases the value, while rotating it to the left (counter-clockwise) decreases it.
+For parameters with large value ranges, you can increase the value by 10 by simultaneously holding down the [INC/YES] button and pressing the [DEC/NO] button. 
+
+Inputting a number directly.
+For parameters having large value ranges (such as the start and end points of a sample), you can also enter the value directly, using the buttons below the LCD display as a numeric keypad.  When the cursor is located on such a parameter, the [NUM] icon appears at the lower right corner of the LCD display indicating that you can call up the number input window by pressing the [INFORMATION] button. From this window, you can input a number directly by pressing the [F1] to [F6] buttons and the [SF1] to [SF5] buttons. First, press the [F6] button so that the cursor appears at the Input Number within the bracket. Move the cursor to the desired digit by using the Cursor buttons [right] and [left], then input the number of the selected digit. After completing the number input, press the [ENTER] button to actually enter the number. Press the [EXIT] button to go back to the original display. 
+
+Selecting a note type.
+When the cursor is located on the parameter to which the note type is set, the note icon appears at the lower right corner indicating that you can call up the Note Type selection window by pressing the [INFORMATION] button. You can specify the note type by pressing the [F1] to [F6] buttons and the [SF1] to [SF5] buttons. After selecting one of the note types, press the [ENTER] button to actually enter the selection. Press the [EXIT] button to go back to the original display. 
+
+
+Knob (KN) and Control Slider (CS).
+
+Knob (KN).
+You can change the brightness and tone characteristics of the current Voice or Performance in realtime by turning the knobs while you play. Rotating it to the right (clockwise) increases the program number, while rotating it to the left (counter-clockwise) decreases it. You can select the function set assigned to the knobs among the following seven sets by pressing the appropriate [KNOB CONTROL FUNCTION] button. 
+
+Function sets assigned to the Knobs (KN).
+
+<Table>
+Operation.	Button of which the lamp is turned on.	Functions controlled by each Knob.			
+		KN1 (Knob 1).	KN2 (Knob 2).	KN3 (Knob 3).	KN4 (Knob 4).
+When pressing the [PAN/SEND] button.	[PAN/SEND] button.	Pan (stereo position) of the Voice/Performance.	Reverb Send Level.	Chorus Send Level.	Tempo of the Song/Pattern/Arpeggio playback.
+When pressing the [TONE] button.	[TONE] button.	Filter Cutoff Frequency (degree of brightness).	Resonance (the level of the signal in the area of the cutoff frequency).	Attack Time of the sound.	Release Time of the sound (decay time after the key is released) (* For Drum Voices, this affects the release time for all played notes, whether held or released).
+When pressing the [ARP FX] button.	[ARP FX] button.	Swing degree of the Arpeggio playback.	Gate time (length) of the Arpeggio playback.	Velocity of the Arpeggio playback.	Arpeggio playback time.
+When pressing the [EQ] button.	[EQ] button.	Low band of the Master EQ in the Voice/Performance mode, part EQ in the Song/Pattern mode.	Low-mid band of the Master EQ in the Voice/Performance mode, Mid band of the Part EQ in the Song/Pattern mode.	High-mid band of the Master EQ in the Voice/Performance mode.  (Not available in the Song/Pattern mode.)	High band of the Master EQ in the Voice/Performance mode, part EQ in the Song/Pattern mode.
+When pressing the [PAN/SEND] button and the [TONE] button simultaneously.	[PAN/SEND] button
+[TONE] button.	Function assigned from the [UTILITY] -> [F2] CTLASN -> [SF2] ASSIGN display (page 263) in the Utility mode.		Function assigned for each Voice from the [VOICE] -> [EDIT] -> [COMMON] -> [F4] CTLSET display (page 155)	
+When pressing the [TONE] button and the [ARP FX] button simultaneously. (** Available only when setting the Zone Switch to on in the Master Mode (page 137))	All the buttons are off.	Function assigned for each Master from the [MASTER] -> [EDIT] -> Zone selection -> [F5] KN/CS display (page 140)			
+When pressing the [ARP FX] button and the [EQ] button simultaneously.	[ARP FX] button [EQ] button.	Function assigned to the Master Effect parameters from the [UTILITY] -> [F4] CTLASN -> [SF5] MEF display.			
+
+
+When pressing any of the [KNOB CONTROL FUNCTION] buttons, the lamp(s) of the buttons will light according to the above table and the status of the Knobs and Control Sliders (currently assigned functions and set values) is shown on the LCD display. 
+The appearance of the knob in the display indicates the actual control status of the knob.  When a knob indication is black, the control knob on the panel affects the sound.  When an indication is white, moving the panel knob does not affect the sound, until the current value is reached (after which the indication turns black, indicating normal control).
+<Figure>
+Turning these Knobs will affect the sound.
+Turning these Knobs will not affect the sound.
+
+Control Slider (CS).
+
+You can adjust the volume of the Voice/Performance you play on the keyboard, or the volume of the specified part (track) of the Song/Pattern by using the Control Sliders (CS). In the Master mode, various functions as well as the volume can be assigned to the Control Sliders (CS) when the Zone Switch is set to on (page 137). 
+
+Function sets assigned to the Control Slider (CS).
+
+<Table>
+Mode.		Functions controlled by each Slider.			
+		CS1.	CS2.	CS3.	CS4.
+Voice mode.	When a Normal Voice is selected (page 60).	Element1 Volume.	Element2 Volume.	Element3 Volume.	Element4 Volume.
+	When a Drum Voice is selected (page 61).	Volume of the entire Voice sound (moving any Slider produces same volume).			
+Performance mode.		Part1 Volume.	Part2 Volume.	Part3 Volume.	Part4 Volume.
+Song mode/Pattern mode.	When tracks (Parts) 1 to 4 are selected.	Track1 (Part1) Volume.	Track2 (Part2) Volume.	Track3 (Part3) Volume.	Track4 (Part4) Volume.
+	When tracks (Parts) 5 to 8 are selected.	Track5 (Part5) Volume.	Track6 (Part6) Volume.	Track7 (Part7) Volume.	Track8 (Part8) Volume.
+	When tracks (Parts) 9 to 12 are selected.	Track9 (Part9) Volume.	Track10 (Part10) Volume.	Track11 (Part11) Volume.	Track12 (Part12) Volume.
+	When tracks (Parts) 13 to 16 are selected.	Track13 (Part13) Volume.	Track14 (Part14) Volume.	Track15 (Part15) Volume.	Track16 (Part16) Volume.
+Master mode.	When the Zone Switch is set to on (page 137).	Function assigned for each Master from the [MASTER] -> [EDIT] -> Zone selection -> [F4] KN/CS display (page 140).			
+
+
+NOTE. 	The [MASTER VOLUME] slider adjusts the overall output level of the instrument, while the Control Sliders adjust the MIDI Volume setting of the corresponding Element or Part.
+
+
+About the editing functions.
+There are three types of method for creating data Ð Editing parameters (Voice, Performance, etc.), Recording MIDI data (Song, Pattern, etc.), and Recording audio data (Sampling). 
+In this section, we'll explain the basic operations for editing the Voice, Performance, Song Mixing, Pattern Mixing, Mixing Voice settings. 
+NOTE.	
+For details on recording MIDI data, see pages 118 (Song) and 110 (Pattern).  For details on recording audio data (for Sampling), see pages 94 and 107.
+NOTE.	
+The Song Edit function (for editing the Song MIDI sequence data) and the Pattern Edit function (for editing the Pattern MIDI sequence data) are not explained here. See page 124. 
+
+Edit Indicator.
+You can adjust or set various parameters by using the data dial, [INC/YES] button, [DEC/NO] button, Knobs, and Control Sliders in the Voice mode (Play/Edit mode), Performance mode (Play/Edit mode), Song Mixing mode, Pattern Mixing mode, and Mixing Voice mode. When changing the value of the parameter in these modes, the [E] (Edit Indicator) will appear on the top left corner of the LCD display. This indicates that the current program has been modified but not yet stored. If you wish to store your sound obtained by edit operation, be sure to store the current program to internal User memory in the Store mode before selecting another program. 
+<Figure>
+If the Edit Indicator appears...
+
+Compare Function.
+This convenient function lets you switch between the edited sound and its original, unedited condition Ð allowing you to listen to the difference between the two and better hear how your edits affect the sound.
+For example, when editing a Voice in the Voice Edit mode, the "E" Edit indicator is shown.  Pressing the [COMPARE] button in this condition reverts to the original unedited sound (the button lamp flashes and the "C" Compare indicator is shown).  Press the [COMPARE] button again to return to the edited sound.
+<Figure>
+Edit Indicator (newly edited sound)
+Changes to the Compare Indicator (original sound)
+
+
+Edit Recall Function.
+If you are editing a program and select a different program without storing your edited one, all the edits you've made will be erased. However, the edited program is maintained in a backup memory location called the Recall buffer (page 187).  To restore the lost data with your latest edits intact, use the Edit Recall function in the Job mode.
+
+<Table>
+Job mode.	How to call up the Edit Recall display.
+Voice.	[VOICE] -> [JOB] -> [F2] RECALL. 
+Performance.	[PERFORM] -> [JOB] -> [F2] RECALL
+Song Mixing.	[SONG] -> [MIXING] -> [JOB] -> [F2] RECALL
+Pattern Mixing.	[PATTERN] -> [MIXING] -> [JOB] -> [F2] RECALL
+Mixing Voice.	[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED -> [JOB] -> [F2] RECALL
+
+
+Confirmation Message.
+When you execute certain operations, such as those in the Job, Store, and File modes, this synthesizer shows a confirmation message. This lets you actually execute the operation or cancel it if desired.
+<Figure>
+If a confirmation message (like the one illustrated above) appears, press the [INC/YES] button to execute the operation or press the [DEC/NO] button to cancel it.
+
+Information Display.
+This convenient function lets you call up relevant details about the selected mode Ð simply by pressing the [INFORMATION] button. For example, when the Voice mode is active, you can quickly check information about which voice bank is selected, what Play mode (poly or mono) is being used, which effects are applied, and so on. 
+For details, see page 275. 
+
+Note (Key) settings.
+Several parameters let you set a key range for a function Ð for example, in setting up a keyboard split Ð by specifying certain note values. You can use the [INC/YES] and [DEC/NO] buttons or data dial to set these parameters, or you can directly enter the values from the keyboard by pressing the appropriate keys (as shown below). 
+<Figure>
+When Note Limit is selected, the [KBD] mark appears, indicating that you can use the keyboard to set the value. Simultaneously hold down the [INFORMATION] button and press the appropriate key.
+
+NOTE.	
+About the note name assigned to each key, see page 16. 
+
+
+Naming.
+You can freely name the created data like Voice and the file saved to the SmartMedia/USB storage device. The chart below lists the types of data that can be named along with the operations for calling up the respective naming displays. 
+
+<Table>
+Data types that can be named.	How to call up the naming display.	Page.
+Voice.	[VOICE] -> [EDIT] -> [F1] GENERAL -> [SF1] NAME. 	80
+Performance.	[PERFORM] -> [EDIT] -> [F1] GENERAL -> [SF1] NAME.	89
+Song.	[SONG] -> [JOB] -> [F6] SONG -> 04: Song Name. 	233
+Pattern.	[PATTERN] -> [JOB] -> [F6] PATTERN -> 05: Pattern Name. 	248
+Mixing Template.	[SONG] or [PATTERN] -> [MIXING] -> [JOB] -> [F6] TEMPLATE. 	237
+Mixing Voice.	[SONG] or [PATTERN] -> [MIXING] -> [F5] VCEED -> [F1] GENERAL ->[SF1] NAME.	106
+Phrase.	[PATTERN] -> [JOB] -> [F4] PHRASE -> 09: Phrase Name. 	246
+Master.	[MASTER] -> [EDIT] -> [F1] NAME. 	138
+Waveform.	[INTEGRATED SAMPLING] -> [JOB] -> [F2] WAVE -> 04: NAME.	259
+Arpeggio.	[SONG] -> [JOB] -> [F5] TRACK -> 07: Put Track To Arp. 	130
+	[PATTERN] -> [JOB] -> [F5] TRACK -> 06: Put Track To Arp. 	130
+Volume Label of the SmartMedia/USB storage device.	[FILE] -> [F1] CONFIG -> [SF3] FORMAT. 	266
+File/Folder saved to the SmartMedia/USB storage device.	[FILE] -> [F2] SAVE or [F4] RENAME. 	132
+
+First, call up the name input display according to the above table, then, move the cursor by using the Cursor button to the desired location and input a character. See below for details. 
+
+NOTE.	
+Since the name of the program is part of the data, make sure that you properly save the program after naming it.
+
+Basic naming operation.
+As shown below, you can set the name by repeating the two operations Ð moving the cursor to the desired location by using the Cursor button and selecting a character by using the data dial, [INC/YES] button, and [DEC/NO] button. 
+<Table>
+Moving the cursor to the desired location on the name Selecting a character at the cursor location
+
+Using the character list.
+If you find it difficult to select the desired characters with the above method, you may want to use the following method -- selecting the characters from a list.
+<Table>
+When the cursor is located at the Name, this [LIST] icon appears and you can call up the Character List display by holding the [INFORMATION] button.
+Release the [INFORMATION] button to return back to the original display.
+Perform the operations below while holding the [INFORMATION] button.
+Move the cursor to the desired location.
+Select a character for the cursor location on the name.
+
+This is the end of the file.

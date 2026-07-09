@@ -1,0 +1,543 @@
+Setting Up.
+
+Please read this section carefully before using your new MOTIF ES.
+This section explains how to connect your MOTIF ES to an AC power source, external audio and MIDI devices, and a computer system. Only switch the MOTIF ES on after you have made all the necessary connections (page 43).
+
+Power Supply.
+1.	Make sure the POWER switch on the MOTIF ES is set to OFF.
+2.	Connect the supplied power cord to the AC INLET on the instrument's rear panel.
+3.	Connect the other end of the power cord to an AC outlet. Make sure your MOTIF ES meets the voltage requirement for the country or region in which it is being used.
+
+<WARNING>
+Make sure your MOTIF ES is rated for the AC voltage supplied in the area in which it is to be used (as listed on the rear panel). Connecting the unit to the wrong AC supply can cause serious damage to the internal circuitry and may even pose a shock hazard!
+<WARNING>
+Use only the AC power cord supplied with the MOTIF ES. If the supplied cord is lost or damaged and needs to be replaced, contact your Yamaha dealer. The use of an inappropriate replacement can pose a fire and shock hazard!
+<WARNING>
+The type of AC power cord provided with the MOTIF ES may be different depending on the country in which it is purchased (a third prong may be provided for grounding purposes). Improper connection of the grounding conductor can create the risk of electrical shock. Do NOT modify the plug provided with the MOTIF ES. If the plug will not fit the outlet, have a proper outlet installed by a qualified electrician. Do not use a plug adapter which defeats the grounding conductor.
+
+About data storage to SmartMedia cards and USB storage devices.
+As you make music with this instrument, you'll create a wide variety of data -- such as custom Voice data (including Voices, Performances, etc.), MIDI sequence data (Songs, Patterns, Arpeggios), and waveform data (with the Sampling function).  Naturally, you'll want to store this data for safekeeping and future use, and the instrument is equipped with a variety of storage options.  You can save your data to SmartMedia card (inserted to the Card slot) or to a USB storage device (connected to the USB TO DEVICE connector).  To recall the data, use the Load function.  (Save and Load operations are done in the File mode; see page 266.)
+Keep in mind that certain types of data are lost when you turn off the power and should be properly saved.  Also keep in mind that since there are several storage options (including SmartMedia card, hard disk, flash disk, etc.), you should always have the proper media formatted and on hand BEFORE you start creating or editing data.
+
+NOTE.	
+The Save/Load operation in the File mode can be executed between the SmartMedia card inserted to the CARD slot on the rear panel and the instrument, or between the USB storage device connected to the USB TO DEVICE connector and the instrument.  Please keep in mind that the Save /Load operation in the File mode cannot be executed between the SmartMedia card inserted to the CARD slot on the rear panel and the USB storage device connected to the USB TO DEVICE connector.  In short, data can be saved/loaded between the storage media and the instrument, but not between the two storage media devices.
+
+Data lost and data retained when power is turned off.
+The chart below lists the data types you can create on the instrument and the internal memory locations to which they are stored, permanently or temporarily. 
+
+<CAUTION>
+Make sure to save any data remaining in DRAM to SmartMedia or a USB storage device before turning off the power, other wise the data will be lost.
+
+<Table>
+Data types.	Page. 	Mode in which data is created.	Internal memory types to which data is stored.
+Voice.	79	Voice mode	Flash ROM
+Mixing Voice.	105	Mixing Voice mode	DRAM -> Will be lost when turning the power off!
+Performance.	87	Performance mode	Flash ROM
+Song*.	117	Song mode	DRAM -> Will be lost when turning the power off!
+Song Chain.	59	Song Chain mode	DRAM -> Will be lost when turning the power off!
+Pattern*.	106	Pattern mode	DRAM -> Will be lost when turning the power off!
+Pattern Chain.	115	Pattern Chain mode	DRAM -> Will be lost when turning the power off!
+Phrase (Pattern).	110	Pattern mode	DRAM -> Will be lost when turning the power off!
+Arpeggio.	130	Song mode, Pattern mode	Flash ROM
+Master.	136	Master mode	Flash ROM
+Waveform**.	94	Sampling mode	DIMM (DRAM) -> Will be lost when turning the power off!
+Mixing Template***.	103	Song Mixing mode, Pattern Mixing mode	Flash ROM
+System settings.	185	Utility mode	Flash ROM
+
+Song*,Pattern* ... Includes the Mixing settings (pages 103, 127)
+Waveform** ...	If you create the User Voices or Sample Voices by using the Sampling function, the corresponding Waveforms can be saved automatically by saving the User Voice data or Song/Pattern data to the SmartMedia/USB storage device. 
+Mixing Template*** ...	Song Mixing/Pattern Mixing can be stored as Song/Pattern data and as a Mixing Template (which are not associated with a specific Song/Pattern).
+
+NOTE.	
+For details about the data types you can create on this instrument, the internal memory locations to which they are stored, and file types when saving the created data to the SmartMedia/USB storage device, refer to "Memory Structure" on page 186. 
+<CAUTION>
+Data of up to 128 MB can be saved to a SmartMedia card inserted to the CARD slot on the rear panel. Yamaha recommends the use of a large-capacity USB storage device, since you may want to save data more 128 MB -- especially if you've installed optional DIMMs (page 289) and are using the Sampling feature. 
+
+Using the SmartMediaª* cards.
+Be sure to handle SmartMedia cards with care.  Follow the important precautions below.
+* SmartMedia is a trademark of Toshiba Corporation.
+
+Compatible SmartMedia card Type.
+3.3V (3V) SmartMedia cards can be used. 5V type SmartMedia cards are not compatible with this instrument. 
+
+Memory Capacity.
+There are seven types of SmartMedia cards: 2MB/4MB/8MB/16MB/32MB/64MB/128MB. Keep in mind that only SmartMedia cards conforming to SSFDC standards (bearing the SmartMedia logo) can be used.
+
+Inserting/Removing SmartMedia cards.
+Inserting a SmartMedia card.
+With the gold-plated contact side facing down, insert the SmartMedia card firmly but carefully into the card slot, as far as it will go.  Be careful not to insert the card upside down or back side in.  Also, do not insert anything else into the slot, other than a proper SmartMedia card. 
+Removing a SmartMedia card.
+Before removing the SmartMedia card, be sure to confirm that the SmartMedia card is not in use, or it is not being accessed by the instrument. Then pull the SmartMedia card out slowly by hand. If the SmartMedia card is being accessed*, a message indicating that it is in use appears on the instrument's display. 
+ * This includes all save, load, format, delete and create directory operations for the SmartMedia card. Also, be aware that the instrument will automatically access the SmartMedia card to check the media type when it is inserted while the instrument is turned on.
+
+<CAUTION>
+Never attempt to remove the SmartMedia card or turn the power off during accessing. Doing so can damage the data on the instrument/SmartMedia card and possibly the SmartMedia card itself. 
+
+Formatting SmartMedia cards.
+Before using a SmartMedia card with your instrument it must first be formatted. Once it is formatted all data on it will be erased. Make sure that no important data is contained on the card beforehand.
+
+NOTE.	
+The SmartMedia cards formatted with this instrument may be unusable with other instruments or devices.
+
+About the SmartMedia cards.
+Handle SmartMedia cards with care!
+¥	SmartMedia cards are very sensitive and can be damaged by static electricity.  Before handling a SmartMedia card, make sure to discharge any static electricity in your body by touching something made of metal, such as a doorknob or aluminum blinds.
+¥	Be sure to remove the SmartMedia card from the CARD slot when it is not in use for a long time.
+¥	Do not expose the SmartMedia card to direct sunlight, extremely high or low temperatures, or excessive humidity, dust or liquids. 
+¥	Do not place heavy objects on a SmartMedia card or bend or apply pressure to the SmartMedia card in any way. 
+¥	Never touch the gold-plated contact with your fingers or let it come in contact with any other metallic or hard surface.
+¥	Do not expose the SmartMedia card to magnetic fields, such as those produced by televisions, speakers, motors, etc., since magnetic fields can partially or completely erase data on the SmartMedia card, rendering it unreadable.
+¥	Do not attach anything other than the provided labels to a SmartMedia card. Also make sure that labels are attached in the proper location.
+
+Protecting your data (write-protect).
+To prevent important data from being inadvertently erased, apply the write-protect seal (provided with the SmartMedia card) to the circle spot indicated on the card.  If you are saving data to the card, make sure to remove the write-protect seal.  Do not reuse a seal that has been removed; it may not stick properly to the card and could come off in the slot.
+
+Data Backup.
+For maximum data security Yamaha recommends that you keep two copies of important data on separate SmartMedia cards. This gives you a backup if one SmartMedia card is lost or damaged.
+
+Burglarproof Lock.
+This instrument is equipped with a burglarproof lock for the SmartMedia card. If necessity arises, install the burglarproof lock onto the instrument.
+To install the burglarproof lock:
+1.	Remove the metallic part using a Phillips screwdriver.
+2.	Turn the metallic part upside down and replace it in the new position.
+
+
+Using USB storage devices.
+When using USB storage devices, make sure to connect them to the USB TO DEVICE connector, and follow the important precautions below.
+
+Compatible USB devices.
+Connect only a USB storage device (such as hard disk, CD-ROM, flash disk and other drives) to the USB TO DEVICE connector.  Other devices such as a computer keyboard or mouse cannot be used.
+Both bus-powered (powered by the host device) or self-powered (battery or external power supply) types can be used.
+The MOTIF ES does not necessarily support all commercially available USB storage devices. Yamaha cannot guarantee operation of USB storage devices that you purchase. Before purchasing USB storage devices, please consult your Yamaha dealer, or an authorized Yamaha distributor (see list at end of the Owner's Manual) for advice, or see the following page: 
+http://www.yamahasynth.com/
+
+NOTE.	
+Although CD-R/W drives can be used to load data to the instrument, they cannot be used for saving data.  However, you can transfer data to a computer and save data to a CD using the CD-R/W drive on the computer.
+
+Formatting USB storage media.
+When a USB storage device is connected or media is inserted, a "Disk or card unformatted" message may appear in the LCD display, indicating that the device or media must be formatted for use.  Execute the Format operation in the File mode (page 268).
+
+Precautions when using the USB TO DEVICE connector.
+<CAUTION>
+¥ 	Never turn the USB device's power on/off and never plug/unplug the USB cable when the connected USB storage device is the self-powered type. Doing so may result in the operation of the synthesizer "freezing" or hanging up.
+¥ 	While the instrument is accessing data (such as in the Save, Load and Delete operations in the File mode), do NOT unplug the USB cable, do NOT remove the media from the device, and do NOT turn the power off to either device.  Doing so may corrupt the data on either or both devices.
+
+Protecting your data (write-protect).
+To prevent important data from being inadvertently erased, apply the write-protect provided with each storage device or media. 
+If you are saving data to the USB storage device, make sure to remove the write-protect. 
+
+
+USB connector types.
+There are two different types of USB connectors, and the rear panel of the instrument features both.  Take care not to confuse the two.
+USB TO HOST connector.
+This type is used to connect the instrument to a computer, and allows you to transfer MIDI data between the devices.  Unlike MIDI, USB can handle multiple ports via a single cable.
+USB cables have different connectors on each end: the A type and the B type. Connect the A type to your computer and the B type to the USB TO HOST connector.
+USB TO DEVICE connector.
+This type is used to connect the instrument to a USB storage device, and allows you to save data you've created to the connected device, as well as load data from the connected device.  Save and Load operations are executed in the File mode.
+USB cables have different connectors on each end: the A type and the B type. Connect the A type to the USB TO DEVICE connector and the B type to the USB storage device.
+
+NOTE. 	The computer cannot access the USB storage device connected to the MOTIF ES's USB TO DEVICE connector, even if connecting as shown above. Only from the File mode on the instrument itself can you access the data on the USB storage device connected to the USB TO DEVICE connector. 
+NOTE. 	Though the MOTIF ES supports the USB 1.1 standard, you can connect and use a USB 2.0 storage device with the MOTIF ES.  However, note that the transfer speed complies to USB 1.1. 
+
+Basic settings for using SmartMedia or a USB storage device.
+1.	Press the [FILE] button to enter the File mode. 
+2.	Press the [SF1] CURRENT button to check which device is selected.
+When Current is set to "CARD".
+The instrument recognizes the SmartMedia inserted to the Card slot. 
+When Current is set to "USB".
+The instrument recognizes the USB storage device. 
+
+<Figure>
+Volume Label of the selected device
+
+3.	Set Current to "CARD" if you wish to access the SmartMedia, or set Current to "USB" if you wish to access the USB storage device. 
+If the USB storage device supports multiple types of media, you'll need to set the Slot number after setting Current to "USB." To check which media corresponds to which USB number (1 or 2) and which slot number, see the Volume Label or Partition setting in this window.
+Once you've made the settings above, you can perform any of the other File operations (in the bottom tabs, called up with the [F2] to [F5] buttons).
+
+NOTE. 	When a USB storage device is connected or media is inserted, a "Disk or card unformatted" message may appear in the LCD display, indicating that the device or media must be formatted for use.  Execute the Format operation in the File mode (page 268).
+
+[TIP] Backing up your data to a computer.
+¥ Backing up MOTIF ES data to a computer.
+Once you've saved data to a SmartMedia card or USB storage device, you can copy the data to the hard disk of your computer, then archive and organize the files as desired.  Simply reconnect the device as shown below.
+<Figure>
+Saving created data to the USB storage device in the File mode (page 266)
+Disconnect the USB storage device from the synthesizer and connect it to the computer.
+Backing up data to a computer and organizing files/folders.
+
+NOTE. 	Though the example here shows the use of a connected USB storage device, you can also back up your created data that you've saved to a SmartMedia inserted to the CARD slot on the rear panel. 
+
+¥ Loading data from a computer to the MOTIF ES.
+Data and files contained on the hard disk of a computer can be loaded to the MOTIF ES by copying them first to the storage media, then transferring them to the instrument.
+In this way, you can use data created on the computer or another instrument with the MOTIF ES.  For example, you can load Standard MIDI files to the instrument as Song/Pattern data, or import audio WAV or AIFF files for use as waveform data.
+
+<Figure>
+Copying the files of the hard disk of the computer to the USB storage device.
+Disconnect the USB storage device from the computer and connect it to the synthesizer.
+Loading files on the USB storage device to the synthesizer in the File mode (page 266)
+
+
+Connections.
+Connecting to External Audio Equipment.
+Since the MOTIF ES has no built-in speakers, you'll need an external audio system or a set of stereo headphones to properly monitor it. The following illustrations show various connection examples; use the one most similar to your intended setup.
+
+Audio Output.
+Connecting stereo powered speakers (analog output).
+For optimum, accurate reproduction of the instrument's rich sounds, effects and full stereo image, use a pair of powered speakers. Connect the powered speakers to the OUTPUT L/MONO and R jacks on the rear panel.
+
+NOTE. 	When using just one powered speaker, connect it to the OUTPUT L/MONO jack on the rear panel.
+
+Connecting a mixer.
+There are extra audio outputs in addition to the OUTPUT (L/MONO and R) jacks. Connect these outputs to a mixer for separately controlling the analog outputs of Drum keys or parts (Performance, Song, and Pattern). You can expand the output capabilities by installing the optional I/O board (AIEB2) or the optional mLAN16E. Installing the AIEB2 adds six extra OUTPUT jacks, while installing the mLAN16E expands the output capabilities with fourteen addition digital outputs, over a single FireWire (IEEE 1394) connector/cable.  For details on how to set the Part/output jack assignments, refer to the chart below.
+
+<Table>
+Outputting separate notes (keys) of a Drum Voice.	Determined from the OutputSel parameter (as selected below) as Drum Voice data.	
+	[VOICE] -> Drum Voice selection ->  [EDIT] ->  Drum Key selection ->  [F1] OSC ->  [SF2] OUTPUT ->  OutputSel.	
+	This setting is available for the Part for which the OutputSel parameter is set to "drum" in another mode (e.g., Performance or Song).		Page 203.
+Outputting separate Parts of a Performance.	Determined from the OutputSel parameter (as selected below).	
+	[PERFORM] -> Performance selection ->  [EDIT] ->  Part selection ->  [F2] OUTPUT ->  [SF3] SELECT ->  OutputSel.	
+	Assigning an audio input Part of a Performance to an output is done from the OutputSel parameter (as selected below).	
+	[PERFORM] ->  Performance selection ->  [EDIT] ->  [COMMON] ->  [F5] AUDIO IN ->  [SF1] OUTPUT ->  OutputSel.		Page 218.
+Outputting separate Parts of a Song.	Determined from the OutputSel parameter (as selected below).	
+	[SONG] ->  Song selection ->  [MIXING] ->  [EDIT] ->  Part selection ->  [F2] OUTPUT ->  [SF3] SELECT ->  OutputSel.		
+	Assigning an audio input Part of a Song to an output is done from the OutputSel parameter (as selected below).	
+	[SONG] ->  Song selection ->  [MIXING] ->  [EDIT] ->  [COMMON] ->  [F5] AUDIO IN ->  [SF1] OUTPUT ->  OutputSel.		Page 235.
+Outputting separate Parts of a Pattern.	Determined from the OutputSel parameter (as selected below).	
+	[PATTERN] ->  Pattern selection ->  [MIXING] ->  [EDIT] ->  Part selection ->  [F2] OUTPUT ->  [SF3] SELECT ->  OutputSel.	
+	Assigning an audio input Part of a Pattern to an output is done from the OutputSel parameter (as selected below).	
+	[PATTERN] ->  Pattern selection ->  [MIXING] ->  [EDIT] -> [COMMON] ->  [F5] AUDIO IN ->  [SF1] OUTPUT ->  OutputSel.	Page 235
+
+The following settings can be made from the parameter pages listed above.
+
+<Table>
+LCD.	Output jacks.	Stereo/Mono.		
+L and R. 	OUTPUT L and R. 	Stereo		
+as L and R. 	ASSIGNABLE OUTPUT L and R. 	Stereo.		
+as 1 and 2. 	ASSIGNABLE OUTPUT 1 and 2.	Stereo (1: L, 2: R) *(Available only when the optional AIEB2 board or mLAN16E board has been installed).		
+as 3 and 4. 	ASSIGNABLE OUTPUT 3 and 4.	Stereo (3: L, 4: R) *(Available only when the optional AIEB2 board or mLAN16E board has been installed).		
+as 5 and 6. 	ASSIGNABLE OUTPUT 5 and 6.	Stereo (5: L, 6: R) *(Available only when the optional AIEB2 board or mLAN16E board has been installed).		
+as 7 and 8. 	ASSIGNABLE OUTPUT 7 and 8.	Stereo (7: L, 8: R) **(Available only when the optional mLAN16E board has been installed).		
+as 9 and 10. 	ASSIGNABLE OUTPUT 9 and 10.	Stereo (9: L, 10: R) **(Available only when the optional mLAN16E board has been installed).		  
+as 11 and 12. 	ASSIGNABLE OUTPUT 11 and 12.	Stereo (11: L, 12: R) **(Available only when the optional mLAN16E board has been installed).		
+as 13 and 14 	ASSIGNABLE OUTPUT 13 and 14	Stereo (13: L, 14: R) **(Available only when the optional mLAN16E board has been installed).				
+as L. 	ASSIGNABLE OUTPUT L. 	Mono.
+as R. 	ASSIGNABLE OUTPUT R. 	Mono.
+as 1. 	ASSIGNABLE OUTPUT 1.	Mono *.(Available only when the optional AIEB2 board or mLAN16E board has been installed).
+:	:	:
+as 6. 	ASSIGNABLE OUTPUT 6.	Mono *.(Available only when the optional AIEB2 board or mLAN16E board has been installed).
+as 7. 	ASSIGNABLE OUTPUT 7.	Mono **.(Available only when the optional mLAN16E board has been installed).
+:	:	:
+as 14. 	ASSIGNABLE OUTPUT 14.	Mono **.(Available only when the optional mLAN16E board has been installed).
+
+
+
+Connection example when the optional AIEB2 board has been installed (analog output)
+<Figure>
+
+Connection example when the optional mLAN16E board has been installed (analog and digital output)
+<Figure>
+
+
+NOTE.	
+About the main output jacks and the Assignable Output jacks. 
+¥ Connecting a set of headphones to the PHONES jack does not affect the sound output from the OUTPUT L/MONO and R jacks.  The sound monitored through the headphones is identical to the sound of the OUTPUT L/MONO and R jacks.
+¥ Any parts assigned to the ASSIGNABLE OUTPUT jacks (including those of the optional AIEB2 interface or mLAN16E interface) will not be output through the OUTPUT L/MONO and R jacks or PHONES jack.
+¥ The System Effects (Reverb, Chorus), the Master EQ, and the Master Effect are not applied to the sound output through the ASSIGNABLE OUTPUT jacks (including those of the optional AIEB2 interface or mLAN16E interface). (Only the Part EQ and the Insertion Effect are applied.)
+
+Digital Output using the optional AIEB2.
+When the optional AIEB2 board has been installed to the rear panel, the sound output through the OUTPUT jacks by analog can also be output by digital through the OPTICAL OUTPUT jack and the DIGITAL OUTPUT jack. Using these digital output jacks, you can record the keyboard performance or Song/Pattern playback of this synthesizer to external media (e.g., an MD recorder) with exceptionally high-quality sound.
+
+NOTE.	
+The digital output resolution of the optionally installed AIEB2 board can be set in the UTILITY mode with the following operation.
+[UTILITY] -> [F2] I/O -> [SF2] OUTPUT.	Page 261.
+
+Audio Input.
+Connecting a microphone or other audio equipment to the A/D INPUT jacks (analog input)
+External instruments and audio equipment, such as a microphone, guitar, bass, CD player or even another synthesizer/keyboard can be connected to the A/D INPUT jacks.  This audio can be used as input for the AUDIO IN Part in the Performance/Song/Pattern mode, and can be used to create samples with the Sampling function (page 172).  With the use of an optional PLG100-VH Plug-in Board, you can even apply an automatic vocal harmony effect to the microphone sound.
+
+<Figure>
+Apply effects to the microphone sound by using the Vocal Harmony Plug-in board (PLG100-VH)
+
+NOTE.	
+Depending on the connected equipment, change the parameter settings in the Utility mode as needed, with the following operations.
+¥	When the output level of the connected equipment (such as a microphone, guitar, bass) is low: 
+[UTILITY] -> [F2] I/O -> [SF1] INPUT -> Mic/Line equal mic
+¥	When the output level of the connected equipment (such as a synthesizer, keyboard, CD player) is high: 
+[UTILITY] -> [F2] I/O -> [SF1] INPUT -> Mic/Line equal line
+NOTE.	
+After the above connections are complete, you may need to adjust the input gain of the audio source using the GAIN knob (page 73).
+NOTE.	
+The audio input sound is not available in the Voice mode because the Voice mode does not have an AUDIO IN Part. 
+
+Digital Input using the optional AIEB2.
+By installing the optional AIEB2 I/O expansion board, you can directly record digital audio from digital sources -- such as a CD player or DAT deck. For maximum compatibility and flexibility, the AIEB2 board includes two different input types: OPTICAL (optical fiber) and DIGITAL (coaxial cable).
+
+NOTE.	
+Either one of the connectors (OPTICAL or DIGITAL) can be used; however, both cannot be used at the same time. Select which connector is used for digital input in the Utility mode with the following operation.
+[UTILITY] -> [F2] I/O -> [SF1] INPUT -> Digital	Page 261
+
+Digital Input using the optional mLAN16E.
+The optional mLAN16E allows you to connect this instrument to an mLAN device or computer, giving you high-speed audio and MIDI data transfer between devices with just one IEEE 1394 cable connection.
+
+Connecting External MIDI Instruments.
+With a standard MIDI cable (available separately), you can connect an external MIDI device, and control it from the MOTIF ES. Likewise, you can use an external MIDI device (such as a keyboard or sequencer) to control the MOTIF ES sounds. Below are several different MIDI connection examples; use the one most similar to your intended setup.
+
+NOTE.	
+Any one of the these interfaces can be used for MIDI data transmission/reception: the MIDI connectors, the mLAN connector (when an optional mLAN16E has been installed), or the USB connector. However, they cannot be used at the same time. Select which connector is used for MIDI data transfer in the Utility mode with the following operation.
+[UTILITY] -> [F5] MIDI -> [SF4] OTHER -> MIDI IN/OUT	
+
+Controlling from an external MIDI keyboard.
+Use an external keyboard to remotely select and play Voices of the MOTIF ES.
+
+MIDI Transmit Channel and Receive Channel.
+Make sure match the MIDI Transmit Channel of the external MIDI instrument with the MIDI Receive Channel of the MOTIF ES. For details on setting the MIDI Transmit Channel of the external MIDI instrument, refer to the Owner's Manual of the MIDI instrument. For details on setting the MIDI Receive Channel of the MOTIF ES, check the following points.
+¥ In the Voice mode/Performance mode (using the MOTIF ES as a single timbre tone generator)
+Check the MIDI Basic Receive Channel with the following operation. 
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> BasicRcvCh.
+If necessary, change this parameter to the same number as the MIDI Transmit Channel of the external MIDI instrument. 
+¥ In the Song mode/Pattern mode (using the MOTIF ES as a multi-timbral tone generator)
+Check the MIDI Receive Channel for each part of the Song/Pattern with the following operation. 
+[SONG] or [PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh.
+Change the settings of the desired parts to match the MIDI Transmit Channel settings on the external MIDI instrument. Please note that all the parts whose MIDI Receive Channel are same as MIDI Transmit Channel of the external MIDI instrument are sounded by your keyboard performance. 
+
+NOTE.	
+The functions of the internal tone generator differ depending on whether the Voice/Performance mode (single timbre, keyboard playback) or the Song/Pattern mode (multi-timbral, sequencer playback) is selected. For details, see page 163. 
+
+Controlling an external MIDI keyboard from this synthesizer.
+This connection lets you sound an external MIDI tone generator (synthesizer, tone generator module, etc.) by playing the MOTIF ES or playing back the Song/Pattern of the MOTIF ES. Use this connection when you wish to sound the other instrument as well as the MOTIF ES. 
+
+
+[TIP] Splitting the sound between the MOTIF ES and an external tone generator by MIDI channel (Part 1).
+Using the connection example shown above, you can play both instruments and have them separately sound different parts -- for example, having your keyboard performance sound the external instrument while the Song/Pattern plays the sounds of the MOTIF ES. Check the following points.
+¥ In the Voice mode/Performance mode.
+You can check the MIDI Transmit Channel at the right corner of the [F1] PLAY display in the Voice Play mode/Performance Play mode. 
+If necessary, you can change the MIDI Transmit Channel by turning the [TRACK SELECT] button on and entering the desired value with the [NUMBER] buttons.
+When you wish to sound only the external tone generator, set Master Volume to "0" or set Local Control to "off" with the following operation.
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> LocalCtrl.
+About how to set the MIDI Receive Channel of the external MIDI instrument, refer to the Owner's Manual of the external MIDI instrument. 
+¥ In the Song mode/Pattern mode
+You can check the MIDI Transmit Channel for each track of the current Song/Pattern with the following operation. Change this setting as necessary. 
+[SONG] or [PATTERN] -> [F3] TRACK -> [SF1] CHANNEL.
+Alternately, you can set the output destination (Internal or external MIDI tone generator) for each track from the following display. 
+[SONG] or [PATTERN] -> [F3] TRACK -> [SF2] OUTSW.
+In this case, you'll need to set the external MIDI tone generator to multi-timbral operation and set the MIDI Receive Channel for each part. For details, refer to the owner's manual of the external MIDI tone generator. 
+
+Alternately, you can have your keyboard performance split and assigned to different MIDI channels by using the Zone settings in the Master mode.  (See page 137.)
+
+NOTE.	
+The functions of the internal tone generator differ depending on whether the Voice/Performance mode (single timbre, keyboard playback) or the Song/Pattern mode (multi-timbral, sequencer playback) is selected. For details, see page 163. 
+
+
+Recording and playback using an external MIDI sequencer.
+In this connection example, song data on the external MIDI sequencer plays the sounds of the tone generator on the MOTIF ES.  The external song data can also be recorded to Song/Pattern tracks on the MOTIF ES. 
+<Figure>
+Sounding the MOTIF ES tone generator from a MIDI sequencer, such as the QX/QY series, RM1x, RS7000.
+
+In this case, make sure that the MOTIF ES is set to the Song mode or Pattern mode. If the instrument is set to the Voice mode or to the Performance mode in which multi-channel MIDI messages are not recognized, the external sequence data (containing multi-channel data) will not play back properly on the MOTIF ES.  In addition, you may have to make certain MIDI synchronization settings (see below).
+
+Synchronizing with an external MIDI instrument (Master and Slave).
+The Songs and Patterns of this instrument can be synchronized to the playback of an external MIDI sequencer,  To do this, one device must be set to internal clock operation and the other (as well as all other devices to be controlled) to external clock.  The device set to internal clock serves as a reference for all connected devices, and is referred to as the "master" instrument.  The connected devices set to external clock are referred to as "slaves."
+When recording playback data of the external MIDI sequencer to a Song/Pattern of the MOTIF ES in the above connection example, make sure to set the MIDI synchronization parameter to the use of external clock in the Utility mode with the following operation. 
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MIDI.
+
+NOTE.	
+For details on how to record the playback data of an external MIDI sequencer to a Song on the MOTIF ES, see page 143. 
+
+Controlling another MIDI instrument via MIDI THRU.
+If you have more synthesizers and tone generators than MIDI ports, you can use the MIDI THRU jack to connect and control additional devices.  Here, the playback data of a MIDI sequencer is used to play the sounds of another MIDI instrument (connected to the MIDI THRU connector) as well as the MOTIF ES. The MIDI THRU connector simply redirects any received MIDI data (via MIDI IN) to connected instrument. 
+
+In this case, make sure that the MOTIF ES is set to the Song mode or Pattern mode. If the instrument is set to the Voice mode or to the Performance mode in which multi-channel MIDI messages are not recognized, the external sequence data (containing multi-channel data) will not play back properly on the MOTIF ES.  In addition, you may have to make certain MIDI synchronization settings (see below). Likewise, make sure to set the MIDI tone generator (connected to the MIDI THRU connector) to the multi-timbral mode. 
+Beside, you need to set the MIDI synchronization related parameters of the MOTIF ES to use of the external clock from the following display.
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MIDI.
+
+[TIP] Splitting the sound between the MOTIF ES and an external tone generator by MIDI channel (Part 2)
+In this connection example shown above, you can split the sequence playback between the MOTIF ES and another instrument connected to MIDI THRU and have them sound different parts.  
+For example, on the MOTIF ES assign the Song/Pattern parts to MIDI Receive Channels 1 through 9 with the following operation, and set the rest of the parts (not to be sounded) to off. 
+[SONG] or [PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh.
+On the connected MIDI tone generator, assign the parts to be sounded to MIDI Receive Channels 10 through 16, and set the rest of the parts (not to be sounded) to off.
+
+Using an mLAN interface (when an optional mLAN16E has been installed).
+The connection example shown on page 32 lets you transfer MIDI messages as well as audio data. The mLAN connection to computer (page 39) allows you to transfer both audio and MIDI data between your MOTIF ES and a computer. 
+
+Connecting to an MTR (Multi Track Recorder).
+Since this synthesizer can receive the MTC (MIDI Time Code) and can transmit the MMC (MIDI Machine Control), you can produce music by synchronizing to a MTC- or MMC-compatible multi-track. 
+You can use two types of MTR control (illustrated below) by setting the MIDI Sync to MTC in the Utility mode, with the following operation. 
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MTC.
+
+NOTE. 	MTC and MMC are available only in the Song mode. 
+
+¥ Synchronizing the MOTIF ES to the MTC signal from an external MTR.
+After receiving the MTC signal transmitted from the MTR by starting the MTR playback, the Song of the MOTIF ES will start at the moment the MTC Start Offset time elapses (set from the display [UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MTC StartOffset in the Utility mode).
+
+NOTE.	
+MTC (MIDI Time Code) allows simultaneous synchronization of multiple audio devices via standard MIDI cables. It includes data corresponding to hours, minutes, seconds, and frames. The MOTIF ES does not transmit MTC. An instrument such as the Yamaha AW4416 is necessary as an MTC master. 
+
+¥ Controlling an MTR by using MMC transmitted from the MOTIF ES.
+You can control the start/stop and fast forward/rewind of the MMC-compatible MTR from the SEQ TRANSPORT buttons on the front panel of this synthesizer, outputting MMC messages via MIDI. 
+
+NOTE.	
+MMC (MIDI Machine Control) allows remote control of multitrack recorders, MIDI sequencers, etc. A MMC-compatible multitrack recorder, for example, will automatically respond to start, stop, fast forward, and rewind operations performed on the controlling sequencer, thus keeping playback of the sequencer and multitrack recorder aligned.
+
+Connecting to a Computer.
+Connecting this instrument to a computer via MIDI opens up a whole world of musical possibilities -- such as using sequencer software to record and play back compositions with the MOTIF ES sounds or using the included Voice Editor software to create and edit your own custom Voices.
+
+NOTE.	
+When connecting to a Macintosh computer (with the exception of Mac OS X), make sure to install OMS to the computer as well as the desired software (sequence software, Voice Editor, etc.). For details, refer to the separate Install Guide. 
+
+Using a USB TO HOST connector.
+When connecting via this method, make sure to set the following parameter to "USB."
+[UTILITY] -> [F5] MIDI -> [SF4] OTHER -> MIDI IN/OUT equal USB.
+
+NOTE.	
+USB cables have different connectors on each end: the A type and the B type. When connecting this synthesizer to the computer, connect the A type to your computer and the B type to the USB TO HOST connector.
+NOTE.	
+When connecting to a computer (Windows/Macintosh) via USB, make sure to install the USB-MIDI driver to the computer as well as the desired software (sequence software, Voice Editor, etc.). For details, refer to the separate Installation Guide. 
+NOTE.	
+If you are using the Remote Control function to control operations on a computer sequencer, you should make connections with a USB cable.
+
+MIDI channel and MIDI port.
+While a MIDI cable can transfer MIDI messages of 16 channels simultaneously, a USB cable can transfer MIDI messages of more than 16 channels simultaneously. 
+MIDI data is assigned to one of sixteen channels, and this synthesizer is capable of simultaneously playing sixteen separate parts, via the sixteen MIDI channels. However, the sixteen-channel limit can be overcome by using separate MIDI "ports," each supporting sixteen channels. 
+A USB cable can handle MIDI data on up to eight ports, letting you use up to 128 channels (8 ports x 16 channels) on your computer.
+
+NOTE.	
+This synthesizer can recognize and use up to three ports at the same time. 
+NOTE	
+When using a USB connection, make sure to match the MIDI transmit port and the MIDI receive port as well as the MIDI transmit channel and the MIDI receive channel.
+
+[TIP] About the Thru Port Setting.
+MIDI ports can be used to divide playback among multiple synthesizers, as well as expand the MIDI channel capacity beyond sixteen.
+In the example below, a separate synthesizer connected to the MOTIF ES is played by MIDI data via port 5, as set in the ThruPort parameter with the following operation. 
+[UTILITY] -> [F5] MIDI -> [SF4] OTHER -> ThruPort equal 5.
+
+Only MIDI data over port 5 will be transmitted through the MOTIF ES to this tone generator.
+Only MIDI data over ports 1, 2, and 3 are recognized. For details on the relationship between the MIDI port and the tone generator block, see page 163.
+
+Precautions when using the USB TO HOST connector. 
+<CAUTION> 
+When connecting the computer to the USB TO HOST connector, make sure to observe the following points. 
+If you do not observe these points, you risk freezing the computer, corrupting the data, and losing the data. If the computer or the instrument freezes, turn the power to the instrument off or restart the computer. 
+¥	Before connecting the computer to the USB TO HOST connector, exit from any power-saving mode (such as suspended, sleep, standby) of the computer. 
+¥	Before turning on the power to the instrument, connect the computer to the USB TO HOST connector. 
+¥	Execute the following before turning the power to the instrument on/off or plugging/unplugging the USB cable to/from the USB TO HOST connector. 
+	- Quit any open applications (such as Voice Editor, Multi Part Editor, and SQ01).
+	- Make sure that data is not being transmitted from the instrument. (Data is transmitted only by playing notes on the keyboard or playing back a     song.)
+¥	While a USB device is connected to the instrument, you should wait for three seconds or more between these operations: When turning the power of the instrument off then on again, or when alternately connecting/disconnecting the USB cable.
+
+Using an IEEE1394 interface (when an optional mLAN16E has been installed).
+By installing an optional mLAN16E interface, you can connect a computer (with an IEEE 1394 interface) to this instrument via a single cable.
+When connecting via this method, make sure to set the following parameter to "mLAN."
+[UTILITY] -> [F5] MIDI -> [SF4] OTHER -> MIDI IN/OUT equal mLAN.
+
+The mLAN connection using an IEEE1394 cable lets you transfer both MIDI data and audio data.  For example, you can record your keyboard performance and Song/Pattern playback to hard disk of the computer as audio data (page 153).
+
+Using a MIDI interface.
+¥ Using the computer's MIDI interface.
+¥ Using an external MIDI interface.
+
+NOTE. 	Please use the appropriate MIDI interface for your computer.
+NOTE. 	If you are using a computer that has a USB interface, make sure to connect the computer and this synthesizer by USB. (The data transfer rate is faster than MIDI and you'll have access to multiple MIDI ports.)
+
+Selecting Voices from a computer.
+You can select Voices on this instrument from your computer software by specifying the following MIDI messages.
+ 
+¥ Bank Select MSB.
+¥ Bank Select LSB.
+¥ Program Change.
+For details on what values are assigned to the Voice Bank/Number of this synthesizer, refer to the separate Data List. 
+
+Local On/Off Ð when Connected to a Computer.
+When connecting this synthesizer to a computer, the keyboard performance data is generally sent to the computer, and then returned from the computer to play the tone generator block. If the Local Control in the Utility mode is set to "on," a "double" sound may result, since the tone generator is receiving performance data from both the keyboard directly and the computer. Use the setting suggestions below as a guideline; specific instructions may differ depending on your computer and the software used.
+¥ When MIDI "Echo" (MIDI through) is set to on the software/computer: 
+<Figure>
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> LocalCtrl equal off.
+MIDI Echo (MIDI thru) equal on.
+
+NOTE. 	When transmitting or receiving System Exclusive data (such as with the Bulk Dump function), use the setting example below, making sure that MIDI "Echo" (MIDI through) on the computer software is set to "off."
+¥ When MIDI "Echo" (MIDI through) is set to off the software/computer: 
+<Figure>
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> LocalCtrl equal on.
+MIDI Echo (MIDI thru) = off.
+
+NOTE. 	Although not indicated in the illustration above, the MOTIF ES actually receives and responds to MIDI data from the computer application (sequencer), regardless of the Local Control setting on the MOTIF ES.
+* 	MIDI "Echo" is a function on sequencers that takes any data received via the MIDI IN and "echoes" it (or sends it as is) through the MIDI OUT. In some software, this function is also called "MIDI Thru."
+NOTE. 	For details about the MIDI Echo, refer to the owner's manual of your particular software. 
+
+
+Connecting Various Controllers.
+The MOTIF ES features several controller jacks on the rear panel -- letting you independently control various aspects of the sound and a variety of functions with optional controllers.
+
+Breath Controller.
+You can connect an optional Breath Controller (BC3) to the BREATH jack on the rear panel. Then use it to control a large number of this synthesizer's parameters, particularly those controlled by a wind player's breath: dynamics, timbre, pitch and so on. The Breath Controller is ideally suited for realistic expression with wind instrument type Voices.
+
+NOTE. 	Breath Controller parameters can be set for each Voice (page 192).
+
+Footswitch (assignable).
+An optional Yamaha FC4 or FC5 Foot Switch connected to the rear panel FOOT SWITCH ASSIGNABLE jack can be assigned to a range of parameters. It is suited for switch-type (on/off) controls, such as Portamento Switch, increment/decrement of a Voice or Performance Number, start/stop of the Sequencer, and holding the Arpeggiator on or off.
+
+NOTE. 	The parameter assigned to the Footswitch is set in the Utility mode (page 263).
+
+Footswitch (sustain).
+An optional FC4 or FC5 Footswitch connected to the SUSTAIN jack on the rear panel lets you control sustain -- particularly useful when playing piano and strings voices.
+Keep in mind that some sounds may not be suitable for use in all situations with the Sustain footswitch.  For example, for organ sounds that have no natural decay, the sound continues at the same level when holding down the Sustain footswitch. 
+On the other hand, many sounds benefit from the use of Sustain, such as piano, which has a natural decay when a note is held.  Using Sustain with these kinds of Voices provides a smooth after-sound and gives you expressive control in your performance.  
+
+NOTE. 	The sustain level of the Amplitude EG (page 162) is maintained while holding down the Sustain footswitch, even when releasing your fingers from the keys.
+NOTE. 	You cannot assign a function other than Sustain to the SUSTAIN jack.
+
+Foot Controller.
+Optional Foot Controllers (such as the FC7), connected to the FOOT CONTROLLER jacks on the rear panel, can be assigned to a number of controller parameters. By using a foot controller for parameter control, both your hands are left free to play the keyboard (or to operate other controllers) -- exceptionally convenient when you're playing live.
+
+NOTE. 	Foot Controller parameters can be set for each Voice (page 192).
+
+
+Turning the power on/off.
+
+Power-on Procedure.
+Once you've made all the necessary connections between your MOTIF ES and any other devices, make sure that all volume settings are turned down all the way to zero. Then turn on the every device in your setup in the order of MIDI masters (senders), MIDI slaves (receivers), then audio equipment (mixers, amplifiers, speakers, etc.). This ensures smooth signal flow from the first device to the last (first MIDI, then audio). When powering down the setup, first turn down the volume for each audio devices, then switch off each device in the reverse order (first audio devices, then MIDI).
+
+When using the MOTIF ES as MIDI receiver:
+<Figure>
+1.MIDI sender.
+2.MOTIF ES.(POWER ON!!)
+3.Audio equipment (first mixer, then amplifier).
+
+Turning the MOTIF ES on/off.
+The explanations here apply when audio equipment (amplifier and speaker) is connected to the MOTIF ES. 
+1.	Make sure that the external audio equipment is connected to the MOTIF ES properly. Also be sure to set the volume of the MOTIF ES and the external audio equipment to 0. 
+2.	Press the POWER switch on the rear panel to turn the MOTIF ES on. 
+The Opening display (together with the message that confirms the status of the Plug-in Board installation) appears and after a while, the Master mode display appears.
+
+NOTE. 	At the time this synthesizer is shipped from the factory, the Master mode display will appear when turning the power on. You can change the default display when turning the power on with the following operation. [UTILITY] -> [F1] GENERAL -> [SF4] OTHER -> PowerOnMode (page 261).
+NOTE.	Because the Auto Load parameter (page 135) is set to on at the time this synthesizer is shipped from the factory, it takes a short amount of time before the instrument assumes normal playing status (in which you can play the keyboard).
+You can switch the on/off status of the Auto Load function from the [UTILITY] -> [F1] GENERAL -> [SF5] OTHER display (page 135).
+3.	Turn the power of the connected audio equipment on. 
+4.	Raise the sound system volume of the audio equipment and the MOTIF ES gradually to a reasonable level.
+5.	If necessary, adjust the legibility of the LCD display by using the LCD Contrast Control. 
+6	After turning the power of the audio equipment off or turning down the volume of the audio equipment, turn the MOTIF ES's power off. 
+
+
+Resetting the User Memory to the Initial Factory Settings.
+The original factory setting of this synthesizer's User Memory (page 186) can be restored as follows. 
+
+<CAUTION> 
+When the factory settings are restored, all the Voice, Performance, Song, Pattern, and system setting in the Utility mode you created will be erased. 
+Be sure to save all important data to SmartMedia or USB storage device before executing this procedure (pages 85, 91 and 131).
+1.	Press the [UTILITY] button to enter the Utility mode (the lamp lights).
+2.	Press the [JOB] button to enter the Utility Job mode. 
+3.	Press the [ENTER] button. (The display prompts you for confirmation.)
+
+NOTE.	
+To cancel the Job, press the [DEC/NO] button.
+
+4.	Press the [INC/YES] button to execute the Job.
+After the Job has been completed, a "Completed" message appears and operation returns to the original display.
+
+<CAUTION> 
+An "Executing..." or "Please keep power on" message is shown when it takes a short amount of time to execute the Job. Never attempt to turn off the power while data is being written to Flash ROM (while an "Executing..." or "Please keep power on" message is shown). Turning the power off in this state results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This means that this synthesizer may not be able to start up properly, even when turning the power on next time. 
+
+NOTE.	
+All settings in the Utility mode that are related to the Plug-in boards are stored only to the memory on those respective boards, and not to the User memory of this synthesizer. Because of this, the Factory Set operation cannot be used to restore settings for those boards.
+
+
+This is the end of the file.
+

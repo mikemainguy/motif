@@ -1,0 +1,170 @@
+File mode.		
+		
+The File mode provides tools for transferring data between the instrument and various storage media and devices, such as SmartMedia cards, hard disk drives and compact flash devices.		
+
+NOTE.	For details about SmartMedia and USB storage devices, see page 27. 	
+NOTE.	For details about the relationship between the data created on this synthesizer and the files for saving, see page 186. 	
+		
+		
+File mode.		[FILE].
+		
+NOTE.	For information on how to select a file/folder and how to create a new folder, see page 268. 	
+		
+[F1] CONFIG. 		
+[SF1] CURRENT.		From this display you can set the parameters about the currently recognized device (SmartMedia/USB storage device). 
+	Current.	In this display you can select the device to be recognized by this synthesizer - a SmartMedia inserted to the Card slot or a properly USB storage device connected to the USB TO DEVICE connector.  When Current is set to CARD, the Volume Label is shown on the second line. When Current is set to USB, the partition information is shown on the second line. If the connected USB storage device supports multiple media, set the slot number at the right corner of the display."
+		
+	Settings:	CARD, USB.
+	Status.	Indicates the status of the storage device recognized by this synthesizer. 
+	Å@> free.	Indicates the amount of unused (free) memory on the current device.
+	Å@> total.	Indicates the amount of total memory on the current device.
+[SF2] MOUNT.		From this display you can select specific partitions for saving/loading data, within the device mounted in the [SF1] CURRENT display (above).
+[SF3] FORMAT.		Before you can use a new SmartMedia/USB storage device with this synthesizer, you will need to format it. Use this operation to format the SmartMedia/USB storage device and assign a Volume Label to it. For instructions on formatting, see page 268.
+	Format.	Determines the storage device to be formatted. When set to "USB," "Slot" appears at the right corner of this display. Select a slot to be accessed when the connected USB storage device supports multiple media.
+	Settings:	CARD, USB.
+	Type.	This is available when Format (above) is set to "USB." Specify the partition to be formatted. 
+	Settings:	all, partition1 to 4
+	Volume Label. 	Names the Volume Label. For instructions on naming, refer to page 53 in the Basic Operation section.
+
+[F2] SAVE.		
+This operation lets you save files to a SmartMedia/USB storage device.  For instructions on saving files of the various data types, refer to the following pages:  page 86 (Voices), page 92 (Performances), page 97 (Waveforms), page 132 (Songs/Patterns).		
+	Current.	Indicates the current directory (folder). This indication is automatically changed according to the current directory (folder) specified in the File/Folder selection box. 
+	TYPE.	Among the various types of data created on this synthesizer, you can save all of them or only a specific type of data to a single file. This parameter determines which specific type of data will be saved to a single file. 
+	Settings:	Refer to "Supplementary information" on page 268.
+
+[F3] LOAD.		
+This operation lets you load files from a SmartMedia/USB device to this synthesizer. 		
+	Current.	Indicates the current directory (folder). This indication is automatically changed according to the current directory (folder) specified in the File/Folder selection box. 
+	TYPE.	Among the various types of data saved in a single file on a SmartMedia/USB storage device, you can load all of them or only a specific type of data to this synthesizer. This parameter determines which specific type of data will be loaded from a single file.
+	Settings:	Refer to "Supplementary information" on page 268.
+
+[F4] RENAME.		
+From this display you can rename files or folders in the selected SmartMedia/USB storage device, using up to eight alphabetic and numeric characters.		
+Files are named according to the MS-DOS naming convention. If the file name contains spaces and other characters unrecognized in MS-DOS, these characters will automatically be replaced by "_" (underscore) characters when saving. 
+<Figure>
+Select the desired file type. 
+Select the file/folder to be renamed.
+Rename the selected file/folder here.
+See ÅgBasic OperationÅh on page 53.
+Press the [F6] NEW button to create a new folder.
+
+		
+[F5] DELETE. 		
+From this display you can delete files/folders from the selected SmartMedia/USB storage device. Select the desired file or folder as shown below, then press the [ENTER] button.		
+
+NOTE.	When you wish to delete a folder, delete all the files and folders contained in the folder beforehand.  Please keep in mind that only folders that contain no files or other nested folders can be deleted. 	
+
+<Figure>
+Select the desired file type.
+Select the file or folder to be deleted.
+
+
+Supplementary information.
+
+File (file mark)/Folder (folder mark) selection.
+The illustrations and instructions below show you how to select files and folders on the SmartMedia/USB storage devices within the File mode.
+<Figure>
+To return to the next highest level, press the [EXIT] button.
+Move the cursor to the desired file or folder by using the [INC/YES] and [DEC/NO] buttons or the data dial.
+To call up the contents of a desired folder, highlight the folder and press the [ENTER] button.
+
+
+Formatting a SmartMedia/USB storage device.
+Before you can use a new SmartMedia/USB storage device with this synthesizer, you will need to format it. Follow the instructions below. 
+
+<Caution>
+If data is already saved on the SmartMedia/USB storage device, be careful not to format it. If you format the SmartMedia/USB storage device, all the previously recorded data will be deleted.
+
+1.	Insert a SmartMedia into the CARD slot or connect a USB storage device to the USB TO DEVICE connector. 
+If necessary, insert the proper media into the slot of the USB storage device. 
+2.	Press the [FILE] mode to enter the File mode. 
+3.	Press the [F1] CONFIG button, then [SF3] FORMAT button to call up the Format display. 
+4.	Select the media to be formatted. 
+Move the cursor to the Format value location and select "CARD" or "USB." When selecting "USB," specify the slot number at the right top of the display as necessary and select the partition to be formatted at the Type value location in the second line of the display.
+5.	Set the Volume Label.
+Move the cursor to the "Volume Label" and input a Volume Label. For instructions on naming, refer to page 53 in the Basic Operation section.
+6.	Press the [ENTER] button. (The display prompts you for confirmation.)
+Press the [DEC/NO] button to cancel the Format operation. 
+7.	Press the [INC/YES] button to execute the Format. 
+After formatting has been completed, a "Completed" message appears and operation returns to the original display.
+
+<Caution>
+While formatting is in process, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+8.	Press the [SF1] CURRENT button and check whether the currently recognized device is "CARD" (SmartMedia in the CARD slot) or "USB" (USB storage device connected to this synthesizer). 
+Change the Current setting as needed.
+
+NOTE.	By executing the Format operation in the File mode, the SmartMedia/USB storage device will be formatted to MS-DOS or Windows format. The formatted SmartMedia/USB storage device may not be compatible with other devices such as a Macintosh computer or digital camera. 
+
+
+File types that can be handled by the MOTIF ES.		
+		
+File types that can be saved from the instrument to the SmartMedia/USB storage device  [FILE] -> [F2] SAVE -> TYPE.		
+<Table>
+TYPE.	File extension(* Automatically assigned to the saved file.)	Description.
+Dir.		When this is set to "TYPE," only the directories (folders) are displayed in the File/Folder selection box and the Save operation cannot be executed. 
+All. 	.W7A	All data in this synthesizer's internal User Memory (Flash ROM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. 
+AllVoice.	.W7V	All the User Voice data in this synthesizer's internal User Memory (Flash ROM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. Also the Waveforms obtained via the Sampling function and assigned to any of the voices are saved together. 
+PluginAllBulk1, 2, 3.	.W2B	All the data in a Plug-in board (Board Voice data created by using the editor software that comes with the Plug-in Board and the Board related settings in the Utility mode) is treated as a single file, and can be saved to the SmartMedia/USB storage device. The numbers 1, 2, and 3 correspond to the Plug-in slots.
+UserARP.	.W7G	All the User Arpeggio data in this synthesizer's internal User Memory (Flash ROM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. 
+AllSong.	.W7S	All the User Song data in this synthesizer's internal User Memory (DRAM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. 
+AllPattern.	.W7P	All the User Pattern data in this synthesizer's internal User Memory (DRAM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. 
+SMF.	.MID	Sequence track (1 to 16) and Tempo track data of Songs or Patterns created in the Song/Pattern mode can be saved to the SmartMedia/USB storage device as Standard MIDI File (format 0) data.
+AllWaveform	.W7W	All the User Wave and Sample data in this synthesizer's internal User Memory (DRAM) is treated as a single file, and can be saved to the SmartMedia/USB storage device. 
+Wav.	.WAV	Sample data created in the Sampling mode can be saved to the SmartMedia/USB storage device as a WAV file (Windows audio format). 
+Aiff.	.AIF	Sample data created in the Sampling mode can be saved to the SmartMedia/USB storage device as an AIFF file (Macintosh audio format).
+Voice Editor.	W7E	All the User Voice data stored on User Banks (Flash ROM) is handled as a single file and saved to the SmartMedia/USB storage device. The saved file can be loaded to the Voice Editor software (included in the CD-ROM) on your computer.
+ 		
+		
+NOTE. When selecting "AllSong" or "AllPattern" as a file type, Sample Voices and assigned Waveforms created via the Sampling function in the Song/Pattern mode are also saved together.		
+		
+		
+File types that can be loaded from SmartMedia/USB storage device to the instrument   [FILE] -> [F3] LOAD -> TYPE.		
+TYPE.	File extension*	Description
+Dir.		When this is set to "TYPE," only the directories (folders) are displayed in the File/Folder selection box and the Load operation cannot be executed. 
+All.	.W7A	Files of the "All" type saved to SmartMedia/USB storage device can be loaded and restored to the instrument. When the box at the left of "without System" is checkmarked, only the Utility mode settings will not be loaded. 
+AllVoice.	.W7V	Files of the "All Voice" type saved to SmartMedia/USB storage device can be loaded and restored to the instrument. 
+Voice.	.W7A .W7V	A specified voice in a file that is saved to the SmartMedia/USB storage device as "All" or "All Voice" type can be individually selected and loaded to the instrument. Please note that the file icons  of "W7A" and "W7V" are changed to  (as virtual folders) when this file type is selected (Quick Guide on page 87).
+Performance.	.W7A	A specified performance in a file that is saved to the SmartMedia/USB storage device as "All" type can be individually selected and loaded to the instrument. Please note that the file icon  of "W7A" is changed to  (as a virtual folder) when this file type is selected (Quick Guide on page 92). 
+PluginAllBulk 1, 2, 3. 	.W2B	A file that is saved to the SmartMedia/USB storage device as "Plugin All Bulk 1, 2, 3" type can be loaded and restored to the Plug-in board installed to the instrument. Please note that the same Plug-in Boards should be installed to the same slot as when the file was saved. 
+UserARP.	.W7G	Files of the "Usr ARP" type saved to SmartMedia/USB storage device can be loaded and restored to the instrument. 
+AllSong.	.W7S	Files of the "All Song" type saved to SmartMedia/USB storage device can be loaded and restored to the instrument.
+Song.	.W7A .W7S .MID	A specified Song in a file that is saved to the SmartMedia/USB storage device as "All" or All Song. type can be individually selected and loaded to the instrument. Please note that the file icons  of "W7A" and "W7S" are changed to  (as virtual folders) when this file type is selected (Quick Guide on page 133). In addition, selecting this file type lets you load the Standard MIDI file (format 0, 1) to a specific Song. 
+AllPattern.	.W7P	Files of the "All Pattern" type saved to SmartMedia/USB storage device can be loaded and restored to the instrument. 
+Pattern.	.W7A .W7P .MID	A specified Song in a file that is saved to the SmartMedia/USB storage device as "All" or "All Pattern" type can be individually selected and loaded to the instrument. Please note that the file icons  of "W7A" and "W7P" are changed to  (as virtual folders) when this file type is selected (Quick Guide on page 133). In addition, selecting this file type lets you load the Standard MIDI file (format 0, 1) to a specific section of a Pattern. 
+AllWaveform.	.W7W	W7W Files of the "All" or "All Waveform" types saved to SmartMedia/USB storage device can be loaded and restored to the instrument.
+Waveform.	.W7A .W7W .WAV .AIF	A specified Waveform in a file that is saved to the SmartMedia/USB storage device as "All" or "All Waveform" type can be individually selected and loaded to the instrument. Please note that the file icons  of "W7A" and "W7W" are changed to  (as virtual folders) when this file type is selected (Quick Guide on page 133). In addition, selecting this file type lets you load the WAV file and AIFF file to the specified destination, which differs depending on the mode before entering the File mode (Quick Guide on pages 100 and 109). 
+SampleVoice.	.W7A .W7S .W7P	A specified Sample Voice in a file that is saved to the SmartMedia/USB storage device as "All" or "All Song" or "All Pattern" type can be individually selected and loaded to the instrument. Please note that the file icons  of "W7A" and "W7S" and "W7P" are changed to  (as virtual folders) when this file type is selected (Quick Guide on page 133). This file type is available only when entering the File mode from the Song mode/Pattern mode. 
+Voice Editor.	.W7E	The Voice data edited via the included Voice Editor software on your computer can be loaded to the instrument. 
+
+* Assigned to the file which can be loaded. 		
+		
+NOTE. In addition to the file types above, Yamaha A5000/A4000/A3000/SU700 files and AKAI S1000/S3000 files can be loaded to the MOTIF ES. 		
+		
+NOTE. When files of the Yamaha A series samplers (A5000/4000/3000) are loaded, an "S" mark by the file name indicates the file contains only sample data and a "P" mark indicates program data (voice related parameters and so on). When entering the File mode from the Voice/Performance mode, the "P" marked file can be loaded and the following two types can be selected instead of Waveform or Key Bank.		
+Type 1: Only one sample is imported to a certain waveform. This type utilizes the various settings of the MOTIF ES, and the parameters corresponding to the four elements are also loaded. Extra samples are not loaded.		
+Type 2: Several samples are imported to a certain waveform. Parameters corresponding to the four elements are not loaded to the MOTIF ES. Extra samples are not loaded.		
+
+
+Data Compatibility with the MOTIF 6/MOTIF 7/MOTIF 8.
+Among the data created on the MOTIF 6/MOTIF 7/MOTIF 8, Voices, Waveforms, Sample Voices can be loaded to the MOTIF ES6/MOTIF ES7/MOTIF ES8. 
+
+  Voices.
+A specified Voice in a file (extension: W2A, W2V) that is saved to the storage device as "All" or "AllVoice" type on the MOTIF can be individually selected and loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "Voice" and execute the Load procedure. 
+Likewise, a file (extension: W2V) that is saved to the SmartMedia/USB storage device as "AllVoice" type on the MOTIF can be loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "AllVoice" and execute the Load procedure. 
+In addition, Voice Editor files (extension: W2E) can be loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "Voice Editor" and execute the Load procedure. 
+
+NOTE.	The Voices loaded to the MOTIF ES 6/7/8 may not produce the exact same sound as those on the original MOTIF 6/7/8, since the contents of the preset Waveforms and the Effect structure are different between the two instrument series.
+
+  Waveforms.
+A specified Waveform in a file (extension: W2A, W2W) that is saved to the storage device as "All" or "AllWaveform" type on the MOTIF can be individually selected and loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "Waveform" and execute the Load procedure. 
+Likewise, a file (extension: W2W) that is saved to the storage device as "AllWaveform" type on the MOTIF can be loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "AllWaveform" and execute the Load procedure. 
+
+  Sample Voices.
+A specified Sample Voice (extension: W2A, W2S, W2P) in a file that is saved to the storage device as "All" or "AllSong" or "AllPattern" type on the MOTIF can be individually selected and loaded to the MOTIF ES. Set the TYPE in the [F3] LOAD display to "SampleVoice" and execute the Load procedure. 
+
+
+This is the end of the file.

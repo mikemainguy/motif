@@ -1,0 +1,188 @@
+Installing Optional Hardware.
+
+Available devices .
+The following optional devices can be installed to the MOTIF ES.
+Plug-in Boards.
+Up to three boards can be installed. 
+AIEB 2 or mLAN16E.
+DIMM.
+
+Installation locations.
+<Figure>
+
+Installation Precautions.
+Before installing the optional hardware, make sure you have a Philips screwdriver and ample space to work. Protective cushions or supports for the instrument may also be needed.
+
+<WARNING>
+  Before beginning installation, switch off the power to the instrument and connected peripherals, and unplug them from the power outlet. Then remove all cables connecting the instrument to other devices. (Leaving the power cord connected while working can result in electric shock. Leaving other cables connected can interfere with work.) Installation or removal of any devices should be started ONLY after the instrument (and the optional hardware) returns to normal room temperature.
+  Be careful not to drop any screws inside the instrument during installation (this can be prevented by keeping the optional units and cover away from the instrument while attaching). If this does happen, be sure to remove the screw(s) from inside the unit before turning the power on. Loose screws inside the instrument can cause improper operation or serious damage. If you are unable to retrieve a dropped screw, consult your Yamaha dealer for advice.
+  Install the optional units carefully as described in the procedure below. Improper installation can cause shorts which may result in irreparable damage and pose a fire hazard.
+  Do not disassemble, modify, or apply excessive force to board areas and connectors on optional units. Bending or tampering with boards and connectors may lead to electric shock, fire, or equipment failures.
+  Before handling the optional units, you should briefly touch the metal surface to which the optional unit cover is attached (or other such metallic area \ be careful of any sharp edges) with your bare hand so as to drain off any static charge from your body. Note that even a slight amount of electrostatic discharge may cause damage to these components.
+
+<CAUTION> 
+  It is recommended that you wear gloves to protect your hands from metallic projections on optional units and other components. Touching leads or connectors with bare hands may cause finger cuts, and may also result in poor electrical contact or electrostatic damage.
+  Handle the optional units with care. Dropping or subjecting them to any kind of shock may cause damage or result in a malfunction.
+  Be careful of static electricity. Static electricity discharge can damage the IC chips on the Plug-in board. Before you handle the optional Plug-in board, to reduce the possibility of static electricity, touch the metal parts other than the painted area or a ground wire on the devices that are grounded.
+  Do not touch the exposed metal parts in the circuit board. Touching these parts may result in a faulty contact.
+  When moving a cable, be careful not to let it catch on the circuit Plug-in board. Forcing the cable in anyway may cut the cable, cause damage, or result in a malfunction.
+  Be careful not to misplace any of the screws since all of them are used.
+  Do not use any screws other than what are installed on the instrument.
+
+Optional Plug-in Board Installation.
+A variety of optional Plug-in boards sold separately let you expand the voice library of your instrument. For details about the Plug-in Board line up which can be used with the MOTIF ES, see page 74. 
+The MOTIF ES provides three slots on the rear panel for Plug-in Boards, allowing you to install up to three boards for simultaneous use.
+
+NOTE.
+The Vocal Harmony Plug-in board (PLG100-VH) can be installed only to slot 1.
+NOTE.
+The Multi part Plug-in board (PLG-100XG) can be installed only to slot 3.
+NOTE.
+The Single part Plug-in board can be installed to any of three slots.
+
+Installing the Plug-in Board.
+1.	Turn the power of the MOTIF ES off, and disconnect the AC power cord. Also, make sure to disconnect the MOTIF ES from any connected external devices. 
+2.	Remove the large screw from the expansion bay cover on the rear panel using a Phillips screwdriver. 
+
+IMPORTANT.
+Keep the removed screw in a safe place. It will be used when re-attaching the cover to the instrument.
+
+3.	Remove the ribbon cables that are to be connected to the Plug-in board from the inside of the MOTIF ES. 
+	The slots are assigned to the color-coded cables as follows:
+4.	Insert the board along the guide rails about two-thirds of the way inside the MOTIF ES, with the connector side face up and toward you.
+Securely insert the board into the appropriate slot, taking care that the board isn't jammed between slots.
+5.	With the board still protruding slightly from the expansion bay, bring the cable end around and connect it to the board. 
+	Make sure to connect the proper cable, matching the color of the cable to the slot used. Also, take care not to pull too strongly on the cable as you connect it to the board.
+Plug-in Connector
+
+NOTE.
+The Vocal Harmony Plug-in board (PLG100-VH) can be installed only to slot 1.
+NOTE.
+The Multi part Plug-in board (PLG-100XG) can be installed only to slot 3.
+
+6.	Insert the Plug-in board the rest of the way into the expansion bay.
+	Carefully put the ribbon cable back into the MOTIF ES, making sure that no part of the cable sticks out of the instrument.
+7.	Replace the cover with the screw you removed in step 2 above.
+8.	Check that the installed Plug-in board is functioning properly. 
+	After connecting the AC power cord to the MOTIF ES, turn on the power. 
+	A message appears indicating that the installed Plug-in Board is being checked. The main display then appears and the corresponding slot indicator at the right top of the front panel lights. This indicates that the board has been successfully installed.
+	If the cable is not connected properly (refer to the notes above) or firmly, the indicator will not light. 
+In this example, a Plug-in board has been installed to slot 1.
+Slot indicator lit
+
+Optional AIEB2 or mLAN16E Installation.
+By installing an optional mLAN expansion board (mLAN16E) or an I/O expansion board (AIEB2), you can increase the input/output capability and interfacing options of the MOTIF ES. 
+
+Installing the AIEB2.
+1.	Turn the power of the MOTIF ES off, and disconnect the AC power cord. Also, make sure to disconnect the MOTIF ES from any connected external devices. 
+2.	Turn over the MOTIF ES so that the keyboard faces down, giving you direct access to the underside of the instrument.
+	To protect the Knobs, Wheels and Sliders from damage, place the keyboard so the four corners are supported by something that provides sufficient support like magazines or cushions.
+<Figure>
+Place supports at all four corners, taking care not to touch the Knobs, Wheels and Sliders.
+
+<CAUTION>
+Since the instrument Ñ particularly the MOTIF ES8 Ñ is very heavy, this procedure should not be done alone, but by two or three people.
+
+3.	Remove the cover from the bottom. 
+	With the rear panel of the instrument facing you, remove the screws from the cover and slide the cover away to remove it. (The MOTIF ES6 and MOTIF ES7 have seven screws, while the MOTIF ES8 has five.)  On the MOTIF ES6/7, slide the cover away from you (toward the front of the instrument, as shown).  On the MOTIF ES8, slide the cover to the right.
+
+IMPORTANT.
+Keep the removed screws in a safe place. They will be used when re-attaching the cover to the instrument after installing the AIEB2.
+
+4.	Remove the three screws from the rear cover while holding it from inside the MOTIF ES with your left hand.
+Rear side of the MOTIF ES
+
+IMPORTANT.
+Keep the removed screws in a safe place. They will be used when re-attaching the cover to the instrument after installing the AIEB2.
+
+5.	Remove the AIEB2 power cables from the hook shaped cable clip in the MOTIF ES.
+<Figure>
+Unlatch the cable clip by pulling out the tab as shown. Replace the clip after pulling out the power cable.
+
+6.	Remove the AIEB2 from its package. 
+	The AIEB2 has one flat ribbon cable and two power cables. Since these two power cables are used for the main body and are not needed when installing to the MOTIF ES, you can remove them from the AIEB2.
+Remove the two power cables.
+7.	Connect the flat ribbon cable coming from AIEB2 to the circuit board of the MOTIF ES.
+	Be careful to connect the cable in the proper direction as shown.
+<Figure>
+Flat ribbon cable of the AIEB2
+Align the connectors as shown.
+Connector on the circuit board of the MOTIF ES
+
+8.	Connect the power cable coming from MOTIF ES to the AIEB2.
+	Connect the 3-pin cable to the CN3 connector of the AIEB2, and the 4-pin cable to the CN1 connector.
+<Figure>
+Connect the 4-pin cable to the CN1 connector.
+Connect the 3-pin cable to the CN3 connector.
+*Make sure to properly match the cables and connectors. Avoid applying excessive force when connecting.
+
+9.	Fasten the AIEB2 to the MOTIF ES.
+	Flip the unit over, so that the bottom of the plate can be seen, and that each connector section of the AIEB2 can be seen from the back (rear) side of MOTIF ES. Supporting the unit with one hand, attach it to the rear of the MOTIF ES with the three screws you removed in step 4. If you start replacing the screws from the center screw, it will be easy to replace the remaining screws.
+<Figure>
+Flip over the AIEB2 taking care not to bend or damage the flat ribbon cable.
+If you start replacing the screws from the center screw, it will be easy to replace the remaining screws.
+
+10.	Let the ribbon cable fall into place between the AIEB2 and the circuit board of the MOTIF ES.
+<Figure>
+Slide the flat ribbon cable in the space between the MOTIF ES and the AIEB2.
+
+11.	Re-install the cover you removed in step No.3, in reverse order.
+
+
+Installing the mLAN16E.
+1 to 4.
+	Using the same procedure as in steps 1 to 4 of "Installing the AIEB2" above, remove the cover on the underside of the MOTIF ES, then remove the cover of the mLAN-I/O expansion bay on the rear panel.
+5.	Remove the mLAN16E from its package.
+6.	Insert the connector on the other end of the flat ribbon cable to the circuit board of the MOTIF ES.
+<Figure>
+Flip over the mLAN16E and fasten it to the MOTIF ES.
+
+7.	Fasten the mLAN16E to the MOTIF ES. 
+	Flip the unit over, so that each connector section of the mLAN16E can be seen from the back side of MOTIF ES. Supporting the unit with one hand, attach it to the rear of the MOTIF ES with the two screws you removed in step No.4, as shown below. 
+8.	Separate the cover you removed in step No.4 into two parts (A and B shown below), then attach part A to the rear panel of the MOTIF ES, covering the empty space left by the installation of the mLAN16E.
+Remove the screw to  separate the cover into two parts. 
+9.	Let the flat ribbon cable fall into place between the mLAN16E and the circuit board of the MOTIF ES.
+10.	Re-install the cover you removed in step No.3, in reverse order.
+
+
+Optional DIMM Installation.
+This section explains how to install DIMM memory modules to the MOTIF ES. 
+
+Compatible DIMMs.
+The MOTIF ES does not necessarily support all commercially available DIMMs. Yamaha cannot guarantee operation of DIMMs that you purchase. Before purchasing DIMMs, please consult your Yamaha dealer, or an authorized Yamaha distributor (see list at end of the Owner's Manual) for advice, or see the following page:
+http://www.yamahasynth.com/
+
+DIMM Type and DIMM Configuration.
+  Yamaha recommends that you purchase DIMMs that conform to the JEDEC* standard. Please be aware, however, that conformance to this standard does not constitute a guarantee that the DIMMs will operate correctly on the MOTIF ES. 
+* JEDEC (Joint Electron Device Engineering Council) sets standards for terminal configurations within electronic devices.
+  Use only 168-pin DIMMs of 64, 128 or 256 MB capacity (synchronized DRAM; PC100 or PC133).
+  When installing DIMMs, make sure to install them in a matched pair of the same capacity.  You cannot install only one module and leave the second memory socket open.  Also make sure each DIMM in the pair is of the same manufacturer and the same type. DIMMs of different makers and configurations may not work together.
+  When purchasing DIMMs, make sure that the DIMM design does not utilize more than 18 memory chips per module. (DIMMs comprised of more than 18 chips do not operate correctly on the MOTIF ES.)
+
+DIMM Installation.
+1 to 3.
+	Use the same operation as in "Installing the AIEB2." 
+4.	Insert the two DIMMs into the DIMM sockets. 
+Location for DIMM installation.
+<Figure>
+Underside of the MOTIF ES.
+
+Installing the DIMM modules to the sockets.
+Make sure that the DIMM module is aligned correctly before you install it.
+<Figure>Insert the DIMM vertically in the socket.
+Press it in firmly until it "snaps" or locks in place.
+
+5.	Re-install the cover you removed in step No.3, in reverse order (page 285). 
+6.	Check that the installed DIMMs are functioning properly. 
+	Set the MOTIF ES right-side up, and connect the power cord to the rear-panel AC INLET jack and an AC outlet. Turn on the power, go to the SAMPLING display by pressing the [INTEGRATED SAMPLING] button, and press the [INFORMATION] button (page 276). If the DIMMs have been installed properly, the appropriate available memory size is indicated in the display.
+
+NOTE.
+If the DIMMs have not been installed properly, the MOTIF ES may freeze when you press the [INTEGRATED SAMPLING] button. If this occurs, turn the power off, perform the instructions above again, and make sure to install the DIMMs firmly in step No.4.
+
+Removing DIMMs.
+Press the ejector lever until the DIMM unlocks.
+Pull the DIMM vertically out of the socket.
+
+
+This is the end of the file.
+

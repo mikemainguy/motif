@@ -1,0 +1,226 @@
+The Controls and Connectors.
+
+Front Panel.
+<Figure>
+
+NOTE.
+When both of the [OCTAVE] buttons are turned off, each key corresponds to the note name shown in the illustrations. Refer to this illustration when setting parameters having note name values, such as Note Limit.
+1.	Keyboard.
+The MOTIF ES6 features a 61-key keyboard, while the MOTIF ES7 has 76 keys and the MOTIF ES8 has 88 keys.  All are equipped with a touch response feature (both initial touch and aftertouch). With initial touch, the instrument senses how strongly or softly you play the keys, and uses that playing strength to affect the sound in various ways, depending on the selected voice. With aftertouch, the instrument senses how much pressure you apply to the keys while playing, and uses that pressure to affect the sound in various ways, depending on the selected voice. 
+Moreover, any of a variety of functions can be assigned to aftertouch for each voice.
+2.	OCTAVE [UP] and [DOWN] buttons.	Page 63.
+Use these buttons to change the note range of the keyboard. To restore the normal octave setting, press both buttons simultaneously.
+
+NOTE. 	Because of its extended keyboard, the MOTIF ES8 does not have OCTAVE buttons.
+
+3.	Pitch bend wheel.	Page 64.
+Controls the pitch bend effect. You can also assign other functions to this controller.
+4.	Modulation wheel.	Page 64.
+Controls the modulation effect. You can also assign other functions to this controller.
+5.	Ribbon controller.	Page 65.
+This Controller is touch sensitive, and is controlled by running your finger lightly across its surface laterally. 
+You can also assign other functions to this controller.
+6.	MASTER VOLUME.
+Adjusts the volume of the overall sound, as output from the rear-panel OUTPUT L/MONO and R jacks as well as the PHONES jack. 
+7.	Four KNOB CONTROL FUNCTION buttons and four Knobs.	Page 50.
+These four highly versatile knobs let you adjust various aspects or parameters of the current Voice. Use the [KNOB CONTROL FUNCTION] buttons to change the parameter set for the knobs. The corresponding LED lights to indicate which group of parameters are active. 
+
+NOTE. 	When [UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave is set to "0," each key corresponds to the note name shown in the illustrations. Refer to this illustration when setting a note name of a parameter like Note Limit. 
+
+8.	[CS1] to [CS4] (Control Slider).	Page 51.
+These sliders control the volume of four elements which make up a Normal Voice in the Voice mode, the volume of four parts in the Performance mode, the volume of four parts including the current part in the Song mode/Pattern mode, and the volume of four zones in the Master mode. 
+
+NOTE. 	If all of the Control Sliders are set to the minimum, you may not hear any sound from the instrument, even when playing the keyboard or a song/pattern.  If this is the case, raise all the sliders to a suitable level.
+NOTE. 	The [MASTER VOLUME] slider adjusts the output level from this instrument. On the other hand, the Control Slider adjusts the MIDI volume value for the corresponding element or part. 
+
+9.	REMOTE buttons.	Page 147.
+The Remote mode lets you control sequencer software on your computer from the panel controls of the instrument.  Turn the [ON/OFF] button on to enter the Remote mode. 
+You can use the [R-AUDIO/G-MIDI] button to switch control between your audio tracks (red lamp) and MIDI tracks (green lamp), when Mode A or B is set to "General" ([UTILITY] -> [F4] CTL ASN -> [SF4] REMOTE).
+
+NOTE. 	When setting the MIDI IN/OUT parameter to "MIDI" ([UTILITY] -> [F5] MIDI -> [SF4] OTHER) or setting both of Mode A and Mode B to "off" ([UTILITY] -> [F4] CTL ASN -> [SF4] REMOTE), you cannot enter the Remote mode even by pressing the REMOTE [ON/OFF] button.  Set these parameters to appropriate values (page 148) then enter the Remote mode. 
+
+10.	EFFECT buttons.	Page 177.
+The extensive effect section of the instrument provides Insertion effects (eight sets, with two effect units per set), System effects (Reverb and Chorus), and Master effects.  The effects can be applied to the keyboard-played voices and to Song/Pattern playback. These three buttons enable you to turn the corresponding Effect blocks (as printed on the panel) on or off with a single touch. 
+Keep in mind that the [INSERTION] and [SYSTEM] buttons are bypass switches, while the [MASTER EFFECT] button is an on/off switch.  The distinction is important -- when the lamp of the [INSERTION] or [SYSTEM] button is on, the effect is off (or bypassed). The [MASTER EFFECT] button is the opposite: when the lamp is on, the Master effect is on.  Also, to access the Master Effect setting display, press and hold the [MASTER EFFECT] button for a second or two.
+
+11.	[ARPEGGIO ON/OFF] button.	Page 66.
+Press this button to enable or disable playback of the Arpeggio for each Voice, Performance, Song, or Pattern. If the Arpeggio Switch of the selected part is set to off in the Performance/Song/Pattern mode, however, pressing this button has no effect. 
+
+12.	SEQ TRANSPORT buttons.	Page 56.
+These buttons control recording and playback of the Song/Pattern sequence data.
+(Top) button.
+Instantly returns to the beginning of the current song or pattern (i.e., the first beat of the first measure).
+(Reverse) button.
+Press briefly to move back one measure at a time, or hold to continuously rewind.
+(Forward) button.
+Press briefly to move forward one measure at a time, or hold to continuously fast-forward.
+(Record) button.
+Press this to enable recording (Song or pattern phrase). (The indicator lights.)
+(Stop) button.
+Press to stop recording or playback.
+(Play) button.
+Press to start playback from the current point in the song or pattern. During recording and playback, the indicator flashes at the current tempo.
+
+13.	MODE buttons.	Page 45.
+These buttons select the operating modes (e.g., Voice mode).
+14.	LCD Display.
+The large backlit LCD displays the parameters and values related to the currently selected operation or mode.
+15.	LCD Contrast Control.	Page 43.
+Use this control to set the LCD display for optimum legibility.
+16.	[F1] to [F6] (Function) buttons.	Page 47.
+These buttons located directly below the LCD display call up the corresponding functions indicated in the display. In the display hierarchy, these functions [F] rank just below the modes.
+17.	[SF1] to [SF5] (Sub Function) buttons.	Page 47.
+These buttons located directly below the LCD display call up the corresponding sub functions indicated in the display. In the display hierarchy, these sub functions [SF] rank just below the functions [F].
+These buttons can be also used to store/recall the Arpeggio type in each Play mode and Song/Pattern Record mode. They can be also used to store/recall the Song Scene (page 123) in the Song Play/Song Record/Pattern Chain Record modes.
+18.	[INFORMATION] button.	Page 53.
+For calling up a special "help" feature that shows information about the currently selected mode. You can go back to the previous display by pressing this button again or pressing any other button.
+Depending on the selected display, this button may be used to call up a window for inputting characters (page 54), for inputting numbers (page 49), for selecting note lengths (page 49), or for selecting keys or note names (page 53).
+19.	Data dial.	Page 49.
+For editing the currently selected parameter. To increase the value, turn the dial right (clockwise); to decrease the value, turn the dial left (counter-clockwise). If a parameter with a wide value range is selected, you can change the value in broader strokes by quickly turning the dial.
+20.	[INC/YES] button.	Page 49.
+For increasing the value of the currently selected parameter. Also use it to actually execute a Job or a Store operation. 
+21.	[DEC/NO] button.	Page 49.
+For decreasing the value of the currently selected parameter. Also use it to cancel a Job or a Store operation.
+ 
+NOTE. 	You can also use the [INC/YES] and [DEC/NO] buttons to quickly move through parameter values in 10-unit jumps, especially those with large ranges.  Simply hold down one of the buttons (of the direction you want to jump), and simultaneously press the other.  For example, to jump in the positive direction, hold down the [INC/YES] button and press [DEC/NO].
+
+22.	Cursor Buttons.	Page 49.
+The cursor buttons move the "cursor" around the LCD display screen, highlighting and selecting the various parameters.
+23.	[EXIT] button.	Page 46.
+The menus and displays of this synthesizer are organized according to a hierarchical structure.
+Press this button to exit from the current display and return to the previous level in the hierarchy.
+24.	[ENTER] button.
+Use this button to execute a Job or a Store operation. Also use this button to actually enter a number when selecting a Memory or Bank for Voice or Performance. In the File mode, use this button to go to the next lowest level in the selected directory. 
+25.	SLOT 1 to 3 lamps.	Page 284
+These three lamps show the installation status of the Plug-in Boards.
+If the Plug-in Board has been correctly installed, the corresponding SLOT lamp will light.
+
+NOTE. 	The Vocal Harmony Plug-in Board (PLG100-VH) can be installed only to slot 1. It cannot be installed to slot 2 or 3.
+NOTE. 	The Multi part Plug-in Board (PLG100-XG) can be installed only to slot 3. It cannot be installed to slot 1 or 2.
+
+26.	BANK buttons.	Page 60.
+Each button selects a Voice or Performance Bank.
+When the [CATEGORY SEARCH] button is turned on, these buttons can be used to select the desired category (printed below each button). When the [SECTION] button is turned on in the Pattern mode, these buttons are used to select the desired section.
+
+27.	GROUP [A] to [H] buttons.	Page 48.
+Each button selects a Voice or Performance Group.
+When the [CATEGORY SEARCH] button is turned on, these buttons can be used to select the desired category (printed below each button). When the [SECTION] button is turned on in the Pattern mode, these buttons are used to select the desired section. 
+
+28.	NUMBER [1] to [16] buttons. 	Page 48.
+Use of these buttons differs depending on the on/off status of the [TRACK SELECT] and [MUTE] buttons. 
+
+<Table>
+	Functions of the NUMBER [1] to [16] buttons.		
+	When [TRACK SELECT] is on.	When [MUTE] is on.	When both [TRACK SELECT] [MUTE] are off.
+Voice Play mode.	Keyboard transmit channel setting.	--	Voice selection, according to Groups A to H
+Voice Edit mode.	Element selection (1 to 4) and Element Mute setting (9 to 12).		--
+Performance Play mode.	Keyboard transmit channel setting.	Performance part Mute setting (1 to 4).	Performance or Voice selection (if cursor is located at Voice name), according to Groups A to H. 
+Performance Edit mode.	Performance part selection (1 to 4)		
+Master Play mode.	Keyboard transmit channel setting (when memorizing the Voice mode or Performance mode to the current Master) or Song/Pattern track selection (when memorizing the Song mode or Pattern mode to the current Master).	--	Master selection, according to Groups A to H.
+Master Edit mode.	Zone selection (1 to 4).	--	--
+Song/Pattern Play mode.	Song/Pattern track selection.	Song/Pattern track Mute setting.	Song/Pattern selection, according to Groups A to H.
+Song/Pattern Mixing mode.	Song/Pattern part selection.	Song/Pattern part Mute setting.		
+Mixing Voice Edit mode.	Element selection (1 to 4) and Element Mute setting (9 to 12).			--
+
+
+29.	[CATEGORY SEARCH] button.	Page 62.
+When this button is turned on in the Performance mode, the lower row of [BANK] buttons (labeled A.PIANO - REED/PIPE below the buttons) and the [GROUP] buttons can be used to select the Performance category.
+When this button is turned on in another mode, the lower row of [BANK] buttons (labeled A.PIANO - REED/PIPE below the buttons) and the [GROUP] buttons can be used to select the Voice category.
+30.	[SECTION] button.	Page 56.
+When this button is turned on in the Pattern mode, the GROUP [A] to [H] buttons can be used to select Pattern Sections A to H and the [PRE5] to [PLG3] buttons of the BANK buttons can be used to select Pattern Sections I to P. 
+31.	[TRACK SELECT] button.	Page 58.
+Turning this button on in the Song/Pattern mode enables the NUMBER [1] to [16] buttons for selecting corresponding Song/Pattern tracks. The on/off status of this button affects the NUMBER [1] to [16] buttons in different ways, depending on the selected mode. (See 28 "NUMBER [1] to [16] buttons" above.)
+32.	[MUTE] button.	Page 58
+Turning this button on in the Song/Pattern mode enables the NUMBER [1] to [16] buttons for muting corresponding Song/Pattern tracks.
+Press one of the NUMBER [1] to [16] buttons while holding this button to solo the corresponding track of the current selected Song/Pattern.
+The on/off status of this button affects the NUMBER [1] to [16] buttons in different ways, depending on the selected mode. (See 28 "NUMBER [1] to [16] buttons" above.)
+
+
+
+Rear Panel.
+
+1.	POWER Switch.	Page 43.
+Press to turn power ON or OFF.
+2.	AC INLET (AC Power Cord Socket).	Page 26.
+Be sure to plug the AC power cord into this socket before plugging the power cord into an AC outlet.
+Use only the AC power cord supplied with this instrument. If the supplied cord is lost or damaged and needs to be replaced, contact your Yamaha dealer.
+The use of an inappropriate replacement can pose a fire and shock hazard!
+3.	mLAN expansion board (mLAN16E) or I/O expansion board (AIEB2) cover.	Page 25.
+Either the mLAN expansion board (mLAN16E) or the I/O expansion board (AIEB2) sold separately can be installed to this instrument. With the mLAN16E board, you can conveniently and easily hook up your MOTIF ES to other mLAN compatible instruments or devices. 
+The AIEB2 board gives you additional digital I/O options, featuring both optical and coaxial connectors. Moreover, the board also includes three stereo ASSIGNABLE OUTPUT pairs (six analog jacks).
+4.	USB connectors.	Page 29.
+This instrument is equipped with two types of USB connectors on the rear panel Ð USB TO HOST and USB TO DEVICE. The USB TO HOST connector is used to connect this instrument to the computer via the USB cable. The USB connection between the instrument and the computer can only be used for transfer of MIDI data. No audio data can be transferred via USB. The USB TO DEVICE connector is used to connect this instrument to a USB storage device (hard disk drive, CD-ROM drive, MO drive, flash disk, etc.) via the USB cable. This lets you save the data created on this instrument to the external USB storage device and load the data from the external USB storage device to the instrument. Save/Load operations can be performed in the File mode. 
+
+NOTE. 	For details about USB, see Page 29. 
+
+USB.
+USB is an abbreviation for Universal Serial Bus. It is a serial interface for connecting a computer with peripheral devices, and enables much faster data transfer compared to conventional serial port connections. 
+
+5.	MIDI IN/OUT/THRU connectors.	Page 34.
+MIDI IN is for receiving control or performance data from another MIDI device, such as an external sequencer.
+MIDI THRU is simply for redirecting any received MIDI data (via MIDI IN) to connected devices, allowing convenient chaining of additional MIDI instruments.
+MIDI OUT is for transmitting all control, performance and playback data from the MOTIF to another MIDI device, such as an external sequencer.
+6.	BREATH Controller Jack.	Page 42.
+Connect an optional Yamaha BC3 Breath Controller here for expressive breath control capability.
+7.	FOOT SWITCH jacks.	Page 42.
+For connection of optional FC4 or FC5 Footswitches. When connected to the SUSTAIN jack, the Footswitch controls sustain. When connected to ASSIGNABLE, it can control one of various different assignable functions. 
+8.	FOOT CONTROLLER jacks. 	Page 42.
+For connection of optional foot controllers (FC7, etc.). Each jack lets you continuously control one of various different assignable functions Ð such as volume, tone, pitch, or other aspects of the sound.
+9.	ASSIGNABLE OUT L and R jacks.	Page 31.
+Line level audio signals are output from this instrument via these phone jacks (1/4" mono phone plug).
+These outputs are independent of the main output (at the L/MONO and R jacks below), and can be freely assigned to any of the Drum Voice keys or the Parts. This lets you route specific Voices or sounds for processing with a favorite outboard effect unit.
+The parts which can be assigned to these jacks are as follows:
+¥ Drum Voice key to which the drum/percussion instrument is assigned.	Page 203.
+¥ Any part of a Performance*	Page 218.
+¥ Any part of a Song*	Page 235.
+¥ Any part of a Pattern*	Page 235.
+* Including the Audio Input part.
+10.	OUTPUT L/MONO and R jacks. 	Page 31.
+Line level audio signals are output via these phone jacks. For monophonic output, use just the L/MONO jack.
+11.	PHONES jack.	Page 31.
+For connection to a pair of stereo headphones.
+12.	A/D INPUT jacks. 	Page 33.
+External audio signals can be input via these phone jacks (1/4" mono phone plug). 
+Various devices such as microphone, guitar, bass, CD player, synthesizer can be connected to these jacks and their audio input signal can be sounded as the AUDIO IN part of the Performance, Song, or Pattern.
+In the Sampling mode, these jacks are used for capturing audio data as samples.  For stereo signals (such as from audio equipment), use both jacks.  For mono signals (such as from a microphone or guitar), use only the L jack.
+13.	GAIN knob. 	Page 73.
+For adjusting the input gain of the audio at the A/D INPUT jacks (above). Depending on the connected device (microphone, CD player, etc.), you may need to adjust this for optimum level.
+14.	CARD (Card slot). 	Page 27.
+Insert a SmartMedia (memory) card here to transfer various data to/from this instrument. Read carefully the precautions on using a SmartMedia (page 28) before inserting a SmartMedia card.
+15.	Plug-in board cover. 	Page 283.
+Installing an optional Plug-in Board to this instrument lets you greatly expand the sonic palette of the instrument. Up to three boards can be installed to the rear panel.
+
+
+When the optional mLAN16E has been installed:
+1.	mLAN (IEEE1394) connector 1, 2.
+For connecting mLAN devices or IEEE1394-compatible (FireWire) devices via standard IEEE1394 (6-pin) cables.
+
+About mLAN.
+"mLAN" is a digital network designed for musical applications.
+It uses and extends the industry standard IEEE 1394 high performance serial bus.
+For details, refer to the Guide Book of the mLAN16E. 
+* The name "mLAN" and its logo (above) are trademarks.
+
+NOTE. 	The digital audio output via the mLAN connector is fixed to a resolution of 24 bit/44.1 kHz. 
+
+
+When the optional AIEB2 has been installed:
+1.	OPTICAL IN, OUT connectors. 	Pages 33, 34.
+Use these connectors to input or output digital signals over optical-fiber cable. You can use the OPTICAL IN to record a digital signal at frequencies of 48kHz, 44.1kHz, or 32kHz. The OPTICAL OUT connector outputs a digital signal of 44.1kHz. 
+2.	DIGITAL IN, OUT connectors.	Pages 33, 34.
+Use these connectors to input or output digital signals over coaxial (RCA-pin) cable. The digital signal format is CD/DAT (S/P DIF). You can use the DIGITAL IN connector to record a digital signal at frequencies of 48kHz, 44.1kHz, or 32kHz. The DIGITAL OUT connector outputs a digital signal of 44.1kHz. 
+3.	ASSIGNABLE OUT jacks (AS1 to AS6).	Page 31.
+Line level audio signals are output from this instrument via these phone jacks (1/4" mono phone plug).
+These outputs are independent of the main output (at the L/MONO and R jacks above), and can be freely assigned to any of the Drum Voice key or the Parts. This lets you route specific Voices or sounds for processing with your favorite outboard effect unit.
+The parts which can be assigned to these jacks are as follows:
+¥ Drum Voice key to which the drum/percussion instrument is assigned.	Page 203.
+¥ Any part of a Performance*	Page 218.
+¥ Any part of a Song*	Page 235.
+¥ Any part of a Pattern*	Page 235.
+* Including the Audio Input part.
+
+NOTE. 	Digital audio output via the OPTICAL OUT connector or DIGITAL OUT connector can be changed between 20-bit and 24-bit resolution in the [UTILITY] -> [F2] I/O -> [SF2] OUTPUT display.  The frequency, however, is fixed at 44.1 kHz.
+
+
+This is the end of the file.
+

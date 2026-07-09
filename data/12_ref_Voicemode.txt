@@ -1,0 +1,949 @@
+Reference.		
+		
+Voice mode.		
+		
+Creating Voices -- basic procedure.		
+You can create and edit your original Voices by setting various parameters in both the Voice Play mode and Voice Edit mode, while the Voice Job mode provides some basic parameter-related tools, such as Initialize and Copy.  Once you've edited a Voice, you can store it to a User Bank in internal memory (Flash ROM) and save all edited Voices to a SmartMedia/USB storage device in the File mode. 		
+		
+Voice Play mode.		[VOICE] -> Voice selection.
+The Voice Play mode lets you perform a variety of general editing operations on the selected voice. For more detailed and comprehensive editing operations, use the Voice Edit mode.		
+		
+NOTE. In the Voice Play mode and Voice Edit mode, you can set the parameters for each Voice. The parameters for all the Voices such as Master EQ and Master Effect can be set from the [UTILITY] -> [F3] VOICE display in the Utility mode. 		
+NOTE. The parameters that have the same name in the Voice Play mode and in the Voice Edit mode have the same functions and settings. 		
+NOTE. When a Plug-in voice is selected, certain parameters are not available for editing, even if they're described here. 		
+		
+[F1] PLAY.		
+	TCH (Transmit Channel).	"Indicates the Keyboard MIDI transmit channel. You can change the Keyboard MIDI transmit channel by pressing the [TRACK SELECT] button so that its indicator lights and pressing any of the NUMBER [1] to [16] buttons. The Keyboard MIDI transmit channel can be changed also with the following operation: [UTILITY] -> [F5] MIDI -> [SF1] CH -> KBDTransCh."
+	OCT (Octave).	"Indicates Keyboard Octave setting set via the [OCTAVE] buttons.  This can be changed also with the following operation: [UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave."
+	ASA (ASSIGN A),  ASB (ASSIGN B).	Indicates the functions assigned to the respective Knobs (printed "ASSIGN A" and "ASSIGN B") when the lamps of both the [PAN/SEND] and [TONE] buttons are turned on. The functions are assigned with the following operation: [UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN.
+
+	NOTE.	TCH (Transmit Channel), OCT (Octave), ASA (ASSIGN A), and ASB (ASSIGN B) settings do not belong to each Voice. Because of this, these are not stored as an individual Voice in the Voice Store mode (page 208).
+
+	AS1 (ASSIGN 1),  AS2 (ASSIGN 2).	Indicates the functions assigned to the respective Knobs (printed "ASSIGN 1" and "ASSIGN 2") when the lamps of both the [PAN/SEND] and [TONE] buttons are turned on. The functions are assigned by setting the Voice Edit common parameters with the following operation: [VOICE] -> [EDIT] -> [COMMON] -> [F4] CTL SET.
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).		You can register the desired Arpeggio types to these buttons and call them up any time during your keyboard performance. Refer to page 66 in the Quick Guide section.
+
+[F2] BANK.		.
+"This display is available only when a Plug-in Board has been installed and a Voice of the Plug-in Board is selected.  From this display you can select the particular bank on the Plug-in board, and determine whether you will be using a Plug-in voice or a ""Board"" voice. Board voices are unprocessed, unaltered voices of the Plug-in board -- the ""raw material"" for Plug-in voices. Plug-in voices are edited Board voices -- voices that have been specially programmed and processed for optimum use with this synthesizer. For more details, see page 74."		
+
+Settings:	The following selections are available, for example, when a Plug-in voice using the Plug-in board installed to slot 1 is selected: PLG1USR (User Plug-in voice), PLGPRE1 (Preset Plug-in voice), 032/000 ... (Indicates the Bank Select MSB/LSB of the Board voice. These values differ depending on the installed Plug-in board.)	
+
+[F3] EFFECT		.
+Pressing the [F3] EFFECT button in the Voice Play mode calls up the same EFFECT display in the Voice Edit mode ([VOICE] -> [EDIT] -> [COMMON] -> [F6] EFFECT). From this display, you can set the effect related parameters for the current Voice. See page 194. 		
+
+[F4] PORTA (Portamento)		.
+"From this display you can select monophonic or polyphonic playback and set the Portamento parameters. Portamento is used to create a smooth transition in pitch from the first note played on the keyboard to the next."		
+	Mono/Poly.	Determines whether the Voice is played back monophonically (single notes only) or polyphonically (multiple simultaneous notes).
+	Settings:	mono, poly.
+
+	NOTE.	When pressing the second note while holding the first note with the PortaSw set to on and the Mono/Poly set to on, the second note sound starts succeeding the transition of the first note, or the second note starts not from the EG (AEG/PEG/FEG) start point but from the EG (AEG/PEG/FEG) point the first note reaches. This realizes the legato performance. This legato degree can be set with the following operation: [VOICE] -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF4] PORTA -> LegatoSlope (page 190).
+
+	PortaSw (Portamento Switch).	Determines whether Portamento is applied to the current Voice or not.
+	Settings:	off, on.
+	PortaTime (Portamento Time).	Determines the pitch transition time. Higher values result in longer transition times.
+	Settings:	0 to 127.
+	PortaMode (Portamento Mode)	Determines the Portamento mode. The behavior of the Portamento varies depending on whether Mono/Poly is set to "mono" or "poly."
+	Settings:	fingered, fulltime.
+		"fingered Portamento is only applied when you play legato (playing the next note before releasing the previous one). "
+		"fulltime  Portamento is always applied."
+
+[F5]  EG (Envelope Generator).		
+This display contains the basic EG settings, both volume and filter, for the voice, as well as the filter's cutoff frequency and resonance settings. The settings made here are applied as offsets to the AEG and FEG settings in the Voice Edit mode. The full names of the available parameters are shown in the chart below, as they appear in the display.	
+
+<Table>
+ATK     DCY      SUS      REL      DEPTH      CUTOFF      RESO AEG     Sustain level     ---     ---     ---Attack time Decay time     Release Time FEG     ---     Depth     Cutoff frequency Resonance
+
+	Settings:	minus 64 to 0 to plus 63 (except --- above)
+		
+[F6]  ARP (Arpeggio).		
+This display contains the basic settings for Arpeggio playback, including Type and Tempo. About the [SF1] to [SF5] buttons, see the explanation of the [F1] PLAY display.		
+	Bank,  Ctgr (Category),  Type	These three parameters determine the Arpeggio Type. The three-letter prefix number before the Type name indicates the number within the selected Category.
+	Settings:	Refer to the separate Data List.
+	Tempo.	Determines the Arpeggio Tempo. When MIDI Sync ([UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync) is set to "MIDI," "MIDI" is displayed here and cannot be set.
+	Settings:	1 to 300.
+	VelLimit (Velocity Limit).	Determines the lowest and highest velocity which can trigger the Arpeggio playback. The Arpeggio plays when you play notes at velocities within in this range.
+	Settings:	1 to 127.
+
+	NOTE.	Keys played outside the set limit sound normally without any Arpeggio.
+
+	Switch.	Determines whether Arpeggio is on or off. You can also turn Arpeggio on/off from the front panel with the [ARPEGGIO ON/OFF] button.
+	Settings:	off, on.
+	Hold.	Determines whether the Arpeggio playback is "held" or not. When this is set to "on," the Arpeggio cycles automatically, even if you release your fingers from the keys, and it continues to cycle until the next key is pressed.
+	Settings:	sync-off (see below), off, on.
+	sync-off	When set to "sync-off," the Arpeggio playback continues to run silently, even when you release the keys. Pressing any key turns the Arpeggio playback on again. In other words, you can use the key to "un-mute" or "mute" (not start or stop) the Arpeggio playback by, respectively, holding it down or releasing it. 
+		
+		
+		
+Voice Edit mode.		[VOICE] -> Voice selection -> [EDIT].
+		
+There are three kinds of Voices: Normal Voices, Drum Voices and Plug-in Voices (if a Plug-in board has been installed). The following section shows how to edit the different types of voices and explains the parameters available. Note that available parameters to be edited differ depending on the Voice types (Normal Voice, Drum Voice, Plug-in Voice).		
+		
+Normal Voice Edit.		
+		
+When a Normal Voice is selected, the Voice Edit parameters are divided into Common Edit (parameters common to all four Elements), and Element Edit (parameters of individual Elements).		
+		
+Common Edit.		[VOICE] -> Normal Voice selection -> [EDIT] -> [COMMON].
+These parameters are for making global (or common) edits to all four Elements of the selected Normal Voice.		
+[F1] GENERAL.		
+[SF1] NAME.		From this display you can assign the category (sub and main) of the selected voice, and create a name for the voice. The voice name can contain up to 10 characters. For detailed instructions on naming a voice, see "Basic Operation" on page 53.
+[SF2] PLY MODE (Play mode).		From this display you can make various settings for the tone generator of this synthesizer, and assign different Micro Tuning settings.
+	Mono/Poly.	Determines whether the Voice is played back monophonically (single notes only) or polyphonically multiple simultaneous notes).
+	Settings:	mono, poly.
+	KeyAsgnMode (Key Assign Mode).	When this is set to "single," double playback of the same note is prevented. This is useful when two or more instances of the same note are received nearly simultaneously, or without a corresponding note off message. To allow playback of each instance of the same note, set this to "multi."
+	Settings:	single, multi.
+	M. TuningNo. (Micro Tuning Number).	Determines the tuning system for the voice. Normally, this should be set to 00 (Equal temperament); however additional tuning systems are available for a variety of tuning applications and effects. 
+	Settings:	See the Micro Tuning List on page 209.
+	M. TuningRoot (Micro Tuning Root).	Determines the root note of the Micro Tuning set above. 
+	Settings:	C to B.
+[SF3] MEQ OFS (Master EQ Offset).		From this display you can adjust the master (global) EQ settings for the entire Voice. The settings made here are applied as offsets to the EQ settings (with the exception of "MID") from the Utility mode, with the following operation:  [VOICE] -> [UTILITY] -> [F3] VOICE -> [SF1] MEQ. You can edit these parameters by using the Knobs.
+	Settings:	minus 64 to 0 to plus 63.
+[SF4] PORTA (Portamento).		This display allows you to set the Portamento related parameters. Portamento is used to create a smooth transition in pitch from the first note played on the keyboard to the next.
+	Switch.	Determines whether Portamento is applied to your keyboard performance using the current Voice or not. 
+	Settings:	off, on.
+	Time.	Determines the pitch transition time. Higher values result in a longer pitch change time, when Time Mode below is set to "Time."
+	Settings:	0 to 127.
+	Mode.	Determines how the Portamento is applied to your keyboard performance. 
+	Settings:	fingered, fulltime. 
+		"fingered Portamento is only applied when you play legato (playing the next note before releasing the previous one)."
+		"fulltime Portamento is always applied."
+	TimeMode.	This determines how the pitch changes in time.
+	Settings:	rate1, time1, rate2, time2
+		"rate1 Pitch changes at the specified rate. "
+		"time1 Pitch changes in the specified time."
+		"rate2 Pitch changes at the specified rate within a octave."
+		"time2 Pitch changes in the specified time within a octave."
+	LegatoSlope.	Determines the speed of the attack of legato notes, when Switch above is set to on and Mono/Poly is set to mono.  (Legato notes "overlap" each other, the next being played before the previous is released.)  The higher the value, the slower the attack rate. 
+	Settings:	0 to 7.
+
+
+[SF5] OTHER.		From this display you can set the control functions for the Knobs, and determine the up/down range for the Pitch Bend wheel.
+	KnobAssign.	Determines the function for the assignable Knobs (1 to 4). Pressing the [KNOB CONTROL FUNCTION] button on the panel sets the desired function row, which is automatically stored to memory with the currently selected voice.
+	Settings:	pan, tone, assign, MEQofs, MEF, arpFx.
+	PB Upper (Pitch Bend range Upper).	These two parameters determine the pitch change range of the Pitch Bend wheel.
+	PB Lower (Pitch Bend range Lower).	
+	Settings:	minus 48 to 24.
+	AssignA, AssignB, Assign1, Assign2.		Simply tweaking the knob with setting the Knob Assign (above) to "assign" to the desired value, which is automatically stored to memory with the currently selected voice. 
+		
+		
+[F2] OUTPUT.		
+	Volume	Determines the output level of the Voice.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo pan position of the Voice. You can also adjust this parameter using the PAN knob on the front panel.
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+
+	NOTE.	When a stereo Voice is selected, this parameter setting may not be effective. Voices with Elements set to opposite Pan settings (set in [F4] AMP -> [SF1] LVL/PAN -> Pan) -- i.e.,  one at L63 and another at R63 -- are considered stereo Voices. 
+
+	RevSend.	Determines the Send level of the signal sent from Insertion Effect A/B (or the bypassed signal) to the Reverb effect. You can also adjust this parameter using the REVERB knob on the front panel.
+	Settings:	0 to 127.
+	ChoSend.	Determines the Send level of the signal sent from Insertion Effect A/B (or the bypassed signal) to the Chorus effect. You can also adjust this parameter using the CHORUS knob on the front panel.
+
+	NOTE.	See page 179 for the Effect connection in the Voice mode.
+
+[F3] ARP (Arpeggio).		
+[SF1] TYPE.		The basic Arpeggio parameters (e.g., type, tempo) are provided in this display.
+	Bank,  Ctgr (Category),  Type.	These three parameters determine the Arpeggio Type. The three-letter prefix number before the Type name indicates the number within the selected Category. When user arpeggio is selected here, you can clear the selected arpeggio data by using the [SF5] button.
+	Settings:	Refer to the separate Data List.
+	Tempo.	Determines the Arpeggio Tempo. When MIDI Sync ([UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync) is set to "MIDI," "MIDI" is displayed here and Tempo cannot be set.
+	Settings:	1 to 300.
+	ChgTiming (Change Timing).	Determines the actual timing at which the Arpeggio type is switched when you select another type during Arpeggio playback. 
+	Settings:	realtime, measure.
+		"realtime The Arpeggio type is switched immediately when you select another type. "
+		"measure The Arpeggio type is switched at the top of the next measure after you select another type."
+	Switch.	Determines whether Arpeggio is on or off. You can also turn Arpeggio on/off from the front panel with the [ARPEGGIO ON/OFF] button.
+	Settings:	off, on.
+	Hold.	Determines whether the Arpeggio playback is "held" or not. When this is set to "on," the Arpeggio cycles automatically, even if you release your fingers from the keys, and it continues to cycle until the next key is pressed.
+	Settings:	sync-off (see below), off, on.
+		"sync-off When set to ""sync-off,"" the Arpeggio playback continues to run silently, even when you release the keys. Pressing any key turns the Arpeggio playback on again. In other words, you can use the key to ""un-mute"" or ""mute"" (not start or stop) the Arpeggio playback by, respectively, holding it down or releasing it."
+	KeyMode.	Determines how the Arpeggio plays back when playing the keyboard.
+	Settings:	sort, thru, direct.
+		sort...	 When you play specific notes (for example, the notes of a chord), the same sequence plays, no matter what order you play the notes. 
+		thru...	 When you play specific notes (for example, the notes of a chord), the resulting sequence differs depending on the order of the notes. 
+		direct...	 Note events of the Arpeggio sequence do not play; only the notes you play on the keyboard are heard.  This setting is for use with non-note Arpeggio data, such as Control Change or Pitch Bend.  When the Arpeggio plays back, these events are applied to the sound of your keyboard performance.  Use this setting when the Arpeggio types includes non-note data or when the Category type ""Ctrl"" is selected. 
+		sortdirect...	 Both""sort"" and ""direct"" are applied to your keyboard performance. 
+		thrudirect...	 Both ""thru"" and ""direct"" are applied to your keyboard performance.
+
+	NOTE.	If the Arpeggio Category (above) is set to "Ctrl," the Voice will not sound unless "direct" is selected here.
+	NOTE.	With the "sort" and "thru" settings, the order in which notes are played back will depend on the Arpeggio sequence data.
+
+	VelMode (Velocity Mode).	This determines the playback velocity of the Arpeggio, or how it responds to your own playing strength.
+	Settings:	original, thru.
+		original...	 The Arpeggio plays back at the preset velocities included in the Arpeggio sequence data. 
+		thru...	 The Arpeggio plays back according to the velocity of your playing. For example, if you play the notes strongly, the playback volume of the Arpeggio increases.
+
+[SF2] LIMIT.		
+	NoteLimit.	Determines the lowest and highest notes in the Arpeggio's note range. Notes played in this range trigger the Arpeggio.
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also create a lower and an upper trigger range for the Arpeggio, with a note range "hole" in the middle, by specifying the highest note first. For example, setting a Note Limit of "C5 to C4" lets you trigger the Arpeggio by playing notes in the two ranges of C -2 to C4 and C5 to G8; notes played between C4 and C5 have no effect on the Arpeggio.
+	NOTE.	You can also set the range directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired low and high keys.
+
+	VelocityLimit.	Determines the lowest and highest velocity in the Arpeggio's velocity range. This lets you control when the Arpeggio sounds by your playing strength.
+	Settings:	1 to 127.
+
+	NOTE.	You can also create separate low and high trigger ranges for the Arpeggio playback, with a velocity "hole" in the middle, by specifying the maximum value first. For example, setting a Velocity Limit of 93 - 34 lets you play the Arpeggio from two separate velocity ranges: soft (1 to 34) and hard (93 to 127). Notes played at middle velocities between 35 and 92 do not play the Arpeggio.
+
+[SF3] PLAY FX. 		These Play Effect parameters let you control the playback of the Arpeggio in useful and interesting ways. By changing the timing and velocity of the notes, you can change the rhythmic "feel" of the Arpeggio.
+	UnitMultiply (Unit Multi Play).	Adjust the Arpeggio playback time. For example, if you set a value of 200 percent, the playback time will be doubled (tempo is halved). On the other hand, if you set a value of 50 percent, the playback time will be halved (tempo is doubled). Normal playback time is 100 percent. 
+	Settings:	50 percent, 66 percent, 75 percent, 100 percent, 133 percent, 150 percent, 200 percent.
+	Swing.	Delays notes on even-numbered beats (backbeats) to produce a swing feel.
+	Settings:	minus 120 to plus 120.
+	QuntValue (Quantize Value).	Determines to what beats the note data in the Arpeggio sequence data will be aligned, or determines to what beats in the Arpeggio sequence data the swing is applied. 
+	Settings:	32nd note, 16th note triplet, 16th note, 8th note triplet, 8th note, 1/4 note triplet, 1/4 note. 
+	QuntStrength (Quantize Strength).	The Strength value sets the "strength" by which note events are pulled toward the nearest quantize beats. A setting of 100 percent produces exact timing set via the QuntValue parameter above. A setting of 0 percent results in no quantization.
+	Settings:	0 percent to 100 percent.
+	VelocityRate.	Determines how much the Velocity of the Arpeggio playback is offset from the original value. For example, a setting of 100 percent means the original values are used. Settings below 100 percent will reduce the velocity of the Arpeggio notes, whereas settings above 100 percent will increase the velocities.
+	Settings:	0 percent to 200 percent
+
+	NOTE.	The Velocity cannot be decreased or increased beyond its normal range of 1 to 127; any values outside that range will automatically be limited to the minimum or maximum.
+
+	GateTimeRate.	Determines how much the Gate Time (length) of the Arpeggio notes is offset from the original value. A setting of 100 percent means the original values are used. Settings below 100 percent will shorten the gate times of the Arpeggio notes, whereas settings above 100 percent will lengthen them.
+	Settings:	0 percent to 200 percent
+
+	NOTE.	The Gate Time cannot be decreased beyond its normal minimum of 1; any values outside that range will automatically be limited to the minimum.
+
+[F4] CTL SET (Controller Set)		
+[SF1] SET1/2 to [SF3] SET5/6.		Since up to six Controller Sets can be assigned to each Voice, three pages (Sets 1/2, Sets 3/4 and Sets 5/6) are provided. For more information on Controller Sets, see page 155. 
+	ElementSw.	Determines whether or not the selected controller affects each individual Element.
+	Settings:	Elements 1 to 4 enabled ("1" to "4") or disabled ("-")
+
+	NOTE.	This parameter is disabled when the Dest (Destination) described below is set to a parameter unrelated to the Voice Elements.
+
+	Source.	Determines which panel controller is to be assigned and used for the selected Set. This controller then is used to control the parameter set in Destination below.
+	Settings:	PB (Pitch Bend Wheel), MW (Modulation Wheel), AT (After Touch), FC1 (Foot Controller 1), FS (Footswitch), RB (Ribbon Controller), BC (Breath Controller), AS1 (Knob ASSIGN 1), AS2 (Knob ASSIGN 2), FC2 (Foot Controller2). 
+
+	NOTE.	Keep in mind that unlike the other controllers, the ASSIGN A and B knobs can each be assigned to one common function for the entire system of this synthesizer, and not to different functions for each individual voice. Also refer to the Utility mode (page 263).
+	Dest (Destination)	Determines the parameter that is controlled by the Source controller (above).
+	Settings:	For a complete list of the available parameters/controls, refer to the separate Data List booklet.
+	Depth.	Determines the degree to which the Source controller affects the Destination parameter. For negative values, the controller operation is reversed; maximum controller settings produce minimum parameter changes.
+	Settings:	minus 64 to 0 to plus 63.
+
+[F5] LFO (Low Frequency Oscillator)		
+From these displays, you can make a variety of LFO related settings. As its name suggests, the LFO creates waveforms of a low frequency. These waveforms can be used to vary the pitch, filter or amplitude to create effects such as vibrato, wah and tremolo.		
+
+[SF1] WAVE.		
+	Wave.	Determines the LFO Wave.
+	Settings:	tri, triplus, sawup, sawdwn, squ1/4, squ1/3, squ, squ2/3, squ3/4, trpzp, S/H 1, S/H 2, user.
+	Speed.	Determines the speed of the LFO Wave modulation. Higher values result in faster modulation speeds.
+	Settings:	0 to 63.
+	TempoSync.	Determines whether or not the LFO is synchronized to the tempo of the Arpeggio or sequencer (song or pattern). 
+	Settings:	off (not synchronized), on (synchronized) 
+	TempoSpeed.	This parameter is available only when TempoSync above has been set to "on." It allows you to make detailed note value settings that determine how the LFO pulses in sync with the Arpeggio or sequencer.
+	Settings:	16th, 8th/3 (eighth-note triplets), 16th. (dotted sixteenth notes), 8th, 4th/3 (quarter-note triplets), 8th. (dotted eighth notes), 4th (quarter notes), 2nd/3 (half-note triplets), 4th. (dotted quarter notes), 2nd (half notes), whole/3 (whole-note triplets), 2nd. (dotted half notes), 4th x 4 (quarter-note quadruplets; four quarter notes to the beat), 4th x 5 (quarter-note quintuplets; five quarter notes to the beat), 4th x 6 (quarter-note sextuplets; six quarter notes to the beat), 4th x 7 (quarter-note septuplets; seven quarter notes to the beat), 4th x 8 (quarter-note octuplets; eight quarter notes to the beat)
+
+	NOTE.	The actual length of the note depends on the internal or external MIDI tempo setting.
+
+	KeyOnReset.	Determines whether or not the LFO is reset each time a note is pressed. The following three settings are available.
+	Settings:	off, each-on, 1st-on.
+		off...	 The LFO cycles freely with no key synchronization. Pressing a key starts the LFO wave at whatever phase the LFO happens to be at that point.
+		each-on...	 The LFO resets with each note you play and starts a waveform at the phase specified by the Phase parameter (below).
+		1st-on...	 The LFO resets with every note you play and starts the waveform at the phase specified by the Phase parameter (below). However, if you play a second note while the first is being held, the LFO continues cycling according to the same phase as triggered by the first note. In other words, the LFO only resets if the first note is released before the second is played."
+
+	RandomSpeed.	Determines the degree to which the LFO speed changes at random. A setting of "0" results in the original speed. Higher values result in a larger degree of speed change.
+	Settings:	0 to 127.
+
+[SF2] DELAY.		
+	Delay (Delay Time).	Determines the delay time before the LFO comes into effect. A higher value results in a longer delay time.
+	Settings:	0 to 127.
+	FadeIn (Fade In Time).	Determines the amount of time for the LFO effect to fade in (after the Delay time has elapsed). A higher value results in a slower fade-in.
+	Settings:	0 to 127.
+	Hold (Hold Time).	Determines the length of time during which the LFO is held at its maximum level. A higher value results in a longer Hold time.
+	Settings:	0 to 127.
+	FadeOut.	Determines the amount of time for the LFO effect to fade out (after the Delay time has elapsed). A higher value results in a slower fade-out.
+	Settings:	0 to 127.
+
+[SF3] PHASE.		
+	Phase.	Determines the starting phase point for the LFO Wave when it is reset.
+	Settings:	0, 90, 120, 180, 240, 270.
+	Offset EL1 to EL4 (Phase Offset Element1 to Element4)	Determines the offset values of the Phase parameter (above) for the respective Elements.
+	Settings:	plus 0, plus 90, plus 120, plus 180, plus 240, plus 270.
+
+[SF4] BOX1 to 3.		From this display you can select the destination parameter for the LFO (which aspect of the sound the LFO controls), the Elements to be affected by the LFO, and the LFO Depth. Three pages (boxes) provided for setting the destination let you assign multiple destinations.
+	ElementSw (Element Switch).	Determines whether or not each Element is to be affected by the LFO. The Element number (1 to 4) is shown when the LFO is enabled; a dash (-) indicates the LFO is disabled for that Element.
+	Dest (Destination).	Determines the parameters which are to be controlled (modulated) by the LFO Wave.
+	Settings:	amd, pmd, fmd, reso (Resonance), pan, ELFOSpd (Element LFO Speed)
+	Depth.	Determines the LFO Wave Depth.
+	Settings:	0 to 127.
+	DptRatio EL1 to EL4 (Depth Offset Element1 to Element4).	Determines the offset values of the Depth parameter (above) for the respective Elements.
+	Settings:	0 to 127.
+
+[SF5] USER.		This menu is available only when the User LFO wave is selected. You can create a custom LFO wave consisting of up to sixteen steps.
+	Template.	You can select a pre-programmed template for the LFO wave. The selected template's wave graph appears on the display and you can create the LFO wave by viewing it. Each time pressing the [SF1] random button, different LFO wave is appears on the display randomly.
+	Settings:	all0...	 Values of all the steps are set to 0.
+		all64...	 Values of all the steps are set to 64.
+		all127...	 Values of all the steps are set to 127.
+		saw up...	 Creates a saw shaped upward wave.
+		saw down...	 Creates a saw shaped downward wave.
+		even step...	 Values of all even steps are set to 127, and values of all odd steps are set to 0.
+		odd step...	 Values of all odd steps are set to 127, and values of all even steps are set to 0.
+	Slope.	Determines the slope or ramp characteristics of the LFO wave.
+	Settings:	OFF (no slope), up, down, up and down.
+	Value.	Edits the value for each step.
+	Settings:	0 to 127.
+	Step.	Selects the step number of the LFO wave.
+	Settings:	1 to 16.
+
+[F6] EFFECT.		
+
+NOTE.	For details on the Effect connections in the Voice mode, see page 179. For details on the Effect Types, refer to the Effect Type list in the separate Data List booklet.	
+
+[SF1] CONNECT.		This display gives you comprehensive control over the effects.
+	EL: OUT 1 to 4 (Element 1 to 4 Effect Output).	Determines which Insertion effect (A or B) is used to process each individual Element. The "thru" setting lets you bypass the Insertion effects for the specific Element. 
+	Settings:	insA, insB, thru.
+	InsEF Connect (Insertion Effect Connect).	Determines the effect routing for Insertion effects A and B. The setting changes are shown on the diagram in the display, giving you a clear picture of how the signal is routed.
+	Settings:	Para, InsA to B, InsB to A (See page 179.)
+	InsA Ctgry (Insertion A Category)	Determines the effect type for Insertion A.
+	InsA Type (Insertion A Type)	
+	InsB Ctgry (Insertion B Category)	Determines the effect type for Insertion B.
+	InsB Type (Insertion B Type)	
+	Reverb Type 	Determines the effect type for Reverb.
+	Chorus Ctg (Chorus Effect Category),	Determines the effect type for Chorus.
+	Chorus Typ (Chorus Effect Type)	
+	Reverb Send.	Determines the level of the sound (from Insertion A or B, or the bypassed signal) that is sent to Reverb effect. A setting of "0" results in no Reverb processing of the sound.
+	Settings:	0 to 127.
+	Chorus Send.	Determines the level of the sound (from Insertion 1 or 2, or the bypassed signal) that is sent to Chorus effect. A setting of "0" results in no Chorus processing of the sound.
+	Settings:	0 to 127.
+	Reverb Return.	Determines the Return level of the Reverb Effect.
+	Settings:	0 to 127.
+	Chorus Return.	Determines the Return level of the Chorus Effect.
+	Settings:	0 to 127.
+	Chorus To Reverb.	Determines the Send level of the signal sent from the Chorus Effect to the Reverb Effect.
+	Settings:	0 to 127.
+	Reverb Pan.	Determines the pan position setting for the Reverb effect.
+	Settings:	L63 (far left) to cnt (center) to R63 (far right)
+	Chorus Pan.	Determines the pan position setting for the Chorus effect.
+	Settings:	L63 (far left) to cnt (center) to R63 (far right)
+[SF2] INS A (Insertion A) 		"These are for adjusting the various parameters of the Effect blocks.  The number of parameters and values available differs depending on the currently selected effect type. For more information, see the Effect Type List in the separate Data List booklet.  Note that the menu of the corresponding Effect block disappears when the ""thru"" type is selected. "
+[SF3] INS B (Insertion A)		
+[SF4] REVERB		
+[SF5] CHORUS		
+		
+		
+		
+		
+Element Edit.		[VOICE] -> Normal Voice selection -> [EDIT] -> Element selection.
+These parameters are for editing the individual Elements that make up a Normal Voice. 		
+
+[F1] OSC (Oscillator)		
+[SF1] WAVE.		From this display you can select the desired waveform or sound used for the Element.
+	ElementSw (Element Switch).	Determines whether the currently selected Element is on or off.
+	Settings:	off (inactive), on (active)
+	Bank.	Determines whether the Preset Waveform or User Waveform is used.
+	Settings:	preset, usr wav.
+
+	NOTE.	The User Waveform contains audio data you have created with the Sampling function or imported (as WAV or AIFF files) from a SmartMedia/USB storage device.
+
+	Wave No. (Waveform Number),WaveCtgry (Waveform Category) 	Determines the Waveform for the selected Element. See the Waveform list in the separate Data List.
+
+[SF2] OUTPUT.		From this display you can set certain output parameters for the selected Element.
+	KeyOnDelay.	Determines the time (delay) between the moment you press a note on the keyboard and the point at which the sound is played. You can set different delay times for each Element. 
+	Settings:	0 to 127.
+	DelayTempoSync.	Determines whether or not the KeyOnDelay is synchronized to the tempo of the Arpeggio or sequencer (song or pattern).
+	Settings:	off (not synchronized), on (synchronized)
+	DelayTempo.	Determines the timing of the KeyOnDelay when the DelayTempoSync is set to on.
+	Settings:	16th, 8th/3 (eighth-note triplets), 16th. (dotted sixteenth notes), 8th, 4th/3 (quarter-note triplets), 8th. (dotted eighth notes), 4th (quarter notes), 2nd/3 (half-note triplets), 4th. (dotted quarter notes), 2nd (half notes), whole/3 (whole-note triplets), 2nd. (dotted half notes), 4th x 4 (quarter-note quadruplets; four quarter notes to the beat), 4th x 5 (quarter-note quintuplets; five quarter notes to the beat), 4th x 6 (quarter-note sextuplets; six quarter notes to the beat), 4th x 7 (quarter-note septuplets; seven quarter notes to the beat), 4th x 8 (quarter-note octuplets; eight quarter notes to the beat)
+	InsEffectOut (Insertion Effect Output).	Determines which Insertion effect (1 or 2) is used to process each individual Element. The "thru" setting lets you bypass the Insertion effects for the specific Element. (This parameter is the same as "EL: OUT" on the [F6] EFFECT -> [SF1] CONNECT display in Normal Common Edit. Making a setting here automatically changes the setting of that parameter as well.)
+	Settings:	thru, insA (Insertion Effect A), insB (Insertion Effect B)
+
+[SF3] LIMIT.		
+	NoteLimit.	Determines the lowest and highest notes of the keyboard range for each Element. The selected Element will sound only when you play notes within this range.
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also create a lower and an upper range for the Element, with a note range "hole" in the middle, by specifying the highest note first. For example, setting a Note Limit of  "C5 to C4" lets you play the Element from two separate ranges: C -2 to C4 and C5 to G8. Notes played between C4 and C5 do not play the selected Element.
+	NOTE.	You can also set the range directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired low and high keys. Refer to the Basic Operation section, page 53.
+
+	VelocityLimit.	Determines the minimum and maximum values of the velocity range within which each Element will respond. Each Element will only sound for notes played within its specified velocity range. For example, this lets you have one Element sound when you play softly and have a different one sound when you play strongly.
+	Settings:	1 to 127.
+
+	NOTE.	You can also create separate low and high ranges for the Element, with a velocity "hole" in the middle, by specifying the maximum value first. For example, setting a Velocity Limit of 93 to 34 lets you play the Element from two separate velocity ranges: soft (1 to 34) and hard (93 to 127). Notes played at middle velocities between 35 and 92 do not play the selected Element.
+
+	VelCrossFade (Velocity Cross Fade).	This determines how gradually the sound of an Element decreases in volume in proportion to the distance of velocity changes outside the Velocity Limit setting (above). The practical application of this parameter is to create natural-sounding velocity crossfades, in which different Elements change gradually depending on how strongly or softly you play.  The higher the value, the more gradual the level change.
+	Settings:	0 to 127
+
+[F2] PITCH. 		
+[SF1] TUNE.		From this display you can set various pitch-related parameters for the selected Element.
+	Coarse.	Determines the pitch of each Element in semitones.
+	Settings:	minus 48 to 0 to plus 48.
+	Fine. 	Determines the fine tuning for the pitch of each Element.
+	Settings:	minus 64 to 0 to plus 63.
+	FineScaling.	"Determines the degree to which the notes (specifically, their position or octave range) affect the pitch in fine tuning (set above) of the selected Element, regarding C3 as the basic pitch.  A positive setting will cause the pitch of lower notes to change lower and that of higher notes to change higher. Negative values will have the opposite effect."
+	Settings:	minus 64 to 0 to plus 63.
+	Random.	This lets you randomly vary the pitch of the Element for each note you play. This is effective in reproducing the natural pitch variations in acoustic instruments. It is also useful for creating unusual random pitch changes. The higher the value, the greater the pitch variation. A value of "0" results in no pitch change.
+	Settings:	0 to 127.
+
+[SF2] VEL SENS (Velocity Sensitivity).		From this display you can determine how the Pitch EG responds to velocity.
+	"EGTime,  Segment"	Determines the velocity sensitivity of the PEG's Time parameters. Select the Segment first, then set its Time parameter. Positive Time settings will play back the specified Segment faster in proportion to the played velocity and negative values will play it back slower.
+	Settings:	EGTime: minus 64 to 0 to plus 63.
+	Settings:	Segment: atk, atk plus dcy, dcy, atk plus rls, all
+		atk (attack)...	 EG Time Value affects Attack time.
+		atk plus dcy (attack plus decay)...	 EG Time Value affects Attack/Decay1 time.
+		dcy (decay)...	 EG Time Value affects Decay time.
+		atk plus rls (attack plus release)...	 EG Time Value affects Attack/Release time.
+		all...	  EG Time Value affects all PEG Time parameters.
+	EGDepth,  Curve.	Determines the velocity sensitivity of the PEG Level. Positive settings will cause the pitch change to rise the harder you play the keyboard, and negative values will cause it to fall. The Curve parameter lets you select from five different preset velocity curves (graphically indicated in the display), that determine how velocity affects the Pitch EG Depth.
+	Settings:	EGDepth: minus 64 to 0 to plus 63.
+	Settings:	Curve: 0 to 4.
+	Pitch.	Determines the velocity sensitivity of the Pitch. Extreme values produce greater variation in PEG Depth. For positive values, the harder you play the keys, the greater the change in PEG Depth. For negative values, the softer you play the keys, the greater the change in PEG Depth.
+	Settings:	minus 64 to 0 to plus 63.
+
+[SF3] PEG (Pitch Envelope Generator).		From this display you can make all the time and level settings for the Pitch EG, which determine how the pitch of the sound changes over time. These can be used to control the change in pitch from the moment a note is pressed on the keyboard to the moment the sound stops. The full names of the available parameters are shown in the chart below, as they appear in the display.
+
+HOLD     ATK     DCY1     DCY2     REL     DEPTH TIME Hold time Attack time Decay1 time Decay2 time Release time LEVEL Hold level Attack level Decay1 level Decay2 level Release level Depth
+
+	Settings:	TIME: 0 to 127.
+		LEVEL: minus 128 to 0 to plus 127.
+		DEPTH: minus 64 to 0 to plus 63.
+
+	NOTE.	For details on the PEG, see page 160.
+
+[SF4] KEY FLW (Key Follow).		From this display you can set the Key Follow effect -- in other words, how the pitch of the Element and its Pitch EG respond to the particular notes (or octave range) you play.
+	PitchSens (Pitch Sensitivity).	Determines the sensitivity of the Key Follow effect (the pitch interval of adjacent notes).  At plus 100 (the normal setting), adjacent notes are pitched one semitone (100 cents) apart. At 0, all notes are the same pitch. At plus 50, one octave is stretched out over twenty-four notes. For negative values, the settings are reversed.
+	Settings:	minus 200 to 0 to plus 200.
+
+	NOTE.	This parameter is useful for creating alternate tunings, or for use with sounds that do not need to be spaced in semitones, such as pitched drum sounds in a Normal Voice. 
+
+	>CenterKey	Determines the central note or pitch for the Key Follow effect on pitch. The note number set here is the same pitch as normal regardless of the Pitch Sensitivity setting. Depending on the Pitch Sensitivity parameter above, the further away from the Center Key the keys are played, the greater the degree of pitch change.
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also set the Center Key directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation section, page 53.
+
+	EGTimeSens (EG Time Sensitivity).	"Determines the degree to which the notes (specifically, their position or octave range) affect the Pitch EG times of the selected Element. The Center Key (next parameter) is used as the basic pitch for this parameter. A positive setting will cause the pitch of lower notes to change slower and that of higher notes to change faster. Negative values will have the opposite effect."
+	Settings:	minus 64 to 0 to plus 63.
+	>CenterKey.	"Determines the central note or pitch for the Key Follow effect on Pitch EG.  When the Center Key note is played, the PEG behaves according to its actual settings. The pitch change characteristics for other notes will vary in proportion to the EG Time settings."
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also set the Center Key directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation on page 53.
+
+[F3] FILTER.		
+[SF1] TYPE.		From this display you can make comprehensive settings for the Filter unit. The available parameters differ depending on which Filter type is selected here. For more information on the Filter types as well as illustrations of each type, refer to page 161.
+	Type.	Basically, there are four different Filter types: an LPF (Low Pass Filter), an HPF (High Pass Filter), a BPF (Band Pass Filter) and a BEF (Band Elimination Filter). Each type has a different frequency response and produces a different effect on the sound. This synthesizer also features special combination Filter types, for additional sonic control.
+	Settings:	Refer to page 209. 
+
+	Gain.	Determines the Gain (the amount of boost applied to the signal sent to the Filter).
+	Settings:	0 to 255.
+	Cutoff.	Determines the cutoff frequency for the Filter, or the central frequency around which the Filter is applied.
+	Settings:	0 to 255.
+	Resonance/Width.	This parameter's function varies according to the selected Filter Type. If the selected filter is an LPF, HPF, BPF (excluding the BPFw), or BEF, this parameter is used to set the Resonance. For the BPFw, it is used to adjust the Width of the band. Resonance is used to set the amount of Resonance (harmonic emphasis) applied to the signal at the cutoff frequency. This can be used in combination with the cutoff frequency parameter to add further character to the sound. The Width parameter is used to adjust the width of the band of signal frequencies passed by the filter with the BPFw. 
+	Settings:	0 to 127.
+	Distance.	Determines the distance between the Cutoff frequencies, for the Dual Filter types (which feature two identical filters combined in parallel, and the LPF12 plus BPF6 type).
+	Settings:	0 to 255.
+	HPFCutoff.	Determines the central frequency for the Key Follow parameter (below) of the HPF. When a filter type "LPF12" or "LPF6" is selected, this parameter is available.
+	Settings:	0 to 255.
+	HPFKeyFlw (Key Follow).	Determines the Key Follow setting for the HPF Cutoff frequency. This parameter varies the center frequency according to the position of the notes played on the keyboard. A positive setting will raise the center frequency for higher notes and lower it for lower notes. A negative setting will have the opposite effect. When a filter type "LPF12" or "LPF6" is selected, this parameter is available.
+	Settings:	minus 200 to 0 to plus 200.
+
+[SF2] VEL SENS (Velocity Sensitivity).		From this display you can determine how the Filter and the FEG respond to velocity.
+	EGTime,  Segment.	"Determines the velocity sensitivity of the FEG's Time parameters.  Select the Segment first, then set its Time parameter. Positive Time settings will play back the specified Segment faster in proportion to the played velocity and negative values will play it back slower."
+	Settings:	EG Time: minus 64 to 0 to plus 63.
+	Settings:	Segment: atk, atk plus dcy, dcy, atk plus rls, all.
+		atk (attack) EG Time Value affects Attack time.
+		atk plus dcy (attack plus decay) EG Time Value affects Attack/Decay1 time.
+		dcy (decay) EG Time Value affects Decay time.
+		atk plus rls (attack plus release) EG Time Value affects Attack/Release time.
+		all  EG Time Value affects all FEG Time parameters.
+	EGDepth,  Curve.	Determines the velocity sensitivity of the FEG Level.  For positive settings, the more strongly you play the keyboard, the more Filter changes the sound. Negative settings do the opposite; the more softly you play, the more the sound changes. The Curve parameter lets you select from five different preset velocity curves (graphically indicated in the display), that determine how velocity affects the Filter EG. 
+	Settings:	EGDepth: minus 64 to 0 to plus 63.
+	Settings:	Curve: 0 to 4.
+	Cutoff.	Determines the degree to which velocity affects the Cutoff frequency of the Filter EG. For positive values, the more strongly you play the keys, the greater the change in the Cutoff frequency. Negative values do the opposite; the more softly you play, the greater the change in frequency. 
+	Settings:	minus 64 to 0 to plus 63.
+	Resonance.	Determines the degree to which velocity affects the Resonance of the Filter EG. For positive values, the more strongly you play the keys, the greater the Resonance change. Negative values do the opposite; the more softly you play, the greater the change in Resonance.
+	Settings:	minus 64 to 0 to plus 63.
+
+[SF3] FEG (Filter Envelope Generator).		From this display you can make all the time and level settings for the Filter EG, which determine how the tonal quality of the sound changes over time. These can be used to control the change in Cutoff Frequency from the moment a note is pressed on the keyboard to the moment the sound stops. The full names of the available parameters are shown in the chart below, as they appear in the display. 
+
+HOLD     ATK     DCY1     DCY2     REL     DEPTH TIME Hold time Attack time Decay1 time Decay2 time Release time LEVEL Hold level Attack level Decay1 level Decay2 level Release level Depth
+
+	Settings:	TIME: 0 to 127.
+		LEVEL: minus 128 to 0 to plus 127.
+		DEPTH: minus 64 to 0 to plus 63.
+
+	NOTE.	For details on the FEG, see page 161.
+
+[SF4] KEY FLW (Key Follow).		From this display you can set the Key Follow effect for the Filter -- in other words, how the tonal qualities of the Element and its Filter EG respond to the particular notes (or octave range) you play.
+	CutoffSens (Cutoff Sensitivity).	Determines the degree to which the notes (specifically, their position or octave range) affect the Filter of the selected Element. A Center Key setting (next parameter) of C3 is used as the basic setting by the Cutoff parameter. A positive setting will lower the Cutoff frequency for lower notes and raise it for higher notes. A negative setting will have the opposite effect.
+	Settings:	minus 200 to 0 to plus 200.
+	   >CenterKey.	This indicates that the central note for Cutoff Sensitivity above is C3. At C3, the tone remains unchanged. For other notes played, the Cutoff Frequency varies according to the particular note and the Cutoff Sensitivity setting. Keep in mind that this is for display purposes only; the value cannot be changed.
+	Settings:	C -2 to G8.
+	EGTimeSens (EG Time Sensitivity).	"Determines the degree to which the notes (specifically, their position or octave range) affect the Filter EG times of the selected Element. The basic speed of change for the FEG is at the note specified in the Center Key (next parameter). A positive setting will cause slower changes for lower notes and faster changes for higher notes.  A negative setting will have the opposite effect. "
+	Settings:	minus 64 to 0 to plus 63.
+	   >CenterKey.	Determines the central note or pitch for the Key Follow effect on Filter EG. Depending on the EG Time Sensitivity parameter above, the further away from the Center Key the keys are played, the more the time of the Filter EG deviates from the normal. When the Center Key note is played, the FEG behaves according to its actual settings. The Filter change characteristics for other notes will vary in proportion to the EG Time settings.
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also set the Center Key directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation section, page 53.
+
+[SF5] SCALE (Filter Scaling).		Filter Scaling controls the filter cutoff frequency according to the positions of the notes on the keyboard. You can divide the entire keyboard by four break points, and assign different offset values of Cutoff Frequency to them respectively. Refer to the setting example on page 211.
+	Settings:	BREAK POINT 1 to 4: C-2 to G8.
+	Settings:	OFFSET 1 to 4: 128 to 0 to plus 127.
+
+	NOTE.	You can also set the Break Point directly from the Keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation section, page 53.
+
+[F4] AMP (Amplitude).		
+[SF1] LVL/PAN (Level/Pan).		This display not only lets you make basic Level and Pan settings for each individual Element, it also gives you some detailed and unusual parameters for affecting Pan position.
+	Level.	Determines the output level for the selected Element.
+
+
+	Settings:	0 to 127.
+	Pan.	Determines the stereo Pan position for the selected Element. This will also be used as the basic Pan position for the Alternate, Random and Scale settings.
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+	AlternatePan.	Determines the amount by which the sound of the selected Element is panned alternately left and right for each note you press. The Pan setting (above) is used as the basic Pan position.
+	Settings:	L64 to 0 to R63.
+	RandomPan.	Determines the amount by which the sound of the selected Element is panned randomly left and right for each note you press. The Pan setting is used as the Center Pan position.
+	Settings:	0 to 127.
+	ScalingPan.	Determines the degree to which the notes (specifically, their position or octave range) affect the Pan position, left and right, of the selected Element. At note C3, the main Pan setting (above) is used for the basic Pan position.
+	Settings:	minus 64 to 0 to plus 63.
+
+[SF2] VEL SENS (Velocity Sensitivity).		From this display you can determine how the Amplitude (volume) EG responds to velocity.
+	EG Time,  Segment	Determines the velocity sensitivity of the AEG's Time parameters.  Select the Segment first, then set its Time parameter. Positive Time settings will play back the specified Segment faster in proportion to the played velocity and negative values will play it back slower.
+	Settings:	EG Time: minus 64 to 0 to plus 63.
+	Settings:	Segment: atk, atk plus dcy, dcy, atk plus rls, all.
+		atk (attack)...	 EG Time Value affects Attack time.
+		atk plus dcy (attack plus decay)...	 EG Time Value affects Attack/Decay1 time.
+		dcy (decay)...	 EG Time Value affects Decay time.
+		atk plus rls (attack plus release)...	 EG Time Value affects Attack/Release time.
+		all...	  EG Time Value affects all AEG Time parameters. 
+	Level,  Curve.	Determines the velocity sensitivity of the Amplitude EG Level. For positive settings, the more strongly you play the keyboard, the more the volume changes. Negative settings do the opposite; the more softly you play, the more the volume changes. The Curve parameter lets you select from five different preset velocity curves (graphically indicated in the display), that determine how velocity affects the Amplitude EG.
+	Settings:	Level: 64 to 0 to plus 63.
+	Settings:	Curve: 0 to 4.
+
+[SF3] AEG (Amplitude Envelope Generator).		From this display you can make all the time and level settings for the Amplitude EG, which determine how the volume of the sound changes over time. These can be used to control the change in volume from the moment a note is pressed on the keyboard to the moment the sound stops. The full names of the available parameters are shown in the chart below, as they appear in the display.
+
+INIT     ATK     DCY1     DCY2     REL     DEPTH TIME     ---     Attack time Decay1 time Decay2 time Release time LEVEL Initial level Attack level Decay1 level Decay2 level     ---     ---
+
+	Settings:	TIME: 0 to 127.
+		LEVEL: 0 to 127.
+
+	NOTE.	For details on the AEG, see page 162. 
+
+[SF4] KEY FLW (Key Follow).		From this display you can set the Key Follow effect for Amplitude -- in other words, how the volume of the Element and its Amplitude EG respond to the particular notes (or octave range) you play.
+	LevelSens (Level Sensitivity).	Determines the degree to which the notes (specifically, their position or octave range) affect the volume of the selected Element. A Center Key setting of C3 is used as the basic setting. A positive setting will lower the output level for lower notes and raise it for higher notes. A negative setting will have the opposite effect.
+	Settings:	minus 200 to 0 to plus 200.
+	   >CenterKey.	This indicates that the central note for Level Sensitivity above is C3. At C3, the volume (level) remains unchanged. For other notes played, the volume varies according to the particular note and the Level Sensitivity setting. Keep in mind that this is for display purposes only; the value cannot be changed.
+	EGTimeSens (EG Time Sensitivity).	"Determines the degree to which the notes (specifically, their position or octave range) affect the Amplitude EG times of the selected Element. The Center Key (next parameter) is used as the basic amplitude for this parameter.  A positive setting will cause the amplitude of lower notes to change slower and that of higher notes to change faster. Negative values will have the opposite effect."
+	Settings:	minus 64 to 0 to plus 63.
+	   >CenterKey.	"Determines the central note or pitch for the Key Follow effect on Amplitude EG. Depending on the EG Time Sensitivity parameter above, the further away from the Center Key the keys are played, the more the time of the Amplitude EG deviates from the norm. When the Center Key is played, the AEG behaves according to its actual settings. The amplitude change characteristics for other notes will vary in proportion to the EGTime settings."
+	Settings:	C -2 to G8.
+
+	NOTE.	You can also set the Center Key directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation section, page 53.
+
+[SF5] SCALE (Amplitude Scaling).		Amplitude Scaling controls the output level (set in the [F4] AMP -> [SF1] LVL /PAN display) according to the positions of the notes on the keyboard. You can divide the entire keyboard by four break points, and assign different offset values of amplitude to them respectively. Refer to the setting example on page 211.
+	Settings:	BREAK POINT 1 to 4: C-2 to G8.
+	Settings:	OFFSET 1 to 4: minus 128 to 0 to plus 127.
+
+	NOTE.	You can also set the Break Point directly from the Keyboard, by holding down the [INFORMATION] button and pressing the desired key. Refer to the Basic Operation section, page 53.
+
+[F5] LFO (Low Frequency Oscillator).		
+This display gives you a comprehensive set of controls over the LFO for each individual Element. The LFO can be used to create vibrato, wah, tremolo and other special effects, by applying it to the pitch, filter and amplitude parameters.		
+	Wave.	Determines the LFO waveform used to vary the sound.
+	Settings:	saw, tri, squ.
+	Speed.	Determines the speed of the LFO waveform. The higher the value, the faster the speed.
+	Settings:	0 to 63.
+	KeyOnReset.	Determines whether or not the LFO is reset each time a note is played.
+	Settings:	off, on.
+	KeyOnDelay.	Determines the delay time between the moment you play a note on the keyboard and the moment the LFO comes into effect. A higher value results in a longer delay time.
+	Settings:	0 to 127.
+	Pmod (Pitch Modulation Depth).	"Determines the amount (depth) by which the LFO waveform varies (modulates) the pitch of the sound.  The higher the value, the greater the amount of pitch modulation. "
+	Settings:	0 to 127.
+
+	Fmod (Filter Modulation Depth).	Determines the amount (depth) by which the LFO waveform varies (modulates) the Filter Cutoff frequency. The higher the value, the greater the amount of filter modulation.
+	Settings:	0 to 127.
+	Amod (Amplitude Modulation Depth).	Determines the amount (depth) by which the LFO waveform varies (modulates) the amplitude or volume of the sound. The higher the value, the greater the amount of amplitude modulation.
+	Settings:	0 to 127.
+	FadeInTime.	"Determines the amount of time for the LFO effect to fade in (after the KeyOnDelay time has elapsed).  A higher value results in a slower fade-in."
+	Settings:	0 to 127.
+
+[F6] EQ (Equalizer).		
+	Type.	Determines the Equalizer Type. This synthesizer features a wide selection of various equalizer types, which can be used not only to enhance the original sound, but even completely change the character of the sound. The particular parameters and settings available depend on the specific Equalizer Type that is selected. 
+	Settings:	EQ L/H, P.EQ, boost6, boost12, boost18, thru.
+		EQ L/H (Low/High)...	 This is a shelving"" equalizer, which combines separate high and low frequency bands. 
+		P.EQ (Parametric EQ)...	 The Parametric EQ is used to attenuate or boost signal levels (gain) around the Frequency. This type features 32 different "Q" settings, which determine the frequency band width of the equalizer."
+		boost6 (boost 6dB)/boost12 (boost 12dB)/boost18 (boost 18dB).	 These can be used to boost the level of the entire signal by 6dB, 12dB and 18dB, respectively.
+		thru...	 If you select this, the equalizers are bypassed and the entire signal is unaffected. 
+		
+		
+		
+Drum Voice Edit	.	
+		
+When a Drum Voice is selected, Voice Edit parameters are divided into Common Edit (parameters common to all keys, up to 73), and Key Edit (parameters of individual keys).		
+		
+Common Edit.		[VOICE] -> Drum Voice selection -> [EDIT] -> [COMMON].
+These parameters are for making global (or common) edits to all keys of the selected Drum Voice. 		
+[F1] GENERAL. 		
+[SF1] NAME. 		Same as in Normal Voice Common Edit. See page 189. 
+[SF3] MEQ OFS (Master EQ Offset).		
+[SF5] OTHER. 		
+
+[F2] OUTPUT.		
+Same as in Normal Voice Common Edit. See page 190. In addition, the following two parameters are also available.		
+	InsRevSend (Insertion Reverb Send).	Determines the Send level for the entire Drum voice (all keys), sent from Insertion Effect A/B to the Reverb effect.
+	Settings:	0 to 127.
+	InsChoSend (Insertion Chorus Send).	Determines the Send level for the entire Drum voice (all keys), sent from Insertion Effect A/B to the Chorus effect. 
+	Settings:	0 to 127.
+
+	NOTE.	Send level (to Reverb and Chorus) cannot be set independently for each Drum key; the value is fixed at 127 (maximum).
+
+[F3] ARP (Arpeggio).		
+[SF1] TYPE. 		Same as in Normal Voice Common Edit. See page 191. 
+[SF2] LIMIT. 		
+[SF3] PLAY FX. 		
+
+[F4] CTL SET (Controller Set).		
+Same as in Normal Voice Common Edit. See page 192. Please note that the Element Switch parameter is not available in Drum Voice Common edit.
+
+[F6] EFFECT. 		
+Same as in Normal Voice Common Edit. See page 194. The only difference here is that gKEY: OUTh appears in the [SF1] CONNECT display instead of gEL: OUTh (in Normal Common Effect).		
+		
+Key Edit.		[VOICE] -> Drum Voice selection -> [EDIT] -> Key selection.
+These parameters are for editing the individual keys that make up a Drum Voice.		
+[F1] OSC (Oscillator).		
+[SF1] WAVE. 		From this display you can select the desired wave or Normal voice used for the individual Drum key.
+	Type.	Determines whether a Wave or a Normal voice is to be used for the selected key. Also, use the Bank, Number and Category parameters below to specify the desired Wave or Normal voice.
+	Settings:	pre wav (Preset wave), voice, usr wav (User wave)
+
+	NOTE.	When the Type is set to gvoiceh here, some parameters in the Drum Voice Edit mode cannot be edited.
+
+	ElementSw (Element Switch).	This parameter is available when Type (above) is set to gpre wavh or guser wav.h This determines whether the currently selected key is on or off, or in other words, whether the wave for the key is active or inactive.
+	Settings:	on, off.
+	Bank. 	This parameter is available when Type (above) is set to gvoice.h Any of the Normal voice banks can be selected.
+
+	NOTE.	Plug-in voices cannot be selected for Drum keys.
+
+	Number.	Determines the Wave/Voice number. The number differs depending on the selected Type. For details about available Waves and Voices, refer to the separate Data List booklet. 
+	Settings:	When Type is set to gpre wavh: 001 to 1859.
+		When Type is set to gvoiceh: 001 to 128.
+		When Type is set to gusr wavh: 001 to 1024.
+	Category.	Determines the Category of the Wave/Normal Voice. If you switch to another Category, the first Wave/Normal Voice in that Category will be selected.
+
+	NOTE.	For more information about the Categories, refer to the separate Data List booklet.
+
+[SF2] OUTPUT.		From this display you can set certain output parameters for the selected Drum key.
+	InsEFOut (Insertion Effect Output).	Determines which Insertion effect (A or B) is used to process each individual Drum key. The gthruh setting lets you bypass the Insertion effects for the specific key.
+	Settings:	thru, insA (Insertion Effect A), insB (Insertion Effect B)
+	RevSend (Reverb Send).	Determines the level of the Drum key sound (the bypassed signal) that is sent to Reverb effect. A setting of g0h results in no Reverb processing of the Drum key sound. This is available only when Insertion Effect Output (above) is set to gthru.h
+	Settings:	0 to 127.
+	ChoSend (Chorus Send).	Determines the level of the Drum key sound (the bypassed signal) that is sent to Chorus effect. A setting of g0h results in no Chorus processing of the Drum key sound. This is available only when Insertion Effect Output (above) is set to gthru.h
+	Settings:	0 to 127.
+	OutputSel (Output Select).	Determines the specific output(s) for the individual Drum key signal. You can assign each individual Drum key sound to be output from a specific hardware output jack on the rear panel. This is available only when Insertion Effect Output (above) is set to gthru.h
+	Settings:	See page 31.
+
+[SF5] OTHER.		From this display you can set various parameters related to how the individual notes of the Drum voice respond to the keyboard and MIDI data.
+	AssignMode.	When this is set to gsingle,h double playback of the same note is prevented. This is useful when two or more instances of the same note are received nearly simultaneously, or without a corresponding note off message. To allow playback of each instance of the same note, set this to gmulti.h
+	Settings:	single, multi.
+	RcvNoteOff (Receive Note Off).	Determines whether or not the selected Drum key responds to MIDI Note Off messages. 
+	Settings:	off, on.
+
+	NOTE.	This parameter is available when the Type is set to gpre wavh or gusr wavh in the [F1] OSC -> [SF1] WAVE display (page 202). 
+
+	AltnateGroup. 	Set the Alternate Group to which the key is assigned. In a real drum kit, some drum sounds cannot physically be played simultaneously, such as open and closed hi-hats. You can prevent keys from playing back simultaneously by assigning them to the same Alternate Group. Up to 127 Alternate Groups can be defined. You can also select goffh here if you wish to allow the simultaneous playback of sounds.
+	Settings:	off, 1 to 127.
+
+[F2] PITCH.		
+[SF1] TUNE. 		From this display you can set various pitch-related parameters for the selected key. 
+	Coarse	Determines the pitch of each Drum Key Wave (or Normal Voice) in semitones.
+	Settings:	minus 48 to plus 48.
+
+	NOTE.	If a Normal voice has been assigned to the key, this parameter adjusts the position of its note (not its pitch) relative to note C3.
+
+	Fine.	Determines the fine tuning for the pitch of each Drum Key Wave (or Normal Voice).
+	Settings:	minus 64 to plus 63
+[SF2] VEL SENS (Velocity Sensitivity)		
+	Pitch 	Determines how the pitch of the selected Drum key responds to velocity. For positive values, the more strongly you play the key, the higher the pitch becomes. For negative values, the more strongly you play the key, the lower the pitch.
+	Settings:	minus 64 to plus 63.
+
+[F3] FILTER. 		
+[SF1] CUTOFF.		This synthesizer lets you apply a low pass filter and high pass filter to each individual Drum key -- giving you exceptionally detailed and comprehensive sonic control over the Drum voice.
+
+	NOTE.	This parameter is available when the Type is set to gpre wavh or gusr wavh in the [F1] OSC -> [SF1] WAVE display (page 202).
+
+	LPFCutoff.	Determines the Cutoff frequency of the Low Pass Filter.
+	Settings:	0 to 255.
+	LPFReso. 	Determines the amount of Resonance (harmonic emphasis) applied to the signal at the Cutoff frequency.
+	Settings:	0 to 127.
+	HPFCutoff. 	Determines the Cutoff frequency of the High Pass Filter.
+	Settings:	0 to 255.
+[SF2] VEL SENS (Velocity Sensitivity).		
+	LPFCutoff. 	Determines the velocity sensitivity of the Low Pass Filter Cutoff frequency. For positive settings, the more strongly you play the keyboard, the higher the cutoff frequency becomes.  For negative settings, the more strongly you play, the lower the cutoff frequency.
+	Settings:	minus 64 to 0 to plus 63.
+
+[F4] AMP (Amplitude).		
+[SF1] LVL/PAN (Level/Pan).		This display not only lets you make basic Level and Pan settings for the sound of each individual Drum key, it also gives you some detailed and unusual parameters for affecting Pan position. 
+
+	Level.	Determines the output for the selected Drum key (Wave). This lets you make detailed balance adjustments among the various sounds of the Drum voice.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo Pan position for the selected Drum key (Wave). This will also be used as the basic Pan position for the Alternate and Random settings.
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+	AlternatePan.	Determines the amount by which the sound of the selected Drum key is panned alternately left and right for each note you press. The Pan setting (above) is used as the basic Pan position.
+	Settings:	L64 to 0 to R63
+
+	NOTE.	This parameter is available when the Type is set to gpre wavh or gusr wavh in the [F1] OSC -> [SF1] WAVE display (page 202).
+
+	RandomPan.	Determines the amount by which the sound of the selected Drum key is panned randomly left and right for each note you press. The Pan setting (above) is used as the Center Pan position.
+	Settings:	0 to 127
+
+	NOTE.	This parameter is available when the Type is set to gpre wavh or gusr wavh in the [F1] OSC -> [SF1] WAVE display (page 202).
+
+[SF2] VEL SENS (Velocity Sensitivity).		
+	Level.	Determines the velocity sensitivity of the Amplitude Envelope Generator's output level. Positive settings will cause the output level to rise the harder you play the keyboard and, conversely, negative values will cause it to fall.
+	Settings:	minus 64 to 0 to plus 63.
+[SF3] AEG (Amplitude Envelope Generator)		
+	AttackTime. 	Settings: 0 to 127.
+	Decay1Time .	Settings: 0 to 127.
+	Decay1Lvl (Level).	Settings: 0 to 127.
+	Decay2Time.	Settings: 0 to 126, hold.
+
+[F6] EQ (Equalizer).		
+Same as in Normal Voice Element Edit. See page 201.		
+NOTE	This parameter is available when the Type is set to gpre wavh or gusr wavh in the [F1] OSC -> [SF1] WAVE display (page 202).	
+		
+		
+		
+		
+Plug-in Voice Edit		
+		
+These parameters are basically the same as in Normal Voice Edit. Unlike with Normal voices, the Plug-in voices only have one Element for editing.		
+		
+NOTE.	Depending on the particular Plug-in board you are using, some of the parameters described here may not be available. For details, refer to the relevant owner's manual of the Plug-in board.	
+NOTE.	For details on the current lineup of available Plug-in boards, see page 74.	
+		
+Common Edit.		[VOICE] -> Plug-in Voice selection -> [EDIT] -> [COMMON].
+		
+[F1] GENERAL.		
+[SF1] NAME. 		Same as in Normal Voice Common Edit. See page 189.
+[SF2] PLY MODE (Play mode).		Same as in Normal Voice Common Edit. See page 190. Please note that Micro Tuning is not available in Plug-in Voice Common Edit.
+[SF3] MEQ OFS (Master EQ Offset).		Same as in Normal Voice Common Edit. See page 190.
+[SF4] PORTA (Portamento).		Same as in Normal Voice Common Edit. See page 190. Please note that Portamento Mode and Time Mode are not available in Plug-in Voice Common Edit.
+[SF5] OTHER.		Same as in Normal Voice Common Edit. See page 190. Unlike with Normal Voice Edit, the Upper and Lower ranges cannot be independently set here.
+
+[F2] OUTPUT.		
+Same as in Normal Voice Common Edit. See page 190.		
+
+[F3] ARP (Arpeggio).		
+[SF1] TYPE.		Same as in Normal Voice Common Edit. See page 191.
+[SF2] LIMIT.		
+[SF3] PLAY FX .		
+
+[F4] CTL SET (Controller Set).		
+[SF1] SET1/2 .		Same as in Normal Voice Common Edit. See page 192. Please note that Element Switch is not available in Plug-in Voice Common Edit.
+[SF2] MW (Modulation Wheel)		From this display you can set how the Plug-in voice responds to the Modulation wheel, by changing the control depth for the filter, pitch and amplitude (volume). 
+	Filter.	Determines the depth of control of the Modulation Wheel over the filter cutoff frequency. Negative settings result in reversed Modulation wheel operation (i.e., moving the wheel up results in less modulation).
+
+	Settings:	minus 64 to 0 to plus 63.
+	PMod (Pitch Modulation Depth).	Determines the depth of control the Modulation Wheel has over pitch modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	FMod (Filter Modulation Depth).	Determines the depth of control the Modulation Wheel has over filter cutoff modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	AMod (Amplitude Modulation Depth).	Determines the depth of control the Modulation Wheel has over amplitude modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+[SF3] AT (After Touch).		This synthesizer gives you a comprehensive set of after touch controls for the Plug-in voice, allowing you to change the pitch and filter settings, and produce modulation effects (pitch, filter and amplitude) ? simply by pressing down hard on the keys.
+	Pitch.	Determines the depth of control of keyboard aftertouch over pitch. You can set a value (in semitones) of up to two octaves.
+	Settings:	minus 24 to 0 to plus 24.
+	Filter. 	Determines the depth of control of keyboard aftertouch over the filter cutoff frequency.
+	Settings:	minus 64 to 0 to plus 63.
+	PMod (Pitch Modulation Depth).	Determines the depth of control that keyboard aftertouch has over pitch modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	FMod (Filter Modulation Depth).	Determines the depth of control that keyboard aftertouch has over filter cutoff modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	AMod (Amplitude Modulation Depth).	Determines the depth of control that keyboard aftertouch has over amplitude modulation. The higher the setting, the greater the depth of control.
+	Settings:	0 to 127.
+[SF4] AC (Assignable Control).		From this display you can assign MIDI Control Change numbers (as Src) and determine the degree to which the assigned controllers affect the filter and the modulation effects (pitch, filter and amplitude). 
+	Src (Source).	Determines the MIDI Control Change number used to control the filter, PMod, FMod, and AMod.
+	Settings:	0 to 95.
+	Filter.	Determines the depth of control the Control Change numbers (set in the Src parameter above) have over the filter cutoff frequency.
+	Settings:	minus 64 to 0 to plus 63.
+	PMod (Pitch Modulation Depth).	Determines the depth of control the Control Change messages (set in the Src parameter above) have over pitch modulation. The larger the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	FMod (Filter Modulation Depth).	Determines the depth of control the Control Change messages (set in the Src parameter above) have over filter cutoff modulation. The larger the setting, the greater the depth of control.
+	Settings:	0 to 127.
+	AMod (Amplitude Modulation Depth).	Determines the depth of control the Control Change messages (set in the Src parameter above) have over amplitude modulation. The larger the setting, the greater the depth of control.
+	Settings:	0 to 127.
+
+[F6] EFFECT. 		
+"Same as in Normal Voice Common Edit. See page 194. Please note that the EL: OUT settings are not available in the [SF1] CONNECT display and the parallel setting (Insertion Connection) is not available in the [SF1] CONNECT display."		
+		
+		
+Element Edit.		[VOICE] -> Plug-in Voice selection -> [EDIT] -> Element selection.
+		
+[F1] OSC (Oscillator).		
+[SF1] WAVE. 		From this display you can select the desired Board Voice used for the Element of the Plug-in voice. Keep in mind that a Plug-in voice only has one Element.
+	Bank. 	Determines the Board Voice Bank. 
+	Settings:	These depend on the particular Plug-in board; refer to the relevant owner's manual for details.
+	Number	Determines the Board Voice Number.
+	Settings:	These depend on the particular Plug-in board; refer to the relevant owner's manual for details.
+[SF5] OTHER.		
+	VelocityDepth.	Determines the velocity sensitivity of the Plug-in Voice. For higher values, the harder you play the keyboard, the louder the voice becomes.
+	Settings:	0 to 127.
+	VelocityOffset. 	This lets you specify an offset value for Velocity Depth (above). In other words, you can increase the relative velocity (or level) of the voice by a set amount -- so that all the notes you play have the added velocity.
+	Settings:	0 to 127.
+	NoteShift.	Determines the transpose setting for the Plug-in voice, or the amount (in semitones) by which the pitch is raised or lowered. The pitch range is two octaves, up or down.
+	Settings:	minus 24 to 0 to plus 24.
+
+[F2] PITCH		
+From this display you can make various time and level settings for the Pitch EG, which determine how the pitch of the Plug-in Voice changes over time.  The full names of the available parameters are shown in the chart below, as they appear in the display.
+
+INIT     ATK     DCY1     DCY2     REL     DEPTH TIME     ---     Attack time     ---     ---     Release time LEVEL Initial level     ---     ---     ---     Release level     ---
+	
+
+[F3] FILTER.		
+	HPFCutoff (High Pass Filter Cutoff frequency).	Determines the Cutoff frequency for the High Pass Filter.
+	Settings:	minus 64 to 0 to plus 63.
+
+[F4] NATIVE.		
+"With a Plug-in board installed to this synthesizer, you can create a Plug-in Voice by editing both native parameters (those parameters exclusive to the particular board) and unique parameters (related specifically to this synthesizer).  Pressing [F4] gives you access to the native parameters of the Plug-in board. The parameters will vary depending on the Plug-in Board. For details about each parameter and its functions, refer to the Owner's Manual or the on-line help that came with your Plug-in Board."		
+
+[F5] LFO (Low Frequency Oscillator).		
+From this display you can set the basic LFO parameters for modulating the pitch to create vibrato and other special effects. 		
+	Speed .	Determines the speed of the LFO waveform. Positive settings increase the speed and negative settings decrease it.
+	Settings:	minus 64 to 0 to plus 63.
+	Delay.	Determines the delay time between the moment you press note on the keyboard and the moment the LFO comes into effect. Positive settings lengthen the delay and negative settings shorten it.
+	Settings:	minus 64 to 0 to plus 63.
+	PMod (Pitch Modulation Depth).	Determines the amount by which the LFO waveform controls the pitch. Positive settings increase the amount and negative settings decrease it. 
+	Settings:	minus 64 to 0 to plus 63.
+
+[F6] EQ (Equalizer).		
+From this display you can apply equalizer settings to the Plug-in Voice. This is a shelving equalizer with two bands; one for high frequencies and the other for low frequencies.		
+
+	NOTE.	For details on the EQ, see page 178.
+
+	LowFreq (Low Frequency).	Determines the shelving point for the low frequencies. The levels of signals below this frequency will be boosted/attenuated by the amount set in the LowGain parameter.
+	Settings:	32Hz to 2.0kHz.
+	LowGain (Low Gain).	Determines the amount by which signals below the LowFreq frequency will be boosted/attenuated.
+	Settings:	minus 64 to 0 to plus 63.
+	HighFreq (High Frequency).	Determines the shelving point for the high frequencies. The levels of signals above this frequency will be boosted/attenuated by the amount set in the HighGain parameter.
+	Settings:	500Hz to 16.0kHz.
+	HighGain (High Gain).	Determines the amount by which signals above the HighFreq frequency will be boosted/attenuated.
+	Settings:	minus 64 to 0 to plus 63.
+		
+		
+		
+		
+Voice Job mode.		[VOICE] -> Voice selection -> [JOB].
+		
+		
+The Voice Job mode features several basic operations, such as Initialize and Copy. After setting parameters as required from the selected display, press the [ENTER] button to execute the Job.		
+		
+		
+[F1] INIT (Initialize).		
+This function lets you reset (initialize) all Voice parameters to their default settings. It also allows you to selectively initialize certain parameters, such as Common settings, settings for each Element/Drum key, and so on ? very useful when creating a completely new voice from scratch.		
+	Type of parameter to be initialized.	When a Normal Voice is selected: ALL, Common, EL1 to 4, without Wave
+		When a Drum Voice is selected: ALL, Common, EL, without Wave
+		When a Plug-in Voice is selected: ALL, Common, EL, without Wave
+
+	NOTE.	If you turn the check mark on when a Drum voice is selected, you can select a Drum key. For details on selecting a key, refer to page 53 in the Basic Operation section.
+
+[F2] RECALL (Edit Recall).		
+If you are editing a Voice and select a different Voice without storing your edited one, all the edits you've made will be erased. If this happens, you can use Edit Recall to restore the Voice with your latest edits intact.		
+
+[F3] COPY.		
+From this display you can copy Common and Element/Drum Key parameter settings from any Voice to the Voice you are editing. This is useful if you are creating a Voice and wish to use some parameter settings from another Voice. 		
+	Source voice.	Determines the Voice and data type to be copied.
+	Data type	
+		When a Normal voice is selected: Common, Element 1 to 4.
+		When a Drum voice is selected: Common, Drum key C0 to C6.
+		When a Plug-in voice is selected: Common, Element.
+
+	NOTE.	If the source Voice type (Normal/Drum/Plug-in) differs from one of the Voice you are currently editing (destination), you will only be able to copy Common parameters.
+
+	Data type of Destination voice (current selected voice).	If the source is a Normal or Drum Voice and data type is set to Element or Drum Key, you can set the data type of the destination Voice.
+	Data type.	
+		When a Normal voice is selected: Common, Element 1 to 4.
+		When a Drum voice is selected: Common, Drum key C0 to C6.
+
+	NOTE.	If you choose to copy Common parameters from the source, this display will change to gCommon.h
+
+[F4] BULK (Bulk Dump).		
+This function lets you send all your edited parameter settings for the currently selected Voice to a computer or another MIDI instrument for data archiving.  For details, see page 185. 		
+
+	NOTE.	In order to execute Bulk Dump, you'll need to set the correct MIDI Device Number, with the following operation: [UTILITY] -> [F5] MIDI -> [SF1] CH -> DeviceNo.
+		
+		
+		
+Voice Store mode.		[VOICE] -> Voice selection -> [STORE].
+		
+This function lets you store your edited voice to User memory (Flash ROM). For details, refer to page 85 in the Quick Guide section. 	
+
+
+
+Supplementary information.
+
+Micro Tuning List.
+[VOICE] -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF2] PLY MODE -> M.TuningNo./M.TuningRoot. (page 190) 
+
+<Table>
+M.TuningNo.	Type.	M.TuningRoot.	Comments.
+00.	Equal Temp (Equal temperament).	--	The ÒcompromiseÓ tuning used for most of the last 200 years of Western music, and found on most electronic keyboards. Each half step is exactly 1/12 of an octave, and music can be played in any key with equal ease. However, none of the intervals are perfectly in tune.
+01.	PureMaj (Pure major).	C to B.	This tuning is designed so that most of the intervals (especially the major third and perfect fifth) in the major scale are pure. This means that other intervals will be correspondingly out of tune. You need to specify the key (C to B) you will be playing in.
+02.	PureMin (Pure minor).	C to B.	The same as Pure Major, but designed for the minor scale.
+03.	Werckmeist (Werckmeister).	C to B.	Andreas Werckmeiser, a contemporary of Bach, designed this tuning so that keyboard instruments could be played in any key. Each key has a unique character. 
+04.	Kirnberger.	C to B.	Johann Philipp Kirnberger, an 18th century composer, created this tempered scale to allow performances in any key.
+05.	VallotandYng (Vallotti and Young).	C to B	Francescatonio Vallotti and Thomas Young (both mid-1700s) devised this adjustment to the Pythagorean tuning, in which the first six fifths are lower by the same amount.
+06.	1/4 Shift (1/4 shifted).	--	This is the normal equal tempered scale shifted up 50 cents.
+07.	1/4 tone. 	--	Twenty-four equally spaced notes per octave. (Play twenty-four notes to move one octave.)
+08.	1/8 tone.	--	Forty-eight equally spaced notes per octave. (Play forty-eight notes to move one octave.)
+09.	Indian.	--	Usually observed in Indian music (white keys only). 
+10.	Arabic 1.	C to B.	Usually observed in Arabic music. 
+11.	Arabic 2.		
+12.	Arabic 3.		
+
+
+Filter Type List.
+[VOICE] -> [EDIT] -> Element selection -> [F3] FILTER -> [SF1] TYPE -> Type. (page 197)
+
+LPF24D (24dB/oct Digital Low Pass Filter).
+A dynamic 24dB/oct low-pass filter with a characteristic digital sound. Compared to the LPF24A type (below), this filter can produce a more pronounced resonance effect.
+
+LPF24A (24dB/oct Analog Low Pass Filter).
+A digital dynamic low-pass filter with characteristics similar to a 4-pole analog synth filter.
+
+LPF18 (18dB/oct Low Pass Filter).
+3-pole 18dB/oct low-pass filter.
+
+LPF18s (18dB/oct Staggered Low Pass Filter).
+3-pole 18dB/oct low-pass filter. This filter has a smoother cutoff slope than the LPF18 type.
+
+LPF12 (12dB/oct Low Pass Filter).
+12dB/oct low-pass filter. This filter is designed to be used in conjunction with a high-pass filter.
+
+LPF6 (6dB/oct low-pass Filter).
+1-pole 6dB/oct low-pass filter. No resonance. This filter is designed to be used in conjunction with a high-pass filter.
+HPF24D (24dB/oct Digital High Pass Filter)
+A dynamic 24dB/oct high-pass filter with a characteristic digital sound. This filter can produce a pronounced resonance effect.
+
+HPF12 (12dB/oct High Pass Filter).
+12dB/oct dynamic high-pass filter.
+
+BPF12D (12dB/oct Digital Band Pass Filter).
+BPFw (Wide Band Pass Filter)
+A 12dB/oct BPF that combines HPF and LPF filters to allow wider bandwidth settings.
+BPF6 (6dB/oct Band Pass Filter)
+
+BEF12 (12dB/oct Band Elimination Filter).
+BEF6 (6dB/oct Band Elimination Filter)
+
+Dual LPF (Dual Low Pass Filter).
+Two 12dB/oct low-pass filters connected in parallel. 
+
+Dual HPF (Dual High Pass Filter).
+Two 12dB/oct high-pass filters connected in parallel.
+
+Dual BPF (Dual Band Pass Filter).
+Two 6dB/oct band-pass filters connected in parallel.
+
+Dual BEF (Dual Band Elimination Filter).
+Two 6dB/oct band-elimination filters connected in serial.
+
+LPF12 plus BPF6 (12dB/oct Low Pass Filter plus 6dB/oct Band Pass Filter).
+A combined low-pass and high-pass filter.
+
+thru.
+The filters are bypassed and the entire signal is unaffected.
+
+
+Setting example of Filter Scaling.
+[VOICE] -> [EDIT] -> Element selection -> [F3] FILTER -> [SF5] SCALE (page 199)
+The best way to understand Filter Scaling is by example. For the settings shown in the example display below, the basic Cutoff frequency value is 64, and the various Offset values at the selected Break point settings change that basic value accordingly. The specific changes to the Cutoff frequency are shown in the diagram below. The Cutoff frequency changes in a linear fashion between successive Break Points as shown. 
+
+
+Setting example of Amplitude Scaling.
+[VOICE] -> [EDIT] -> Element selection -> [F4] AMP -> [SF5] SCALE (page 200)
+The best way to understand Amplitude Scaling is by example. 
+For the settings shown in the example display above, the basic Amplitude (volume) value for the selected Element is 80, and the various Offset values at the selected Break point settings change that basic value accordingly. The specific changes to the Amplitude are shown in the diagram below. The Amplitude changes in a linear fashion between successive Break Points as shown. 
+
+
+This is the end of the file.

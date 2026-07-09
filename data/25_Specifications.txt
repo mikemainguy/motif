@@ -1,0 +1,83 @@
+Specifications.		
+		
+Keyboards.	MOTIF ES8. 	88 keys, Balanced Hammer Effect Keyboard (Initial Touch/Aftertouch)
+	MOTIF ES7. 	76 keys, FS Keyboard (Initial Touch/Aftertouch)
+	MOTIF ES6. 	61 keys, FS Keyboard (Initial Touch/Aftertouch)
+Tone Generator block.	Tone Generator	AWM2 (complying with the Modular Synthesis Plug-in System)
+	Polyphony. 	128 notes plus the polyphony of the Plug-in Board (if installed)
+	Multi Timbral Capacity. 	16 parts (internal) plus 3 or more Plug-in Board parts (1 for each Single Plug-in Board;
+		16 for Multi Plug-in Board), Audio Input parts (A/D, AIEB2, mLAN*)    * 4 stereo parts.
+	Wave. 	175MB (when converted to 16- bit linear format), 1859 waveforms
+	Voice. 	Preset: 768 normal voices plus 64 drum kits.
+		GM: 128 normal voices plus 1 drum kit.
+		User: 128 x 2 (Bank1: Original, Bank2: Picked up from Preset).
+		          Normal Voice plus 32 drum kits. 
+	Plug-in Voice. 	Preset for the PLG150-AN/DX/PF/DR/PC: 64 
+		Preset for the PLG-150VL: 192
+		User: 64 for each Plug-in slot
+	Performance.	User: 128 (up to 4 parts)
+	Filter.	18 types
+	Effect System. 	Reverb x 20 types, Chorus x 49 types, Insertion (A, B) x 116 types x 8 blocks, Master Effect x 8 types, Master Equalizer (5 bands), Part EQ (3 bands, stereo), Plug-in Insertion (available when the PLG100-VH has been installed to slot 1)
+	Expandability.	3 Slots for Modular Synthesis Plug-in Boards.
+
+Sampling block (Available when DIMMs have been installed.)	Samples.	Up to 1024 Waveforms (Multi Samples)
+		Up to 128 Key Banks per Waveform
+		Up to 4096 Key Banks 
+	Sampling Source.	Analog input L/R, Stereo output (Resampling), Digital/Optical (available when the AIEB2 has been installed), mLAN (available when the mLAN16E has been installed)
+	A/D Conversion. 	20-bit, 64 x oversampling.
+	D/A Conversion. 	24-bit, 128 x oversampling.
+	Sample Data Bits. 	16.
+	Sampling Frequency.	44.1kHz, 22.05kHz, 11.025kHz, 5.5125kHz (Stereo/Mono).
+		Digital Sampling Frequency (when the AIEB2 has been installed) 48kHz, 44.1kHz, 32kHz. 
+		* Can be input, with converted to the Sampling Frequency of the MOTIF ES. 
+		Sampling Frequency via the mLAN (when the mLAN16E has been installed) 44.1kHz (fixed).
+	Sampling Memory.	Optionally installed, expandable to 512MB (256MB DIMM x 2 slots) * DIMMs are not installed to the instrument when shipped from the factory.
+	Sample Length. 	Mono: 32 MB.
+		Stereo: 64 MB.
+	Sampling Time.	44.1kHz: 6 min. 20 sec., 22.05kHz: 12 min. 40 sec., 11.025kHz: 25 min. 20 sec., 5.0125kHz: 55 min. 40 sec.  * Mono/Stereo.
+	Sample Format.	Original format, WAV, AIFF, A3000/4000/5000/SU700 format (loadable only), AKAI S1000/S3000 format (loadable only)
+Sequencer block.	Note Capacity 	Approx. 226,000 notes.
+	Note Resolution.	480 ppq (parts per quarter note) 
+	Maximum Polyphony. 	124 notes.
+	Tempo. 	1 to  300
+	Recording type. 	Real time replace, Real time overdub (with the exception of the Pattern Chain), Real time punch (Song only), Step (with the exception of the Pattern Chain)
+	Tracks. 	Pattern Mode: 16 phrase tracks.
+		Pattern Chain Mode: Pattern track, Tempo track, Scene track.
+		Song Mode: 16 sequence tracks (Loop on/off can be set for each track), Tempo track, Scene track
+	Patterns. 	64 patterns (x 16 sections)
+		Measures: 256 maximum.
+	Phrases.	Preset Phrases: 687 phrases.
+		User Phrases: 256 per pattern.
+	Songs. 	64 songs.
+	Arpeggio.	Preset x 1787 types.
+		User x 256 types.
+		* MIDI Sync, MIDI transmit/receive channel, Velocity Limit, and Note Limit can be set. 
+	Scene Memory.	5 per Song.
+	Scequence Format.	Original format, SMF format 0, 1 (Format 1 load only).
+Others.	Master. 	User: 128.
+		* 4 Zones (Master keyboard settings), Assignable Knob/Slider settings, Program Change Table
+	Sequence Software compatible with the Remote Control function. 
+	For Windows -  SQ01 V2, Cubase SX, SONAR 2.0, Multi Part Editor for MOTIF-RACK, Multi Part Editor for MOTIF ES.
+	For Macintosh -  Logic 5.5, Digital Performaer 3.1.
+	Controllers.	Pitch Bend wheel, Modulation wheel, Ribbon Controller, Assignable Control Sliders (4), Assignable Knobs (4), Data dial.
+	Display.	240 x 64 dot graphic backlit LCD .
+	External Memory0	SmartMedia (3.3V)
+		* Up to 128MB can be used. 
+	Connectors.	OUTPUT L/MONO, R (standard phone jack)
+		ASSIGNABLE OUTPUT L, R (standard phone jack)
+		AD INPUT L, R (standard phone jack)
+		PHONES (standard stereo phone jack)
+		FOOT CONTROLLER 1, 2
+		FOOT SWITCH x 2 (SUSTAIN, ASSIGNABLE)
+		BREATH, MIDI IN/OUT/THRU, USB (TO HOST, TO DEVICE), AC INLET
+	Power Consumption.	38W. 
+	Dimensions, Weight.	MOTIF ES8: 1,458 (W) x 465 (D) x 167.4 (H)mm, 28.3kg.
+		MOTIF ES7: 1,255 (W) x 394 (D) x 136.4 (H)mm, 19.2kg
+		MOTIF ES6: 1,048 (W) x 394 (D) x 136.4 (H)mm, 16.5kg
+	Accessories.	AC Power cord, CD-ROM x 3, Owner's Manual (this book), Data List, Installation Guide.
+
+*Specifications and descriptions in this owner's manual are for information purposes only. Yamaha Corp. reserves the right to change or modify products or specifications at any time without prior notice. Since specifications, equipment or options may not be the same in every locale, please check with your Yamaha dealer. 		
+
+
+This is the end of the file.
+

@@ -1,0 +1,346 @@
+Sampling mode.		
+
+Creating samples - basic procedure.		
+In the Sampling mode, the following three types of data can be created.		
+	  Waveform.	Created by recording a sample. 
+	  Sample Voice.	Created by recording a sample (depending on the settings before recording) in the Sampling mode entered from the Song mode/Pattern mode. The resulting Waveform can be assigned to a Sample Voice. 
+	  User Voice.	Created by recording a sample (depending on the settings before recording) in the Sampling mode entered from the Voice mode/Performance mode. The resulting Waveform can be assigned to a User Voice. 
+After creating the data described above, save them to a SmartMedia/USB storage device in the File mode. Sample Voices that are assigned to Song tracks can be saved along with Song data. When saving Song data (that includes Sample Voices) or User Voice data, all Waveforms assigned to the data will be saved automatically. Waveforms assigned to the Sample Voices or User Voices will be saved together automatically. Waveforms which are not assigned to any Song or Voice data should be saved individually as Waveforms.		
+
+IMPORTANT:	The Sampling mode is available only when optional DIMMs (page 289) have been installed to the MOTIF ES.	
+<Caution>	The waveforms created in the Sampling mode reside temporarily in the optionally installed DIMMs (page 187). Because data contained in DIMM is lost when the power is turned off, you should always save the waveforms created by recording, editing, and using Jobs to a SmartMedia/USB storage device before turning off the power. For information on how to save, see page 97. 	
+
+Sampling Record mode.		[INTEGRATED SAMPLING].
+In this mode, you can record sounds to this synthesizer (for example, your voice, a guitar, or sounds from a CD), edit them, and use them to create voices you can play from the keyboard. Or, if you enter this mode from the Song or Pattern mode, the sounds you record (commonly called "sample") can be assigned to the tracks and played back automatically with the song or pattern. What's more, by using the Resampling function, you can create new samples from your edits, or make samples from the sounds of this synthesizer itself.		
+
+
+When entering the Sampling mode from the Voice mode/Performance mode.		
+In this case, you can create a Waveform or User Voice by recording sounds input from external devices such as a microphone and audio equipment. 		
+
+[F1] DEST (Destination).		
+From this display you can determine the destination location to which the recorded sample will be stored.		
+	Waveform.	Determines the Waveform number to which the recorded sample is assigned.
+	Settings:	001 to 1024.
+	Keybank.	Determines the note number located at the center of the Key Bank.
+	Settings:	C-2 to G8.
+
+	NOTE.	For details about Waveform and Key Bank, see page 173. 
+
+	Part.	Determines the Performance Part to which the recorded sample is assigned. This is available only when entering the Sampling mode from the Performance mode. When set to "off," only the Voice will be created by sampling.
+	Settings:	off, 1 to 4.
+	Voice.	The recorded sample can be stored as a User voice. This parameter determines the User voice bank and number to which the recorded sample is assigned.
+
+	NOTE.	When this is set to "---," only a Waveform is created; the sample is not stored as a User voice. The sample is stored to the smallest numbered Waveform available. If you wish to hear the new sample, go to the WAVE display ([VOICE] -> Voice selection -> [EDIT] -> Element selection -> [F1] OSC -> [SF1] WAVE) or KEYBANK display ([INTEGRATED SAMPLING] -> [EDIT] -> [F1] KEYBANK) and search through the User Waveforms to find the desired sample.
+
+	Key.	Available only when the User voice bank is set to UDR (User Drum). This parameter lets you determine the key to which the sample obtained via the Sampling feature will be assigned. 
+	Settings:	C0 to C6
+
+[F2] SOURCE. 		
+From this display you can set parameters related to the audio source. 		
+	Type.	Determines the Sampling type. Keep in mind that this parameter is fixed to "sample" when entering the Sampling mode from the Voice/Performance mode.
+	Source.	Determines the recording source. 
+	Settings:	A/D, resample, AIB2, mLAN1 to 4.
+		A/D...	 Analog audio from the A/D INPUT jacks is recognized as the recording source.
+		resample...	 The audio signal produced from the instrument when you play the keyboard along with the Audio Input part (in other words all the audio signals output from the OUTPUT jacks) is recognized as a recording source and "resampled.
+		AIEB2...	 Digital audio from the DIGITAL IN terminal or OPTICAL IN terminal (with optional AIEB2) is recognized as the recording source.
+		mLAN1 to 4...	 The mLAN connector (with optional mLAN16E) is recognized as the recording source."
+	Next	"Determines whether multiple samples can be recorded without exiting from the Record mode (on) or not (off). When you wish to assign individual samples to the keys one by one to create a Drum Voice, set this parameter to on.  Keep in mind that the Next parameter may be fixed to ""off"" and cannot be changed.  This occurs when you enter the Sampling mode from the Voice mode/Performance mode, set the Voice to something other than ""off"" in the [F1] DEST display, and set the Source (above) to ""resample"" in the [F2] SOURCE display. 
+
+	Mono/Stereo.	Determines whether new samples will be recorded as stereo or mono samples.
+	Settings:	monoL, monoR, monoL plus R, stereo.
+		L mono...	 The L-channel signal will be recorded as a mono sample.
+		R mono...	 The R-channel signal will be recorded as a mono sample.
+		L plus Rmono...	 The L-channel and R-channel signals will be mixed and recorded as a mono sample.
+		stereo...	 A stereo sample will be recorded.
+
+	Frequency (Sampling Frequency).	Specifies the sampling frequency. The rate at which digital readings are taken is referred to as the sampling frequency. Higher sampling frequencies result in higher quality sound, but use up more memory.
+	Settings:	44.1k (44.1 kHz), 22.0kLo (22.05 kHz Lo-Fi), 11.0kLo (11.025 kHz Lo-Fi), 5.5kLo (5.5125 kHz Lo-Fi).
+
+	NOTE.	When the Source is set to any of mLAN1 to 4 and the mLAN terminal is used as an audio input, the Frequency is fixed to 44.1 kHz and cannot be changed.
+	NOTE.	At settings other than 44.1 kHz, the sound monitored during recording may be different from the recorded sound, depending on the source signal.
+
+[F6] REC.		
+Even if you press the [F6] REC button, recording (sampling) will not start immediately. Set various parameters such as Trigger Mode in the Sampling Standby display, then start the actual sampling according to the settings. 		
+
+STANDBY (Sampling Standby).		Press the [REC] button to enter the Sampling Standby display. From this display you can turn the Confirm function on or off by pressing the [F2] CONFM button as well as set parameters listed below. For details on the Confirm function, refer to page 95 in the Quick Guide section.
+	TrggrMode (Trigger Mode).	Specifies the method by which sampling will be triggered.
+	Settings:	level, manual.
+		level...	 When this is selected, press the [F6] REC button to enable the Trigger Waiting condition. Sampling will then begin as soon as an input signal exceeding the specified trigger level is received. When this is selected, you need also set the Trigger Level (1 to 127). 
+		manual...	  When this is selected, sampling will begin as soon as the [F6] START button is pressed, regardless of the input signal level. 
+	Key.	This is the same parameter as Keybank in the [F1] DEST display. 
+	RecMonitor (Recording Monitor).	Determines the output level of the monitor for the input signal. This monitor signal is output from the PHONES jack or the OUTPUT R and L/MONO jacks. This has no effect on the recording level.
+	Settings:	0 to 127.
+	RecGain (Recording Gain).	Determines the recording gain when resampling. This parameter is available only when the Source is set to "resample."
+	Settings:	 minus 12dB to plus 12dB.
+
+WAITING (Trigger Waiting).		When Trigger Mode is set to "level" in the Sampling Standby display, press the [F6] REC button again to enter the Trigger Waiting condition; the [F6] menu changes to "STOP." In this status, sampling will begin as soon as an input signal exceeding the specified trigger level is received. Before recording starts, press the [F6] STOP button or [EXIT] button to return to the Sampling Standby display.  Keep in mind that the Confirm function can also be turned on or off by using the [F2] CONFM button in the Trigger Waiting condition.
+
+RECORDING .		During recording, press the [F6] STOP button or [EXIT] button to stop the sampling. 
+After sampling (recording) stops:		The following menus appear only when the Confirm function is turned on. 
+	[F3] AUDITION.	Pressing this lets you hear the sample obtained by recording (sampling).
+	[F4] CANCEL.	Pressing this deletes the sample obtained by recording (sampling) and return to the Sampling Standby display. 
+	[F5] OK.	Pressing this stores the sample obtained by recording (sampling) to the specified destination.
+
+
+
+When entering the Sampling mode from the Song mode/Pattern mode.		
+
+In this case, you can create a Waveform or Sample Voice by recording sounds input from external devices such as a microphone and audio equipment. 		
+
+[F1] DEST (Destination).		
+From this display you can determine the destination location to which the recorded sample will be stored. 		
+	Track.	Determines the track number to which the recorded sample is assigned.
+	Settings:	1 to 16.
+	Keybank.	Determines the note number located at the center of the Key Bank. This parameter is available only when the Sampling type is set to "sample" or "sample plus note" (in the Type parameter below).
+	Settings:	C-2 to G8.
+
+[F2] SOURCE. 		
+From this display you can set parameters related to the audio source.		
+	Type.	Determines the Sampling type. When entering the Sampling mode from the Song/Pattern mode, the data created by  Sampling varies depending on this setting. 
+	Settings:	sample, sample plus note, slice plus seq.
+		sample...	  Only sample (wave) data is created.
+		sample plus note...	 In addition to sample data, the appropriate note data for playing the sample is created and recorded to the track specified in the [F1] DEST display.
+		slice plus seq...	 The recorded sample is automatically divided into ""slices,"" and these are assigned to successive notes on the keyboard. 
+
+	NOTE.	Detailed settings (meter, measure number etc,) are specified in the Slice display after sampling.
+	Source.	Determines the recording source.  Same as in the Sampling mode from the Voice mode/Performance mode. See above. 
+
+	Next.	Determines whether multiple samples can be recorded without exiting from the Record mode (on) or not (off). When you wish to assign individual samples to the keys one by one to create a Drum Voice, set this parameter to on.  Keep in mind that this parameter is fixed to off when the Source is set to "slice plus seq."
+	Mono/Stereo.	Determines whether new samples will be recorded as stereo or mono samples. Same as in the Sampling mode from the Voice mode/Performance mode. See above. 
+	Frequency  (Sampling Frequency).	Specifies the sampling frequency. Same as in the Sampling mode from the Voice mode/Performance mode. See above. 
+
+[F6] REC.		
+Even if you press the [F6] REC button, recording (sampling) will not start immediately. Set various parameters such as Trigger Mode in the Sampling Standby display, then start the actual sampling according to the settings.		
+STANDBY (Sampling Standby).		"Press the [REC] button to enter the Sampling Standby display. From this display you can turn the Confirm function on or off by pressing the [F2] CONFM button as well as set parameters listed below. For details about the Confirm function, refer to page 95 in the Quick Guide section.  Please keep in mind that the Confirm function is not available when the Type in the [F2] SOURCE display is set to ""slice plus seq."
+	TrggrMode (Trigger Mode).	Specifies the method by which sampling will be triggered.
+	Settings:	level, meas, manual.
+		level Same as in the Sampling mode from the Voice mode/Performance mode. See above. 
+		meas (measure) This should be set together with the Punch-in/out measure. After the [F6] START button is pressed, sampling will begin at the specified punch-in measure, and end at the specified punch-out measure. Sampling will also stop when the Song/Pattern is stopped by pressing the [  ] (Stop) button. 
+		"manual  Same as in the Sampling mode from the Voice mode/Performance mode. See above. "
+	Key.	This appears when Type in the [F2] SOURCE display is set to something other than "slice plus seq." This is the same parameter as Keybank in the [F1] DEST display. 
+	RecMonitor (Recording Monitor).	Determines the output level of the monitor for the input signal. This monitor signal is output from the PHONES jack or the OUTPUT R and L/MONO jacks. This has no effect on the recording level."
+	Settings:	0 to 127.
+	RecGain (Recording Gain).	Determines the recording gain when resampling. This parameter is available only when the Source is set to "resample."
+	Settings:	 minus 12dB to plus 12dB.
+
+WAITING (Trigger Waiting or Punch-in Waiting).		When Trigger Mode is set to "level" in the Sampling Standby display, press the [F6] REC button again to enter the Trigger Waiting condition; the [F6] menu changes to "STOP." In this condition, sampling will begin as soon as an input signal exceeding the specified trigger level is received.  When the Trigger Mode is set to "meas" in the Sampling Standby display, press the [F6] REC button again to enter the Punch-in Waiting condition; the [F6] menu changes to "STOP." In this condition, sampling will begin as soon as a song or pattern playback reaches the punch-in measure.  Before recording starts in either condition, press the [F6] STOP button or [EXIT] button to return to the Sampling Standby display. Keep in mind that the Confirm function can be tuned on or off by using the [F2] CONFM button also in the Trigger Waiting or Punch-in Waiting condition if the Sampling type is set to other than "slice plus seq."
+
+RECORDING.		During recording, press the [F6] STOP button or [EXIT] button to stop sampling.
+After sampling (recording) stops:		The following menus appear when the Sampling type is set to "sample" or "sample plus note" and the Confirm function is turned on. 
+	[F3] AUDITION.	Pressing this lets you hear the sample obtained by recording (sampling). 
+	[F4] CANCEL.	Pressing this deletes the sample obtained by recording (sampling) and return to the Sampling Standby display.
+	[F5] OK.	Pressing this stores the sample obtained by recording (sampling) to the specified destination. 
+
+TRIM/SLICE display after sampling stops.		If you've entered the Sampling Record mode for the Song or Pattern mode and you've set the sampling type to "slice plus seq," you should set the following Slice related parameters after the Sampling stops.  Please note that the Confirm function is not available in this case. 
+
+	[F1] TRIM.	
+	The trim function makes it possible to specify the beginning and end points to be played back within an entire sample. You can also specify the tempo for the range of the looped playback and determine its beat.	
+	Start (Start Point).	Determines the Start point for the sample playback.
+	Loop (Loop Start Point).	Determines the Top point of the loop playback (the point where the loop begins) within the range of the entire sample.
+	End (End Point).	Determines the End point of the loop playback within the range of the entire sample.
+	Beat.	Indicates the (beat) and tempo of the range from the Loop Start Point to the End Point. 
+	[SF1] AUDITION.	Press the [SF1] button to sound the recorded sample according to the settings in this display.
+	[SF2] LP equal ST.	When the menu indication here is "LP equal ST," the Start (Start Point) and the Loop (Loop Start Point) will share the same address, meaning that both of them will be changed simultaneously, even if just one of them is changed.  Pressing the [SF2] button in this condition changes the menu from "LP equal ST" to "LP equal ST."  When the menu indication here is "LP equal ST," the Start (Start Point) and the Loop (Loop Start Point) can be changed independently.  When pressing the [SF2] button in this condition, the address value of the Start will be copied to that of the Loop, with the result that both of them will have the same address value.  The menu indication also changes from "equal" to "LP equal ST."
+	[SF3] SET END.	Pressing this calls up the display for determining the End Point, from which you can set the tempo, beat, and measure for the sample. Press the [ENTER] button to actually set End Point. If you are satisfied with the results (press [SF1] to audition the sample), press the [F6] OK button to return to the original display. Doing this stores your edited sample to the DIMM memory. To return to the original display without changing the data, press the [F5] CANCEL button.
+	[SF4] EXTRACT.	Delete all unnecessary sample data located ahead of the Start point and located after the End point) by pressing the [SF4] button.
+	[F5] ZOOM minus.	Press the [F5] and [F6] buttons to zoom in and out of the wave display.
+	[F6] ZOOM plus.	
+	[F2] SLICE.	
+	This powerful feature lets you automatically divide the recorded sample into separate "slices." These slices are then assigned to successive notes and arranged as sequence data. 	
+
+	NOTE.	Before executing the Slice operation, you'll need to accurately adjust the length of the sample. Use the [SF1] AUDITION button in the [F1] TRIM display to loop the sample and precisely set the Start and End points as required.
+
+	After specifying the following parameters, press the [ENTER] button. (The display prompts you for confirmation.) Press the [INC/YES] button to execute the Slice. You can hear and confirm the sliced samples by pressing the [SF1] AUDITION button. If you are satisfied with the result of the operation, press the [F6] OK button to store the result of the Slice operation and go back to the Sampling Setup display. If not, press the [F5] CANCEL button to go back to the Sampling Setup display without storing the result. 	
+	Type (Slice Type).	Specifies how the sample is sliced, and to some extent determines the resulting sound quality. Select the type that best suits the original phrase.
+	Settings:	beat1 to 3, phrase1 to 4, quick.
+		beat1 to 3...	 This slice type is suited for percussive phrases such as drums or bass with a fast attack and short decay. Three variations are provided.
+		phrase1 to 4...	 Ideal for phrases containing cymbals or other instruments with a long decay. Four variations are provided. 
+		quick...	 Regardless of the phrase content, the sample is divided at the specified note sub-divisions. The number of slices per measure is calculated by multiplying the top number of the Meter (time signature) parameter by the bottom number of the SubDivide parameter.
+
+	NOTE.	For helpful hints on getting the Slice Type parameter to work for different samples, see "Tips for using the Slice Types" on page 259.
+
+	Measure.	Determines the number of measures in the sample to be sliced. When the slice operation is executed, sequence data corresponding to the specified number of measures is created. The sequence data is created from the beginning of the current measure at which sampling is started. 
+	Settings:	1 to 8.
+	Meter.	Specifies the meter (time signature) of the sample. The setting here is the basic slice unit.
+	Settings:	1/16 to 16/16, 1/8 to 16/8, 1/4 to 8/4.
+	SubDivide.	The Meter parameter sets the basic slice unit, and SubDivide specifies even finer resolution for phrases containing regions with shorter notes. For the phrase shown at right, for example, the Meter should be set to 4/4 and SubDivide to 1/2. 
+	Settings:	
+		When Meter is set to 1 to 8/4...	 quarter note (1/1), 8th note (1/2), 4th note triplet (1/3), 16th note (1/4), 8th note triplet (1/6), 32nd note (1/8), 16th note triplet (1/12).
+		When Meter is set to 1 to 16/8 ...	 8th note (1/1), 16th note (1/2), 8th note triplet (1/3), 32nd note (1/4), 16th note triplet (1/6)
+		When Meter is set to 1 to 16/16...	 16th note (1/1), 32nd note (1/2), 16th note triplet (1/3)
+
+	NOTE.	This parameter has no effect when the Slice Type parameter is set to beat 1 to 3.
+	NOTE.	The maximum slice resolution for stereo samples is 64 slices, and for mono samples 128 slices.
+
+	Sens (Envelope Sensitivity).	Further adjusts the sub-divisions specified by the SubDivide parameter. Higher values result in higher resolution, allowing even finer notes and smaller sounds to be detected and sliced. Use the Audition function (press [SF1]) to hear the results, and if you're not satisfied with them, change the setting and try again.
+	Settings:	1 to 5.
+	NOTE	This parameter has no effect when the "quick" slice type is selected.
+
+
+
+Sampling Edit mode.		[INTEGRATED SAMPLING] -> [EDIT].
+This mode gives you a variety of sample editing tools, with which you can change the samples you've recorded in the Sampling Record mode, and customize them for your applications as needed. 		
+
+NOTE.	For samples that have been recorded in stereo (with Stereo Sampling), both the left and right waves of the sample are edited together. In the actual process, any edits made to the left channel wave are duplicated exactly in the right channel. The exception to this, of course, is Pan - since the sample already is in stereo.	
+NOTE.	Unlike in the Sampling Record mode, all parameters and functions of the Sampling Edit mode are the same, no matter which mode was previously selected.	
+NOTE.	All Sampling Edit operations apply to the Waveform (actual sample), not the voice.	
+
+[F1] KEYBANK.		
+From this display you can determine the destination location to which the recorded sample will be stored. 		
+	Waveform.	Select a Waveform that contains a Sample you wish to edit. Move the cursor to the Waveform number and select the desired number by using the [INC/YES] button, [DEC/NO] button, or the data dial.  To select the desired Key Bank, simultaneously hold down the [INFORMATION] button and press the appropriate key on the keyboard. Press the [SF2] SELECT button to call up in order the Samples assigned to the selected Key Bank.
+	Keybank.	Indicates information about the selected Key Bank. The Key Range and Velocity Range (which cannot be edited here) can be edited in the [F4] RANGE display. 
+	[SF1] AUDITION.	You can hear (audition) the selected sample by pressing the [SF1] button.
+	[SF2] SELECT.	Press the [SF2] button to call up in order the Samples assigned to the selected Key Bank.
+
+	NOTE.	The [SF1] AUDITION and [SF2] SELECT buttons can be used in the same way also with other displays in the Sampling Edit mode and the Sampling Job mode. 
+
+[F2] TRIM.		
+This operation is the same as in the Sampling Record mode (when Sampling Type is set to "slice plus seq"). See page 253. 		
+[F3] PARAM (Parameter).		
+	Level.	Determines the output level of the selected sample.
+	Settings:	 minus 94.5dB to  minus 0.0dB.
+	Pan.	Determines the stereo position of the selected sample. Please note that this is not available for samples recorded in stereo. 
+	Settings:	L64 (far left) to C (center) to R63 (far right).
+	PlayMode.	Determines how the selected sample is to be played back.
+	Settings:	oneshot, reverse, loop.
+		oneshot...	 The Sample plays back one time from Start point to End point.
+		reverse...	 The Sample plays back one time in reverse from End point to Start point.
+		loop...	 Sample playback begins from the Start point, continues to the Loop point, then repeats indefinitely between the Loop point and End point.
+
+	NOTE.	For details on the above settings, see page 176.
+
+	OriginalKey.	Determines the base key for the sample. Since the sample will be pitched shifted for keys played around this base key, this should be set as close as possible to the original pitch or note value of the actual sample.
+	Settings:	C - 2 to G8.
+	FineTune.	Determines the fine tuning for the pitch of the sample.
+	Settings:	minus 100 cent to 0 cent to 99 cent
+	[SF1] AUDITION.	You can hear (audition) the selected sample by pressing the [SF1] button.
+	[SF2] SELECT.	Press the [SF2] button to call up in order the Samples assigned to the selected Key Bank.
+
+[F4] RANGE.		
+From this display you can set the Key Range and the Velocity Range for the sample assigned to the selected Key Bank. Note that both the Key range and Velocity range values are graphically indicated in the display.		
+
+	NOTE.	When the cursor is at one of the Key Range values, you can directly set the Key Range parameter from the keyboard. (Simultaneously hold down the [INFORMATION] button and press the appropriate key on the keyboard.) 
+
+	[SF1] AUDITION.	You can hear (audition) the selected sample by pressing the [SF1] button.
+	[SF2] SELECT.	Press the [SF2] button to call up in order the Samples assigned to the selected Key Bank.
+
+
+
+Sampling Job mode.		[INTEGRATED SAMPLING] -> [JOB].
+The Sampling Job mode contains a comprehensive set of editing tools and functions you can use to change the sound of the sample you've created and edited in the Sampling Edit mode. It also includes a variety of convenient operations, such as copying or erasing data.  After setting parameters as required in the selected display, press the [ENTER] button to execute the Job. 		
+
+NOTE.	Unlike in the Sampling Record mode, all parameters and functions of the Sampling Job mode are the same, no matter which mode was previously selected. The only exception to this is the Slice Job ([F1] ->12 below), which varies depending on whether the previously selected mode was Voice/Performance or Song/Pattern.	
+NOTE.	All Sampling Job operations apply to the Waveform (actual sample), not the Voice.	
+
+
+[F1] KEYBANK (Key Bank Job).		
+Before executing the Key Bank Job by pressing the [ENTER] button, you'll need to specify the Waveform and Key Bank.  First, select the desired Waveform by moving the cursor to the 4-digit number in the display and change it by using the [INC/YES] and [DEC/NO] buttons or the data dial. Second, move the cursor to the Key value, select the desired key by using the [INC/YES] and [DEC/NO] buttons or the data dial, then use the [SF2] SELECT button to select in order the Key Bank (sample) assigned to the selected key. You can select the desired key also by pressing the note on the keyboard directly while holding the [INFORMATION] button. As in the Sampling Edit mode, the [SF1] AUDITION button lets you hear the sample assigned to the selected Key Bank. 		
+01: Copy.		This Job copies the data of a sample contained in a specified Key Bank to another Key Bank. After specifying the source Waveform and Key Bank as well as the destination Waveform and Key Bank, press the [ENTER] button to execute the Copy Job.
+02: Delete.		This Job deletes the specified Key Bank and its sample. After specifying the Waveform and Key Bank, press the [ENTER] button to execute the Delete Job. If the Key Bank is set to "all" and the Job is executed, all the samples of the selected Waveform are deleted.
+
+	NOTE.	If all the samples of the specified Waveform are deleted, the Waveform itself is deleted.
+
+03: Extract.		This Job deletes all unnecessary sample data (located ahead of the Start point and located after the End point). In effect, it extracts only the sample data you want to use, trimming all unneeded sound from the start and end of the sample.  After specifying the Waveform and Key Bank, press the [ENTER] button to execute the Extract Job. If the Key Bank is set to "all" and the Job is executed, this Job is applied to all the samples of the selected Waveform."
+04: Move.		This Job lets you move a sample contained in a specified Key Bank to another Key Bank. This would be useful for creating a new Waveform from the samples of various other existing Waveforms.  After specifying the source Waveform and Key Bank as well as the destination Waveform and Key Bank, press the [ENTER] button to execute the Move Job.
+
+	NOTE.	If the last remaining sample is moved from the source Waveform, the source Waveform itself is deleted. 
+
+05: Normalize. 		This Job maximizes (normalizes) the overall level of the specified sample. The "100" (100 percent) setting is a quick and convenient way to boost the level of an entire sample, to make it as loud as possible without distorting.  After specifying the Waveform and Key Bank, then press the [ENTER] button to execute the Normalize Job. "
+<Figure>
+Press the [F5] (CANCEL) button to cancel the operation.
+Press the [F6] (OK) button to assign the normalized sample to the specified Key Bank.
+Press the [ENTER] button to execute the operation. If you are not satisfied with the results, change the Ratio value and press the [ENTER] button again. This automatically reverts back to the original settings and executes the operation again with the new settings.
+
+	Ratio.	Specifies the post-normalization sample level. A setting of 100 percent maximizes the level so that the highest peak level in the sample is just below clipping (maximum digital signal level). Settings below 100 percent reduce the level of the sample accordingly. Settings higher than 100 percent will raise the sample level above the maximum, producing deliberate clipping.
+	Settings:	001 to 800 percent.
+
+06: Time-Stretch.		This Job lets you change the length of the sample without changing the pitch. The basic steps in using this Job are the same as in 05: Normalize explained above.
+	Ratio.	Determines the length of post-process sample as a ratio of the length of the original sample (100 percent). Lower values compress the sample, while higher values expand the sample.
+	Settings:	0 to 400 percent.
+	Accuracy.	Determines the quality of the resulting sample by specifying which aspect of the original is to be emphasized: sound quality or rhythmic feel. 
+	Settings:	sound4 to sound1, normal, rhythm1 to rhythm 2
+		sound4 to sound1 These settings place emphasis on sound quality, with the "SOUND 4" setting producing the highest sound quality.
+		normal  Produces an optimum balance of sound quality and rhythmic feel.
+		rhythm1 to rhythm 2 These settings place emphasis on rhythmic feel, with the "Rhythm 2" setting producing the most accurate rhythmic feel.
+
+07: Convert Pitch.		This Job lets you change the pitch of the sample without changing the length.
+The basic steps in using this Job are the same as in 05: Normalize explained above. 		
+	Pitch.	Determines the amount and direction of pitch shift in semitone increments.
+	Settings:	minus 12 to 0 to plus 12.
+	Fine.	Determines the amount and direction of fine pitch shift in cent increments (1 cent equal 1/100th of a semitone).
+	Settings:	minus 50 to 0 to plus 50.
+
+08: Fade In/Out.		This Job lets you create fade-ins and fade-outs for the sample. The basic steps in using this Job are the same as in 05: Normalize explained above. 
+	Type.	Determines the type of level fade: fade-in or fade-out.
+	Settings:	in (fade-in), out (fade-out).
+	Length.	Determines the length of the fade-in or fade-out. When a fade-in is selected, this parameter specifies the length of the fade starting at the specified Start point. When a fade-out is selected, this parameter specifies the length of the fade starting at the beginning of the fade and ending at the specified End point.
+	Settings:	0000000 to End point.
+
+09: Convert Freq (Convert Frequency).		This Job lets you halve the sampling frequency of the specified sample. This can be used to convert hi-fi samples to a lo-fi sound, and reduce the sample size by half to conserve memory.  The basic steps in using this Job are the same as in 05: Normalize explained above. 
+
+10: Stereo to Mono.		This Job lets you convert a stereo sample to a mono sample. The basic steps in using this Job are the same as in 05: Normalize explained above. 
+	Type.	Determines which channel, or both channels, of the stereo sample will be converted to a mono sample.
+	Settings:	L plus R>mono, L>mono, R>mono.
+		L plus R>mono...	 The left and right channels of the stereo sample are mixed and converted to a mono sample. 
+		L>mono...	 The left channel of the stereo sample is converted to a mono sample.
+		R>mono...	 The right channel of the stereo sample is converted to a mono sample.
+
+11: Loop-Remix.		This Job lets you automatically cut the sample into separate "slices" and randomly rearrange the slices for special effects and unusual rhythmic variations. A variety of audio transform operations are also included for even greater changes in the sound.  The basic steps in using this Job are the same as in 05: Normalize explained above. 
+	Type.	Determines the degree to which the looped portion of the sample will be sliced.
+	Settings:	1 to 4.
+	Variation.	Determines how the original sample is varied by the this Job.
+	Settings:	normal1 to 2, reverse1 to 2.
+		normal1 to 2 These settings slice and rearrange the sample data, without performing any other audio changes.
+		reverse1 to 2 In addition to slicing and rearranging, these settings reverse the playback of some of the slices. 
+
+12: Slice.		This Job lets you divide the sample into separate "slices," the number of which is determined by the note length (with Measure, Meter, and SubDivide).  When entering this Job from the Song/Pattern mode, note data for playing the slices in sequence is also created. (Keep in mind that the results of this Job vary depending on the previously selected mode: Voice/Performance or Song/Pattern.) The basic steps in using this Job are the same as in 05: Normalize explained above.  With the exception of the parameter below, all parameters and settings are the same as in the Slice display of the Sampling Record mode (page 254).
+	Lowest Key.	Specifies the lowest key number from which the sliced samples are assigned in order.
+	Settings:	C - 2 to G8.
+
+	NOTE.	In the Slice display of the Sampling Record mode (page 254), this parameter is fixed to "C-1" for the MOTIF ES6, "E0" for the MOTIF ES7, and "A-1" for the MOTIF ES8, and cannot be set.
+
+[F2] WAVEFORM (Waveform Job).		
+01: Copy.		This Job lets you copy the data of one Waveform to another. After specifying the source Waveform and destination Waveform, press the [ENTER] button to execute the Copy Job. 
+02: Delete.		This Job lets you delete a specific Waveform from memory.
+03: Transpose.		This Job lets you transpose the Key bank setting of a specified Waveform.
+	Octave.	Determines the amount in octaves by which the Key Bank is transposed. When you want to transpose by less than one octave, set this to "0" and use the Note parameter below.
+	Settings:	minus 3 to 0 to plus 3.
+	Note.	Determines the amount in semitones by which the Key Bank is transposed. When you want to transpose by exact octaves, set this to "0" and use the Octave parameter above.
+	Settings:	minus 11 to 0 to plus 11.
+04: Name.		"This Job lets you assign a name to the selected Waveform. For specific instructions on naming, refer to page 53 in the Basic Operation section.
+
+[F3] OTHER.		
+01: Clean Up Memory.		This Job deletes all the waveforms to which User voices or Sample voices are not assigned.
+02: Optimize Memory .		This Job optimizes the memory (DRAM) for sampling.
+03: Delete All. 		This Job deletes all the waveforms.
+04: Convert to Drum Voice.		This Job lets you convert the selected waveform to a specific Drum voice. 
+
+
+Supplementary.
+
+Tips for using the Slice Types3.
+
+  Slicing percussive phrases having short decays.
+First, try slicing using "beat1." If the result has a weak attack or the release portions of the phrase seem to overlap, try again using "beat2." Try adjusting the envelope sensitivity for finer control. 
+If after using "beat1" the attack portions overlap or the overall rhythmic feel is degraded, try again using "beat3." Use the SubDivide parameter to adjust the slice resolution, and make final adjustments with the Envelope Sensitivity parameter. 
+  Slicing phrases having long decays.
+First, try slicing using "phrase1." If the result has a weak attack or the release portions of the phrase seem to overlap, try again using "phrase2." Use the SubDivide parameter to adjust the slice resolution, and make final adjustments with the Envelope Sensitivity parameter.
+If after using "phrase1" the points between the slices sounds rough and the overall feel is choppy, try again using "phrase3" or "phrase4" and set SubDivide to a finer resolution. Make final adjustments with the Envelope Sensitivity parameter. The "phrase3" setting is generally best for sustained strings or brass type sounds with no vibrato - in other words, the pitch remains constant. It can also produce echo-like effects when applied to percussive phrases with short decay. The "phrase4" setting is generally best for sustained strings or brass type sounds with vibrato, as well as vocal phrases.
+
+Wave Memory Required for Slice Operations.
+Individual wave data slices created through slice operations require approximately 1.5 times the original memory because a tail section is automatically added and fade-in and fade-out sections are automatically created at the beginning and end of the wave data. This helps to maintain maximum sound quality when the tempo is increased, and results in smoother connections between slices (no tail section is created when the "quick" slice type is selected).
+A memory work area is required for the processing calculations carried out for each slice operation, as well as sufficient memory to hold the completed waveforms. When the sampling frequency is 44.1 kHz, the approximate amount of memory (expressed in kilobytes) required for each slice type is listed below. 
+
+beat1:	Original wave size x N plus (0.3 x number of slices)
+beat2:	Original wave size x N plus (0.2 x number of slices)
+beat3:	Original wave size x N plus (0.3 x number of slices)
+phrase1:	Original wave size x N plus (5.8 x number of slices)
+phrase2:	Original wave size x N plus (1.4 x number of slices)
+phrase3:	Original wave size x N plus (0.4 x number of slices)
+phrase4:	Original wave size x N v (1.4 x number of slices)
+quick:	Original wave size x 3 plus (0.7 x number of slices)
+
+For monaural samples N equal 5.5, and for stereo samples N equal 8. 
+Also, the number of slices is doubled for stereo samples. 
+
+This is the end of the file.

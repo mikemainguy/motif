@@ -1,0 +1,1179 @@
+Basic Structure.
+
+This section gives you an easy-to-understand overview of the MOTIF ES -- its wide range of sophisticated features, its MIDI control and performance functions, and its convenient file management system for original data you've created with the instrument.
+
+Internal Structure (System Overview)
+This synthesizer is made up of several blocks, as shown here.
+<Figure>
+Controller block.
+Sequencer block.	MIDI sequence data.
+. Song.
+. Pattern.
+. Arpeggio.
+Tone Generator block.	Internal AWM2 Plug-in board.
+. Voice.
+. Performance.
+Effect block.	DSP.
+. Reverb.
+. Chorus.
+. Master Effect.
+. Part Equalizer.
+. Master Equalizer.
+Sampling block.
+
+
+Controller Block.
+This block consists of the keyboard, Pitch Bend and Modulation Wheels, Ribbon Controller, Knobs, Control Sliders and so on. 
+The keyboard itself doesn't generate sounds, but instead generates/transmits note on/off, velocity and other information (MIDI messages) to the synthesizer's tone generator block when you play notes. The controllers also generates/transmits MIDI messages. 
+The synthesizer's tone generator block produces the sound according to the MIDI messages transmitted from the keyboard and controllers. 
+
+Controller supported by the MOTIF ES.
+The controllers you can use on this synthesizer and the reference pages are as follows: 
+
+  Controllers with which the MOTIF ES is equipped.
+Keyboard (Initial Touch, Aftertouch)	page 18.
+Pitch Bend Wheel	page 64.
+Modulation Wheel	page 64.
+Ribbon Controller	page 65.
+Knob (KN)	page 50.
+Control Slider (CS)	page 51.
+
+  Controllers (sold separately) that can be connected to the rear panel of the MOTIF ES.
+Foot Controller	page 42.
+Footswitch	page 42.
+Breath Controller	page 42.
+
+Controller related parameters in each mode.
+The chart below shows the operations for calling up the Controller related parameters in each mode.  Parameters for the Footswitch and the Assign Knobs A/B apply to the entire instrument, regardless of the selected program (Voice/Performance/Song/Pattern). 
+
+<Table>
+Voice mode.	Controller Set (for each Voice). 	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F4] CTL SET.		See below.
+	Assigning the Control Change number to each Controller (for all Voices).	[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF4] CTL ASN.	Page 262.
+Performance mode.	Assigning the Control Change number to each Controller (for each Performance).	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F4] CTL ASN.	Page 214.
+Song mode.	Assigning the Control Change number to each Controller (for each Song Mixing).	[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F4] CTL ASN.	Page 234.
+Pattern mode.	Assigning the Control Change number to each Controller (for each Pattern Mixing).	[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F4] CTL ASN.	Page 248.
+All modes.	Assigning the function and Control Change number to the Assign Knob A/B.	[UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN.	Page 263.
+	Assigning the function and Control Change number to the Footswitch (connected to the ASSIGNABLE connector).	[UTILITY] -> [F4] CTL ASN -> [SF3] FT SW	Page 263
+
+Controller Set.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F4] CTL SET.	Page 192.
+Aside from their default control parameters, the controllers of the instrument, such as the Pitch Bend wheel and the Modulation wheel, can be freely assigned to a variety of different parameters. For example, you could assign Resonance to the Modulation Wheel and set aftertouch to apply vibrato. These settings for all the controllers are referred to as a "Controller Set," and up to six Controller Sets can be created for each Voice.
+
+NOTE.
+You can set whether the controller affects each Element by setting the Element Switch on or off as desired. Note that this applies only to Normal Voices.
+NOTE.
+The Element Switch parameters are not available when a function unrelated to Elements (1 to 40) is set as the destination.
+
+  Source and Destination.
+"source" refers to the hardware controller and "destination" refers to the parameter or function being controlled.  An extensive variety of destination parameters are available, far more than those listed above.  For a complete list of destination parameters, see the separate Data List. 
+  Using one source to control several destinations.
+For example, set the Source parameter of Control Set 1 to MW (Modulation Wheel) and the Destination parameter to ELFO-PM (Element LFO Pitch Modulation Depth). Then set the Source parameter of Control Set 2 also to MW, but set the Destination parameter to ELM PAN (Element Pan). You will also need to specify the Element to be controlled and also the depth (amount) of control.
+In this example, when you move the Modulation Wheel upward, the amount of Pitch Modulation increases accordingly, and the Element is panned from left to right. In this way, you can have the sound change in several different ways, simply by adjusting a single controller.
+  Using several sources to control one destination.
+For example, set the Source parameter of Control Set 1 to MW (Modulation Wheel) and the Destination parameter to ELFO-PM (Element LFO Pitch Modulation Depth). Then set the Source parameter of Control Set 2 to FC (Foot Controller) and set the Destination parameter also to ELFO-PM (Element LFO Pitch Modulation Depth).
+Now, Pitch Modulation is assigned to both the Modulation Wheel and Foot Controller. In this way, you can have several different controllers affect the same aspect of the sound. This can be useful in live performance situations, letting you use any one of several controllers depending on which is convenient at the time.
+
+NOTE.
+The Controller Set edited in the Voice Edit mode is available when the corresponding Voice is selected in the Performance mode, Song mode, and Pattern mode. 
+NOTE.
+The function assigned to the Controller by the Controller Set function can be applied only to the internal tone generator block. Operating the Controller will transmit the MIDI message (Control Change Number assigned below) to the external MIDI instrument. 
+
+Assigning Control Change numbers to the controllers.
+The functions assigned to the controllers by the Controller Set function can be applied only to the internal tone generator block. For connected external MIDI instruments, use of the controllers generates MIDI Control Change messages, as shown in the chart below.
+
+<Table>
+Controller.	Generated MIDI message.	Display.
+Aftertouch.	Channel Aftertouch (DnH).	Ð
+Pitch Bend Wheel.	Pitch Bend (EnH).	Ð
+Modulation Wheel.	Control Change (BnH, 01H).	Ð
+Footswitch (connected to the SUSTAIN connector)* These Controllers are not used in the Controller Set function.	Control Change (BnH, 40H).	Ð
+ASSIGN Knob A, B* These Controllers are not used in the Controller Set function.	Control Change (BnH).	[UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN.
+Footswitch (connected to the ASSIGNABLE connector)* These Controllers are not used in the Controller Set function.	Control Change (BnH).	[UTILITY] -> [F4] CTL ASN -> [SF3] FT SW.
+Ribbon Controller.	Control Change (BnH).	[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF3] CTL ASN.
+ASSIGN Knob 1, 2.		[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F4] CTL ASN.
+Foot Controller 1, 2.		[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F4] CTL ASN.
+Breath Controller .		[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F4] CTL ASN.
+
+
+As shown above, the keyboard Aftertouch, Pitch Bend Wheel, Modulation Wheel, Footswitch connected to the SUSTAIN connector, were originally designed for a particular purpose, and send pre-defined MIDI Control Change messages when used, regardless of their Control Set allocations within the synthesizer. For example, when the pan function is assigned to the Pitch Bend Wheel with the Controller Set, using the Pitch Bend Wheel will apply the pan function to the internal tone generator and will transmit the Pitch Bend messages to the external MIDI instrument. 
+Using the other controllers will transmit the Control Change messages set from the display shown above to the external MIDI instrument while it will apply the functions set via the Controller Set to the internal tone generator block. 
+You can also set up a controller such that it sends one kind of Control message to the synthesizer's internal tone generator yet another kind to the external MIDI instrument. For example, in a Controller Set you could assign Resonance to the ASSIGN Knob 1. Then, in the Utility mode, you could assign Control Change Number 1 (modulation) to the same knob. Now, when you turn the knob, resonance will be applied to the sound of the internal tone generator block; however, at the same time, modulation messages will be transmitted to the external MIDI instrument. 
+
+Tone Generator block.
+The Tone Generator block is what actually produces sound in response to the MIDI messages generated by playing the keyboard, using the controllers, and the playback of the sequencer (Song/Pattern/Arpeggio). 
+<Figure>
+Tone Generator.
+OSC.
+Outputs the wave that makes up the sound.
+PITCH.
+Controls the pitch of the sound.
+FILTER
+Changes the tonal quality of the sound output from the PITCH unit.
+AMP.
+Controls the output level (amplitude) of the sound output from the FILTER unit. The signals are then sent at this level to the Effect block.
+To the Effect block.
+
+Internal AWM2 Tone Generator and optional Plug-in boards.
+The tone generator block in this synthesizer consists of the built-in AWM2 sound source and optional Plug-in Board(s). 
+<Figure>
+Internal AWM2 Tone Generator.
+Plug-in boards (optional)
+Up to three boards can be installed.
+
+  AWM2 (Advanced Wave Memory 2).
+AWM2 (Advanced Wave Memory 2) is a synthesis system based on sampled waves (sound material), and is used in many Yamaha synthesizers. For extra realism, each AWM2 Voice uses multiple samples of a real instrument's waveform. Furthermore, a wide variety of parameters -- envelope generator, filter, modulation, and others -- can be applied.
+You can also create your own waves (Samples) via microphone or from external audio equipment by using the Sampling function. These are then stored in internal memory (DRAM) and can be used just like the preset waves.
+  Plug-in Board.
+For details on using the optional Plug-in Boards for even more sounds, see page 74.
+
+Voice, Performance, and Mixing.
+This instrument features three different types of programs, that form the basis for creating and playing sounds.
+  Voice.
+A program that contains the sonic elements for generating a specific musical instrument sound is referred to as a "Voice." Each Voice consists of up to four elements (Normal Voice) or up to 73 keys (Drum Voice). Each Voice is created by editing parameters unique to each element/key and parameters common to all the elements/keys in the Voice mode (page 188) or in the Mixing Voice mode (page 249). 
+  Performance.
+A program in which multiple Voices (parts) are combined in a layer, or in other configurations is referred to as a "Performance." Each Performance can contain up to four different parts (Voices). Each Performance can be created by editing parameters unique to each part and parameters common to all the parts in the Performance mode (page 212). 
+  Mixing.
+A program in which multiple Voices are assigned to Parts for multi-timbral play in the Song and Pattern modes is referred to as a "Mixing." Each Mixing can contain up to 34 parts (page 163). Each Mixing can be created by editing parameters unique to each part and parameters common to all the parts in the Song Mixing mode (page 233) or in the Pattern Mixing mode (page 248). 
+
+NOTE.
+The Mixing belongs to the Song or Pattern. 
+
+The illustration below shows the structure and interrelationship of the Voices, Performances, and Mixings.
+<Figure>
+One Voice.
+Up to four elements (Normal Voice).
+Up to 73 keys (Drum Voice).
+
+NOTE.	This synthesizer has two types of Voices Ð Voices created in the Voice mode and Mixing Voices (dedicated for the Song/Pattern) created in the Mixing Voice mode.
+
+One Mixing.
+  1 to 16 parts (of the internal tone generator)
+  17 to 32 parts (of the optionally installed PLG100-XG)
+  PLG1 to 3 parts (of the optionally installed single part Plug-in boards)
+
+One Performance.
+Up to four parts
+
+Different Voice for each part.
+Set in the Voice Edit mode (page 79)
+
+NOTE.
+The Drum Voice Key Edit parameters do not contain LFO settings. 
+
+
+The following illustrations may help in understanding the memory structure of the Voices, Performances, and Mixings.
+
+<Figure>
+Voices.
+Normal Voice.	Drum Voice.
+Preset Voice.
+Normal Voices: 768.
+Drum Voices: 64.
+GM Voice.
+Normal Voices: 128.
+Drum Voice: 1.
+User Voice.
+Normal Voices: 256.
+Drum Voices: 32.
+Mixing Voice.
+Normal Voices: up to 256 (Up to 16 Voices for each Song/Pattern)
+
+NOTE.	The Mixing Voices can be selected only in the Song mode/Pattern mode. These cannot be selected in the Voice mode or assigned to each Part in the Performance mode.
+
+Sample Voice.
+(Up to 128 Voices for each Song/Pattern, 1024 Voices for all Songs/Patterns)
+
+NOTE.	The Sample Voices can be selected only in the Song mode/Pattern mode. These cannot be selected in the Voice mode or assigned to each Part in the Performance mode.
+NOTE.	The Sample Voices can be created by recording the audio signal to a Song/Pattern track via the Sampling function (page 172).
+
+Plug-in Voice.
+* When the PLG150-VL is installed, there are three Preset Banks and 192 Preset Voices.
+
+
+Normal Voices and Drum Voices.
+Internally, there are two Voice Types: Normal Voices and Drum Voices. Normal Voices are mainly pitched musical instrument-type sounds that can be played over the range of the keyboard. Drum Voices are mainly percussion/drum sounds that are assigned to individual notes on the keyboard. A collection of assigned percussion/drum waves or Normal Voices is known as a Drum Kit.
+
+GM Voices.
+GM (General MIDI) is a worldwide standard for Voice organization and MIDI functions of synthesizers and tone generators. It was designed primarily to ensure that any song data created with a specific GM device would sound virtually the same on any other GM device Ð no matter the manufacturer or the model. The GM Voice bank on this synthesizer is designed to appropriately play back GM song data. However, keep in mind that the sound may not be exactly the same as played by the original tone generator.
+
+Tone generator parameters that produce the Voice sound.
+Among various parameters that makes up one Voice, Oscillator, Pitch, Filter, Amplitude, LFO and three Envelope Generators (PEG, FEG, AEG) shown in the illustration on pages 160 to 162 are the basic parameters for creating the Voice sound. Parameters about Oscillator, Pitch, Filter and Amplitude determine the three basic elements of the sound Ð Pitch (how low or high it is), Tone (or its overall sound quality), and Volume (how loud its volume level is) of the Voice. Parameters such as LFO and EG (Envelope Generator) determine the transition in these three basic elements of the sound from the moment the sound starts to the moment the sound stops. 
+In the sections that follow, we'll explain in detail about the sound-related parameters and provide an introduction to the basics of electronic synthesis.
+
+  Oscillator.
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F1] OSC.
+This unit outputs the wave which determines the basic pitch. You can assign the wave (or basic sound material) to each Element of the Normal Voice or each Key of the Drum Voice. In the case of the Normal Voice, you can set the note range for Element (the range of notes on the keyboard over which the Element will sound) as well as the velocity response (the range of note velocities within which the Element will sound). For example, you could set one Element to sound in an upper range of the keyboard, and another Element to sound in a lower range. Thus, even within the same Voice, you can have two different sounds for different areas of the keyboard or you can make the two Element ranges overlap so that their sounds are layered over a set range. Furthermore, you can set each Element to respond to different velocity ranges so that one Element sounds for lower note velocities, whereas another Element sounds for higher note velocities. See the illustration at left of this page. 
+
+NOTE.
+You can assign the wave with the following operation.
+
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F1] OSC -> [SF1] WAVE .
+Strictly speaking, what is assigned here to an Element or Key is not a "wave" but a "waveform." The difference between the two terms is explained on page 173. 
+
+  Pitch.
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F2] PITCH.
+This unit controls the pitch of the sound (wave) output from the Oscillator. In the case of the Normal Voice, you can detune separate Elements, apply Pitch Scaling and so on. Also, by setting the PEG (Pitch Envelope Generator), you can control how the pitch changes over time.
+
+PEG (Pitch Envelope Generator).
+Using the PEG, you can control the transition in pitch from the moment the sound starts the moment the sound stops. You can create the PEG by setting parameters as illustrated below. When you press a note on the keyboard, the pitch of the Voice will change according to these envelope settings. This is useful for creating automatic changes in pitch, which is effective for the Synth Brass. Furthermore, different PEG parameters can be set for each Element or each Key.
+<Figure>
+Pressing the key (Key on)
+Releasing the key (Key off)
+
+  Filter.
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F3] FILTER.
+This unit modifies the tone of the sound output from Pitch by cutting the output of a specific frequency portion of the sound.
+
+Cutoff Frequency and Resonance.
+Here's how filters work.  In the example below (a low pass filter), a portion of the signal lower than a given frequency is allowed to pass, and signals above that frequency are cut. This frequency is referred to as the cutoff frequency. You can produce a relatively bright or darker sound by setting the cutoff. Resonance is a parameter that boosts the level of the signal in the area of the cutoff frequency. By emphasizing the overtones in this area, this can produce a distinctive "peaky" tone, making the sound brighter and harder. 
+<Figure>
+These frequencies are "passed" by the filter.
+
+About the main Filter types.
+The Low Pass Filter is shown in the illustration above Ð however, this synthesizer features other Filter types (four total) as shown below.
+
+Low Pass Filter (above).
+This passes only those signals below the Cutoff frequency. You can then use the Reso (Resonance) parameter to add further character to the sound. 
+
+High Pass Filter.
+This passes only those signals above the Cutoff frequency. You can then use the Reso (Resonance) parameter to add further character to the sound. 
+<Figure>
+These frequencies are "passed" by the filter.
+
+Band Pass Filter.
+This passes only those a band of signals around the Cutoff frequency. The width of this band can be varied.
+
+Band Elimination Filter.
+This attenuates a band of signals around the Cutoff frequency, but passes everything else.
+
+FEG (Filter Envelope Generator).
+Using the FEG, you can control the transition in tone from the moment the sound starts to the moment the sound stops. You can create the FEG by setting parameters as illustrated below. When you press a note on the keyboard, the cutoff frequency will change according to these envelope settings. This is useful for creating automatic wah or filter sweep effects, for example. Furthermore, different FEG parameters can be set for each Element Key. 
+<Figure>
+Pressing the key (Key on)
+Releasing the key (Key off)
+
+
+  Amplitude.
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F4] AMP.
+This unit controls the output level (amplitude) of the sound output from Filter. The signals are then sent at this level to the Effect block. Also, by setting the AEG (Amplitude Envelope Generator), you can control how the volume changes over time. 
+
+AEG (Amplitude Envelope Generator).
+Using the AEG, you can control the transition in volume from the moment the sound starts is to the moment the sound stops. You can create the AEG by setting parameters as illustrated below. When you press a note on the keyboard, the volume will change according to these envelope settings. Furthermore, different AEG parameters can be set for each Element Key. 
+
+NOTE.
+When you release the key while holding the Footswitch connected to the SUSTAIN connector, the sound will maintain at the Sustain Level shown above. For Voices having a Sustain Level value greater than 0, the sound continues.  For Voices having a Sustain Level of 0, the sound decays naturally to silence.
+
+  LFO (Low Frequency Oscillator).	
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Drum Key selection -> [F5] LFO.
+[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F5] LFO.
+As its name suggests, the LFO produces a wave of a low frequency.
+These waves can be used to vary the pitch, filter or amplitude of each Element to create effects such as vibrato, wah and tremolo. LFO can be set independently for each Element; it can also be set globally for all Elements. 
+
+
+Single Timbre Tone Generator (Voice/Performance mode) and Multi-timbral Tone Generator (Song/Pattern mode).
+The internal tone generator block operates in two different ways (Single timbre and Multi-timbral) depending on the selected mode. The difference between the two is whether they can handle the multi-MIDI channels or not at the same time. 
+
+  Single Timbre Tone Generator (Voice/Performance mode).
+A MIDI tone generator that receives over a single MIDI channel and plays a single instrument part is referred to as a "single timbre" tone generator.  This is the operating status of the internal tone generator in the Voice and Performance modes.
+
+NOTE.
+To set the MIDI receive channel for single timbre operation (Voice and Performance modes), use the following operation in the Utility mode.
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> BasicRcvCh.
+
+  Multi-timbral Tone Generator (Song/Pattern mode).
+A MIDI tone generator that simultaneously receives over multiple MIDI channels and plays multiple instrument parts is referred to as a "multi-timbral" tone generator.  This allows playback of multi-channel MIDI song data -- such as on a MIDI sequencer or computer -- with each internal part being assigned to and played by a different track or channel.  This is the operating status of the internal tone generator in the Song and Pattern modes.
+
+NOTE.
+To set the MIDI receive channel for multi-timbral operation (Song and Pattern modes), use the following operation in the Utility mode.
+[SONG] or [PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh. 
+NOTE.
+When using an external MIDI sequencer or computer to play this instrument, make sure to use the Song mode or Pattern mode.
+
+Maximum Polyphony.
+Maximum polyphony refers to the highest number of notes that can be sounded simultaneously from the internal tone generator of the instrument.
+The maximum polyphony of this synthesizer is 128. When the internal tone generator block receives a number of notes exceeding the maximum polyphony, previously played notes are cut off. Keep in mind this may be especially noticeable with Voices not having decay.
+Furthermore, the maximum polyphony applies to the number of voice elements used, not the number of voices. When the normal voices that include up to four elements are used, the maximum number of simultaneous notes may be less than 128. 
+
+NOTE.
+When the Plug-in board is installed, the maximum polyphony increases accordingly.  For details on maximum polyphony for the Plug-in Boards, refer to the Owner's Manual of the particular board.
+
+Part structure of the tone generator block.
+This synthesizer plays the sounds in the tone generator block in response to MIDI messages received from the controller or sequencer block. The MIDI messages are assigned to sixteen independent channels, and this synthesizer is capable of simultaneously playing sixteen separate parts, via the sixteen MIDI channels. However, the sixteen-channel limit can be overcome by using separate MIDI "ports," each supporting sixteen channels. The multiple sound sources of this synthesizer (internal tone generator and Plug-in Boards) take advantage of the three MIDI ports included on the instrument.
+<Figure>
+Part for Voice mode.
+Parts used in modes other than the Voice mode.
+
+As shown in the above illustration, up to 48 parts are provided for the modes (excepting the Voice mode). However, the number of parts that are actually used is a maximum of 34 in the Song and Pattern modes, as we will see later in some examples.
+
+NOTE.
+The USB cable supports up to eight separate MIDI ports. The Tone Generator block of this synthesizer supports three separate ports as illustrated above. 
+NOTE.
+A single MIDI cable/connection cannot handle data over multiple MIDI ports.
+
+Part structure of the tone generator block in the Voice mode.
+In this mode, a Voice is played from the keyboard, using a single part. This part is used also when the Plug-in Voice is selected. The tone generator block in the Voice mode receives MIDI data over a single channel.  Keep in mind that song data on an external sequencer consisting of multiple MIDI channels will not play back properly in this mode.  If you are using an external MIDI sequencer or computer to play the instrument, make sure to use the Song mode or Pattern mode. 
+<Figure>
+Part for Voice mode.
+Parts used in modes other than the Voice mode.
+Parts 1 to 48 are not used.
+
+NOTE.
+The MIDI receive channel in the Voice mode can be set from the following display in the Utility mode. 
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> BasicRcvCh.
+The MIDI port number which this synthesizer can recognize in the Voice mode is 1. 
+NOTE.
+The Multi-Part Plug-in Board (PLG100-XG) cannot be used in the Voice mode. 
+
+Part structure of the tone generator block in the Performance mode.
+This mode lets you play a Performance (which multiple Voices (parts) are combined Ð in a layer, or in other configurations) using the keyboard. While a total of seven parts are available in this mode (as shown below), a maximum of four parts can be used simultaneously.  Although this mode lets you play several parts at the same time, all are set to receive over the same single MIDI channel, as in the Voice mode.  For this reason, song data on an external sequencer consisting of multiple MIDI channels will not play back properly in this mode.  If you are using an external MIDI sequencer or computer to play the instrument, make sure to use the Song mode or Pattern mode.
+<Figure>
+When three single part Plug-in boards are installed to the synthesizer.
+Parts 5 to 13 and 17 to 48 are not used.
+These seven parts (1, 2, 3, 4, 14, 15, 16) are reserved for use in the Performance mode; however, only up to four of them can be used at the same time.
+
+NOTE.
+The MIDI receive channel in the Performance mode can be set with the following operation in the Utility mode.
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> BasicRcvCh. 
+In the Voice mode, the instrument recognizes only data over MIDI Port 1.
+NOTE.
+The Multi-part Plug-in Board (PLG100-XG) cannot be used in the Performance mode. 
+
+Part structure of the tone generator block in the Song mode/Pattern mode.
+In these modes, multiple parts are provided and different voice and different melodies or phrases can be played back for each part. Because these modes let you set the MIDI channel for each part of the tone generator block, you can use an external MIDI sequencer as well as the sequencer block of the instrument to play the sounds.
+As illustrated below, the sequence data of each track plays the corresponding parts (those having the same MIDI channel assignment) in the tone generator block. 
+<Figure>
+Sequencer block (example).
+When setting the Transmit Channel/Port to the following example in the Song/Pattern mode or on the external MIDI sequencer or on the computer:
+Tone Generator block (example).
+When a Multi-part Plug-in Board (PLG100-XG) and a two Single part Plug-in Board are installed to this synthesizer and setting the Receive Channel/Port to the following example:
+Parts 33 to 46 are not used.
+
+The MIDI Transmit Channel/Port of the Song/Pattern can be set with the following operation.
+In the Song mode: [SONG] -> Song selection -> [F3] TRACK -> [SF1] CHANNEL.
+In the Pattern mode: [PATTERN] -> Pattern selection -> [F3] TRACK -> [SF1] CHANNEL.
+
+When sounding the internal tone generator block, assign the tracks to Transmit Port 1 and use Parts 1 to 16.  Keep in mind that data over Transmit Ports 2 or 3 cannot sound the internal tone generator block. The tone generator of the installed Plug-in Board can be sounded via any of the MIDI ports 1 - 3. 
+The MIDI Receive Channel of the tone generator's part can be set with the following operation.
+In the Song mode: [SONG] -> Song selection -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh.
+In the Pattern mode: [PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh.
+
+You can set the port number assignment for the Plug-in Board with the following operation.
+[UTILITY] -> [F6] PLUG -> [SF2] MIDI.
+
+NOTE.
+For details about MIDI, see page 181. 
+NOTE.
+The Plug-in Board lets you use only a single Voice at the same time. Please note that you cannot assign multiple Voices of the Plug-in Board to multiple parts at the same time. 
+NOTE.
+The Voice and related settings (volume, pan, etc.) are sounded by the keyboard according to the Part parameters in the Mixing settings of the current Song/Pattern and Part.  Other settings such as Controllers and Effect types correspond to the Common parameters in the Mixing settings of the current Song/Pattern.
+
+Audio Input Part (AUDIO IN).
+The Performance mode, Song mode, and Pattern mode are capable of handling the audio input signal as a Part. Various parameters such as volume, pan, and effect can be set to this Part and the sound is output together with other Parts. Other available settings include how stereo input signals are handled, as well the output assignment of the audio Part.  
+These parameters are set and stored for each Performance, Song Mixing, and Pattern Mixing. Please note that the Audio Input Part is not available in the Voice mode. 
+Among the following three types of Audio Input parts which this synthesizer can handle, two types (five stereo parts if the mLAN16E has been installed) can be handled at the same time, since the optional mLAN16E and AIEB2 cannot be installed together. 
+
+<Table>
+A/D Input part.	This part (one stereo part) is input from the external audio equipment connected to the A/D INPUT jack.
+mLAN Input parts (when the optional mLAN16E has been installed).	These four stereo parts are input from external mLAN-compatible audio equipment connected to the mLAN jack via a single IEEE1394 cable. 
+AIEB2 parts (when the optional AIEB2 has been installed).	This part (one stereo part) is input from external audio equipment connected to the OPTICAL INPUT or the DIGITAL INPUT (Coaxial) connector. 
+Either one of the connectors (OPTICAL or DIGITAL) can be used; however, both cannot be used at the same time. Select which connector is used for digital input with the following operation in the Utility mode.
+	[UTILITY] -> [F2] I/O -> [SF1] INPUT -> Digital.
+
+Parameters for the above Parts can be set with the following operations.
+
+In the Performance mode.	[PERFORM] -> Performance selection-> [EDIT] -> [COMMON] -> [F5] AUDIO IN.
+In the Song mode.	[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F5] AUDIO IN.
+In the Pattern mode.	[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F5] AUDIO IN.
+
+NOTE.
+Although the Insertion Effects of this synthesizer can be applied to the A/D Input Part, they cannot be applied to the mLAN Input part and the AIEB2 Input part. 
+
+Sequencer Block.
+This block lets you create songs and patterns by recording and editing your performances as MIDI data (from the controller block), then playing it back with the tone generator block. The sequencer block can be operated in the Song mode, in the Pattern mode, and with the Arpeggio feature. When a Song or a Pattern is played back, the musical data of each sequence track is transmitted to the tone generator block according to the Transmit Channel settings. 
+
+NOTE.
+Songs can be played back only in the Song mode. They cannot be played back in other modes. 
+Patterns can be played back only in the Pattern mode. They cannot be played back in other modes. 
+Arpeggios can be played back in any modes. 
+
+Song and Pattern.
+Songs and Patterns are MIDI sequence data consisting of up to 16 tracks.
+A Song on this synthesizer is effectively the same as a Song on a MIDI sequencer, and playback automatically stops at the end of the recorded data.
+In the MOTIF ES, the term "Pattern" refers to a relatively short musical or rhythmic phrase -- 1 to 256 measures -- which is used for looped playback. Therefore, once Pattern playback starts, it continues until you press the [ ] (Stop) button. This synthesizer features a variety of preset Phrase data that is used as the basic material in making up Patterns.
+
+Song data structure.
+The following illustration shows the track structure of a Song. Songs are created by recording MIDI sequence data to individual tracks and by setting tone generator related parameters (in Song Mixing).
+<Figure>
+
+NOTE.	Please note that the Multi-part Plug-in Part (17 to 32) settings apply not to one individual Song but to all 64 Songs.
+
+  Song Mixing.
+Even if you record your keyboard performance to a Song track, the setup data (non-note events such as voice, pan, volume) which for proper playback should be recorded at the top of the Song will not be recorded to it. For this reason, the setup data handled as Song Mixing settings should be stored in the Song Mixing Store mode. 
+Because the Song Mixing is a collection of settings related to the tone generator, it can be applied to the sequence data transmitted from the external MIDI sequencer as well as this synthesizer's Song playback. 
+
+NOTE.
+When the Multi-Part Plug-in Board PLG100-XG has been installed, Mixing of sixteen parts (17 to 32) can be set. Please note that the Multi-part Plug-in Part (17 to 32) settings apply not to one individual Song but to all 64 Songs.
+
+  Scene.
+A Song Scene is a "snapshot" of important settings, and contains parameter settings such as transpose, tempo, and track mute and the tone generator related parameters controllable from the Knobs with the [PAN/SEND] or [TONE] lamp turned on, and the Control Sliders. Five settings can be registered to the [SF1] to [SF5] buttons for each Song. 
+
+  Song Chain.
+This function allows songs to be "chained" together for automatic sequential playback. The Song Chain can be created and played back from the [SONG] -> [F6] CHAIN display. This instrument allows you to create one Song Chain data. 
+Pattern data structure
+The following illustration shows the track structure of a Pattern. Patterns are created by recording MIDI sequence data to individual tracks, by assigning Phrases (Preset and User) which is material for a Pattern to individual tracks, and by setting tone generator related parameters (in a Pattern Mixing).
+<Figure>
+Copy the Phrase recorded to a track of another pattern.
+The Patch function lets you assign a Phrase to each track.
+
+NOTE.	Please note that the Multi-part Plug-in Part (17 to 32) settings apply not to one individual Pattern but to all 64 Patterns.
+
+
+  Pattern Mixing.
+Even if you record your keyboard performance to a Pattern track, the setup data (non-note events such as voice, pan, volume) which for proper playback should be recorded at the top of the Pattern will not be recorded to it. For this reason, the setup data handled as Pattern Mixing settings should be stored in the Pattern Mixing Store mode. Unlike the Song, only the voice number is recorded to a track as a Track Voice (Phrase Voice) which is used for playback normally. Because the Pattern Mixing is a collection of settings related to the tone generator, it can be applied to the sequence data transmitted from the external MIDI sequencer as well as this synthesizer's Pattern playback. 
+
+NOTE.
+When the Multi-Part Plug-in Board PLG100-XG has been installed, Mixing of sixteen parts (17 to 32) can be set. Please note that the Multi-Part Plug-in Part (17 to 32) settings apply not to one individual Pattern but to all 64 Patterns.
+
+  Section.
+A Pattern consists of one or more "Sections" (Pattern variations). You can play the Pattern by specifying a Section after selecting a Pattern.
+
+  Phrase.
+This is the basic MIDI sequence data Ð and the smallest unit Ð used in creating a Pattern. "Phrase" is a short musical/rhythmic passage for a single instrument, such as a rhythm pattern for the rhythm part, a bass line for the bass part, or a chord backing for the guitar part. This synthesizer features 687 Preset Phrases, and features memory space for 256 of your own original User Phrases. 
+
+  Pattern Chain.
+Pattern Chain allows you to string several different Sections (within a single Pattern) together to make a single Song. You can have the synthesizer automatically change Sections by creating Pattern Chains in this way beforehand. 
+You can create the Pattern Chain by recording a Pattern playback with Section changes from the [PATTERN] -> [F6] CHAIN display or by editing the timing of Section changes from the [PATTERN] -> [F6] CHAIN -> [EDIT] display. The created Pattern Chain can be played back when calling up the [PATTERN] -> [F6] CHAIN display. 
+You can also use them when creating Songs based on a certain Pattern, since the created Pattern Chain can be converted into a Song from the [PATTERN] -> [F6] CHAIN -> [EDIT] -> [F3] SONG display. This synthesizer lets you create one Pattern Chain for each Pattern. 
+
+MIDI tracks and Sample tracks.
+The Song/Pattern tracks (1 to 16) of this synthesizer are divided into two groups: MIDI tracks and Sample tracks. 
+MIDI tracks are created by recording your keyboard performance in the Song Record mode/Pattern Record mode. On the other hand, Sample tracks are created by recording and obtaining a Sample in the Sampling mode. 
+
+  Sample tracks -- with Sample Voices.
+Voices which are automatically created and stored using the Sampling feature in the sequencer (Song/Pattern) mode, are referred to as "Sample Voices." Tracks using these Sample Voices are referred to as "Sample" tracks -- to distinguish them from the MIDI tracks. Sample Voices are stored as original, dedicated Voices for each Song or Pattern. If you wish to use a Sample Voice of a certain song/pattern for another song/pattern, execute the copy operation in the Song Job mode (page 226) or in the Pattern Job mode (page 244). 
+
+MIDI track recording method.
+[SONG] or [PATTERN] -> [ ] (Record) -> [F1] SETUP -> Type.
+The following explanations are important points for you to keep in mind as you record your User Songs/Patterns. The recording methods explained here should be set from the Setup display in the Song Record mode/Pattern Record mode before recording. 
+
+NOTE.
+See page 173  for details about the Sample track recording method. 
+
+  Realtime recording and Step recording.
+Realtime recording .
+With realtime recording, the instrument functions in the same way as a tape recorder, recording the performance data as it is played. This allows you to capture all the nuances of an actual performance. This method is used for the Recording types explained below, such as Replace, Overdub, Loop, and Punch In/Out. 
+Step recording (Type equal step).
+With step recording, you can compose your performance by "writing" it down one event at a time. This is a non-realtime, step recording method -- similar to writing music notation onto paper. 
+
+  Replace and Overdub (Song/Pattern)
+Replace.
+You can use this method when you want to overwrite an already recorded track with new data. The first recording is lost, and the new one takes its place.
+
+Overdub.
+You can use this method when you want to add more data to a track that already contains data. The first recording is kept, and the new one is added. This method lets you build up a complex phrase together with Loop recording (below).
+
+  Loop Recording (Pattern)
+[PATTERN] -> [ ] (Record) -> [F1] SETUP -> loop equal on.
+Pattern repeats the rhythm pattern of several measures (1 to 256 measures) in a "loop," and its recording is also done using loops. This method is used when recording a Pattern Phrase using the Overdub method (above). As shown in the. example below, notes that you record will play back from the next repetition (loop), letting you record while hearing previously recorded material.
+
+When recording a rhythm of Bass Drum, Snare Drum, Hi-Hat cymbal in order: 
+<Figure>
+Loop 1st round.
+Loop 2nd round.
+Loop 3rd round.
+
+NOTE.
+Loop Recording can only be used with Realtime recording.
+
+  Punch In/Out (Song)
+You can use this method when you want to re-record only over a specific area of the track. You'll need to set the start and end points before re-recording.
+In the eight-measure example below, the third measures through the fifth measure are re-recorded.
+<Figure>
+
+NOTE.
+Punch In/Out Recording can only be used with Realtime recording.
+NOTE.
+Note that the Punch In/Out method always replaces (destroys) the original data over the specified area.
+
+
+Arpeggio.
+This function lets you automatically trigger musical and rhythmic phrases using the current Voice by simply pressing a note or notes on the keyboard.  The Arpeggio sequence also changes in response to the actual notes or chords you play, giving you a wide variety of inspiring musical phrases and ideas -- both in composing and performing.
+
+NOTE.
+A single Arpeggio type can be played back at the same time even in the Performance, Song, and Pattern mode, enabling you to play multiple tone generator's parts simultaneously. 
+
+Category of the Arpeggio type.
+The Arpeggio types are divided into 18 categories as listed below. 
+
+<Table>
+LCD.	Category Name	Description
+Seq.	Synth Sequence	Various arpeggio phrases suited for synth voices. 
+ChSq.	Synth Chord Sequence	Various rhythmic chord phrases or synth voices.
+HySq.	Synth Hybrid Sequence	Various arpeggio types programmed so that bass phrases are played with the lower keys and chords or melodies are played with the midrange and higher keys.  These arpeggio types are useful for split voice combinations.  In addition, there are also Hybrid Velocity ("HybVel...") types that feature different phrases for different velocity ranges, letting you change the arpeggio phrase depending on how strongly you play the keyboard.
+APKb.	Acoustic Piano and Keyboard	Various arpeggio types suited for piano and other keyboard voices, such as electric piano and clav.
+Orgn.	Organ	Various arpeggio types suited for organ voices. 
+GtPl. 	Guitar and Plucked	Various arpeggio types suited for guitar and harp voices. 
+GtKM.	Guitar - Keyboard Mega Voice	Various arpeggio types suited for guitar Keyboard Mega voices (see note below). 
+Bass.	Bass	Various arpeggio types suited for bass or synth bass voices. 
+BaKM.	Bass - Keyboard Mega Voice	Various arpeggio types suited for bass Keyboard Mega voices (see note below). 
+Strn. 	Strings	Various arpeggio types suited for strings and pizzicato voices. 
+Bras. 	Brass	Various arpeggio types suited for brass voices. 
+RdPp. 	Reed and Pipe	Various arpeggio types suited for saxophone and flute voices. 
+Lead. 	Synth Lead	Various arpeggio types suited for synth lead voices. 
+PdMe.	Synth Pad and Musical FX	Various arpeggio types suited for synth pad voices and special musical effects voices, including percussive sounds.
+CPrc. 	Chromatic Percussion	Various arpeggio types suited for chromatic percussion voices. 
+DrPc. 	Drum and Percussion	Various arpeggio types suited for drum and percussion voices (drum kits). 
+Comb.	Combination	Various arpeggio types suited for Performances. These are combination arpeggios, with separate phrases suitable for drum voices, bass voices, and chord/melody instruments. 
+Cntr.	Control	Various arpeggio types programmed primarily with Control Change and Pitch Bend data.  These arpeggio types change the tone or pitch of the sound, rather than play specific notes.  In fact, some types contain no note data at all. When using a type of this category, set the KeyMode parameter to "direct" in each mode. 
+
+NOTE.
+Keyboard Mega Voices.
+Normal voices use velocity switching to make the sound quality and/or level of a voice according to how strongly or softly you play it. This makes the voices sound authentic and natural. However, with Keyboard Mega Voices, each velocity range (the measure of your playing strength) has a completely different sound. For example, a guitar voice includes the sounds of various performance techniques. In conventional instruments, different voices having those sounds would be called up via MIDI and played in combination to achieve the desired effect. However, now with Keyboard Mega voices, a convincing guitar part can be played with just a single voice, using specific velocity values to play the desired sounds.
+
+Arpeggio playback types.
+The MOTIF ES features a total of 1787 Arpeggio types divided into 18 categories, each with its own playback type designed for use with particular types of Voices, as described below.
+
+  Arpeggios for Normal Voices.
+Arpeggio types (belonging to the categories except for the DrPC and Cntr) created for use of Normal Voices have the following two playback types. 
+
+Playback only of the played notes.	The Arpeggio is played back using only the played note and its octave notes. 
+Playback of a programmed sequence according to the played chord.	These Arpeggio types have the several sequences each of which is suited for a certain chord type. Even if you press only one note, the Arpeggio is played back using the programmed sequence -- meaning that notes other than the ones you play may be sounded.  Adding notes to those already held changes the sequence accordingly -- in other words, the arpeggio plays back according to the chord you play.
+
+NOTE.
+The two playback types above are not distinguished by the category name or type name.  You'll have to actually play the types and hear the difference.
+NOTE.
+Since these types are programmed for Normal Voices, using them with Drum Voices may not give musically appropriate results.
+
+  Arpeggios for Drum/Percussion Voices -- Category: DrPc.
+These arpeggio types are programmed specifically for use with Drum Voices, giving you instant access to various rhythm patterns.  Three different playback types are available.
+
+<Table>
+Playback of a drum pattern.	Pressing any note(s) will trigger the same rhythm pattern. 
+Playback of a drum pattern, plus additional played notes (assigned drum instruments).	Pressing any note will trigger the same rhythm pattern. Adding notes to the one already held produces additional sounds (assigned drum instruments) for the drum pattern.
+Playback only of the played notes (assigned drum instruments).	Playing a note or notes will trigger a rhythm pattern using only the notes played (assigned drum instruments).  Keep in mind that even if you play the same notes, the triggered rhythm pattern differs depending on the order of the notes played.  This gives you access to different rhythm patterns using the same instruments simply by changing the order in which you play the notes.
+
+NOTE.
+The three playback types above are not distinguished by the category name or type name.  You'll have to actually play the types and hear the difference.
+NOTE.
+Since these types are programmed for Drum Voices, using them with Normal Voices may not give musically appropriate results.
+
+  Arpeggios for Performances -- Category: Comb.
+The Arpeggio types belonging to the category "Comb" are programmed so that different arpeggios are triggered -- an arpeggio for a Normal Voice and an arpeggio for a Drum Voice -- depending on the played note. These types are useful in the Performance mode in which multiple voices (Drum Voice and Normal Voice) are combined in a layer since these types enable you trigger the arpeggio for the Normal Voice and the Drum Voice at the same time. 
+
+  Arpeggios without note events -- Category: Cntr.
+These arpeggio types are programmed primarily with Control Change and Pitch Bend data.  They are used to change the tone or pitch of the sound, rather than play specific notes.  In fact, some types contain no note data at all.  When using a type of this category, set the KeyMode parameter to "direct" with the following operations.
+
+<Table>
+Voice mode.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF1] TYPE -> KeyMode
+Performance.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF1] TYPE -> KeyMode
+Song mode.	[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF1] TYPE -> KeyMode
+Pattern mode.	[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF1] TYPE -> KeyMode
+
+Arpeggio related parameters.
+The Arpeggio related parameters can be set from the following displays, depending on the selected mode. 
+
+  Voice mode.
+
+<Table>
+Arpeggio type parameters called up when selecting a Voice.	[VOICE] -> Voice selection -> [F6] ARP.	Page 189.
+	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP.	Page 191.
+Assigning Arpeggio types to the [SF1] to [SF5] buttons for each Voice.	[VOICE] -> Voice selection -> [F1] PLAY.	Page 188.
+MIDI output parameters for Arpeggio playback for all the Voices.	[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF3] ARP CH	Page 262.
+NOTE.
+MIDI output parameters for Arpeggio playback are set for each Voice in the Voice mode. In the other modes, however, they can be set for each Performance, Song, and Pattern. 
+
+Performance mode.
+
+<Table>
+Arpeggio type parameters called up when selecting a Performance (including MIDI output parameters for Arpeggio playback).	[PERFORM] -> Performance selection -> [F6] ARP.	Page 213.
+	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP.	Page 214.
+Assigning Arpeggio types to the [SF1] to [SF5] buttons for each Performance	[PERFORM] -> Performance selection -> [F1] PLAY.	Page 212.
+
+Song mode.
+Parameters about the Arpeggio type called up when selecting a Song (including MIDI output parameters for Arpeggio playback).	[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F3] ARP.	Page 234
+Assigning Arpeggio types to the [SF1] to [SF5] buttons for each Song.	[SONG] -> Song selection -> [F1] PLAY.	Page 221
+	[SONG] -> Song selection -> [ ] (Record) -> [F3] ARP	Page 223
+Arpeggio type parameters in recording.	[SONG] -> Song selection -> [ ] (Record) -> [F4] REC ARP.	Page 223.
+
+NOTE.
+Arpeggio related parameters in the Song mode belong to the Mixing. Therefore, if desired, store them to internal memory (DRAM) in the Song Mixing Store mode and save them to the SmartMedia/USB storage device as Song data in the File mode. 
+
+ Pattern mode.
+Parameters about the Arpeggio type called up when selecting a Pattern (including MIDI output parameters for Arpeggio playback).	[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F3] ARP.	Page 248.
+Assigning Arpeggio types to the [SF1] to [SF5] buttons for each Pattern.	[PATTERN] -> Pattern selection -> [F1] Play.	Page 241.
+	[PATTERN] -> Pattern selection -> [ ] (Record) -> [F3] ARP.	Page 243.
+Arpeggio type parameters in recording	[PATTERN] -> Pattern selection -> [ ] (Record) -> [F4] REC ARP.	Page 243.
+
+NOTE.
+Arpeggio related parameters in the Pattern mode belong to the Mixing. Therefore, if desired, store them to internal memory (DRAM) in the Pattern Mixing Store mode and save them to the SmartMedia/USB storage device as Pattern data in the File mode. 
+
+
+Sampling Block.
+Sampling is a powerful function that lets you bring your own recorded sounds Ð voice, instrument, rhythm, special sound effects, etc. Ð into the system of this synthesizer, and play those sounds just as you would the Voices of the instrument.
+
+IMPORTANT.
+In order to use the Sampling features of the instrument, you'll need to install DIMM memory modules (sold separately) to the instrument.  
+
+NOTE.
+In addition to being able to record samples directly with the MOTIF ES, you can also import existing audio data (in WAV or AIFF file format) in the File mode.  This lets you use audio you've recorded and edited on computer with the instrument.
+<Figure>
+Sampling Source.
+Before sampling, connect the source to the appropriate connector.
+A/D INPUT jacks.
+OPTICAL IN connector or DIGITAL IN connector (when the optional AIEB2 has been installed)
+mLAN connector (when the optional mLAN16E has been installed)
+Sampling.
+Executing from the [INTEGRATED SAMPLING] -> [F6] REC display in the Sampling mode.
+Load.
+Loading the WAV file/AIFF file from the [FILE] -> [F3] LOAD display, setting the file type to "Waveform."
+Optional DIMM (up to 512MB)
+Sampling Destination.
+Before sampling, set the appropriate location for storing the sample (Waveform, User Voice) from the [INTEGRATED SAMPLING] -> [F1] DEST display.
+User Voice
+(When executing the Sampling function in the Voice mode/Performance mode)
+Sample Voice
+(When executing the Sampling function in the Song mode/Pattern mode)
+
+
+Data created by Sampling.
+Regardless of the mode, the raw Sampled data is the same, of course. However, various parameters are different, depending on the particular mode or settings. Briefly, here is an explanation of what kinds of data are created in the Sampling function.
+
+  Sampling data common to all modes.
+Wave (Sample data).
+This is the raw audio data stored in this synthesizer's internal memory when sampling. 
+Key Bank.
+The note range and velocity range to which the Sample is assigned, is called the Key Bank.
+Waveform.
+The group of Key Banks to which sample data is assigned is called the Waveform.
+
+  Data created by sampling in the Voice/Performance mode.
+User Voice.
+Before you can play the recorded/imported sample data (Waves), you'll need to save them as User Voices, after which they can be selected and played from the keyboard or sequencer -- the same as other Voices. Also, these User Voices can be assigned as Performance parts Ð just as with the Preset Voices. 
+
+  Data created by sampling in the Song/Pattern mode.
+When sampling in the Song/Pattern mode, the recorded/imported sample data is automatically stored as a Sample Voice.
+Sample Voices can be assigned to the Mixing parts corresponding to the track which was assigned from the [INTEGRATED SAMPLING] -> [F1] DEST display, and they can be sounded while Song/Pattern data is being played back. Sample Voices are original, dedicated Voices for the particular Song/Pattern that was selected when sampling. Because of this, you cannot take a Sample Voice belonging to one Song or Pattern and use it in another Song or Pattern. 
+
+NOTE.
+You cannot select Sample Voices in the Voice or Performance mode. (However, you CAN select the Wave of the Sample Voice in Voice Edit.)
+
+Note Data.
+When you set the Type to "Sample + note" from the [SONG] or [PATTERN] -> [INTEGRATED SAMPLING] -> [F2] SOURCE display and execute Sampling, a Sample Voice is created and the sampled wave is assigned to a specified note and recorded as simple MIDI sequence data to a specified track (as shown below).
+<Figure>
+Assign the Sample to a specified key (note) to create a Sample Voice.
+
+Key Bank and Sequence data.
+When you set the Type to "Sample plus seq" from the [SONG] or [PATTERN] -> [INTEGRATED SAMPLING] -> [F2] SOURCE display and execute Sampling, a Sample Voice is created and the sampled wave is "sliced" or divided into several component samples -- and each is assigned to specific notes, with sequence data for playing the notes to recreate the sample.  This is useful with rhythmic samples, giving you fine control over the playback, including tempo changes.
+<Figure>
+Slice the Sample and assign the sliced Sample to specified keys (notes) to create a Sample Voice.
+
+Waveform and User Voices/Sample Voices.
+<Figure>
+
+NOTE.
+When executing the Sampling in the Sampling mode entered from the Voice mode/Performance mode, you can specify the Waveform number and User Voice number as a Destination (location to which the sampled wave is stored) beforehand. Likewise, you can specify the same parameters also when loading the WAV file/AIFF file in the File mode entered from the Voice mode/Performance mode. 
+NOTE.
+When executing the Sampling in the Sampling mode entered from the Song mode/Pattern mode, you can specify the track number as a Destination (location to which the sampled wave is stored) beforehand. Likewise, you can specify the same parameters also when loading the WAV file/AIFF file in the File mode entered from the Song mode/Pattern mode. When creating Waveforms, sampled audio waves are automatically stored starting from the lowest numbered available space.
+NOTE.
+Up to 128 keybanks can be assigned to a single waveform. Up to a maximum of 4096 key banks can be created on the instrument.
+
+How to select and hear the Waveform.
+You can select and hear any of Waveforms from the following display in the Voice Edit mode. 
+[VOICE] -> [EDIT] -> Element selection -> [F1] OSC -> [SF1] WAVE.
+If you set the Bank parameter to "usr wave," you can select and hear the Waveform obtained by using the Sampling function or loading the WAV file/AIFF file. 
+You can also select and hear the User Waveform from the following display in the Sampling mode. 
+[INTEGRATED SAMPLING] -> [EDIT] -> [F1] KEY BANK.
+
+Trigger mode.
+[INTEGRATED SAMPLING] -> [F6] REC -> TriggerMode.
+The Trigger mode is a convenient feature in Sampling that lets you determine how sample recording is started -- manually or automatically, based on the audio level.  
+
+Start recording manually.
+[INTEGRATED SAMPLING] -> [F6] REC -> TriggerMode equal manual.
+Regardless of the audio input signal level or the Song/Pattern playback status, sampling starts soon after you press the [F6] REC button in the Sampling Setup display. Sampling also starts regardless of the playback/stop status of the Song/Pattern.
+
+Start recording when the input signal exceeds the Trigger Level.
+[INTEGRATED SAMPLING] -> [F6] REC -> TriggerMode equal level.
+After pressing the [F6] REC button in the Sampling Setup display (in any mode), sampling starts as soon as a strong enough audio signal is received. The threshold for this audio-triggered start is called the Trigger Level (explained in the illustration below).
+<Figure>
+Sample recording starts here.
+
+As you can see, the higher the Trigger Level setting, the louder the input audio needs to be in order to start sampling. On the other hand, if the Trigger Level is set too low, a soft noise may be enough to inadvertently start sampling. 
+
+Start recording when the Song/Pattern playback reaches a specified point.
+[INTEGRATED SAMPLING] -> [F6] REC -> TriggerMode equal meas.
+After pressing the [F6] REC button in the Sampling Setup display, start and stop of sampling is linked to playback of the Song/Pattern.
+This setting is available only when the Song/Pattern mode and recording type (Rec Type) are set to "Slice plus Seq" or "Sample plus Note."
+
+Sample playback types.
+[INTEGRATED SAMPLING] -> [EDIT] -> [F3] PARAM -> PlayMode.
+Samples can be set to play back in the following three different ways.
+
+One Shot.
+[INTEGRATED SAMPLING] -> [EDIT] -> [F3] PARAM -> PlayMode equal oneshot.
+When you press a note on the keyboard, the Sample plays from beginning to end just once. This type of playback is commonly used for drum and percussion sounds.  
+
+Loop.
+[INTEGRATED SAMPLING] -> [EDIT] -> [F3] PARAM -> PlayMode equal loop.
+This is used primarily to create long continuous sounds, such as brass and strings, or instruments with naturally long decay, such as piano. An appropriate part of the sample near the end is looped to reproduce a long sustain or decay.
+When you play a note on the keyboard, the Sample plays from the start point to the end point. It then returns to the loop start point and plays to the end point again, and keeps doing this until you release the note. With musical instruments in general, the characteristic part of the sound (the "attack" section) is usually at the beginning, just after the start point. After this, the sound does not vary a great deal while the note is being held, and you can set the loop and end points at either end of this section. When playing back a Sample of an instrument that has been looped like this, the attack section of the sound is played back once and then the looped section is played back continuously until you release the note. Looping is also way of creating usable instrument sounds without using up too much memory.
+You can set each point in the Sampling mode. Since this synthesizer is capable of displaying the entire image of the sampled audio data in the LCD (zoom in and zoom out are available), you can edit the loop points visually Ð making sample editing accurate and easy.
+
+Reverse.
+[INTEGRATED SAMPLING] -> [EDIT] -> [F3] PARAM -> PlayMode plus reverse.
+When you press a note on the keyboard, the Sample plays from end to beginning just once. This is useful for creating reversed cymbal sounds and other special effects.
+
+Effect Block.
+This block applies effects to the output of the tone generator block, processing and enhancing the sound using sophisticated DSP (digital signal processing) technology. 
+
+Effect structure.
+The effect processing of this synthesizer features the System Effects, Insertion Effects, Master Effect, Part EQ (Equalizer), and Master EQ (Equalizer). 
+
+System Effects (Reverb, Chorus).
+System Effects are applied to the overall sound, whether it be a Voice, an entire Performance, a Song, etc.
+With System effects, the sound of each Part is sent to the effect according to the effect Send Level for each Part. The processed sound (referred to as "wet") is sent back to the mixer, according to the Return Level, and output Ð after being mixed with the unprocessed "dry" sound. This arrangement lets you prepare an optimum balance of the effect sound and the original sound of the Parts.
+
+Reverb.
+The Reverb effects add a warm ambience to the sound, simulating the complex reflections of actual performance spaces, such as a concert hall or a small club. A total of 20 different Reverb types are available.
+
+Chorus.
+The Chorus effects use various types of modulation processing, including flanger and phaser, to enhance the sound in a variety of ways.  A total of 49 types are available, including reverb and delay effects.
+
+NOTE.
+About the System Effect related display in each mode, see pages 179 and 180. 
+
+Insertion Effects A, B.
+Insertion effects can be applied individually to each part. Insertion effects are mainly used to directly process a single part. The depth of the effect is adjusted by setting the dry/wet balance. Since an Insertion effect can only be applied to one particular part, it should be used for sounds you want to drastically change or for sounds that use an effect unintended for other sounds. You can also set the balance so that only the effect sound is heard, by setting Wet to 100%. 
+This synthesizer features eight sets of Insertion effects (one set has A and B units). They can be applied to all parts of the Performance, and applied to eight parts (maximum) of the Song/Pattern. 
+A total of 116 different Chorus types are available. 
+
+NOTE.
+In the Voice mode, only one set of the Insertion effects is available. 
+NOTE.
+For details on the displays related to the Insertion effects in each mode, see pages 179 and 180. 
+NOTE.
+Among the AUDIO IN parts, Insertion effects cannot be applied to the mLAN parts and AIEB2 parts. 
+
+Plug-in Insertion Effects.
+This is a special effect system, only available when an effect-type Plug-in Board is installed. Plug-in Board effects are not available in the Voice mode.
+
+NOTE.
+For details on the displays related to the Plug-in Insertion effects in each mode, see pages 179 and 180. 
+
+Master Effect.
+This block applies effects to the final stereo output signal of the entire sound. A total of 8 different Master Effect types are available. 
+
+NOTE.
+For details on the displays related to the Master effects in each mode, see pages 179 and 180. 
+
+EFFECT Buttons.
+Three EFFECT buttons on the panel let you switch each effect block on and off. 
+Press the [INSERTION] button below "BYPASS" so that the lamp lights to turn the Insertion effects off. You can specify which Insertion effects (only the internal Insertion effect, only the Plug-in Insertion effect, or both of them) are bypassed from the [UTILITY] -> [F1] GENERAL -> [SF3] EF BYPS display in the Utility mode. 
+Press the [SYSTEM] button below "BYPASS" so that the lamp lights to turn the System effects off. You can specify which System effects (only the Reverb effect, only the Chorus effect, or both of them) are bypassed from the [UTILITY] -> [F1] GENERAL -> [SF3] EF BYPS display in the Utility mode. 
+Press the [MASTER EFFECT] button so that the lamp lights to turn the Master effect on. Keep in mind that pressing and holding this button calls up the Master effect setup display in the current mode. 
+
+Controlling the Master effect by using the Knobs.
+When pressing the [ARP FX] button and the [EQ] button simultaneously (both lamps light), you can control the Knobs to adjust the Master effect related parameters specified in the [UTILITY] -> [F4] CTL ASN -> [SF5] MEF display of the Utility mode. 
+
+Equalizer (EQ).
+Usually an equalizer is used to correct the sound output from amps or speakers to match the special character of the room, or to change the tonal character of the sound. The sound is divided into several frequency bands, and adjustments are made to the sound by raising or lowering the level of each band.
+By adjusting the sound according to the genre Ð classical music being more refined, pop music more crisp, and rock music more dynamic Ð you can draw out the special characteristics of the music and make your performance more enjoyable. 
+Three separate EQ sections are available on the instrument: Element EQ, Part EQ, and Master EQ.
+
+  Element EQ.
+[VOICE] -> Voice selection -> [EDIT] -> Element selection/Key selection -> [F6] EQ
+The Element EQ is applied to each element of the Normal Voice and each key of the Drum Voice. You can specify which shape is used among the two shapes described below and set the related parameters. 
+
+Peaking type.
+This type of EQ shape lets you attenuate/boost the signal at the specified Frequency setting.
+
+Shelving type.
+This type of EQ shape lets you attenuate/boost the signal at frequencies above or below the specified Frequency setting. 
+
+NOTE.
+In addition to the individual gain controls, there is also an overall level parameter that attenuates/boosts the entire frequency range.
+
+  Part EQ.
+This 3-band EQ is applied to each part of the Performance/Song/Pattern, The high band and low band are the shelving type. The middle band is the peaking type. 
+
+NOTE.
+The part EQ is not available in the Voice mode. 
+
+  Master EQ.
+Master EQ is applied to the final (post-effect), overall sound of the instrument.  In this EQ, all bands can be set to peaking, or the lowest and highest bands can be set to shelving (as shown below).
+
+EQ for which all bands are set to peaking type.
+EQ for which LOW and HIGH are set to shelving type.
+
+Effect connection in each mode.
+  In the Voice mode.
+The Effect parameters in the Voice mode are set for each Voice and the settings are stored to internal flash ROM as a User Voice. Please note that the Master Effect and Master EQ parameters are set for all the Voices in the Utility mode and stored to internal flash ROM as System settings by pressing the [STORE] button also in the Utility mode. 
+<Figure>
+[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF1] CONNECT.
+You can set which Insertion system, A or B, is applied to each Element (or to each key when the Drum voice is selected). The Insertion effect can also be bypassed.
+You can select the Insertion connection from the three types shown below.
+A to B.
+B to A.
+parallel.
+[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF2] MEF (for all Voices).
+[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF1] MEQ (for all Voices)
+[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3]MEQ OFS
+
+
+NOTE.
+The parallel connection is not available for Plug-in voices.
+NOTE.
+The Plug-in Insertion effect (when the Effect Plug-in board has been installed) is not available in the Voice mode. 
+
+  In the Performance mode.
+The Effect parameters in the Performance mode are set for each Performance and the settings are stored to internal flash ROM as User data.
+<Figure>
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF1] CONNECT.
+The Insertion connection type depends on the setting of the Voice assigned to the selected part.
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF3] MEF.
+*1 Among all of the audio input Parts, the Insertion effect can be applied only to the A/D Input Part.
+*2 Select the part to which the Plug-in Insertion effect is applied from Parts 1 to 4, Plug-in Parts 1 to 3, and the audio input Part in the following display.
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF1] INS SW
+*3 [PERFORM] -> Performance selection -> [EDIT] -> Part selection -> [F3] EQ.
+*4 [PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF1] OUT.
+*5 [PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF2] MEQ.
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS.
+
+
+  In the Song mode/Pattern mode.
+The Effect parameters in the Song mode/Pattern mode are set for each Song/Pattern. The Effect settings are stored to internal DRAM in the Song Mixing mode/Pattern Mixing mode and saved to the SmartMedia/USB storage device in the File mode. 
+<Figure>
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF1] CONNECT.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F2] MEQ/MEF -> [SF2] MEF.
+
+*1  Select the part to which the Plug-in Insertion effect is applied from Parts 1 to 4, Plug-in Parts 1 to 3, and the audio input Part.
+*2 Among all of the audio input Parts, the Insertion effect can be applied only to the A/D Input Part.
+*3 The Insertion effects can be applied to up to eight Parts, selectable from Parts 1 to 4, Plug-in Parts 1 to 3, and the A/D input Part in the following display.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF2] INS SW.
+The connection type depends on the setting of the Voice assigned to the selected part.
+*4 [SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> Part selection -> [F3] EQ
+*5 [SONG] or [PATTERN] -> Song/Pattern selection -> [F4] EF SEND.
+*6 [SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F2] MEQ/MEF -> [SF1] MEQ.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF1] MEQ OFS.
+
+Tone Generator block.
+Part 17 to 32
+(When the Multi-part Plug-in Board.
+PLG100-XG has been installed)
+
+
+NOTE.
+The Insertion Effect, Plug-in Insertion Effect, and the System Effect cannot be applied to Parts 17 to 32 (using the Multi-part Plug-in board PLG100-XG). 
+NOTE.
+The Part EQ cannot be applied to parts of the Plug-in Board. 
+NOTE.
+The System Effects (Reverb, Chorus), the Master EQ, and the Master Effect are not applied to the sound output through the ASSIGNABLE OUTPUT jacks (including those of the AIEB2) or the mLAN connector of the mLAN16E board. (Only the Part EQ and the Insertion Effect are applied.)
+
+
+About MIDI.
+MIDI (Musical Instrument Digital Interface) is a standard which allows electronic musical instruments to communicate with each other, by sending and receiving compatible Note, Control Change, Program Change and various other types of MIDI data, or messages.
+This synthesizer can control other MIDI devices by transmitting note related data and various types of controller data. It can also be controlled by incoming MIDI messages which automatically determine the tone generator mode, select MIDI channels, voices and effects, change parameter values, and of course play the voices specified for the various Parts.
+Many MIDI messages are expressed in hexadecimal or binary numbers. Hexadecimal numbers may include the letter "H" as a suffix. The letter "n" indicates a certain whole number.
+The chart below lists the corresponding decimal number for each hexadecimal/binary number. 
+
+MIDI channels.
+MIDI performance data is assigned to one of sixteen MIDI channels. Using these channels, 1 to 16, the performance data for sixteen different instrument parts can be simultaneously sent over one MIDI cable. 
+Think of the MIDI channels as TV channels. Each TV station transmits its broadcasts over a specific channel.
+Your home TV set receives many different programs simultaneously from several TV stations and you select the appropriate channel to watch the desired program.
+MIDI operates on the same basic principle.
+The transmitting instrument sends MIDI data on a specific MIDI channel (MIDI Transmit Channel) via a single MIDI cable to the receiving instrument. If the receiving instrument's MIDI channel (MIDI Receive Channel) matches the Transmit Channel, the receiving instrument will sound according to the data sent by the transmitting instrument. 
+For information on how to set the MIDI transmit channel and the MIDI receive channel, see page 35. 
+MIDI data is assigned to one of sixteen channels. However, we can overcome the sixteen-channel limit by using separate MIDI "ports," each supporting sixteen channels. For details, see page 38. 
+
+MIDI Messages Transmitted/Recognized by this synthesizer.
+MIDI messages can be divided into two groups: Channel messages and System messages. Below is an explanation of the various types of MIDI messages which this synthesizer can recognize/transmit. The messages transmitted/recognized by this synthesizer are shown in the MIDI Data Format and MIDI Implementation Chart of the separate Data List.
+
+NOTE.
+This synthesizer's tone generator and sequencer blocks handle different MIDI events. These are listed separately in the MIDI Data Format as well as in the MIDI Implementation Chart.
+
+CHANNEL MESSAGES.
+Channel messages contain data related to the performance on the keyboard for the specific channel.
+
+Note On/Note Off (Key On/Key Off).
+Messages which are generated when the keyboard is played.
+Reception note range equal C-2 (0) - G8 (127), C3 equal 60. 
+Velocity range equal 1 to 127 (Only the Note On velocity is received)
+Note On: Generated when a key is pressed.
+Note Off: Generated when a key is released.
+Each message includes a specific note number which corresponds to the key which is pressed, plus a velocity value based on how hard the key is struck.
+
+Control Change.
+Control Change messages let you select a voice bank, control volume, panning, modulation, portamento time, brightness and various other controller parameters, through specific Control Change numbers which correspond to each of the various parameters.
+
+Bank Select MSB (Control No.000).
+Bank Select LSB (Control No.032)
+Messages which select variation voice bank numbers by combining and sending the MSB and LSB from an
+external device. The functions of MSB and LSB messages differ depending on the tone generator mode. MSB numbers select voice type (Normal Voice or Drum Voice), and LSB numbers select voice banks.
+(For more information about Banks and Programs, see Voice List in the separate Data List.)
+A new bank selection will not become effective until the next Program Change message is received.
+
+Modulation (Control No.001).
+Messages which control vibrato depth using the Modulation Wheel.
+Setting the value to 127 produces maximum vibrato and 0 results in vibrato off.
+
+Portamento Time (Control No.005).
+Messages which control the duration of portamento, or a continuous pitch glide between successively played notes.
+When the parameter Portamento Switch (Control No.065) is set to on, the value set here can adjust the speed of pitch change. 
+Setting the value to 127 produces maximum portamento time and 0 results in minimum portamento time.
+
+Data Entry MSB (Control No.006)
+Data Entry LSB (Control No.038)
+Messages which set the value for the parameter specified by RPN MSB/LSB (page 183) and NRPN MSB/LSB (page 183). Parameter value is determined by combining the MSB and LSB.
+
+Main Volume (Control No.007)
+Messages which control the volume of each Part.
+Setting the value to 127 produces maximum volume and 0 results in volume off.
+
+Pan (Control No.010)
+Messages which control the stereo panning position of each Part (for stereo output).
+Setting the value to 127 positions the sound to the far right and 0 positions the sound to the far left.
+
+Expression (Control No.011)
+Messages which control intonation expression of each Part during performance.
+Setting the value to 127 produces maximum volume and 0 results in volume off.
+
+Hold1 (Control No.064)
+Messages which control sustain on/off.
+Setting the value between 64 to 127 turns the sustain on, between 0 to 63 turns the sustain off.
+
+Portamento Switch (Control No.065)
+Messages which control portamento on/off.
+Setting the value between 64 to 127 turns the portamento on, between 0 to 63 turns the portamento off.
+
+Sostenuto (Control No.066)
+Messages which control sostenuto on/off.
+Holding specific notes and then pressing and holding the sostenuto pedal will sustain those notes as you play subsequent notes, until the pedal is released.
+Setting the value between 64 to 127 turns the sostenuto on, between 0 to 63 turns the sostenuto off.
+
+Harmonic Content (Control No.071)
+Messages which adjust the filter resonance set for each Part.
+The value set here is an offset value which will be added to or subtracted from the voice data. Higher values will result in a more characteristic, resonant sound. Depending on the voice, the effective range may be narrower than the range available for adjustment.
+
+Release Time (Control No.072)
+Messages which adjust the AEG release time set for each Part.
+The value set here is an offset value which will be added to or subtracted from the voice data.
+
+Attack Time (Control No.073)
+Messages which adjust the AEG attack time set for each Part.
+The value set here is an offset value which will be added to or subtracted from the voice data.
+
+Brightness (Control No.074)
+Messages which adjust the filter cutoff frequency set for each Part. 
+The value set here is an offset value which will be added to or subtracted from the voice data. Lower values result in a softer sound.
+Depending on the voice, the effective range may be narrower than the range available for adjustment.
+
+Decay Time (Control No.075)
+Messages which adjust the AEG decay time set for each Part. The value set here is an offset value which will be added to or subtracted from the voice data.
+
+Effect1 Depth (Reverb Send Level) (Control No.091)
+Messages which adjust the send level for the Reverb effect.
+
+Effect3 Depth (Chorus Send Level) (Control No.093)
+Messages which adjust the send level for the Chorus effect.
+
+Data Increment (Control No.096)
+Decrement (Control No.097) for RPN
+Messages which increase or decrease the MSB value of pitch bend sensitivity, fine tune, or coarse tune in steps of 1. You will need to assign one of those parameters using the RPN in the external device in advance. The data byte is ignored. When the maximum value or minimum value is reached, the value will not be incremented or decremented further. (Incrementing the fine tune will not cause the coarse tune to be incremented.)
+
+NRPN (Non-Registered Parameter Number)
+LSB (Control No.098) (Plug-in Board only)
+NRPN (Non-Registered Parameter Number)
+MSB (Control No.099) (Plug-in Board only)
+Messages which adjust a voice's vibrato, filter, EG, drum setup or other parameter settings.
+First send the NRPN MSB and NRPN LSB to specify the parameter which is to be controlled. Then use Data Entry (page 182) to set the value of the specified parameter.
+Note that once the NRPN has been set for a channel, subsequent data entry will be recognized as the same NRPN's value change. Therefore, after you use the NRPN, you should set a Null (7FH, 7FH) value to avoid unexpected results.
+For details, refer to the owner's manual of the relevant Plug-in Board.
+
+RPN (Registered Parameter Number) LSB (Control No.100)
+RPN (Registered Parameter Number) MSB (Control No.101)
+Messages which offset, or add or subtract values from a Part's pitch bend sensitivity, tuning, or other parameter settings. First send the RPN MSB and RPN LSB to specify the parameter which is to be controlled. Then use Data Increment/Decrement (page 183) to set the value of the specified parameter. Note that once the RPN has been set for a channel, subsequent data entry will be recognized as the same RPN's value change. Therefore after you use the RPN, you should set a Null (7FH, 7FH) value to avoid unexpected results.
+The following RPN numbers can be received.
+
+<Table>
+RPN MSB.	RPN LSB.	PARAMETER.
+00.	00.	Pitch Bend Sensitivity.
+00.	01.	Fine Tune.
+00.	02.	Coarse Tune.
+7F.	7F.	Null.
+
+Channel Mode Messages.
+The following Channel Mode Messages can be received.
+
+<Table>
+2nd BYTE.	3rd BYTE.	MESSAGE.
+120.	0.	All Sounds Off.
+121.	0.	Reset All Controllers.
+123.	0.	All Notes Off.
+126.	0 to 16.	Mono.
+127.	0.	Poly.
+
+All Sounds Off (Control No.120)
+Clears all sounds currently sounding on the specified channel. However, the status of channel messages such as Note On and Hold On is maintained.
+
+Reset All Controllers (Control No.121)
+The values of the following controllers will be reset to the defaults.
+
+<Table>
+CONTROLLER.	VALUE.
+Pitch Bend Change.	0 (center).
+Aftertouch	0 (off).
+Polyphonic Aftertouch.	0 (off).
+Modulation.	0 (off).
+Expression.	127 (max).
+Hold1.	0 (off).
+Portamento.	0 (off).
+Sostenuto.	0 (off).
+Soft Pedal.	0 (off).
+Portamento Control.	Cancels the Portamento source key number.
+RPN.	Number not specified; internal data will not change.
+NRPN.	Number not specified; internal data will not change.
+
+All Notes Off (Control No.123)
+Clears all notes currently on for the specified channel.
+However, if Hold1 or Sostenuto is on, notes will continue sounding until these are turned off.
+
+Mono (Control No.126)
+Performs the same function as when an All Sounds Off message is received, and if the 3rd byte (mono number) is in the range of 0 to 16, it sets the corresponding channel to Mono Mode (Mode 4: m equal 1).
+
+Poly (Control No.127)
+Performs the same function as when an All Sounds Off message is received, and sets the corresponding channel to Poly Mode.
+Program Change
+Messages that determine which voice to select for each Part. With a combination of Bank Select, you can select not only basic voice numbers, but also variation voice bank numbers. For a list of the Voices, see the separate Data List. 
+
+Pitch Bend.
+Pitch Bend messages are continuous controller messages that allow the pitch of designated notes to be raised or lowered by a specified amount over a specified duration.
+
+Channel Aftertouch.
+Messages which let you control the sounds by the pressure you apply to the keys after the initial striking of the keys, over the entire channel.
+This synthesizer does not transmit this data from the keyboard; however, this synthesizer does properly respond to this data when received from an external device.
+
+Polyphonic Aftertouch.
+Messages which let you control the sounds by the pressure you apply to the keys after the initial striking of the keys, for each individual key. This synthesizer does not transmit this data from the keyboard; however, the data is transmitted from the internal sequencer.
+
+
+SYSTEM MESSAGES.
+System messages are the data related to the overall system of the device.
+
+System Exclusive Messages.
+System Exclusive messages control various functions of this synthesizer, including master volume and master tuning, tone generator mode, effect type and various other parameters.
+
+General MIDI (GM) System On (Song mode/Pattern only)
+When "General MIDI system on" is received, the MOTIF ES will receive the MIDI messages which are compatible with GM System Level 1, and consequently will not receive NRPN and Bank Select messages.
+
+F0 7E 7F 09 01 F7 (Hexadecimal)
+
+NOTE.
+Make sure that the interval between this message and the first note data of the song is at least a quarter note or greater in length.
+
+Master Volume.
+When received, the Volume MSB will be effective for the System Parameter.
+
+F0 7F 7F 04 01 ll mm F7 (Hexadecimal)
+* mm (MSB) equal appropriate volume value, ll (LSB) equal ignored.
+
+System Realtime Messages.
+These messages control the sequencer, that is to say Song and Pattern. 
+
+Active Sensing (FEH)
+Once FEH (Active Sensing) has been received, if no MIDI data is subsequently received for longer than an interval of approximately 300 msec, the MOTIF ES will perform the same function as when All Sounds Off, All Notes Off, and Reset All Controllers messages are received, and will then return to a status in which FEH is not monitored
+
+Timing Clock (F8H)
+This message is transmitted with a fixed interval (24 times per 1/4 note) to synchronize connected MIDI instruments. 
+You can select whether the sequencer block uses the internal Timing Clock, or external Timing Clock messages received via MIDI IN by setting the MIDI Sync parameter: [UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync.
+
+Start (FAH)
+This message lets the MIDI sequence data start playing back from the beginning. This message will be transmitted when pressing the [>] (Play) button at the top of the Song or Pattern. 
+
+Continue (FBH)
+This message lets the MIDI sequence data start playing back from the current song position. This message will be transmitted when pressing the [>] (Play) button at the middle of the Song or Pattern. 
+
+Stop (FCH)
+This message causes MIDI sequence data (song) to stop playing back. This message will be transmitted when pressing the [ ] (Stop) button during playback. 
+
+NOTE.
+You can select whether this synthesizer will transmit Timing Clock, Start, Continue, and Stop messages by setting the SeqCtrl parameter: [UTILITY] -> [F5] MIDI -> [SF3] SYNC -> SeqCtrl.
+
+System Common Message.
+System Common messages also control the sequencer, including Song Select and Song Position Pointer messages.
+
+
+Internal Memory and File Management.
+As you use the MOTIF ES, you'll create many different kinds of data, including Voices, Performances, Songs, and Patterns.  This section describes how to maintain the various types of data and use the memory devices/media for storing them.
+
+Maintaining data.
+You can maintain the data you've created via the following three methods. 
+  Store.
+This is a process of transferring or saving the created data of this synthesizer to a dedicated location (User Memory) in the internal memory. Each type of data can be stored with the following operations.
+
+<Table>
+Voice.	[VOICE] -> Voice selection -> [STORE].	Page 85.
+Performance.	[PERFORM] -> Performance selection -> [STORE].	Page 91.
+Song Mixing.	[SONG] -> Song selection -> [MIXING] -> [STORE]. 	Page 131.
+Pattern Mixing.	[PATTERN] -> Pattern selection -> [MIXING] -> [STORE]. 	Page 131.
+Mixing Voice.	[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [F5] VCE ED -> [STORE]. 	Page 106.
+Master.	[MASTER] -> Master selection -> [STORE]. 	Page 137.
+System settings.	[UTILITY] -> [STORE] *( Please note that pressing the [STORE] in the Utility mode starts the Store operation of the System settings immediately.) 	Page 260.
+
+<CAUTION>
+Since Song Mixing, Pattern Mixing, and Mixing Voice data is stored to DRAM (page 187), all such data is lost when turning off the power -- even if the data has been stored with the operations above. Make sure to save this data to the SmartMedia/USB storage device in the File mode after storing. 
+<CAUTION>
+Never attempt to turn off the power while data (e.g., Voice) is being written to Flash ROM (while an "Executing..." or "Please keep power on" message is shown). Turning the power off in this state may cause the system to freeze (due to corruption of data in the Flash ROM) and prevent normal startup the next time the power is turned on, as well as resulting in the loss of all user data.
+
+  Save	[FILE] -> [F2] SAVE.
+This is a process of transferring or saving the created data of this synthesizer to an external memory device (SmartMedia/USB storage device). This process can be done in the File mode. The Save operation can be done via various methods, such as saving all data as a single file or saving a specified type of data (e.g., only Voices) as a single file. For details, see Memory Structure (page 186) and Reference (page 188). The saved data as files can be recalled by loading them in the File mode. 
+
+  Bulk Dump.
+This function lets you save the data in the Edit buffer (DRAM) or Flash ROM by transmitting it as Bulk data (system exclusive message) to an external MIDI instrument or sequence software on a computer. This can be done with the following operations.
+
+<Table>
+Voice.	[VOICE] -> Voice selection -> [JOB] -> [F4] BULK.
+Performance.	[PERFORM] -> Performance selection -> [JOB] -> [F4] BULK.
+Song Mixing.	[SONG] -> Song selection -> [MIXING] -> [JOB] -> [F4] BULK. 
+Pattern Mixing.	[PATTERN] -> Pattern selection -> [MIXING] -> [JOB] -> [F4] BULK.
+Master.	[MASTER] -> Master selection -> [JOB] -> [F4] BULK.
+
+NOTE.
+Mixing Voice data cannot be transmitted as Bulk data via panel operations.
+NOTE.
+User Arpeggio data and some of the System settings are not handled as Bulk data. 
+NOTE.
+The data in the User Memory of Flash ROM can be transmitted to an external MIDI instrument or computer upon reception of a bulk request message. For details about the bulk request message and bulk dump format, see the separate Data List. 
+
+Voice and Plug-in Voice data can be transmitted to a computer for editing with the Voice Editor software (on the included CD-ROM).  The edited Voice data can then be transmitted back to the instrument in banks as bulk data.  Similarly, Voice data created in the Voice Edit mode can be sent to the computer in banks as bulk data.
+Song Mixing and Pattern Mixing data can also be transmitted to a computer for editing, using the Multi Part Editor software (on the included CD-ROM).  The edited Mixing data can then be transmitted back to the instrument as bulk data.  Mixing data created in the Song Mixing Edit and Pattern Mixing modes can also be sent to the computer in banks as bulk data.
+
+Memory Structure.
+This diagram details the relationship among the functions of the MOTIF ES and the internal memory and SmartMedia/USB storage device. 
+<Figure>
+*1 For details on the Bulk Dump, Save, and Store operations, see page 185.
+*2 Only the currently edited data can be transmitted as Bulk data. Note that the Mixing Voice cannot be transmitted as Bulk data. 
+*3 The Mixing settings can be stored/recalled as a template in the Song Mixing Job mode/Pattern Mixing Job mode. 
+*4 You can convert the MIDI sequence data recorded in the Song Record mode/Pattern Record mode to Arpeggio data. This can be executed with the following operations:    [SONG] -> [JOB] -> [F5] TRACK -> 07: Put Track to Arp    [PATTERN] -> [JOB] -> [F5] TRACK -> 06: Track to Arp
+*5 In order to create a Waveform by sampling or importing an audio file, optional DIMM modules must be installed.
+
+
+Internal Memory.
+Below are explanations of the basic terms used in the Memory Structure illustration on the previous page.
+  Flash ROM.
+ROM (Read Only Memory) is memory designed specifically for reading out of data, and as such data cannot be written to it. 
+Unlike conventional ROM, Flash ROM can be overwritten Ð allowing you to store your own original data. The contents of Flash ROM are maintained even when the power is turned off. 
+  DRAM.
+RAM (Random Access Memory) is memory designed specifically for data writing and data reading operations. There are two different kinds of RAM, depending on the condition for storing the data: SRAM (Static RAM) and DRAM (Dynamic RAM). 
+The created data stored on DRAM is lost when the power is turned off. Because of this, you should always store any data residing in DRAM to the SmartMedia/USB storage device before turning off the power.
+  DIMM.
+DIMM modules must be installed in order to use the Sampling function or to load audio data (Waveform/WAV file/AIFF file) to the instrument.  As with DRAM described above, the created data stored on DIMM is lost when the power is turned off.  Because of this, you should always store any data residing in DIMM to the SmartMedia/USB storage device before turning off the power. 
+  Edit Buffer and User Memory.
+The edit buffer is the memory location for edited data of these types: Voice, Performance, Master, Song Mixing, and Pattern Mixing. Data edited in this location will be stored to the User Memory.
+If you select another Voice, Performance, Master, Song, or Pattern, the entire contents of the edit buffer will be rewritten with the newly selected Voice/Performance/Master/Song Mixing/Pattern Mixing data. Make sure to store any important data before selecting another Voice, etc. 
+  Edit Buffer and Recall Buffer.
+If you've selected another Voice/Performance/Song/Pattern without storing the one you were editing, you can recall your original edits, since the edit buffer's contents are stored in backup memory. 
+
+NOTE.
+Keep in mind that the recall buffer is not available in the Master Edit mode. 
+
+
+This is the end of the file.

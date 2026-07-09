@@ -1,0 +1,778 @@
+Quick Guide -- Playing the MOTIF ES.
+
+Playing the Demo Songs/Patterns.
+Here's the best place to start your explorations of the MOTIF ES. The Song and Pattern Demos have been specially programmed so you can hear just how amazing the sounds are, and find out just how powerful the instrument really is -- for music creation, performance and production. Before you can play the Demos, you'll need to load the Demo data (contained in ROM) to the DRAM memory location as shown below.
+
+NOTE.	
+For details about ROM and DRAM, see page 187. 
+
+<CAUTION> 
+When the Demo Song/Pattern data is loaded, the memory area for playback will be overwritten and the following Utility settings will be changed in order to play back the Demo Song/Pattern properly. 
+[UTILITY] -> [F1] GENERAL -> [SF1] TG -> Volume, NoteShift, Tune
+[UTILITY] -> [F1] GENERAL -> [SF4] OTHER -> CtrlRest
+[UTILITY] -> [F1] GENERAL -> [SF3] EF BYPAS
+Important data should always be backed up to a SmartMedia/USB storage device.
+
+In some cases such as those listed below, the Demo Song/Pattern data will be loaded automatically when turning the power on.
+  When turning the power on with no SmartMedia card in the CARD slot when the instrument is in its factory shipped state or after the Factory Set (page 44) is executed.
+  When turning the power on with a SmartMedia card containing no Auto Load files in the CARD slot when the instrument is in its factory-shipped state or after the Factory Set (page 44) is executed.
+In cases such as those listed above, steps No.1 to No.3 are unnecessary. Press the [SONG] button to enter the Song mode, then perform the instructions below from
+step No.4.
+
+NOTE.	This synthesizer features an Auto Load function by which the Demo Song/Pattern data or the specified files in the SmartMedia card inserted in the CARD slot will be loaded automatically when turning the power on. For details about the Auto Load function, see page 135.
+
+1.	Press the [FILE] button and [UTILITY] button simultaneously. 
+2.	Set the LoadType to "All." 
+You can select from the three Load Types listed below.  Here, we'll select "All." 
+
+<Table>
+All.	Loads both the Demo Song and Pattern data.
+Song.	Loads only the Demo Song data. 
+Pattern.	Loads only the Demo Pattern data. 
+
+3.	Press the [ENTER] button to load the Demo data.
+After the data is loaded, the Song Play display is automatically called up. 
+If "Pattern" is selected in step No.2 above, the Pattern Play display is automatically called up once the data is loaded.
+
+NOTE.	
+Keep in mind that the example displays shown in this manual are for instruction purposes only, and the contents (for example, the Demo Song/Pattern names) may differ slightly from those on your instrument.
+
+4.	Press the [>] (Play) button to start Song playback. 
+When playback of the selected Song is finished, the Song automatically stops. You can stop the Song anytime during playback by pressing the [  ] (Stop) button. This pauses the song at the current position. To resume playback of the Song from that point, press the [>] (Play) again. To instantly return to the beginning of the Song, press the [|<] (Top) button.
+5.	Select and play another Demo Song.
+Move the cursor to "Song Number: Name" (with the cursor buttons) then select another song by using the Data Dial, or the [INC/YES] and [DEC/NO] buttons.
+<Figure>
+Decreases number
+Increases number
+
+Next, let's play a Demo Pattern. 
+6.	Press the [PATTERN] button to enter the Pattern mode.
+7.	Press the [>] (Play) button to start Pattern playback. 
+There is another way to start Pattern playback Ð by pressing the note son the keyboard. Move the cursor to the keyboard icon and press the [INC/YES] button so that the [Play] mark appears. In this status, press any key to start the pattern playback. 
+Press the [DEC/NO] button with the cursor located at the keyboard icon to turn the [Play] mark off. 
+8.	Select different Sections of the Pattern.
+Make sure that the [SECTION] lamp is on (press the button if necessary), then press any of the buttons shown below to select and play the various Sections contained in a Pattern.   Pressing the [A] to [H] buttons calls up Sections A to H and pressing the [PRE5] to [PLG3] buttons calls up the Sections I to P. Try out various rhythm variations by changing the Section. 
+NOTE	
+Some Sections of the Demo Pattern may have no data. Because of this, selecting some Sections may result in no sound. 
+9.	Press the [  ] (Stop) button to stop Pattern playback. 
+Unlike Song playback, Pattern playback continues in a loop until the [  ] (Stop) button is pressed. 
+You can stop the Pattern anytime during playback by pressing the [  ] (Stop) button. This pauses the Pattern at the current position. To resume playback of the Pattern from that point, press the [>] (Play) again. 
+To instantly return to the beginning of the Pattern, press the [|<] (Top) button.
+10.	Select and play another Demo Song.
+Selecting a Pattern is done in the same way as selecting a Song. Refer to step No.5 above.
+
+Parameters in the Song Play mode.
+<Figure>
+Location settings for the selected Song.
+Measure : Beat (for current playback location)
+ARP1 to ARP5
+Use the [SF1] to [SF5] buttons to call up the Arpeggio type and Song Scene assigned to each button (page 123).
+Tempo for the selected Song.
+Time signature for the selected Song (You can change the value by moving the cursor here and using the [INC/YES]/[DEC/NO] buttons and data dial.)
+Transpose setting (for entire Song)
+Currently selected Song.
+Song track number and track mute/solo status.
+Track data status.
+Indicates a MIDI track (page 168) containing MIDI sequence data.
+Indicates muted track.
+Indicates a sample track (page 168) containing a Sample Voice (page 173).
+Indicates soloed track (page 58).
+Indicates that the track has no recorded data.
+
+
+Using Mute/Solo with the Song and Pattern tracks.
+Try this with the Demo Songs to hear how the tracks sound both in isolation and in various combinations.
+
+To mute a track.
+1.	Press the [MUTE] button (the lamp lights).
+2.	Press any of the NUMBER [1] to [16] buttons to select the track number to be muted.
+The corresponding track is set to mute (its lamp goes off) and produces no sound. When pressing the same number button again, the track mute is canceled (its lamp lights). 
+To turn Mute off, press the [MUTE] button again (the lamp goes off).
+
+To solo a track.
+Simultaneously hold down the [MUTE] button and press one of the NUMBER buttons [1] to [16] to solo the corresponding track. Once you've selected a track for soloing, the [MUTE] button's lamp flashes, indicating the Solo function is active. While Solo is active, you can change the soloed track simply by pressing the corresponding NUMBER button [1] to [16].
+To cancel the Solo function, press the [MUTE] button again.
+
+
+Selecting a Song/Pattern track and playing the keyboard.
+You can play along with the Song or Pattern using the sound of a track -- for example, playing additional drum/percussion sounds on a drum track while the Song plays. Press the [TRACK SELECT] button so that its lamp lights, and select a track by pressing the one of the NUMBER buttons [1] to [16]. 
+If you want you can also mute a track and play the part of the track yourself.  To do this, select the desired track as described, then mute the track (as explained in "To mute a track" above).
+
+Song Location.
+The Song Play mode has a convenient Location function that lets you jump to user-specified parts of a song. This lets you assign a specific measure number in the selected song, and instantly jump to the assigned measure Ð either during playback or when the song is stopped. Two Locations can be assigned. 
+
+Assigning Locations.
+Select the desired measure in the recorded song for the Location. (Highlight "MEAS" and use the [INC/YES] and [DEC/NO] buttons or data dial.) Then, to assign the measure to Location 1, simultaneously hold down the [SET LOCATE] button and press the [<<] (Reverse) button.
+To assign Location 2, use the [>>] (Forward) button.
+<Figure>
+Specify a measure number to be registered.
+In this example, the selected measure is assigned to Location 1. The current settings for Locations 1 and 2 are shown at the top right of the display.
+
+Jumping to an assigned Location.
+To instantly jump to the assigned Location 1 or 2, simultaneously hold down the [LOCATE] button and pressing the [<<] (Reverse) button (for Location 1) or the [>>] (Forward) button (for Location 2). 
+
+Song Chain.
+This function allows Songs to be "chained" together for automatic sequential playback. In this section, try using the Song Chain features with the Demo Songs.
+1.	Press the [F6] CHAIN button to call up the Song Chain display. 
+From this display you can program and play your own custom Song sequences.
+2.	Program the desired order of the Songs.
+Move the cursor to "001" by using the cursor buttons and select the desired Song by using the Data Dial, or the [INC/YES] and [DEC/NO] buttons. Likewise, assign the other Songs to locations 002, 003, 004, and so on. 
+In addition, the following parameters can be set in the Song Chain.
+
+<Table>
+skip.	Skips past (ignores) the selected chain number and continues playback from the next chain number.
+stop.	Stops Song Chain playback at that chain number. You can restart Song Chain playback from the next chain number by pressing the [>] (Play) button.
+end.	Indicates the end mark of the Song Chain data.
+3.	Play the Song Chain. 
+Move the cursor to the top of the Song Chain display, and press the [>] (Play) button to start Song playback. 
+When the Song Chain programmed in step No.2 reaches to the end, playback stops automatically. Press the [  ] (Stop) button during playback to stop Song Chain playback. 
+
+NOTE.	
+The Song Chain can only be played back in the Song Chain display, and not from any other display.
+Parameters in the Pattern Play mode
+
+<Figure>
+When the [Play] mark appears, pressing any note on the keyboard starts Pattern playback (page 57).
+Measure : Beat (for current playback location)
+ARP1 to ARP5
+Use the [SF1] to [SF5] buttons to call up the Arpeggio type assigned to each button (page 123).
+Tempo for the selected Pattern.
+Time signature for the selected pattern (You can change the value by moving the cursor here and using the [INC/YES]/[DEC/NO] buttons and data dial.)
+Transpose setting (for entire Pattern).
+Currently selected Pattern and Section.
+Pattern track number and track mute/solo status.
+Track data status.
+Indicates a MIDI track (page 168) containing MIDI sequence data.
+Indicates muted track.
+Indicates a sample track (page 168) containing a Sample Voice (page 173).
+Indicates soloed track (page 58).
+Indicates that the track has no recorded data. (No Phrase is assigned.)
+
+
+Pattern Chain.
+Pattern Chain allows you to string several different Sections together to make a single Song. 
+About the Pattern Chain structure, see page 168. For information on how to create Pattern Chain data, see page 115. 
+
+
+Playing the Keyboard (in the Voice Play mode)
+The Voice Play mode is where you select and play the instrument sounds (voices) of this synthesizer.
+
+Selecting a Voice.
+.Selecting a Normal Voice
+Internally, there are two Voice Types: Normal Voices and Drum Voices. Normal Voices are mainly pitched musical instrument-type sounds that can be played over the range of the keyboard. Drum Voices are mainly percussion/drum sounds that are assigned to individual notes on the keyboard. In this section, we'll show you how to select a Normal Voice.
+You can select the desired Voice from various Voice Banks (Preset 1 to 6, User 1 to 2, GM preset, Plug-in 1 to 3) as shown below. 
+<Figure>
+Voice Bank.
+Preset Bank.
+Contains the Voices built into this instrument.
+User Bank.
+Contains the voices you create in the Voice Edit mode.
+GM Bank.
+Contains the voices allocated according to the GM standard. For details, see page 160.
+Plug-in Bank
+Available when Plug-in Boards have been installed. See page 74.
+
+1.	Press the [VOICE] button to enter the Voice Play mode. 
+In this condition, playing the keyboard sounds the Voice indicated in the display. 
+The parameters shown in the Voice Play mode are briefly explained below.
+<Figure>
+Indicates the Keyboard MIDI transmit channel. See page 64 for details.
+Indicates the Keyboard Octave setting set via the [OCTAVE] buttons. See page 63 for details.
+ARP1 to ARP5
+Use the [SF1] to [SF5] buttons to call up the Arpeggio type assigned to each button (page 66).
+Indicates the functions assigned to the respective Control knobs. See page 81.
+Indicates the currently selected voice.
+Bank and Voice Program number
+Bank.
+(selected via the BANK buttons)
+Voice Program number
+(corresponding to Groups A to H and Numbers 01 to 16)
+Group
+(selected via the GROUP [A] to [H] buttons)
+Number
+(selected via the NUMBER [1] to [16] buttons)
+Category and Voice name
+NOTE.	
+Keep in mind that the example displays shown in this manual are for instruction purposes only, and the contents (for example, the Voice name here) may differ slightly from those on your instrument.
+
+2.	Select a Normal Voice Bank.
+Select one of the Banks from Preset 1 to 6, User 1 to 2, and GM. 
+3.	Select a Normal Voice Group. 
+Voices in each Bank are divided into Groups [A] to [H]. Select a Group to display the Voices that belong to the selected Group. 
+4.	Select a Normal Voice Number. 
+Press one of the NUMBER [1] to [16] buttons. 
+5.	Play the keyboard. 
+
+Selecting a Drum Voice.
+Internally, there are two Voice Types: Normal Voices and Drum Voices. Normal Voices are mainly pitched musical instrument-type sounds that can be played over the range of the keyboard. Drum Voices are mainly percussion/drum sounds that are assigned to individual notes on the keyboard. In this section, we'll show you how to select a Drum Voice.
+1.	Press the [VOICE] button to enter the Voice Play mode. 
+2.	Select a Drum Voice Bank. 
+While holding the [DRUM KITS] button, press one of the arrow-indicated buttons: [PRE5] (Preset Drum), [USER1] (User Drum), or [GM] (GM Drum). 
+3.	Select a Drum Voice Group.
+This operation is basically the same as in selecting a Normal Voice. You can select a Group from A to D when selecting the Preset Drum Bank in step No.2. You can select a Group from A or B when selecting the User Drum Bank in step No.2. You can select only A when selecting the GM Drum Bank in step No.2. 
+4.	Select a Drum Voice Number. 
+This is the same as in selecting a Normal Voice. 
+5.	Play the keyboard and check what instrument is assigned to each key. 
+
+NOTE.	
+For details about the instrument assignments for each key, refer to the separate Data List. 
+
+Using the [INC/YES], [DEC/NO] buttons and data dial.
+You can select a Voice Number by using the [INC/YES], [DEC/NO] buttons and data dial in steps No.3 and No.4. 
+<Figure>
+
+NOTE.	
+The procedure for selecting Voices in other modes differs from above.  For details on selecting Voices in the Performance mode, see page 71.  For details on selecting Voices in the Song/Pattern mode, see page 102.
+
+
+Using the Category Search function.
+This synthesizer features a powerful Category Search function that gives you quick access to the sounds you want, irrespective of their bank locations. Simply select a Voice category, such as A. PIANO or SYN LEAD, and you can browse through all related Voices one by one Ð and audition each of them, too. If you've installed a Plug-in Board to the instrument, those Voices are automatically included in the search as well. Plus, you can use the special Favorites category to store the Voices you use most.
+1.	Turn the Category Search function on by pressing the [CATEGORY SEARCH] button.
+In this condition with the button lit, you can use the BANK and GROUP buttons to specify the Category. 
+Press the [CATEGORY SEARCH] button again to turn this function off. 
+2.	Select a Category.
+Press one of the BANK and GROUP buttons to call up the selected Category name and the Voice list. The first Voice in the Category is selected.
+All Categories are divided into two or three Sub Categories for further ease in selection. The Sub Category names are displayed at the bottom of the Category Search display. Press the [F1] to [F3] buttons to select the first Voice in the corresponding Sub Category.
+
+NOTE.	
+An alternate way of selecting categories is to use the Cursor buttons to select and highlight the Category name in the display, then use the [INC/YES] and [DEC/NO] buttons or the data dial to select the Category.  Then, move the cursor to the Voice list at the right of the display to select the Voice (see step No.3 below).
+NOTE.	
+Some Voices such as User Voices may not be registered to any Category.  You can search for these Voices by setting the Category to "--------------." 
+
+3.	Select a Voice from the Voice List in the display. 
+Step through the available Voices by using the data dial. You can also use the [INC/YES] and [DEC/NO] buttons, or use the Cursor [up]/[down] buttons. 
+4.	Press the [CATEGORY SEARCH] button to turn this function off and go back to the original display. 
+
+NOTE.	
+You can also use the [ENTER] button or [EXIT] button to exit from the Category function. 
+
+Favorite Category.
+Use this convenient function to store all your favorite, often-used Voices in a single, easy-to-access location Ð and call them up by pressing the [FAVORITES] button. Select any Voice you want, from any desired category, and enter each to the Favorites Category. In this way, you can go directly to all the Voices you use the most, without having to hop around other Categories Ð a great aid when playing live.
+1.	Turn the Category Search function on by pressing the [CATEGORY SEARCH] button.
+2.	Specify the Category and Sub Category, then select a Voice (page 62). 
+3.	Register the Voice selected in step No.2 to the Favorite Category by Pressing the [F5] SET/CLR button to checkmark the box next to the Voice name.  
+You can un-checkmark it by pressing the [F5] button again. 
+
+<Figure>
+Pressing [F5] toggles between the two settings:
+Checkmark on.
+Checkmark off.
+To remove all the marked Voices from the Favorite Category, simply press the [F6] CLR ALL button.
+
+4.	Set other Voices to the Favorite Category as required by repeating step No.2 to 3.  
+5.	Press the [FAVORITES] button to see the Voices set to the Favorite Category in steps No.2 to 4. 
+You can use the [F5] SET/CLR and [F6] CLR ALL buttons also in this display to register/remove the voices to/from the Favorite Category. 
+6.	Press the [FAVORITES] button again to return to the Category Search display.  
+7.	Pressing the [CATEGORY SEARCH] button to exit from the Category Search display will store the Favorite Category settings to internal Flash ROM automatically. 
+
+<CAUTION>
+Make sure to execute step No.7. The settings made in steps No.3 to 4 will be lost if you turning the power off without executing step No.7. 
+<CAUTION>
+Never attempt to turn off the power while data (e.g., Voice) is being written to Flash ROM (while a "Please keep power on" message is shown). Turning the power off in this state may not only cause the system to freeze (due to data corruption in the Flash ROM) and prevent normal startup the next time the power is turned on, it may also result in loss of all user data.
+
+Keyboard octave setting (MOTIF ES6/MOTIF ES7)
+Sometimes when playing a voice, you may wish to play in a lower or higher pitch range. For example, you may want to shift the pitch down lower to get extra bass notes, or shift up to get higher notes for leads and solos. The Octave Up/Down controls let you do this quickly and easily. Each time you press the [OCTAVE UP] button on the panel, the overall pitch of the voice goes up by one octave.
+Likewise, each press of the [OCTAVE DOWN] button takes the pitch down by one octave. The range is from minus 3 to plus 3, with 0 being standard pitch. When this is set to Octave Up, the lamp of the [OCTAVE UP] button lights, and when it is set to Octave Down, the [OCTAVE DOWN] button's lamp lights. The current octave setting is shown at the top right of the display. You can instantly restore standard pitch (0) by simultaneously pressing both the [OCTAVE UP] button and the [OCTAVE DOWN] button (both lamps turn off).
+
+NOTE.	
+The Octave setting made here is automatically reflected in the identical Octave parameter in the Utility mode ([UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave).  This setting is available in all modes.
+
+[TIP]	Transpose setting of the keyboard.
+You can set the amount in semitones by which the range of the keyboard is shifted up or down as well as the octave setting. 
+1.	Press the [UTILITY] button to enter the Utility mode. 
+2.	Press the [F1] GENERAL button, then the [SF2] KBD button. 
+3.	Move the cursor to "Transpose" by using the Cursor button. 
+4.	Change the Transpose value by using the [INC/YES], [DEC/NO] buttons and data dial. 
+5.	Press the [STORE] button to store the Transpose setting to internal Flash ROM. 
+<CAUTION>
+Make sure to execute step No.5. The settings made in step No.4 will be lost if you turning the power off without executing step No.7. 
+<CAUTION>
+Never attempt to turn off the power while data (e.g., Voice) is being written to Flash ROM (while a "Please keep power on" message is shown). Turning the power off in this state may not only cause the system to freeze (due to data corruption in the Flash ROM) and prevent normal startup the next time the power is turned on, it may also result in loss of all user data.
+
+NOTE.	
+The transpose setting is available in all modes. 
+
+Keyboard MIDI transmit channel setting.
+This function is especially convenient when recording to an external sequencer or controlling another instrument via MIDI.  It lets you easily change the transmit channel with just a couple of button presses.  Press the [TRACK SELECT] button (the lamp lights), then press the appropriate NUMBER button ([1] to [16]).  The transmit channel setting is shown at the top right of the display.
+NOTE.	
+You can also set the MIDI keyboard transmit channel from the Utility mode ([UTILITY] -> [F5] MIDI -> [SF1] CH -> KBDTransCh). This parameter is available for the Voice mode/Performance mode but not for the Song mode/Pattern mode. 
+Using Controllers
+Pitch Bend Wheel
+Use the Pitch Bend wheel to bend notes up (roll the wheel away from you) or down (roll the wheel toward you) while playing the keyboard. This wheel is self-centering and will automatically return to normal pitch when released. Try out the Pitch Bend wheel while pressing a note on the keyboard. 
+<Figure>
+
+NOTE.	
+Each preset Voice has its own default Pitch Bend Range setting. The Pitch Bend Range setting for each Voice can be changed in the [VOICE] -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF5] OTHER display and stored as a User Voice in the Voice Store mode. From this display you can also reverse the Pitch Bend function -- so that moving the wheel up lowers the pitch, and moving it down raises the pitch.
+NOTE.	
+Functions other than Pitch Bend can be assigned to the Pitch Bend Wheel in the [VOICE] -> [EDIT] -> [COMMON] -> [F4] CTL SET display. These assignment settings can be stored as a User Voice in the Voice Store mode. Even if a different function is assigned to this wheel, the Pitch Bend function is available and Pitch Bend messages are still generated when the wheel is used. 
+NOTE.	
+Using the Pitch Bend wheel generates the same MIDI message to extend devices, regardless of the assignments made in the Voice Edit mode.
+
+Modulation Wheel.
+Even though the Modulation wheel is conventionally used to apply vibrato to the sound, many of the preset Voices have other functions and effects assigned to the wheel. The more you move this wheel up, the greater the effect that is applied to the sound. Try out the Modulation wheel with various preset voices while playing the keyboard. 
+<Figure>
+
+NOTE.	
+To avoid accidentally applying effects to the current Voice, make sure the Modulation Wheel is set to minimum before you start playing. 
+NOTE.	
+Various functions can be assigned to the Modulation Wheel in the [VOICE] -> [EDIT] -> [COMMON] -> [F4] CTL SET display. These assignment settings can be stored as a User Voice in the Voice Store mode. 
+NOTE.	
+Using the Modulation wheel generates the same MIDI message to external devices, regardless of the assignments made in the Voice Edit mode.
+
+Ribbon Controller.
+The Ribbon Controller is touch sensitive, and is controlled by running your finger laterally across the surface. Various function are assigned to each preset Voice. 
+Try out the Ribbon Controller with various preset Voices while playing the keyboard. 
+
+NOTE.	
+You can set the Ribbon Controller to control different functions on connected external MIDI devices from the functions assigned for the instrument itself.  You can also determine whether the Ribbon Controller value returns to the center, or stays at the point where you released your finger.  Both of these setting can be made in the Utility mode ([UTILITY] -> [F3] VOICE -> [SF4] CTL ASN).
+
+Knobs (KN).
+These knobs let you change various aspects of the Voice's sound in real time Ð while you play. Turn a knob to the right to increase the value, and left to decrease it. For each preset Voice, various functions are assigned to four knobs. Try out these knobs with various preset Voices while playing keyboard. 
+You can change which particular group of functions or parameters the knobs are assigned to by pressing any of the [KNOB CONTROL FUNCTION] buttons. For details, see page 81. 
+
+NOTE.	
+In certain situations, using the knobs may not result in any change in the sound.  For more information, refer to page 50 in the Basic Operation section.
+
+Edit Indicator.
+Tweaking the knobs in the Voice mode directly changes the parameters of the Voice. When any of the Voice parameters are changed, the [E] (Edit) Indicator appears in the top left of the display. This indicates that the current voice has been modified but not yet stored.
+If you're satisfied with the tweaks you made and the resulting sound, you can store the changes as a User Voice in the Voice Store mode (page 85). 
+<CAUTION>
+If you select another Voice during editing, the [E] (Edit) indicator will disappear and all your edits will be lost.
+It is a good idea to store the edited Voice data from the Voice Store mode (page 85). Even if you lose the edited Voice data, you can restore it by using the Edit Recall function (page 82).
+
+Control Sliders.
+In the Voice mode, the four Control Sliders let you independently adjust the levels of the Elements of a Normal Voice or the Drum Voice keys. When Normal Voice is selected, you can adjust the volume balance among the four Elements. 
+
+NOTE.	
+Inadvertent use of the sliders may result in no sound. If this occurs, move the sliders upward. 
+
+
+Using the Arpeggio feature.
+This function lets you trigger rhythm patterns, riffs and phrases using the current Voice by simply playing notes on the keyboard. Since the preset Voices already have their own Arpeggio types pre-assigned, all you need to do is select the desired Voice and turn on the Arpeggio function. Try selecting different Voices and check out the various Arpeggio types.
+
+NOTE.	
+For details about Arpeggio, see page 169. 
+
+1.	Press the [ARPEGGIO ON/OFF] button to turn Arpeggio on.
+For certain Voices, simply selecting the Voice will turn Arpeggio on.
+2.	Play a note or notes on the keyboard to trigger the Arpeggio playback. 
+The particular rhythm pattern or phrase that plays depends on the actual notes or chords you play, as well as on the selected Arpeggio type.  For details, refer to page 169 in the Basic Operation section.
+Changing the Arpeggio type during keyboard performance
+A different Arpeggio type is assigned to each of the [SF1] ARP1 to [SF5] ARP5 buttons for each preset Voice. When a musical note icon appears to the right of each Arpeggio number in the display (see below), the corresponding button is assigned an Arpeggio type. Try out various Arpeggio types by pressing the [SF1] to [SF5] buttons. 
+You can confirm the currently selected Arpeggio type in the [F6] ARP display. 
+<Figure>
+Arpeggio type currently selected.
+
+<Table>
+Bank.	Indicates "pre (preset)" or "usr (user)."
+Ctgr.	See page 169. 
+Type.	Refer to the separate Data List booklet. 
+
+Register your favorite Arpeggio types to the [SF1] to [SF5] buttons.
+You can change the default settings and assign any Arpeggio types you like to the [SF1] to [SF5] buttons.  The selected Arpeggio indication is highlighted in white.  If two buttons share the same type, both will appear in white. The settings can be stored as a User Voice in the Voice Store mode. 
+1.	Press the [ARPEGGIO ON/OFF] button to turn Arpeggio on. 
+2.	Select the desired Arpeggio type in the [VOICE] -> [F6] ARP display. 
+3.	While holding the [STORE] button, press one of the [SF1] to [SF5] button. 
+The currently selected Arpeggio type is assigned to the pressed button. If you execute this operation with the [ARPEGGIO ON/OFF] lamp off, no Arpeggio type will be assigned to the pressed button. 
+4.	Repeat steps No.2 to 3 as necessary. 
+5.	Press and release the [STORE] button to enter the Voice Store mode and store the setting as a User Voice (page 85). 
+NOTE.	
+Keep in mind that holding and releasing the [STORE] button WITHOUT pressing one of the [SF1] to [SF5] buttons will automatically enter the Voice Store mode, instead of storing the Arpeggio type.
+
+Controlling Arpeggio playback by using the knobs.
+You can adjust the Arpeggio related parameters such as volume and tempo by rotating the knobs. If you are satisfied with the results, you can store the changes as a User Voice in the Voice Store mode. 
+1.	Press the KNOB CONTROL FUNCTION [ARP FX] button (the lamp lights). 
+Selecting some voices automatically turns this lamp on. 
+2.	Tweak the knobs while the Arpeggio is playing.
+For details on what functions each knob controls while the [ARP FX] lamp is on, see page 81.
+3.	If you're satisfied with the results, you can store the changes as a User Voice in the Voice Store mode (page 85). 
+
+
+Playing the Keyboard (in the Performance Play mode).
+As in the Voice Play mode, the Performance Play mode is where you select and play the instrument sounds of this synthesizer. 
+In a Performance, you can mix several different Voices together in a layer, or split them across the keyboard, or even set up a combination layer/split. Each Performance can contain up to four different Parts.
+
+Selecting a Performance.
+128 Performances (1 bank) are provided in internal User memory (Flash ROM). In the Performance Play mode, you can select and play individual User performances. Since there is only one bank for Performances, you need not select a Performance Bank. 
+1.	Press the [PERFORM] button to enter the Performance Play mode. 
+In this condition, playing the keyboard sounds the Performance indicated in the display. 
+The parameters shown in the Performance Play mode are briefly explained below. 
+<Figure>
+Indicates the Keyboard MIDI transmit channel. See page 68 for details.
+Indicates the Keyboard Octave setting set via the [OCTAVE] buttons. See page 68 for details.
+ARP1 to ARP5.
+Use the [SF1] to [SF5] buttons to call up the Arpeggio type assigned to each button (page 70).
+Indicates settings related to the Control knobs. See page 90.
+Indicates the currently selected Performance.
+Bank and Performance Program number.
+Performance Program number (corresponding to Groups A to H and Numbers 01 to 16)
+Group (selected via the GROUP [A] to [H] buttons)
+Number (selected via the NUMBER [1] to [16] buttons)
+Category and Performance name.
+
+NOTE.	
+Keep in mind that the example displays shown in this manual are for instruction purposes only, and the contents (for example, the Performance name here) may differ slightly from those on your instrument.
+
+2.	Select a Performance Group. 
+Performances are divided into Groups [A] to [H]. Select a Group to show a list of the Performances. 
+3.	Select a Performance Number. 
+Press one of the NUMBER [1] to [16] buttons. 
+4.	Play the keyboard. 
+
+Using the [INC/YES], [DEC/NO] buttons and data dial.
+Rather than using the BANK/NUMBER buttons described in steps No.2 and 3 above, you can select a Performance by using the [INC/YES], [DEC/NO] buttons and data dial. 
+<Figure>
+
+Performance Part mute/solo.
+Each performance can contain a maximum of four Parts, each of which can be turned on or off independently. 
+Muting and soloing of Parts is done in the same way as that of tracks in a Song/Pattern. See page 58. 
+
+Using the Category Search function.
+As in the Voice Play mode, you can use the Category Search and Favorite Category functions in the Performance Play mode. For details on how to use the function, see page 62. 
+
+Keyboard octave setting (MOTIF ES6/MOTIF ES7).
+As in the Voice Play mode, you can use the [OCTAVE UP/DOWN] button to shift the note of the keyboard up or down in octaves.
+
+NOTE.	
+The Octave setting made here is automatically reflected in the identical Octave parameter in the Utility mode ([UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave).  This setting is available in all modes.
+
+[TIP]	Transpose setting of the keyboard.
+As in the Voice Play mode, you can set the amount in semitones by which the range of the keyboard is shifted up or down in the Utility mode. 
+
+NOTE.	
+The transpose setting is available in all modes. 
+
+Keyboard MIDI transmit channel setting.
+As in the Voice Play mode, you can change the MIDI transmit channel for the keyboard.  Press the [TRACK SELECT] button (the lamp lights), then press the appropriate NUMBER button ([1] to [16]).  The transmit channel setting is shown at the top right of the display.
+
+NOTE.	
+You can also set the MIDI keyboard transmit channel from the Utility mode ([UTILITY] -> [F5] MIDI -> [SF1] CH -> KBDTransCh). This parameter is available for the Voice mode/Performance mode but not for the Song mode/Pattern mode. 
+
+
+Using Controllers.
+Pitch Bend Wheel.
+This is basically the same as in the Voice Play mode (page 64). 
+
+NOTE.	
+The Pitch Bend Range setting depends on the setting (made in the Voice mode) of the Voice assigned to each Part. 
+NOTE.	
+The functions assigned to the Pitch Bend Wheel depend on the setting (made in the Voice mode) of the Voice assigned to each Part. 
+NOTE.	
+Even if a different function is assigned to the wheel, Pitch bend is still available and Pitch Bend messages are still generated when the wheel is used.
+
+Modulation Wheel.
+This is basically the same as in the Voice Play mode (page 64). 
+
+NOTE.	
+To avoid accidentally applying effects to the current Voice, make sure the Modulation Wheel is set to minimum before you start playing. 
+NOTE.	
+The functions assigned to the Modulation Wheel depend on the settings (made in the Voice mode) of the Voice assigned to each Part. 
+NOTE.	
+Using the Modulation wheel generates the same MIDI message to external devices, regardless of the assignments made in the Voice Edit mode.
+
+Ribbon Controller.
+This is basically the same as in the Voice Play mode (page 65). 
+
+NOTE.	
+The functions assigned to the Ribbon Controller depend on the settings (made in the Voice mode) of the Voice assigned to each Part. 
+NOTE.	
+You can set the Ribbon Controller to control a different functions on connected external MIDI devices from the functions assigned for the Performance on the instrument itself.  You can also determine whether the Ribbon Controller value returns to the center for each Performance, or stays at the point where you released your finger.  Both of these setting can be made in the Performance Edit mode ([PERFORM] -> Performance selection -> [EDIT] -> COMMON -> [F4] CTL ASN).
+
+Knobs (KN).
+These knobs let you change various aspects of the Performance sound in real time Ð while you play. Turn a knob to the right to increase the value, and left to decrease it. For each Performance, various functions are assigned to four knobs. Try out these knobs with various Performances while playing the keyboard. 
+You can change which particular group of functions or parameters the knobs are assigned to by pressing any of the [KNOB CONTROL FUNCTION] buttons. For details, see page 90. 
+
+NOTE.	
+In certain situations, using the knobs may not result in any change in the sound.  For more information, refer to page 50 in the Basic Operation section.
+
+Edit Indicator.
+Tweaking the knobs in the Performance mode directly changes the parameters of the Performance. When any of the Performance parameters are changed, the [E] (Edit) Indicator appears in the top left of the display. This indicates that the current Performance has been modified but not yet stored.
+If you're satisfied with the tweaks you made and the resulting sound, you can store the changes as a User Performance in the Performance Store mode (page 91). 
+<CAUTION>
+If you select another Performance during editing, the [E] (Edit) indicator will disappear and all your edits will be lost. It is a good idea to store the edited Performance data from the Performance Store mode (page 91). Even if you lose the edited Performance data, you can restore it by using the Edit Recall function (page 91). 
+<CAUTION> 
+When shipped from the factory, this synthesizer contains a full set of specially programmed 128 User Performances in the User bank. You can edit and store these Performances and overwrite them in the Performance Store mode. You can also restore them to the original factory presets by pressing the [ENTER] button in the [UTILITY] -> [JOB] display (page 44). 
+
+Control Sliders.
+In the Performance mode, the four Control Sliders let you independently adjust the levels of the Parts of a Performance. You can adjust the volume balance among four parts. 
+
+NOTE.	
+Inadvertent use of the sliders may result in no sound. If this occurs, move the sliders upward. 
+NOTE.	
+In certain situations, using the Control Sliders may not result in any change in the sound.  For more information, refer to page 50 in the Basic Operation section.
+
+Using the Arpeggio feature.
+As in the Voice mode, you can use the Arpeggio feature in the Performance mode. 
+In the Performance mode, you can make independent Arpeggio playback settings for each Part of the Performance -- including the on/off setting, as well as the Arpeggio type and related parameters.  This means you can set the Performance such that any or all Parts can be used to trigger Arpeggio playback.  A useful application of this would be to assign a Drum Voice to one Part and use Arpeggio playback on only that Part -- so that you can have a rhythm pattern accompaniment playing while you play another Voice.
+Since the preset Performances already have their own Arpeggio types pre-assigned, all you need to do is select the desired Performance and turn on the Arpeggio function.  Try selecting different Performances and check out the various Arpeggio types.
+
+NOTE.	
+Different Arpeggio types cannot be played back for each Part. 
+NOTE.	
+For details about Arpeggio, see page 169. 
+
+Changing the Arpeggio type during your performance.
+As in the Voice Play mode (page 66), the Performance play mode lets you use the [SF1] to [SF5] buttons to assign the Arpeggio types and recall them. 
+The Arpeggio type for the current Performance can be selected in the [PERFORM] -> [F6] ARP display or the [PERFORM] -> [EDIT] -> [COMMON] -> [F3] ARP display. 
+If you assign the desired Arpeggio type to the [SF1] to [SF5] buttons, store the settings as a User Performance in the Performance Store mode (page 91). 
+
+Controlling Arpeggio playback by using the knobs.
+You can tweak Arpeggio related parameters such as volume and tempo by using the knobs. If you're satisfied with the tweaks you made and the resulting sound, you can store the changes as a User Performance in the Performance Store mode. 
+For information on using the knobs, refer to the Voice Play mode (page 66). 
+
+Assigning desired Voices to each part.
+Performances can be made up of a maximum of four Parts (Voices), selected from the internal tone generator Parts 1 to 4 and Plug-in board Parts 1 to 3.
+You can create a Performance by layering several Voices together, and by assigning different Voices to separate ranges of the keyboard. You can then store up to 128 of your original, edited Performances to internal User memory. 
+
+<Figure>
+Layer (example).
+Built-in tone generator Parts.
+Plug-in Parts*(*Available when the Plug-in Board has been installed.)
+Split (example).
+Built-in tone generator Parts .
+Plug-in Parts*(*Available when the Plug-in Board has been installed.)
+
+1.	Press the [F2] VOICE button in the Performance Play mode.
+This calls up a list indicating which Voice is assigned to each Part of the current Performance. 
+2.	Assign the desired Voice to each Part.
+Move the cursor to the desired Part. When a Voice has already been assigned to the selected Part, change the Voice Bank or Number by using the data dial, the [INC/YES] and the [DEC/NO] button. When no Voice is assigned to the selected Part, press the [SF1] ADD INT button or [SF2] ADD PLG button to execute the assignment, then change the Voice Bank or Number. 
+You can also select a Voice Bank/Number by using the BANK, GROUP, and NUMBER buttons (page 60). 
+<Figure>
+Select a Voice Bank/Number at the cursor location.
+Voice Bank.
+Voice Number.
+Assign an internal Voice to the selected Part.
+Assign a Plug-in Voice to the selected Part. (Available when the Plug-in Board has been installed.)
+Delete the Voice assignment of the selected Part.
+
+NOTE.	
+Voices of the Multi part Plug-in Board PLG100-XG cannot be assigned to Performance parts. 
+
+When an internal Voice is assigned to a Part, the following Voice Banks are available. 
+
+<Table>
+PRE1 (Preset1) to PRE6 (Preset 6).	Preset Banks 1 to 6 of the Normal Voice. These correspond to the [PRE1] to [PRE6] buttons in the Voice mode. 
+USER1 to USER2.	User Banks 1 to 2 of the Normal Voice. These correspond to the [USER1] to [USER2] buttons in the Voice mode. 
+GM.	GM Normal Voice Bank. This corresponds to the [GM] button in the Voice mode. 
+PDR (Preset Drum).	Preset Bank of the Drum Voice. This corresponds to pressing the [DRUM KITS] button and the [PRE5] button simultaneously. 
+GMDR (GM Drum)	GM Drum Voice Bank. This corresponds to pressing the [DRUM KITS] button and the [GM] button simultaneously.
+UDR (User Drum).	User Bank of the Drum Voice. This corresponds to pressing the [DRUM KITS] button and the [USER1] button simultaneously. 
+
+When a Plug-in Board Voice is assigned to a Part, the available Voice Banks differ depending on the installed Plug-in Board. For details, refer to the Owner's Manual that came with the Plug-in Board. 
+
+3.	Specify the note range of each part, as required.
+You can set the lowest note of the range over which the Voice of the selected Part sounds by simultaneously holding the [SF4] button and pressing the desired key. To set the highest note of the range, simultaneously hold the [SF5] button and press the desired key.
+<Figure>
+
+4.	Change the volume of each Part and adjust the relative balance among the four Parts by using the Control sliders. 
+5.	Store the settings as a User Performance in the Performance Store mode. 
+Press the [STORE] button to enter the Performance Store mode, select the destination Performance number, then press the [ENTER] button to execute the store operation. For details about Performance Store, see page 91. 
+
+Using the A/D input sound.
+One of the enormous benefits of the Performance mode is that you can have the A/D input sound -- such as your voice through a microphone, a guitar, bass, or CD player -- assigned as one of the four Parts of a Performance.  Various Part parameters such as volume, pan, and effects can be set for this Part, and the sound of the Part is mixed and output together with the other Parts. These parameters are set and stored in the Performance Store mode for each Performance. 
+
+NOTE.	
+The Audio Input part is available also in the Song mode/Pattern mode, but is not available in the Voice mode. The procedure and explanations here apply to the Song and Pattern modes as well. The microphone related parameters (corresponding to step No.8 below) of each Song/Pattern are edited in the Song Mixing mode/Pattern Mixing mode. 
+
+Connecting a microphone to the A/D INPUT jack.
+The explanation below applies in particular to low-level equipment, such as microphones, guitars and basses.
+1.	Make sure to turn the power of the MOTIF ES off and set the GAIN knob on the rear panel to the minimum.
+2.	Plug the microphone to the A/D INPUT jack on the rear panel. 
+
+NOTE.	
+A standard dynamic microphone is recommended. (The MOTIF ES does not support phantom-powered condenser microphones.)
+
+3.	Turn the power on. 
+4.	Press the [PERFORM] button to enter the Performance Play mode and select the desired Performance. 
+5.	Press the [UTILITY] button to enter the Utility mode, press the [F2] I/O button, then press the [SF1] INPUT button.
+6.	Set Mic/Line to "mic." 
+Move the cursor to the "Mic/Line" parameter by using the Cursor button and set it to "mic" by using the [INC/YES] button, [DEC/NO] button, or data dial. 
+
+NOTE.	
+When the output level of the connected equipment (such as a microphone, guitar, bass) is low, set this parameter to "mic." When the output level of the connected equipment (such as a synthesizer keyboard, CD player) is high, set this parameter to "line." 
+NOTE.	
+This setting is available for all modes. If you wish to store this setting, press the [STORE] button. 
+
+7.	Adjust the microphone input level by using the GAIN knob on the rear panel.
+8.	Set the audio input related parameters as necessary from the AUDIO IN display ([PERFORM] -> [EDIT] -> [COMMON] -> [F5] AUDIO IN).
+For details about each parameter, refer to page 214 in the Reference section.
+<Figure>
+When the optional AIEB2 or mLAN16E has been installed, the [F5] AUDIO IN menu has two indications: "A/D" and gAIEB2" or "mLAN16E." Here, call up the A/D display by pressing the [SF5] button.
+
+9.	Store the settings as a User Performance in the Performance Store mode (page 91). 
+
+Connecting audio equipment to the A/D INPUT jack.
+The explanation below applies in particular to high-level audio equipment, such as CD players, synthesizers, and other keyboards.
+1.	Make sure to turn off the power of both the MOTIF ES and the relevant audio equipment.
+2.	Plug the audio equipment cable to the A/D INPUT jack on the rear panel. 
+3.	Switch the power of the connected audio equipment on, then switch the power of the MOTIF ES on. 
+4.	Press the [PERFORM] button to enter the Performance Play mode and select the desired Performance. 
+5.	Press the [UTILITY] button to enter the Utility mode, press the [F2] I/O button, then press the [SF1] INPUT button. 
+6.	Set Mic/Line to "line."
+Move the cursor to the "Mic/Line" parameter by using the Cursor button and set it to "line" by using the [INC/YES] button, [DEC/NO] button, or data dial. 
+
+NOTE.	
+When the output level of the connected equipment (such as a microphone, guitar, bass) is low, set this parameter to "mic." When the output level of the connected equipment (such as a synthesizer keyboard, CD player) is high, set this parameter to "line." 
+NOTE.	
+This setting is available for all modes. If you wish to store this setting, press the [STORE] button. 
+
+7.	Adjust the audio input level by using the GAIN knob on the rear panel. 
+8.	Set the audio input related parameters as necessary from the AUDIO IN display ([PERFORM] -> [EDIT] -> [COMMON] -> [F5] AUDIO IN).
+For details about each parameter, refer to page 214 in the Reference section. When an optional AIEB2 or mLAN16E has been installed, press the [SF5] button to call up the A/D display. 
+9.	Store the settings as a User Performance in the Performance Store mode (page 91). 
+
+NOTE.	
+Audio input signals from the OPTICAL INPUT and DIGITAL INPUT connector (when the optional AIEB2 has been installed) or the mLAN connector (when the optional mLAN16E has been installed) can also be handled as Audio Input Parts. For details, see page 165. 
+
+
+Using the Plug-in Board.
+Plug-in Boards give you an enormous amount of additional sonic flexibility and power. When installed, they work seamlessly and transparently within the system of this synthesizer Ð meaning that you can use their sounds and functions just as if they were built right into this synthesizer at the factory.
+The boards that are available for and can be installed to this synthesizer are described below.
+Up to three Plug-in boards can be installed to the MOTIF ES. These boards are not simply a source of more Voices; they are also full-featured, editable tone generators in their own right and extend the system-level specifications such as maximum polyphony.
+In addition, they allow you to use synthesis systems besides AWM2. You can play Plug-in Voices just like ordinary internal Voices and use them as Parts in a Song/Pattern/Performance. 
+This synthesizer is compatible with the Modular Synthesis Plug-in System (see below).
+
+About MODULAR SYNTHESIS PLUG-IN SYSTEM.
+The Yamaha Modular Synthesis Plug-in System offers powerful expansion and upgrade capabilities for Modular Synthesis-Plug-in-compatible synthesizers, tone generators and sound cards. This enables you to easily and effectively take advantage of sophisticated synthesizer and effects technology, allowing you to keep pace with the rapid and multi-faceted advances in modern music production. 
+
+Available Plug-in Boards.
+There are three types of Modular Synthesis Plug-in System-compatible Plug-in Boards: Single Part, Multi-Part and Effect Plug-in Board. Using these, you can build your own system based on the sounds you require. 
+
+Single Part Plug-in Boards.
+Single Part Plug-in Boards let you add a completely different synthesizer or single timbre tone generator (page 162) and play its voices by using a single part of this synthesizer. Some boards allow you to use synthesis systems besides AWM2. 
+
+  Analog Physical Modeling Plug-in Board (PLG150-AN).
+Using Analog Physical Modeling (AN) synthesis, the very latest digital technology is used to accurately reproduce the sound of analog synthesizers. With this board installed, you have real-time control over the playback of vintage synthesizer sounds as well as the very latest sounds heard in today's club-oriented music.
+
+  Piano Plug-in Board (PLG150-PF).
+A massive waveform memory is dedicated to the reproduction of piano sounds. This board offers 136 stereo sounds, including a number of acoustic and electric pianos, and up to 64-note polyphony. You can even install two of these boards to double the polyphony to 128 notes.
+
+  Advanced DX/TX Plug-in Board (PLG150-DX).
+The sounds of the DX7 are available on this Plug-in Board. Unlike PCM-based tone generators, this board uses the powerful FM Synthesis system Ð the same as found on DX-series synthesizers Ð for extraordinarily versatile and dynamic sound shaping potential. Sounds are compatible with those of the DX7, and the board can even receive DX7 data via MIDI bulk dump.
+
+  Virtual Acoustic Plug-in Board (PLG150-VL).
+With Virtual Acoustic (VA) synthesis, the sounds of real instruments are modeled (simulated) in real time, giving a degree of realism that cannot be achieved using conventional PCM-based synthesis techniques. When playing these sounds using an optional MIDI Wind Controller (WX5), you can even capture some of the physical feel of woodwind instruments.
+
+  Drum Plug-in Board (PLG150-DR)/Percussion Plug-in Board (PLG150-PC).
+Once connected and installed, the PLG150-DR/PLG150-PC becomes a seamless additional sound source of AWM2 for the host tone generator or synthesizer Ð providing a total of 88 drum/percussion voices. Thanks to the built-in effect processing power, the PLG150-DR/PLG150-PC has two separate effect blocks Ð Insertion and Reverb Ð that can be applied to each kit.
+
+Multi-Part Plug-in Board.
+Multi-Part Plug-in Boards let you add a completely independent multi-timbral tone generator to the MOTIF ES (page 162) -- expanding the Voice capacity and polyphony of the instrument with a full sixteen additional instrument parts.
+
+  XG Plug-in Board (PLG100-XG).
+This Plug-in Board is a 16-part XG sound generator. You can play back XG/GM song files using the rich variety of sounds and effects on this board.
+
+Effect Plug-in Board.
+Effect Plug-in Boards let you add a completely different effect block to the host synthesizer. 
+
+  Vocal Harmony Plug-in Board (PLG100-VH).
+With this board installed, you can add harmonies to selected parts using four types of effects. Chorus parts for vocals can be created automatically from chords that have been prepared and stored as MIDI data. You can also use this synthesizer like a vocoder by connecting and using a microphone while playing the keyboard. 
+
+
+Using a Single Part Plug-in Board.
+Install any of the Single Part Plug-in Boards such as PLG150-AN, PLG150-PF, PLG150-DX, PLG150-VL, PLG150-DR, and PLG150-PC to the MOTIF ES and play the Plug-in Voice in the Voice Play mode. 
+1.	After turning the power off, install a Single Part Plug-in Board to the instrument. 
+See page 283. 
+2.	Switch the MOTIF ES on.
+The corresponding slot indicator at the right top of the front panel lights. This indicates that the board has been successfully installed.
+3.	Check the status of the installed Plug-in Boards in the [UTILITY] -> [F6] PLUG -> [SF1] STATUS display.
+<Figure>
+The name of the installed Plug-in Board is displayed.
+4.	Set the MIDI port of the installed Plug-in Board to "2" or "3" in the [UTILITY] -> [F6] PLUG -> [SF2] MIDI display. 
+NOTE.	
+If the MIDI Port number here is set to "1" or "off," the Plug-in Voice may sound simultaneously with the internal Voice, when playing back Song/Pattern data.  To keep this from happening, make sure the MIDI Port number of the Plug-in Board is set to "2" or "3" -- especially when using the Song/Pattern mode.  To prevent a similar problem when using both a Single Part Plug-in Board and a Multi Part Plug-in Board together, set each board to a different MIDI Port number.
+
+5.	Press the [VOICE] button to enter the Voice Play mode and select a Plug-in Voice. 
+Selecting a Plug-in Voice is done in the same way as selecting a Normal Voice (page 60) with the exception that you select one of the PLG (Plug-in) Banks. Press the PLG button which corresponds to the slot to which the Plug-in Board has been installed. 
+You'll also need to select a Bank within the Plug-in Board. Press the [F2] BANK button to call up the Plug-in Board Bank selection display, then select the desired Bank. 
+
+NOTE.	
+For details about the Bank structure of each Plug-in Board, refer to the Owner's Manual of each Plug-in Board. Regarding the PLGPRE (Plug-in Preset) bank, refer to the Plug-in Voice List. Regarding the Board Voice bank displayed as "035/000," refer to the Voice Map/List. The PLGUSR (Plug-in User) banks contain the Voices you edited and stored as User Voices. 
+
+6.	Play the keyboard.
+
+NOTE.	
+Playing Voices of the Plug-in User banks (PLG1USR, PLG2USR, PLG3USR) will result in no sound, if the Plug-in Board has just been installed.  These banks become available only after you edit a Plug-in Voice and store it as a User Plug-in Voice. 
+
+Plug-in Voices and Board Voices.
+The Voices of a Single Part Plug-in Board installed to this synthesizer can be divided into two types: Board Voices and Plug-in Voices. Board Voices are unprocessed, unaltered Voices of the Plug-in board Ð the "raw material" used for the Plug-in Voices. Plug-in Voices, on the other hand, are edited Board Voices Ð Voices that have been specially programmed and processed for optimum use with the host synthesizer. 
+Since the MOTIF ES includes preset Plug-in Voices for all the Plug-in Boards, you can call up and play appropriate Voices for each board immediately after installing it. 
+
+NOTE.	
+The Plug-in Voices can be edited in the Voice Edit mode. 
+NOTE.	
+The Board Voices can be edited using the computer software supplied for each Plug-in Board. 
+
+[TIP]	Playing the PLG150-VL sound with the Breath Controller.
+With Virtual Acoustic (VA) synthesis, the PLG150-VL has the sounds of real instruments modeled (simulated) in real time, giving a degree of realism that cannot be achieved using conventional PCM-based synthesis techniques. When playing these sounds using an optional Breath Controller, you can even capture some of the physical feel of woodwind instruments. 
+1.	Install the PLG150-VL to the MOTIF ES.
+2.	Connect the Breath Controller BC3 to the BREATH connector on the rear panel (page 42).
+3.	Switch the MOTIF ES power on. 
+4.	Set the Plug-in Board related parameters in the Utility mode, corresponding to steps No.3 and 4 in the instructions on the previous page.
+5.	Set the Breath Controller Curve via the [UTILITY] -> [F1] GENERAL -> [SF1] TG -> BCCurve parameter (page 260). 
+6.	Press the [VOICE] button to enter the Voice Play mode, then select a Plug-in Voice of the PLG150-VL. 
+7.	Play the Voice and blow into the Breath Controller to expressively change the sound.
+You can also use the MIDI Wind Controller WX5 to play the Plug-in Voice of the PLG150-VL. Connect the WX5 to the MOTIF ES with a MIDI cable. 
+
+
+Using a Multi Part Plug-in Board.
+In this section, we'll explain how to play back an XG format song, using the PLG100-XG Plug-in Board.  Naturally, to get the most out of these instructions, you should have XG song data (Standard MIDI File) stored on a SmartMedia card or USB storage device.
+1.	After turning the power off, install the Multi Part Plug-in Board PLG100-XG to slot 3 of this synthesizer.
+See page 283 for details. 
+2.	Switch the MOTIF ES power on. 
+3.	Check the status of the installed Plug-in Boards in the [UTILITY] -> [F6] PLUG -> [SF1] STATUS display. 
+4.	Set the MIDI port of the PLG100-XG to "2" or "3" in the [UTILITY] -> [F6] PLUG -> [SF2] MIDI display.  
+
+NOTE.	
+If the MIDI Port number here is set to "1" or "off," the Plug-in Voice may sound simultaneously with the internal Voice, when playing back Song/Pattern data.  To keep this from happening, make sure the MIDI Port number of the Plug-in Board is set to "2" or "3" -- especially when using the Song/Pattern mode.  To prevent a similar problem when using both a Single Part Plug-in Board and the PLG100-XG together, set each board to a different MIDI Port number.
+
+5.	Press the [SONG] button to enter the Song mode, then press the [FILE] button to enter the File mode. 
+6.	Load the XG song file (Standard MIDI file) from the SmartMedia/USB storage device to the MOTIF ES in the [FILE] -> [F3] LOAD display, as described in the sub-instructions below. 
+6-1.	Insert a SmartMedia card which contains the XG song files into the CARD slot, or use a USB storage device (connected to the USB TO DEVICE connector) containing appropriate XG song files.
+6-2.	Press the [FILE] button to enter the File mode, then set the basic parameters. 
+Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+6-3.	Set the [FILE] -> [F3] LOAD -> TYPE parameter to "Song." 
+6-4.	Move the cursor to the list of files to be loaded, select the desired file, then press the [ENTER] button. 
+6-5.	Specify the destination Song number, then press the [ENTER] button to execute the Load operation. 
+
+<CAUTION>
+Loading data to this synthesizer automatically erases and replaces any existing data in the User memory. Make sure to save any important data to a SmartMedia/USB storage device before performing any Load operations. 
+
+7.	Press the [SONG] button to enter the Song Play mode, then select the Song number to which the XG song file was loaded.  
+8.	Set the MIDI transmit port of all the tracks to the number set in step No.4 from the [SONG] -> [F3] TRACK -> [SF1] CHANNEL display. 
+<Figure>
+Set MIDI transmit ports.
+
+9.	Press the [>] (Play) button to play the XG song. 
+
+Using an Effect Plug-in Board.
+In the example explanation below, the PLG100-VH Vocal Harmony Plug-in Board is used to apply harmony effects to the microphone sound in the Performance mode.
+
+NOTE.	
+For Songs/Patterns, the Effect Plug-in Board related parameters (which correspond to step No.6 to 7 below) can be edited in the Song Mixing mode/Pattern Mixing mode. 
+NOTE.	
+Please note that the Effect Plug-in Board cannot be used in the Voice mode. 
+
+1.	After turning the power off, install the Effect Plug-in Board PLG100-VH to slot 1.
+See page 283 for details. 
+2.	Plug the microphone to the A/D INPUT jack on the rear panel (page 72). 
+
+NOTE.	
+A standard dynamic microphone is recommended. (The MOTIF ES does not support phantom-powered condenser microphones.)
+
+3.	Turn the MOTIF ES power on. 
+4.	Press the [PERFORM] button to enter the Performance Play mode, select the desired Performance, then set the microphone related parameters. 
+For details, refer to steps No.4 to 9 on page 72. 
+5.	Check the status of the installed Plug-in Boards in the [UTILITY] -> [F6] PLUG -> [SF1] STATUS display.
+6.	Select "PartAD" as the Part to which the Plug-in Insertion Effect is applied in the CONNECT display ([PERFORM] -> [F3] EFFECT -> [SF1] CONNECT).
+<Figure>
+Move the cursor here, then select the Part.
+
+7.	Set related parameters (such as the Effect Type, and others) from the Plug-in Effect display ([PERFORM] -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF3] PLG-EF).
+For details, refer to the Owner's Manual of the PLG100-VH. 
+8.	Sing or talk into the microphone to check the effect sound, and adjust the settings as necessary.
+9.	If desired, store the settings for the microphone sound and PLG100-VH as a Performance in the Performance Store mode (page 91).  
+
+
+This is the end of the file.
+

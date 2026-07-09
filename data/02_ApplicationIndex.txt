@@ -1,0 +1,275 @@
+Application Index.
+
+Listening to the MOTIF ES.
+  Listening to the Demo song/pattern.		Page 55
+  Listening to Song Chain playback.		Page 59
+  Listening to Pattern Chain playback.		Page 115
+  Listening to Arpeggio playback.		Pages 66 (Voice mode), 70 (Performance mode), 105 (Song/Pattern mode)
+
+Playing the keyboard.
+  Selecting a Voice and playing the keyboard.		Pages 60 (Voice mode), 102 (Song/Pattern mode)
+  Selecting a Voice of the Plug-in Board and playing the keyboard.	Pages 75 (Voice mode), 121 (Song/Pattern mode)
+  Selecting a Performance and playing the keyboard.	Page 67
+  Using the instrument as a Master Keyboard.		Page 136
+  Sounding the metronome.	 [SONG] or [PATTERN] -> [UTILITY] -> [F3] SEQ -> [SF1] CLICK -> Mode equal all 	Page 262
+  Splitting the keyboard Ð Setting upper and lower ranges for the Voices.	Pages 70 (Performance mode), 141 (Master mode)
+  Layering two Voices (or Parts) together.		Pages 70 (Performance mode), 141 (Master mode)
+
+Selecting programs and making settings on the MOTIF ES.
+  Selecting a Voice.		Pages 60 (Voice mode), 102 (Song/Pattern mode)
+Using the Category Search function.		Page 62
+  Selecting a Performance.		Page 67
+  Selecting a Song.		Page 56
+  Selecting a Pattern.		Page 57
+Selecting a Section.		Page 57
+Selecting a Phrase and assigning it to a Pattern track.	Page 113
+  Selecting a Mixing template for a Song/Pattern.		Page 103
+  Selecting a Master.		Page 136
+  Selecting an Arpeggio type.		Pages 66 (Voice mode), 70 (Performance mode), 105 (Song/Pattern mode)
+  Selecting a Waveform.		Page 174
+  Selecting a Filter type.		Page 209
+  Selecting an Effect type.
+Selecting a Reverb type/Chorus type/Insertion type.
+[VOICE] -> Voice selection -> [F3] EFFECT. 	Page 194
+[PERFORM] -> Performance selection ->  [F3] EFFECT -> [SF1] CONNECT. 	Page 215
+[SONG] or [PATTERN] -> Song/Pattern selection-> [MIXING] -> [F3] EFFECT -> [SF1] CONNECT. 	Page 235
+Selecting a Master Effect type.
+[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF2] MEF. 	Page 262
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF3] MEF. 	Page 214
+[SONG] or [PATTERN] -> Song/Pattern selection-> [MIXING] -> [EDIT] -> [COMMON] -> [F2] MEQ/MEF -> [SF2] MEF. 	Page 234
+Selecting a Master EQ type.
+[VOICE] -> [UTILITY] -> [F3] VOICE -> [SF1] MEQ. 	Page 262
+[PERFORM] -> Performance selection-> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF2] MEQ. 	Page 214
+[SONG] or [PATTERN] -> Song/Pattern selection-> [MIXING] -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF1] MEQ. 	Page 234
+
+Using controllers.		Pages 66 (Voice mode), 69 (Performance mode), 104 (Song/Pattern mode)
+  Understanding the organization and structure of the controllers.	Page 154
+  Assigning functions to the controllers for each Voice (Controller Set).	Page 155
+  Assigning Control Change numbers to each controller.	Page 156
+  Setting the Pitch Bend Range.
+[VOICE] -> Voice selection-> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF5] OTHER -> PB Upper/PB Lower. 	Page 190
+[SONG] or [PATTERN] -> Song/Pattern selection-> [MIXING] -> [EDIT] -> Part selection-> [F1] VOICE -> [SF5] OTHER -> PB Upper/PB Lower. 	Page 235
+  Checking the currently assigned parameters for knob control.	Pages 81 (Voice mode), 90 (Performance mode), 129 (Song/Pattern mode)
+  Checking the currently assigned parameters for Control Slider (CS) control.	Page 140
+  Using a Foot Pedal as a sustain pedal.		Page 42
+  Starting/stopping a song or pattern by pressing a Footswitch.	 [UTILITY] -> [F4] CTL ASN -> [SF3] FT SW. 	Page 263
+  Changing a Voice or a Performance by pressing a Footswitch.	 [UTILITY] -> [F4] CTL ASN -> [SF3] FT SW. 	Page 263
+  Turning Arpeggio playback on or off by pressing a Footswitch.	 [UTILITY] -> [F4] CTL ASN -> [SF3] FT SW. 	Page 263
+  Determining how the sound responds to a Breath Controller.	[UTILITY] -> [F1] GENERAL -> [SF1] TG -> BCCurve. 	Page 260
+  Keeping the effect of a controller (Modulation Wheel, etc.) the same, even when changing Voices.
+[UTILITY] -> [F1] GENERAL -> [SF4] OTHER -> CtrlReset equal hold. 	Page 261
+Sounding only the specified Part or Voice.
+  Turning each element on or off in the Voice Edit mode.	Page 79
+  Determining whether each Element is used or not in the Voice Edit mode.
+[VOICE] -> [EDIT] -> Element selection -> [F1] OSC -> [SF1] WAVE -> ElementSw equal on/off. 	Page 195
+  Determining whether each Part is used or not in the Performance mode.
+[PERFORM] -> Performance selection-> [EDIT] -> Part selection -> [F1] VOICE -> [SF1] VOICE -> PartSw equal on/off. 	Page 216
+  Turning each track (Part) of a song/pattern on or off.	Page 58
+  Turning off or muting playback of a Song/Pattern Part, by setting the receive channel to off.	
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> part selection -> [F1] VOICE -> [SF2] MODE -> ReceiveCh. 	Page 235
+
+Adjusting the volume or output level.
+  Overall.
+Adjusting the Master Volume output.	[MASTER VOLUME]. 	Page 18
+Adjusting the entire volume of the instrument's internal tone generator block.	 [UTILITY] -> [F1] GENERAL -> [SF1] TG -> Volume. 	Page 260
+Adjusting the output gain of each Output connector.	[UTILITY] -> [F2] I/O -> [SF2] OUTPUT. 	Page 261
+  In the Voice mode.
+Adjusting the volume balance of the Elements of a Normal Voice with the Control Sliders.
+[VOICE] -> Normal Voice selection -> [EDIT] -> Element selection-> [F4] AMP -> [SF1] LVL/PAN -> Level. 	Page 81
+Adjusting the entire volume for the selected Voice (common to all Elements/keys). 
+[VOICE] -> Voice selection-> [EDIT] -> [COMMON] -> [F2] OUTPUT -> Volume .	Page 190
+  In the Performance mode.
+Adjusting the volume balance of the Parts of an edited Performance with the Control Sliders.
+[PERFORM]  ->  Performance selection -> [EDIT]  -> Part selection -> [F2] OUTPUT  -> [SF1] VOL/PAN  ->  Volume. 	Page 91
+Adjusting the entire volume for the selected Performance (common to all Parts) 
+[PERFORM] ->  Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEQ -> [SF1] OUT -> Volume. 	Page 213
+Adjusting the volume of the audio input (of a microphone or external audio equipment).
+[PERFORM] ->  Performance selection -> [EDIT] -> [COMMON] -> [F5] AUDIO IN -> [SF1] OUTPUT -> Volume. 	Page 215
+  In the Song mode/Pattern mode.
+Adjusting the volume balance of the Parts of an edited Song with the Control Sliders.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> Part Selection -> [F1] VOL/PAN -> VOLUME. 	Page 130
+Adjusting the volume of the audio input (of a microphone or external audio equipment)
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING -> [EDIT] -> [COMMON] -> [F5] AUDIOIN -> [SF1] OUTPUT -> Volume. 	Page 235
+
+Inputting audio from a microphone, instrument or other audio device.
+  About the organization of audio input parts.		Page 165
+  Connecting a microphone to the A/D INPUT connector.	 [UTILITY] -> [F2] I/O -> [SF1] INPUT -> Mic/line equal mic. 	Page 72
+  Connecting audio equipment to the A/D INPUT connector.	 [UTILITY] -> [F2] I/O -> [SF1] INPUT -> Mic/line equal line. 	Page 73
+  Setting audio input related parameters.
+[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F5] AUDIO IN. 	Page 214
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> [COMMON] -> [F5] AUDIO IN .	Page 235
+  Sampling (recording) audio from a microphone.	Page 94
+  Sampling (recording) audio from another audio device.	Page 98
+  Applying a vocal harmony effect to the microphone sound by using the Plug-in Board PLG100-VH.	Page 78
+
+Using Plug-in Boards.
+  Installing a Plug-in Board.		Page 283
+  Checking that a Plug-in Board is properly installed.	 [UTILITY] -> [F6] PLUG -> [SF1] STATUS. 	Page 75
+  Checking the receive port of the installed Plug-in Board.	 [UTILITY] -> PLUG -> [SF2] MIDI .	Page 75
+  Selecting and playing a voice of a Single Part Plug-in Board. (PLG150-AN, PLG-150-PF, PLG150-DX, PLG150-VL, etc.).
+		Pages 75 (Voice mode), 121 (Song/Pattern mode)
+  Playing an XG song by using the Multi-part Plug-in Board PLG100-XG. 	Page 77
+  Applying a vocal harmony effect to the microphone sound by using the Plug-in Board PLG150-VH.	Page 78
+
+Creating Data.
+  Creating a Voice.
+Creating a Normal Voice in the Voice Edit mode.		Page 79
+Creating a Drum Voice in the Voice Edit mode.		Page 82
+Creating a Plug-in Voice in the Voice Edit mode.		Page 84
+Creating a Normal Voice/Drum Voice by using the Sampling function.	Page 94
+Creating a Sample Voice by using the Sampling function.	Page 107
+Creating a Normal/Drum Voice by importing a WAV or AIFF file.	Page 100
+Creating a Sample Voice by importing a WAV or AIFF file.	Page 109
+Creating a Mixing Voice especially for a Song or Pattern.	Page 105
+  Creating a Performance.		Page 87
+  Creating a Song.
+Recording your keyboard performance to a Song track (Realtime Recording).	Page 118
+Recording over (replacing) existing material in a Song track -- Punch-in Recording.
+[SONG] -> [l] (Record) -> [F1] SETUP -> Type equal punch. 	Page 119
+Recording additional material to an existing Song track (without erasing previous material) -- Overdub Recording.
+[SONG] -> [l] (Record) -> [F1] SETUP -> Type equal overdub. 	Page 119
+Sounding a metronome during recording.	 [SONG] -> [UTILITY] -> [F3] SEQ -> [SF1] CLICK -> Mode equal rec. 	Page 262
+Recording a Song by using a Performance. 		Page 120
+Recording a Song with the sounds of a Plug-in Board.		Page 121
+Using the Step Recording function.	 [SONG] -> [l] (Record) -> [F1] SETUP -> Type equal step. 	Page 238
+Editing MIDI events for each track of an already-recorded Song. 	 [SONG] -> [EDIT] -> Track selection. 	Page 124
+Inserting Tempo change information in the middle of the Song.	 [SONG] -> [EDIT] -> [F4] TR SEL. 	Page 125
+Inserting Voice change information.	 [SONG] -> [EDIT] -> Track selection ->  Inserting a Bank Select MSB/LSB and Program Change. 	Page 225
+Editing Song Mixing settings, such as the volume of each Part.	 [SONG] -> [MIXING] .	Page 127
+Using convenient "Jobs," such as Copy, Clear, Quantize.	 [SONG] -> [JOB] -> Job selection. 	Page 126
+  Creating a Pattern.
+Assigning a Preset Phrase to each track of a Pattern (Patch function).	Page 113
+Recording (Sampling) your favorite rhythm (audio) to a Pattern track to create a Phrase.	Page 107
+Importing a WAV file or an AIFF file to a Pattern track to create a Phrase. 	Page 109
+Recording your keyboard performance to a Pattern track to create a Phrase.	Page 110
+Recording a newly found Arpeggio rhythm pattern to a Pattern track.	Page 112
+Sounding the metronome during recording.	 [PATTERN] -> [UTILITY] -> [F3] SEQ -> [SF1] CLICK -> Mode equal rec. 	Page 262
+Using the Step Recording function.	 [PATTERN] -> [l] (Record) -> [F1] SETUP -> Type equal step. 	Page 238
+Editing MIDI events for each track of an already-recorded Pattern.	 [PATTERN] -> [EDIT] -> Track selection .	Page 124
+Editing Pattern Mixing settings, such as the volume of each Part.	 [PATTERN] -> [MIXING]. 	Page 127
+Using convenient "Jobs," such as Copy, Clear, Quantize.	 [PATTERN] -> [JOB] -> Job selection. 	Page 126
+Programming a sequence of a Section to create a Pattern Chain.	 [PATTERN] -> [F6] CHAIN. 	Page 115
+Converting a Pattern Chain to Song data.	 [PATTERN] -> Pattern selection -> [F6] CHAIN -> [EDIT] -> [F3] SONG. 	Page 117
+  Creating a Master.		Page 136
+  Creating an Arpeggio. 		Page 130
+  Creating a Waveform.		Page 94
+
+Storing/Saving the created data.
+  Storing an edited Voice to internal memory (Flash ROM) and saving all the Voices in internal memory to a SmartMedia/USB storage device.	Page 85
+  Storing an edited Performance to internal memory (Flash ROM) and saving all the Performances in internal memory to a SmartMedia/USB storage device.	Page 91
+  Saving the Song/Pattern data. 
+Storing Song Mixing/Pattern Mixing settings to internal memory (DRAM).	Page 131
+Storing the entire Song/Pattern data to SmartMedia/USB storage device.	Page 132
+  Storing Mixing settings to internal memory (Flash ROM) as a template.	Page 104
+  Storing an edited Master to internal memory (Flash ROM) and saving all the Masters on internal memory to a SmartMedia/USB storage device. 	Page 137
+  Saving all Arpeggios in internal memory (Flash ROM) to a SmartMedia/USB storage device.	Page 269
+  Saving all Samples (obtained via the Sampling function) in internal memory (DRAM) to a SmartMedia/USB storage device.	Page 97
+
+Naming your created data.		Page 53
+
+Recovering lost data.
+  Voice
+Comparing the Voice before editing with the just-edited one (Compare function).	Page 80
+Recalling an edited, but not-stored Voice (when another Voice has been selected) -- Recall function.	Page 82
+  Performance.
+Comparing the Performance before editing with the just-edited one (Compare function).	Page 89
+Recalling an edited, but not-stored Performance (when another Performance has been selected) -- Recall function.	Page 91
+  Song/Pattern.
+Canceling the changes made in the recent session such as Recording and Job to restore the data to its previous status.
+[SONG] or [PATTERN] -> [JOB] -> [F1] UNDO. 		Page 127
+Comparing the Mixing settings before editing with the just-edited ones (Compare function). 	Page 129
+Recalling edited, but not-stored Mixing settings (when another Mixing set has been selected) -- Recall function.	Page 129
+
+Initializing.
+  Resetting the User Memory to the Initial Factory Settings.		Page 44
+  Formatting a SmartMedia card.		Page 268
+  Initializing the edited Voice.	 [VOICE] -> [JOB] -> [F1] INIT. 	Page 208
+  Initializing the edited Performance.	 [PERFORM] -> [JOB] -> [F1] INIT. 	Page 219
+  Initializing the edited Master.	 [MASTER] -> [JOB] -> [F1] INIT. 	Page 273
+  Initializing the edited Song Mixing settings.	 [SONG] -> [MIXING] -> [JOB] -> [F1] INIT. 	Page 236
+  Initializing the edited Pattern Mixing settings.	 [PATTERN] -> [MIXING] -> [JOB] -> [F1] INIT. 	Page 248
+
+Pitch related settings (Tune, Note Shift, etc.).
+  Overall.
+Changing the octave setting of the keyboard.	 [UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave. 	Page 63
+Shifting the note up or down on the keyboard. 	 [UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Transpose. 	Page 63
+Shifting the note up or down in the tone generator block.	 [UTILITY] -> [F1] GENERAL -> [SF1] TG -> NoteShift. 	Page 260
+Adjusting the tuning to other instruments.	 [UTILITY] -> [F1] GENERAL -> [SF1] TG -> Tune. 	Page 260
+  In the Voice mode.
+Setting the tuning system for the voice	[VOICE]  -> Voice selection  -> [EDIT]  -> [COMMON]  -> [F1] GENERAL  -> [SF2] PLY MODE  -> M.TuningNo. 	Page 190
+Adjusting the pitch for each Element of the edited Voice in semitones. 
+[VOICE] -> Voice selection-> [EDIT] -> Element selection-> [F2] PITCH -> [SF1] TUNE -> Coarse. 	Page 196
+Finely adjusting the pitch for each Element of the edited Voice.
+[VOICE] -> Voice selection-> [EDIT] -> Element selection-> [F2] PITCH -> [SF1] TUNE -> Tune.	Page 196
+Setting the all notes (keys) to the same pitch.
+[VOICE] -> Voice selection-> [EDIT] -> Element selection-> [F2] PITCH -> [SF4] KEY FLW -> PitchSens equal 0. 	Page 197
+  In the Performance mode.
+Shifting the note up or down for each Part of the edited Performance.
+[PERFORM] ->  Performance selection -> [EDIT] -> Part selection -> [F4] TONE -> [SF1] TUNE -> NoteShift. 	Page 218
+Finely adjusting the pitch for each Part of the edited Performance.
+[PERFORM] -> Performance selection -> [EDIT] -> Part selection -> [F4] TONE -> [SF1] TUNE -> Detune. 	Page 218
+  In the Song mode/Pattern mode.
+Shifting the note up or down for each Part of the current Song/Pattern.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> Part selection -> [F4] TONE-> [SF1] TUNE -> NoteShift. 	Page 236
+Finely adjusting the pitch for each Part of the current Song/Pattern.
+[SONG] or [PATTERN]  -> Song/Pattern selection-> [MIXING]  -> [EDIT]  -> Part selection -> [F4] TONE  -> [SF1] TUNE  -> Detune. 	Page 236
+  In the Master mode.
+Shifting the keyboard octave up or down for each zone of the edited Master.
+[MASTER] -> Master selection -> [F2] MEMORY -> ZoneSwitch equal on -> [EDIT] -> Zone selection -> [F2] NOTE -> Octave. 	Page 272
+Finely adjusting the keyboard pitch for each zone of the edited Master.
+[MASTER] -> Master selection-> [F2] MEMORY -> ZoneSwitch equal on -> [EDIT] -> Zone selection -> [F2] NOTE -> Transpose. 	Page 272
+
+Connecting to a computer/external MIDI instrument.
+  Determining which connector (among the MIDI, USB TO HOST, mLAN) is used as a MIDI input/output connector.
+[UTILITY] -> [F5] MIDI -> [SF4] OTHER -> MIDI IN/OUT. 	Page 265
+  Using the sounds of the MOTIF ES for song playback from a MIDI sequencer.	Page 36
+  Setting whether or not Bulk Dump data can be received	[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> RevBulk equal on/protect. 	Page 264
+  Sounding only the external MIDI tone generator and turning the internal tone generator off.
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> LocalCtrl equal off. 	Page 264
+  Synchronizing with an external MIDI instrument/computer.
+Using the MOTIF ES as a MIDI master.	[UTILITY]  -> [F5] MIDI  -> [SF3] SYNC  -> MIDI Sync equal internal, ClockOut equal on, Seqctrl equal out. 	Page 36
+Using the MOTIF ES as a MIDI slave.	[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MIDI, ClockOut equal off, Seqctrl equal in. 	Page 36
+Using the MOTIF ES as a MTC slave.	[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MTC, ClockOut equal off, Seqctrl equal in.	Page 37
+  Disabling synchronization with the external MIDI instrument/computer.
+Maintaining normal playback on an external MIDI sequencer, even when starting/stopping Song/Pattern playback on the MOTIF ES.
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal internal, Seqctrl equal off. 	Page 264
+Maintaining normal Song/Pattern playback on the MOTIF ES, even when starting/stopping playback on an external MIDI sequencer.
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> Seqctrl equal off. 	Page 264
+  Synchronizing the LFO wave speed of the Voice with an external MIDI instrument/computer.
+[UTILITY] -> [F5] MIDI -> [SF3] SYNC -> MIDI Sync equal MIDI. 	Page 264
+[VOICE] ->  Normal Voice selection -> [EDIT] -> [COMMON] -> [F5] LFO -> [SF1] WAVE -> TempoSync equal on. 	Page 193
+  Setting which MIDI events will be transmitted or recognized via the MIDI, USB TO HOST, and mLAN connectors.
+[SONG] or [PATTERN] -> [UTILITY] -> [F3] SEQ -> [SF2] FILTER. 	Page 262
+  Setting the MIDI transmit channel.
+Setting the MIDI transmit channel of the keyboard in the Voice mode/Performance mode.	
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> KBDTransCh. 	Page 64
+Setting the MIDI transmit channel and port for each track of a Song/Pattern.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [F3] TRACK -> [SF1] CHANNEL. 		Page 221
+Setting the MIDI transmit channel of Arpeggio playback.
+[UTILITY] -> [F3] VOICE -> [SF3] ARP CH -> TransmitCh. 	Page 262
+  Setting the MIDI receive channel.
+Setting the MIDI receive channel of the keyboard in the Voice mode/Performance mode.	
+[UTILITY] -> [F5] MIDI -> [SF1] CH -> BasicRcvCh. 	Page 263
+Setting the MIDI receive channel for each part of a Song/Pattern.
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> Part selection-> [F1] VOICE -> [SF2] MODE -> ReceiveCh. 	Page 235
+  Setting parameters for Program Change transmission/recognition.
+Enabling or disabling the sending of Bank Select and Program Change messages, when selecting a Voice or Performance
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> BankSel, PgmChange. 	Page 264
+Enabling or disabling selection of MOTIF ES Voices/Performances from an external MIDI device. 
+[UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> BankSel, PgmChange. 	Page 264
+[SONG] or [PATTERN] -> Song/Pattern selection -> [MIXING] -> [EDIT] -> Part selection-> [F5] RCV SW -> BankSel, PgmChange 	Page 235
+Setting related parameters so that the MIDI messages produced by the Song/Pattern playback will not be transmitted via MIDI.
+[SONG] or [PATTERN]  -> [UTILITY]  -> [F3] SEQ  -> [SF2] FILTER.	Page 262
+  Setting whether each track playback sounds the internal tone generator or an external tone generator.
+[SONG] or [PATTERN]  -> Song/Pattern selection -> [F3] TRACK -> [SF2] OUT SW. 	Page 222
+
+Other tips.
+  Loading the specified file on the SmartMedia/USB storage device automatically when the power is turned on.	Page 135
+  Setting the Mode set automatically when the power is turned on.
+[UTILITY] -> [F1] GENERAL -> [SF4] OTHER -> PowerOnMode. 	Page 261
+  Setting an individual Output connector for each key of the Drum Voice or for each part of the Performance/Song/Pattern.	Page 31
+
+
+
+This is the end of the file.
+

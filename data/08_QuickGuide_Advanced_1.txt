@@ -1,0 +1,837 @@
+Quick Guide -- Advanced Course.
+
+Editing a Voice.
+The Voice Edit mode ([VOICE] -> [EDIT]) gives you comprehensive tools for creating your own original Voices, either from scratch by changing the basic sounds, or by tweaking the various Voice parameters.  Create your custom sounds by calling up a preset Voice and editing as desired.  The actual parameters available and the methods for editing differ depending on the Voice type.
+
+  Normal Voice Edit.
+A Normal Voice can consist of up to four Elements. There are two types of Voice Edit displays: those for Common Edit to edit the settings common to all four Elements, and those for editing individual Elements. 
+
+  Drum Voice Edit.
+Each Drum voice consists of various Waves and/or Normal voices, each assigned to notes across the keyboard, from C0 to C6. There are two types of Drum Voice Edit displays: those for Common Edit to edit the settings that apply to all Drum keys in the voice, and those for editing individual keys (Elements).
+
+  Plug-in Voice Edit.
+This is basically the same as Normal Voice Edit. Unlike with Normal voices, the Plug-in voices only have one Element for editing. 
+
+Normal Voice Edit.
+1.	Press the [VOICE] button to enter the Voice mode, then select a Normal Voice to be edited. 
+2.	Press the [EDIT] button to enter the Voice Edit mode. 
+3.	Call up the Common Edit display or Element Edit display.
+If you wish to edit the sounds that make up a Voice and the basic parameters that determine the sound, such as Oscillator, Pitch, Filter, Amplitude, and EG (Envelope Generator), call up the Element Edit display. If you wish to edit more global parameters related to the overall Voice and how it's processed, such as Arpeggio, Controller, and Effects, call up the Common Edit display. 
+
+<Caption>
+While in the Voice Edit mode, you can switch between the Common Edit display and the Element Edit display as shown below.
+ Calling up the Common Edit display.
+Press the [COMMON] button to call up the Common Edit display.
+In the Edit mode, the [DRUM KITS] button functions as the [COMMON] button.
+Indicates a Common Edit display.
+ Calling up the Element Edit display.
+Press the desired element number from the ELEMENT [1] to [4] buttons to call up the Element Edit display.
+Indicates the display for editing Element 1.
+To turn each Element on or off (to hear how each affects the overall sound), use buttons [9] to [12]. You can also isolate or solo an Element by holding down the [MUTE] button and pressing the desired number button ([9] to [12]). To cancel the solo, press the [MUTE] button again.
+
+4.	Select the menu you wish to edit by pressing the [F1] to [F6] and [SF1] to [SF5] buttons, then edit the parameters.
+The following briefly describes the main Voice parameters.
+
+  Basic parameters for creating a sound.
+Element selection -> [F1] to [F6].
+If you wish to edit the basic sound-generating and sound-shaping parameters for the Voice, such as Oscillator, Pitch, Filter, Amplitude, and EG (Envelope Generator), use the Common Edit display. 
+
+<Table>
+[F1] OSC (Oscillator).	pages 160, 195.
+[F2] PITCH.	pages 160, 196.
+[F3] FILTER.	pages 161, 197.
+[F4] AMP (Amplitude).	pages 162, 199.
+[F5] LFO.	pages 162, 201.
+[F6] EQ (Equalizer).	pages 178, 201.
+
+  Effect related parameters.	Pages 177 and 194. 
+[COMMON] -> [F6] EFFECT.
+The Effects use DSP (Digital Signal Processing) to alter and enhance the sound of a Voice.  Effects are applied in the final stages of editing, letting you change the sound of the created Voice as desired. The Common Edit display lets you edit the Effect related parameters. 
+
+  Controller related parameters.	Pages 155 and 192.
+For each Voice, you can assign various functions to built-in controllers such as Pitch Bend Wheel, Modulation Wheel, Ribbon Controller, Knobs (ASSIGN1 and 2), Keyboard Aftertouch and optionally connected controllers such as Footswitch, Foot Controller, Breath Controller. These settings can be edited in the Common Edit display. 
+
+  Arpeggio related parameters.	Pages 169 and 191.
+[COMMON] -> [F3] ARP (Arpeggio).
+For each Voice, you can set the Arpeggio related parameters such as Arpeggio type and playback tempo. These can be edited in the Common Edit display. 
+
+5.	Repeat No.3 to 4 as desired. 
+6.	Name the edited Normal Voice. 
+Enter a name for the Voice from the NAME display ([COMMON] -> [F1] GENERAL -> [SF1] NAME). For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+<Figure>
+Enter the desired Voice name.
+
+7.	Store the edited Voice to internal User memory (page 187). 
+The edited Voice can be stored in the Voice Store mode. See page 85 for details. 
+8.	If desired, save the edited and stored voices to a SmartMedia/USB storage device. 
+Keep in mind that edited Voice data is stored to internal User memory (Flash ROM) and is stored even when turning the power off.  As such it is not necessary to save the data to SmartMedia card or another device; however, you may want to save it to another media for backup or organizational purposes. For more information, see page 85.
+
+Compare Function.
+This convenient function lets you switch between the edited Voice and its original, unedited condition Ð allowing you to listen to the difference between the two and better hear how your edits affect the sound.
+1.	In the Voice Edit mode (the [EDIT] indicator lighting), press the [EDIT] button so that its indicator flashes.
+The [C] indicator is shown at the top of the display (in place of the [E] indicator), and the original, unedited voice is restored for monitoring. 
+2.	Press the [EDIT] button again to disable the "Compare" function and restore the settings for your edited Voice. 
+Compare the edited sound with the unedited sound by repeating steps No.1 and 2. 
+
+NOTE.	
+While Compare is active, you cannot make edits to the Voice. 
+
+[TIP]	Editing a Voice by using the Knobs.
+The four knobs at the top left of the instrument are not only for tweaking the sound while you perform -- you can also use them to edit a Voice, either in the Voice Play mode or the Voice Edit mode.
+
+  When the [PAN/SEND] indicator is turned on: 
+<Table>
+PAN.	Determines the stereo pan position of the Voice.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> 
+[F2] OUTPUT -> Pan		Page 190.
+REVERB.	Determines the amount of Reverb effect that is applied to the Voice.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F2] OUTPUT -> RevSend	Page 191.
+CHORUS.	Determines the amount of Chorus effect that is applied to the Voice.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F2] OUTPUT -> ChoSend	Page 191.
+TEMPO.	Determines the tempo of the Arpeggio assigned to the currently selected Voice.	[VOICE] -> Voice selection -> [F6] ARP -> Tempo	Page 189.
+
+  When the [TONE] indicator is turned on: 
+<Table>
+CUTOFF.	Raises or lowers the Filter cutoff frequency to adjust the tone brilliance. 	[VOICE] -> Voice selection -> [F5] EG -> CUTOF	Page 189.
+RESONANCE.	Boosts or attenuates the level at the area around the Filter cutoff frequency. 	[VOICE] -> Voice selection -> [F5] EG -> RESO	Page 189.
+ATTACK.	Determines the attack time of the sound. For example, you can adjust a strings Voice so that the sound gradually swells in volume by setting a slow attack time Ð simply turn this knob to the right.	[VOICE] -> Voice selection -> [F5] EG -> ATK (AEG)	Page 189.
+RELEASE.	Determines the release time of the sound. Turning the knob to the right sets a long release time and (depending on the selected Voice) lets the sound sustain after the key is released. To produce a sharp release, in which the sound abruptly cuts off, set a short release time.	[VOICE] -> Voice selection -> [F5] EG -> REL (AEG)		Page 189.
+
+NOTE.	
+The settings above are applied as offsets to the AEG and FEG settings in the Voice Edit mode.
+
+  When the [ARP FX] indicator is turned on: 
+<Table>
+SWING.	Adjusts the swing feel of the Arpeggio playback. 	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> Swing	Page 192.
+GATE TIME.	Adjusts the Gate Time (length) of the Arpeggio notes. 	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> GateTimeRate	Page 192.
+VELOCITY.	Adjusts the velocity of the Arpeggio notes.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> VelocityRate	Page 192.
+UNITMULTIPLY.	Adjusts the Arpeggio playback time based on tempo.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> UnitMultiply	Page 192.
+
+  When the [EQ] indicator is turned on: 
+<Table>
+LO.	Determines the amount of boost or attenuation applied to the low frequency band of the Master EQ.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> LOW	Page 190.
+LO MID.		Determines the amount of boost or attenuation applied to the low-midrange frequency band of the Master EQ.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> LOW MID	Page 190.
+HI MID.	Determines the amount of boost or attenuation applied to the high-midrange frequency band of the Master EQ.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> HIGH MID 	Page 190.
+HI.		Determines the amount of boost or attenuation applied to the high frequency band of the Master EQ.	[VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> HIGH 	Page 190.
+
+NOTE.	
+The settings above are applied as offsets to the EQ settings in the [VOICE] -> [UTILITY] -> [F3] VOICE -> [SF1] MEQ display. 
+
+  When both the [PAN/SEND] and [TONE] indicators are turned on (by pressing them simultaneously): 
+ASSIGN A.	Adjusts parameters assigned to these knobs in the [UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN display.		Page 263.
+ASSIGN B.				
+ASSIGN 1.	Adjusts parameters assigned to these knobs in the [VOICE] -> Voice selection -> [EDIT] -> [COMMON] -> [F4] CTL SET display.		Page 192.
+ASSIGN 2.			
+
+NOTE.	
+In addition to above functions, Master Effect related parameters (set in the [UTILITY] -> [F3] VOICE -> [SF2] MEF display) can be assigned to these four knobs by pressing the [ARP FX] and [EQ] buttons simultaneously. The particular parameters assigned to the four knobs can be set in the [UTILITY] -> [F4] CTL ASN -> [SF5] MEF display. 
+
+[TIP]	Editing a Voice by using the Control Sliders (CS).
+[VOICE] -> Voice selection -> [EDIT] -> Element selection -> [F4] AMP -> [SF1] LVL/PAN -> Level.
+In the Voice mode, the four Control Sliders let you independently adjust the levels of the Elements of a Normal Voice or the Drum Voice keys. When a Normal Voice is selected, you can adjust the level balance among the four Elements. 
+
+NOTE.	
+Inadvertent use of the sliders may result in no sound. If this occurs, move the sliders upward. 
+
+To solo an Element for editing.
+This feature is useful for isolating the sound of single Element, for ease in editing.
+1.	In the Normal Voice Edit mode, simultaneously hold down the [MUTE] button and press one of the NUMBER buttons [9] to [12] to solo the corresponding Element.
+	Once you've selected an Element for soloing, the [MUTE] button's lamp flashes, indicating the Solo function is active and only the selected Element can be edited. 
+<Figure>
+In this example, only Element 3 is turned on and can be edited.
+
+2.	To solo another Element, simply press the appropriate number button ([9] to [12]).
+3.	To exit from the Solo function, press the [MUTE] button again.
+
+Edit Recall.
+If you are editing a Voice and select a different Voice without storing the one you were editing, all the edits you've made will be erased. If this happens, you can use Edit Recall to restore the Voice with your latest edits intact.
+1.	Press the [JOB] button in the Voice mode to enter the Voice Job mode. 
+2.	Press the [F2] RECALL button to call up the Recall display. 
+3.	Press the [ENTER] button. (The display prompts you for confirmation.)
+If you wish to cancel the operation, press the [DEC/NO] button.
+4.	Press the [INC/YES] button to execute Edit Recall to restore the voice.
+
+
+Drum Voice Edit.
+1.	Press the [VOICE] button to enter the Voice mode, then select a Drum Voice to be edited.
+2.	Press the [EDIT] button to enter the Voice Edit mode.
+3.	Call up the Common Edit display or Key Edit display. 
+If you want to edit the sounds that make up a Drum Voice and the basic parameters that determine the sound, such as Oscillator, Pitch, Filter, Amplitude, and EG (Envelope Generator), call up the Key Edit display.  To edit more global parameters related to the overall Drum Voice and how it's processed, such as Arpeggio, Controller, and Effects, call up the Common Edit display.
+<Figure>
+While in the Voice Edit mode, you can switch between the Common Edit display and the Element Edit display as shown below.
+ Calling up the Common Edit display.
+Press the [COMMON] button to call up the Common Edit display.
+In the Edit mode, the [DRUM KITS] button functions as the [COMMON] button.
+Indicates a Common Edit display.
+ Calling up the Key Edit display.
+Press any of the ELEMENT [1] to [4] buttons to call up the Key Edit display, then select the key to which the desired instrument is assigned.
+Indicates the display for editing the key C0.
+
+4.	Select the desired menu for editing by pressing the [F1] to [F6] and [SF1] to [SF5] buttons, then edit the parameters. 
+The main parameters available are basically the same as in the Normal Voice Edit (page 80). What is called Key Edit in the Drum Voice corresponds to Element Edit in the Normal Voice. Please keep in mind that the LFO parameters are not available in the Drum Voice. 
+5.	Repeat No.3 to 4 as desired.
+6.	Name the edited Drum Voice. 
+Enter a name for the Voice from the NAME display ([COMMON] -> [F1] GENERAL -> [SF1] NAME). For detailed instructions on naming a voice, refer to page 53 in the Basic Operation section.
+<Figure>
+Enter the desired Voice name.
+
+7.	Store the edited Voice to internal User memory (page 186).
+The edited Voice can be stored in the Voice Store mode. See page 85 for details. 
+8.	If desired, save the edited and stored voices to a SmartMedia/USB storage device.
+Keep in mind that edited Voice data is stored to internal User memory (Flash ROM) and is stored even when turning the power off.  As such it is not necessary to save the data to SmartMedia card or another device; however, you may want to save it to another media for backup or organizational purposes.   For more information, see page 85. 
+
+[TIP]	Assigning drum/percussion instruments to individual keys.
+[VOICE] -> Drum Voice selection -> [EDIT] -> Key selection -> [F1] OSC -> [SF1] WAVE.
+In the Drum Voice Edit mode, you can create your own original drum kits by assigning specific instrument sounds to individual keys -- in any desired order -- and edit detailed parameters for each key's sound.
+1.	Call up the Key Edit display in the Voice Edit mode. 
+	Refer to step No.3 on page 82. 
+2.	Call up the [F1] OSC -> [SF1] WAVE display. 
+3.	Press the key to which you want to assign a sound.
+	The drum instrument currently assigned to the pressed key will sound. 
+4.	Select the desired Waveform to be assigned.
+	Move the cursor to "Number" and change the value by using the data dial, [INC/YES] button, and [DEC/NO] button. Then, press the same key set in step No.3 again to confirm the selected instrument sound. 
+You can also select a different sound category (such as Percussion, or even a Normal Voice sound), by moving the cursor to gCategoryhand changing the setting.
+5.	Create your original drum kit by repeating steps No.3 to 4. 
+6.	Store the created drum kit as a Drum Voice in User memory. 
+	The edited Voice can be stored in the Voice Store mode. See page 85 for details. 
+7.	If desired, save the edited and stored voices to a SmartMedia/USB storage device. 
+
+[TIP]	Setting the drum key for independent open and closed hi-hat sounds.
+[VOICE] -> Drum Voice selection -> [EDIT] -> Key selection -> [F1] OSC -> [SF5] OTHER -> AltnateGroup.
+In a real drum kit, some drum sounds cannot physically be played simultaneously, such as open and closed hi-hats. 
+You can prevent drum instruments from playing back simultaneously by assigning them to the same Alternate Group. 
+The preset Drum Voices have many such Alternate Group assignments to ensure the most authentic, natural sound.  When creating a Voice from scratch, you can use this feature -- either to ensure authentic sound, or to create special effects, where playing one sound cancels out a previous one.
+1.	Call up the Key Edit display in the Voice Edit mode. 
+	Refer to step No.3 on page 82. 
+2.	Call up the [F1] OSC -> [SF5] OTHER display. 
+3.	Press the key which corresponds to "Hi-Hat Open" and set the Alternate Group to "1."
+4.	Press the key which corresponds to "Hi-Hat Close" and set it to the same Alternate Group (1) as in step No.3.
+5	Confirm whether the Alternate Group has been set properly. 
+	Immediately after pressing the "Hi-Hat Open" key, press the "Hi-Hat Close" key. Pressing the second key should cut off the sound of the first.
+Since the settings above are included in the Drum Voice data, store them as a Drum Voice in the Voice Store mode. 
+
+[TIP]	Determining how the Drum Voice responds when the key is released.
+[VOICE] -> Drum Voice selection -> [EDIT] -> Key selection -> [F1] OSC -> [SF5] OTHER -> RcvNoteOff.
+You can determine whether or not the selected Drum key responds to MIDI Note Off messages. Setting the Receive Note Off parameter to "off" can be useful for cymbal sounds and other sustaining sounds. This lets you have the selected sounds sustain to the length of their natural decay Ð even if you release the note, or when a Note Off message is received. If this parameter is set to "on," the sound will stop immediately when the note is released or a Note Off message is received.
+
+[TIP]	Setting the Output jack for each key (drum/percussion instrument).
+[VOICE] -> Drum Voice selection -> [EDIT] -> Key selection -> [F1] OSC -> [SF2] OUTPUT -> OutputSel.
+You can change the output jack on the rear panel for the individual Drum key signal. This function is useful when you wish to apply a connected external effect to a specific drum instrument. 
+For details, see page 31. 
+
+
+Plug-in Voice Edit.
+The Plug-in Voices (available when installing optional Plug-in Boards to the instrument) can be edited in basically the same way as in Normal Voice Edit (page 79). Unlike with Normal voices, the Plug-in voices only have one Element for editing. In addition, some of the other parameters may not be available. Refer to page 205 in the Reference section.
+
+Storing/Saving the created Voice.
+Two steps are necessary in order to store (save) your voice Ð storing the edited voice to internal memory and saving the stored voices to a SmartMedia/USB storage device. 
+<Figure>
+Storing edited Voices individually.
+All the User Voice data in internal memory can be saved as a single file.
+The W7E file can be loaded to the Voice Editor, computer software.
+
+Keep in mind that edited Voice data is stored to internal User memory (Flash ROM) and is stored even when turning the power off.  As such it is not necessary to save the data to SmartMedia card or another device; however, you may want to save it to another media for backup or organizational purposes, using the Save operation. For more information, see page 86. 
+
+Storing the edited Voice as a User Voice to internal memory.
+[VOICE] -> [STORE].
+1.	After editing the Voice, press the [STORE] button to enter the Voice Store mode.
+Make sure to execute the Store operation before selecting another Voice. 
+2.	Select the destination Voice memory.
+Select a User Bank ("USR1" or "USR2" when storing a Normal Voice, "UDR" when storing a Drum Voice, "P1-U" to "P3-U" when storing a Plug-in Voice) and the desired Voice number by using the data dial, [INC/YES] and [DEC/NO] button. 
+<Figure>
+Select a User Bank.
+Select a Voice number.
+
+<CAUTION> 
+When you execute the Store operation, the settings for the destination memory will be overwritten. Important data should always be backed up to a separate SmartMedia/USB storage device. 
+
+3.	Press the [ENTER] button.
+The display prompts you for confirmation.
+To cancel the Store operation, press the [DEC/NO] button.
+4.	Press the [INC/YES] button to execute the Store operation.
+After the Voice has been stored, a "Completed" message appears and operation returns to the Voice Play display.
+
+<CAUTION> 
+Keep in mind that the Store operation may take a short time to complete, during which an "Executing.." or "Please keep power on" message may be shown. Never attempt to turn off the power while data is being written to Flash ROM while such a message is displayed. Turning the power off in this state results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This may also result in the MOTIF ES  being unable to properly start up the next time the power is turned on.
+<CAUTION> 
+If you select another Voice without storing, the currently edited Voice will be lost. Make sure to store the edited Voice before selecting another Voice. 
+
+Saving the edited Voices to a SmartMedia/USB storage device.
+[FILE] -> [F2] SAVE.
+Whether you are saving data to SmartMedia or a USB storage device, the procedure is the same.  Insert a SmartMedia card (to the CARD slot) or connect the USB device and follow the instructions below.
+1.	Press the [FILE] button to enter the File mode, then execute the basic settings.
+Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30.
+2.	Press the [F2] SAVE button to call up the Save display. 
+3.	Set the Type parameter to "All Voice." 
+Move the cursor to TYPE, then select a file type by using the data dial, [INC/YES] and [DEC/NO] buttons. The following three file types are available for saving Voice data. Here, select "All Voice." 
+
+<Table>
+All.	When this is selected, execute the Save operation to save all the created data including the User Voices as a single file (extension: W7A).
+All Voice.	When this is selected, execute the Save operation to save all User Voices as a single file (extension: W7V). 
+Voice Editor.	When this is selected, execute the Save operation to save all User Voices as a single file (extension: W7E) which can be exported to the Voice Editor software contained in the included CD-ROM.
+
+4.	Input a file name.  
+Move the cursor to the file name input location, then input a file name. For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+5.	Press the [ENTER] button to execute the Save operation.  
+If you are about to overwrite an existing file, the display prompts you for confirmation. Press the [INC/YES] button to execute the Save operation to overwrite the existing file, or press the [DEC/NO] button to cancel it.
+<CAUTION>
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+Loading Voice data from the SmartMedia/USB storage device.
+[FILE] -> [F3] LOAD.
+In the previous section, we saved Voice data as an "All Voice" file to a SmartMedia card or USB storage device.  Here, we'll recall that Voice data and load it to the instrument with the Load operation.
+1.	Press the [FILE] button to enter the File mode, then execute the basic settings.
+Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Press the [F3] LOAD button to call up the Load display.
+3.	 Select the file type to be loaded. 
+The file saved in operation explained on the previous page has all the User Voices. If you wish to load all the User Voices, set Type to "All Voice." If you wish to load only a specific voice, set Type to "Voice." 
+4.	 Select a file (file mark) to be loaded.
+Move the cursor to the file (extension: W7V) saved in the operation explained on the previous page. If you've set the Type to "AllVoice" in step No.3, go to step No.5. If you've set the Type to "Voice" in step No.3, execute the operations in the following box, then go to step No.5. 
+
+When Type is set to "Voice": 
+When Type is set to "Voice," you can specify and load a specific Voice from a file (with the extension W7V or W7A).
+<Figure>
+Move the cursor to the file (extension: W7V) saved in the operation explained on the previous page.
+All the Voices contained in the selected file are listed on the display. Move the cursor to the desired Voice.
+Select the destination Voice Bank/Number.
+Select the desired Voice to be loaded.
+<CAUTION>
+Loading data to this synthesizer automatically erases and replaces any existing data in the User memory. Make sure to save any important data to a SmartMedia/USB storage device before performing any Load operations.
+
+5.	Press the [ENTER] button to execute the Load operation. 
+After the data has been loaded, a "Completed" message appears and operation returns to the original display.
+<CAUTION>
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+
+Editing a Performance.
+The Performance Edit mode ([PERFORM] -> [EDIT]) lets you create your own original Performances -- containing up to four different Parts (Voices) -- by editing the various parameters.  The Voices can be selected from the internal tone generator or the installed Plug-in Boards. After assigning different Voices to separate ranges of the keyboard, edit the detailed parameters in the Performance Edit mode. 
+1.	Press the [PERFORM] button to enter the Performance mode, then select a Performance to be edited.
+2.	Press the [EDIT] button to enter the Performance Edit mode. 
+3.	Call up the Common Edit display or Part Edit display. 
+Use the Part Edit to edit the parameters for each Part. Use Common Edit to edit the parameters for all of the Parts. 
+<Figure>
+While in the Voice Edit mode, you can switch between the Common Edit display and the Part Edit display as shown below.
+ Calling up the Common Edit display.
+Press the [COMMON] button to call up the Common Edit display.
+In the Edit mode, the [DRUM KITS] button functions as the [COMMON] button.
+Indicates a Common Edit display.
+
+NOTE.	You can mute or solo a Part in the Performance Edit mode, just as in the Performance Play mode or the Song/Pattern mode (page 68).
+
+ Calling up the Part Edit display
+Press the desired Part number from the PERF. PART [1] to [4] buttons to call up the Part Edit display.
+Indicates the display for editing Part 1.
+To switch between the Part 1 to 4 display and the Plug-in Part 1 to 3 display, press the [F6] button.
+You can select the four Performance Parts from this group of seven.
+Parts to which Internal voices are assigned
+Parts to which Plug-in Board voices are assigned
+
+4.	Select the menu you wish to edit by pressing the [F1] to [F6] and [SF1] to [SF5] buttons, then edit the parameters.
+The following briefly describes the main Performance parameters.
+
+  Parameters for the Voice assigned to each Part.	Page 216.
+Part selection -> [F1] VOICE.
+The Voice assigned to each part and its note range can be set also in the Performance Play mode (page 71). In addition to the parameters available in the Performance Play mode, the Performance Edit mode also lets you set Portamento (pitch glide) and Arpeggio Switch (which determines whether the Arpeggio plays a specific Part or not).
+
+  Basic parameters for making sound.	Page 218.
+Part selection -> [F4] TONE.
+If you wish to edit the basic parameters for the synthesizer such as Tune, Filter, and Amplitude, use the Part Edit display. 
+
+  Parameters related to the Audio Input part.	Page 214.
+[COMMON] -> [F5] AUDIO IN.
+The audio signal input from the A/D INPUT jack (or the optional audio inputs) can be handled as an Audio Input part. You can apply various parameters such as Volume, Pan, and Effect settings to this Part -- just as you can with the other Parts. The parameters related to the Audio Input Part can be edited in Common Edit for each Performance. 
+
+  Parameters related to the OUTPUT jacks for each part.	Page 218.
+Part selection -> [F2] OUTPUT -> [SF3] SELECT -> OutputSel.
+You can assign each individual Part's Voice to be output from a specific hardware output jack on the rear panel. This function is useful when you want to output a specific Part to a separate speaker or process it with a favorite external effect.
+
+  Effect related parameters.	Pages 177 and 215.
+[COMMON] -> [F6] EFFECT.
+[COMMON] -> [F2] OUT/MEF -> [SF3] MEF (Master Effect).
+The Effects use DSP (Digital Signal Processing) to alter and enhance the sound of a Performance. The Common Edit display lets you edit the Effect related parameters. 
+
+  Master EQ related parameters.	Pages 178 and 214.
+These parameters let you use the five-band Master EQ to process the overall sound of the Performance.  Master EQ also features separate EQ shape parameters for the Low and High bands, as well as the Frequency, Gain and Q controls for each band.
+
+  Controller related parameters.	Pages 155 and 214.
+[COMMON] -> [F4] CTL ASN (Controller Assign)
+For each Performance, you can assign the Control Change Number to built-in controllers such as Ribbon Controller, Knobs (ASSIGN1 and 2), Keyboard Aftertouch and optionally connected controllers, such as Foot Controller and Breath Controller. 
+
+NOTE.	
+Functions assigned to Controllers depend on the settings of each Part's Voice edited in the Voice Edit mode. 
+
+  Arpeggio related parameters.	Pages 169 and 214.
+For each Performance, you can set the Arpeggio related parameters, such as Arpeggio type and playback tempo. These can be edited in the Common Edit display. 
+
+5.	Repeat steps No.3 to 4 as desired. 
+6.	Name the edited Performance. 
+Enter a name for the Performance from the NAME display ([COMMON] -> [F1] GENERAL -> [SF1] NAME).
+For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+<Figure>
+Enter the desired Performance name.
+
+7.	Store the edited Performance to internal User memory (page 186).  
+The edited Performance can be stored in the Performance Store mode. See page 91 for details. 
+8.	If desired, save the edited and stored Performances to a SmartMedia/USB storage device.
+Keep in mind that edited Performance data is stored to internal User memory (Flash ROM) and is stored even when turning the power off.  As such it is not necessary to save the data to SmartMedia card or another device; however, you may want to save it to another media for backup or organizational purposes. For more information, see page 91. 
+
+Compare Function.
+Just as in the Voice Edit mode, you can use the Compare function also in the Performance Edit mode. This convenient function lets you switch between the edited voice and its original, unedited condition Ð allowing you to listen to the difference between the two and better hear how your edits affect the sound.
+1.	In the Performance Edit mode (with the [EDIT] indicator lit), press the [EDIT] button so that its indicator flashes.
+	The [C] indicator is shown at the top of the display (in place of the [E] indicator), and the original, unedited Performance is restored for monitoring. 
+2.	Press the [EDIT] button again to disable the "Compare" function and restore the settings for your edited Performance. 
+Compare the edited sound with the unedited sound as desired by repeating steps No.1 and 2. 
+
+NOTE.	
+While Compare is active, you cannot make edits to the Performance. 
+
+[TIP]	Editing a Performance by using the Knobs.
+The four knobs at the top left of the instrument are not only for tweaking the sound while you perform -- you can also use them to edit a Performance, either in the Performance Play mode or the Performance Edit mode.
+
+  When the [PAN/SEND] indicator is turned on: 
+<Table>
+PAN.	Determines the stereo pan position of the Performance.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF1] OUT -> Pan.	Page 213.
+REVERB.	Determines the amount of Reverb effect that is applied to the Performance.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF1] OUT -> RevSend.	Page 213.
+CHORUS.	Determines the amount of Chorus effect that is applied to the Performance.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF1] OUT -> ChoSend.	Page 213.
+TEMPO.	Determines the tempo of the Arpeggio assigned to the currently selected Performance.	[PERFORM] -> Performance selection -> [F6] ARP -> Tempo.	Page 213.
+
+  When the [TONE] indicator is turned on: 
+<Table>
+CUTOFF.	Raises or lowers the Filter cutoff frequency to adjust the tone brilliance. 	[PERFORM] -> Performance selection -> [F5] EG -> CUTOF	Page 213
+RESONANCE.	Boosts or attenuates the level at the area around the Filter cutoff frequency. 	[PERFORM] -> Performance selection -> [F5] EG -> RESO	Page 213
+ATTACK.	Determines the attack time of the sound. For example, you can adjust a strings Voice so that the sound gradually swells in volume by setting a slow attack time Ð simply turn this knob to the right.	[PERFORM] -> Performance selection -> [F5] EG -> ATK (AEG)	Page 213
+RELEASE.	Determines the release time of the sound. Turning the knob to the right sets a long release time and (depending on the Voice assigned to the selected Performance) lets the sound sustain after the key is released. To produce a sharp release, in which the sound abruptly cuts off, set a short release time.	[PERFORM] -> Performance selection -> [F5] EG -> REL (AEG)	Page 213
+
+NOTE.	
+The settings above are applied as offsets to the AEG and FEG settings in the Performance Edit mode.
+
+
+  When the [ARP FX] indicator is turned on:
+<Table>
+SWING.	Adjusts the swing feel of the Arpeggio playback.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> Swing	Page 214
+GATE TIME.	Adjusts the Gate Time (length) of the Arpeggio notes. 	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> GateTimeRate	Page 214
+VELOCITY.	Adjusts the velocity of the Arpeggio notes. 	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> VelocityRate	Page 214
+UNITMULTIPLY.	Adjusts the Arpeggio playback time based on tempo. 	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F3] ARP -> [SF3] PLAY FX -> UnitMultiply	Page 214
+
+  When the [EQ] indicator is turned on: 
+<Table>
+LO.	Determines the amount of boost or attenuation applied to the low frequency band of the Master EQ.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> LOW	Page 213
+LO MID.	Determines the amount of boost or attenuation applied to the low-midrange frequency band of the Master EQ.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> LOW MID 	Page 213
+HI MID.	Determines the amount of boost or attenuation applied to the high-midrange frequency band of the Master EQ.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> HIGH MID	Page 213
+HI.		Determines the amount of boost or attenuation applied to the high frequency band of the Master EQ.	[PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF3] MEQ OFS -> HIGH 	Page 213
+
+NOTE.	
+The settings above are applied as offsets to the EQ settings in the [PERFORM] -> Performance selection -> [EDIT] -> [COMMON] -> [F2] OUT/MEF -> [SF2] MEQ (Master EQ) display. 
+
+  When both the [PAN/SEND] and [TONE] indicators are turned on (by pressing them simultaneously): 
+<Table>
+ASSIGN A.	Adjusts parameters assigned to these knobs in the [UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN display. 		Page 263.
+ASSIGN B.				
+ASSIGN 1.	Depends on the settings of the Voice assigned to the selected Performance.		Page 192.
+ASSIGN 2.			
+
+NOTE.	
+In addition to above functions, Master Effect related parameters (set in the [PERFORM] -> Performance selection -> [COMMON] -> [F2] OUT/MEF -> [SF3] MEF display) can be assigned to these four knobs by pressing the [ARP FX] and [EQ] buttons simultaneously. The particular parameters are assigned to the four knobs can be set in the [UTILITY] -> [F4] CTL ASN -> [SF5] MEF display. 
+
+[TIP]	Editing a Performance by using the Control Sliders (CS)
+[PERFORM] -> Performance selection -> [EDIT] -> Part selection -> [F2] OUTPUT -> [SF1] VOL/PAN -> Volume
+In the Performance mode, the four Control Sliders let you independently adjust the levels of the Parts (Voices), letting you control the overall balance of the Parts.
+
+NOTE.	
+Inadvertent use of the sliders may result in no sound. If this occurs, move the sliders upward. 
+
+Edit Recall.
+If you are editing a Performance and select a different Performance without storing the one you were editing, all the edits you've made will be erased. If this happens, you can use Edit Recall to restore the Performance with your latest edits intact.
+1.	Press the [JOB] button in the Performance mode to enter the Performance Job mode. 
+2.	Press the [F2] RECALL button to call up the Recall display. 
+3.	Press the [ENTER] button. (The display prompts you for confirmation.)
+	If you wish to cancel the operation, press the [DEC/NO] button.
+4.	Press the [INC/YES] button to execute the Edit Recall to restore the Performance.
+
+Storing/Saving the created Performance.
+Two steps are necessary in order to store (save) your Performance Ð storing the edited Performance to internal memory and saving the stored Performances to a SmartMedia/USB storage device. 
+<Figure>
+Storing edited Performances individually.
+All the User Performance data in internal memory can be saved as a single file.
+Keep in mind that edited Performance data is stored to internal User memory (Flash ROM) and is stored even when turning the power off.  As such it is not necessary to save the data to SmartMedia card or another device; however, you may want to save it to another media for backup or organizational purposes, using the Save operation.
+
+Storing the edited Performance as a User Performance to internal memory.
+[PERFORM] -> [STORE].
+1.	After editing the Performance, press the [STORE] button to enter the Performance Store mode.
+Make sure to execute the Store operation before selecting another Performance. 
+2.	Select the destination Performance memory.
+Select a Performance number by using the data dial, [INC/YES] and [DEC/NO] button. 
+
+<CAUTION> 
+When you execute the Store operation, the settings for the destination memory will be overwritten. Important data should always be backed up to a separate SmartMedia/USB storage device. 
+
+3.	Press the [ENTER] button.
+The display prompts you for confirmation.
+To cancel the Store operation, press the [DEC/NO] button.
+4.	Press the [INC/YES] button to execute the Store operation.
+After the Performance has been stored, a "Completed" message appears and operation returns to the Performance Play display. 
+<CAUTION>
+Keep in mind that the Store operation may take a short time to complete, during which an "Executing.." or "Please keep power on" message may be shown. Never attempt to turn off the power while data is being written to Flash ROM while such a message is displayed. Turning the power off in this state results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This may also result in the MOTIF ES  being unable to properly start up the next time the power is turned on.
+<CAUTION>
+If you select another Performance without storing, the currently edited Performance will be lost. Make sure to store the edited Performance before selecting another Performance. 
+
+Saving the edited Performances to a SmartMedia/USB storage device.
+[FILE] -> [F2] SAVE.
+Whether you are saving data to SmartMedia or a USB storage device, the procedure is the same.  Insert a SmartMedia card (to the CARD slot) or connect the USB device and follow the instructions below.
+1.	Press the [FILE] button to enter the File mode, then execute the basic settings. 
+Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Press the [F2] SAVE button to call up the Save display. 
+3.	Set the Type parameter to "All."  
+Move the cursor to TYPE, then select a file type by using the data dial, [INC/YES] and [DEC/NO] buttons. When Type is set to "All," execute the Save operation to save all the created data, including the Performances as well as the Voices assigned to them, as a single file (extension: W7A). 
+4.	Input a file name. 
+Move the cursor to the file name input location, then input a file name. For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+
+5.	Press the [ENTER] button to execute the Save operation.
+If you are about to overwrite an existing file, the display prompts you for confirmation. Press the [INC/YES] button to execute the Save operation to overwrite the existing file, or press the [DEC/NO] button to cancel it.
+
+<CAUTION>
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+Loading the Performance data from the SmartMedia/USB storage device.
+[FILE] -> [F3] LOAD.
+In the previous section, we saved Performance data as an "All" file (extension: W7A) to a SmartMedia card or USB storage device.  Here, we'll recall that Performance data and load it to the instrument with the Load operation.
+1.	Press the [FILE] button to enter the File mode, then execute the basic settings.
+Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Press the [F3] LOAD button to call up the Load display. 
+3.	Select the file type to be loaded. 
+The file saved in operation explained on the previous page contains all the Performances. 
+If you wish to load all the Performances, set Type to "All." In this case, all data that can be created on the MOTIF ES will be loaded in step No.5 below. If you wish to load only a specific Performance, set Type to "Performance." 
+<Figure>
+Loading a specific Performance when Type is set to "Performance."
+All Performances are loaded when Type is set to "All."
+
+<CAUTION> 
+When Type (file type) is set to "All" and the Load operation is executed, all data that can be created on the instrument will be loaded.  This means that any existing data in User memory will automatically be overwritten and lost. Make sure to save any important data to a SmartMedia/USB storage device before performing the Load operations, especially when Type is set to "All." 
+
+NOTE.	
+When Type (file type) is set to "Performance" and the Load operation is executed, the sound of the Performances may not be reproduced properly if the User Voices assigned to the Performances saved in the file have been changed by editing. 
+
+4.	Select a file (file mark) to be loaded.
+Move the cursor to the file (extension: W7A) saved in the operation explained on the previous page. If you set the Type parameter to "All" in step No.3, go to step No.5. If you set the Type parameter to "Performance" in step No.3, execute the operations in the following box, then go to step No.5. 
+
+When Type is set to "Performance": 
+When Type is set to "Performance," you can specify and load a specific Performance from a file (with the extension W7A).
+<Figure>
+Move the cursor to the file (extension: W7A) saved in the operation explained on the previous page.
+All the Performances contained in the selected file are listed on the display. Move the cursor to the desired Performance.
+Select the destination Performance number.
+Select the desired Performance to be loaded.
+
+<CAUTION> 
+Loading data to this synthesizer automatically erases and replaces any existing data in the User memory. Make sure to save any important data to a SmartMedia/USB storage device before performing any Load operations.
+
+5.	Press the [ENTER] button to execute the Load operation. 
+After the data has been loaded, a "Completed" message appears and operation returns to the original display.
+<CAUTION>
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+
+Creating a Voice by using the Sampling function.
+Sampling is a powerful function that lets you bring your own recorded sounds Ð your voice, an instrument, rhythms, special sound effects, etc. Ð into the system of this synthesizer, and play those sounds just like any other voices. These sounds, the audio data you capture with the Sampling function, are referred to as "Samples."
+The data you create by Sampling differs depending on which mode you enter the Sampling mode from -- the Voice/Performance mode or the Song/Pattern mode.  In this section, we'll describe how to use the Sampling function from the Voice/Performance mode in creating a User Voice.
+
+NOTE.	
+See page 173 for instructions on using the Sampling function in the Song mode/Pattern mode. 
+
+IMPORTANT.	In order to use the Sampling function, DIMM modules must be installed to the instrument.  For details on installing DIMMs, see page 289.
+Depending on the size of the audio (sample) data obtained via the Sampling function, you may not be able to save all of the desired data to a SmartMedia card (maximum capacity: 128MB).  For this reason, we recommend using a large-capacity USB storage device for your Sampling data.
+
+Sampling your voice with a microphone and creating a Normal Voice
+1.	Connect a microphone to the instrument.
+Follow steps No.1 to 8 on page 72.
+2.	Press the [INTEGRATED SAMPLING] button in the Voice mode or Performance mode to enter the Sampling mode. 
+3.	Press the [F2] SOURCE button to call up the display for setting the Sampling Source, then set the parameters as shown below.
+Type: 	sample.
+Source:	A/D.
+Next:	off.
+Mono/Stereo:	L mono.
+Frequency:	44.1k.
+For details about each parameter, see page 251. 
+4.	Press the [F1] DEST button to call up the display for setting the Sampling Destination, then set the parameters as described below.
+Waveform.	Determines the Waveform number. Select a number which has no data ([--- : -----------] is indicated). For details about the Waveform, see page 173. 
+Keybank.	Here, set this parameter to "C3." After the Sampling is completed, you can hear the sampled sound by pressing the note set here. For details about the Keybank, see page 173.  
+Part.	This is available when entering the Sampling mode from the Performance mode. This parameter determines the Performance Part to which the Voice (below) created by sampling is assigned. 
+Voice.	Set the Bank to "USR1" or "USR2" (one of the User Normal Voice Banks), then select a User Normal Voice Number. After the Sampling is completed, you can hear the created Voice by selecting the Voice number set here.
+
+NOTE.	
+If the Voice parameter above is set to "off," you won't be able to play the sampled sound as a Voice after completing this operation.  However, you can call up the sampled sound by selecting a Waveform. For details on how to select a Waveform, see page 174. 
+
+5.	Press the [F6] REC button to call up the Sampling Record display (Sampling Standby status), then set the parameters as required.
+<Figure>
+You can change the Keybank (set in step No.4) also in this display.
+Turn the Confirm function on or off.
+Trigger Level.
+Indicates Sampling Standby status.
+
+  Setting the Confirm function.
+When the [F2] CONFM (Confirm function) is turned on ( is indicated), you can easily listen back to your just-recorded sample and conveniently re-record it if you're not satisfied with the results. Here, set the [F2] CONFM button on. 
+
+  Setting the Trigger mode.
+The Trigger mode lets you determine how the Sampling actually starts. For example, you can start the Sampling simply by pressing the button or when the Song/Pattern playback reaches a specified point. Here, set the TrggrMode (Trigger mode) to "level" which lets you start sampling as soon as the microphone level exceeds the specified Trigger Level. 
+
+  Setting the Trigger Level.
+When the Trigger mode is set to "level," you'll also need to set the Trigger Level.  This determines when sampling actually starts, depending on the level of the input signal (in this case, your voice).  As you sing into the microphone, notice the movement of the level meter (bar), and when the bar crosses the Trigger Level arrow.  If necessary, select the Trigger Level value and use the  data dial to change it, moving the arrow as low or as high as needed.  
+<Figure>
+Trigger Level.
+The section of the bar exceeding the Trigger Level becomes black.
+Indicates Sampling Standby status.
+
+6.	Press the [F6] REC button again to enable Sampling Trigger Waiting.
+Doing this puts sample recording on standby, waiting for an input signal that exceeds the Trigger level.
+<Figure>
+Indicates that sample recording is waiting for a signal of an appropriate level.
+
+7.	Sing into the microphone to start sampling.
+Sing into the microphone.  (You may want to match the pitch of your voice to the note C3, set in step No.4 above.) The sampling actually starts as soon as the an input signal exceeding the specified trigger level is received. 
+8.	Press the [F6] STOP button to stop sampling, then check the results. 
+Press the [F3] AUDITION button to hear the sampled sound. 
+If you're not satisfied with the results and you wish to try again, press the [F4] CANCEL button to return to the Sampling Standby display and try sampling from step No.5 again. If you are satisfied with the results, press the [F5] OK button to store the sampled sound as a "sample" and return to the [F1] DEST or [F2] SOURCE display. 
+Keep in mind that if the Confirm function is turned off in step No.5 above, the display shown above will not appear when stopping sampling. Instead, stopping sampling returns directly to the [F1] DEST or [F2] SOURCE display.
+9.	Press the [EDIT] button to enter the Sampling Edit mode, then press the [F4] RANGE button to call up the Range setting display. 
+10.	Set the key range within which the sample is sounded.
+Immediately after sampling, the sample is assigned only to one key -- the one set in step No.4 as "KeyBank." This display lets you expand the key range within which the sample is sounded. Here, set the key range to C2 to B3. 
+<Figure>
+Indicates the original key of the currently selected sample. If you wish to select a different sample, call up the [F1] KEYBANK display, then press a different key while holding the [INFORMATION] button.
+Set the key range.
+Use the data dial, [INC/YES] and [DEC/NO] button, or press the key while holding the [INFORMATION] button.
+Play the keyboard within the key range set above.
+Your sampled voice is sounded, following the pitches of the notes you play.
+
+11.	Repeat step No.4 to 10 to add another sample to the same Voice (Waveform). 
+For example, in step No.4 set Keybank to "G4," sing into the microphone as described in step No.7 (matching the pitch G4, if necessary), and set the Key Range to C4 to E5 in step No.10. As a result, the sample is assigned to the keys as illustrated below. 
+<Figure>
+The sample is sounded within this key range.
+The original sample is assigned to this key.
+
+When you play the sample from the keyboard, the more distant the played samples are from the original key, the less natural the samples sound.  For this reason, you should try to make multiple samples and multiple key ranges, so that each key range is shorter and the samples sound more natural.
+
+12.	Save your newly created User Voice to a SmartMedia/USB storage device. 
+Refer to "Saving a Sample" on page 97. 
+The recorded (edited) sample data resides temporarily in DIMM (page 187). Because data contained in DIMM is lost when the power is turned off, you should always save any data residing in DIMM to a SmartMedia /USB storage device before turning off the power.
+
+About Samples, Key Banks, Waveforms, and Voices.
+Understanding the Sampling-related terms below will help you better understand the Sampling function itself and how to use it.  Keep in mind the hierarchy here as it relates to sampling -- the audio source (e.g., your voice) starts as a Sample, becomes part of a Key Bank, which makes up a Waveform, which is used to create a Voice.
+  Sample .
+The sound obtained via the Sampling function is referred to as "Sample." 
+  Key Bank.
+In order to play the sample from the keyboard, the sample must be assigned to notes on the keyboard. First, assign the sample to a specified key when sampling (step No.4 on page 94), then expand the key range within which the sample is sounded (step No.10 on page 96). The Key Range and the Velocity Range within which the sample is sounded is referred to as a "Key Bank." In step No.10 above, you saw how to set the Key Range.  From the same display, you can also set a Velocity Range.  Using these two parameters, you can create a Key Bank.
+  Waveform.
+The group of Key Banks to which sample data is assigned is referred to as a "Waveform." The Waveform is assigned to each Element of a Normal Voice. In step No.11 above, you saw how to add Key Banks one by one to create a Waveform.
+  Voice .
+After completing a Waveform, you can create an Element by applying various sound-making parameters such as Pitch, Filter, Amplitude and other parameters such as Effect and EQ to it. Finally, combine four Elements (each containing its own Waveform) to create a Normal Voice.
+
+NOTE.
+You can select and hear the Waveforms created via the Sampling function as well as all the preset Waveforms in the WAVE display ([VOICE] -> [EDIT] ->  Element selection -> [F1] OSC -> [SF1] WAVE).
+
+
+Saving a Sample.	[FILE] -> [F2] SAVE.
+Assign the Samples obtained via the Sampling function to specific Key Ranges to create a Waveform. Because the Waveform data including Samples which resides temporarily in DIMM (page 187) is lost when the power is turned off, you should always save the Waveform data or Samples to a SmartMedia/USB storage device before turning off the power. The following four methods can be used to save a Sample that is assigned to a Waveform. Execute the Save operation in the File mode. 
+
+<CAUTION> 
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+  Saving as a User Voice.
+When you save a User Voice that contains Samples, all the related data -- the Waveform assigned to the Voice, the Samples assigned to the Waveform, as well as the User Voice itself -- is automatically saved together. Insert a SmartMedia into the CARD slot or connecting the USB storage device to this synthesizer, and follow the instructions below.
+1.	Press the [FILE] button to enter the File mode, then execute the basic settings. 
+	Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Press the [F2] SAVE button to call up the Save display. 
+3.	Set the TYPE parameter to "All" or "AllVoice." 
+	When "All" is selected, execute the Save operation to save all the created data including the User Voices as a single file. When "AllVoice" is selected, execute the Save operation to save all User Voices, including Waveforms assigned to Normal Voice Elements or Drum Voice Keys, as a single file. 
+4.	Input a file name. 
+	Move the cursor to the file name input location, then input a file name. For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+5.	Press the [ENTER] button to execute the Save operation. 
+	If you are about to overwrite an existing file, the display prompts you for confirmation. Press the [INC/YES] button to execute the Save operation to overwrite the existing file, or press the [DEC/NO] button to cancel it.
+
+  Saving as a Waveform.
+When you save a Waveform that makes up a Voice, all the Samples that are assigned to the Waveform are automatically saved together.  The procedure for saving is the same as described in "Saving a User Voice" above, with the exception that Type is set  to "AllWaveform" in step No.3.
+
+  Saving as a WAV file.
+You can select a specific Sample from a Waveform and save it as a WAV file (Windows audio format). Insert a SmartMedia into the CARD slot or connecting the USB storage device to this synthesizer, and follow the instructions below.
+
+1.	Select a Voice containing the Sample to be saved in the Voice Play mode, then press the [FILE] button to enter the File mode, and execute the basic settings. 
+	Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Set the TYPE parameter to "Wav" in the [F2] SAVE display. 
+3.	Input a file name. 
+	Move the cursor to the file name input location, then input a file name. For detailed instructions on naming, refer to page 53 in the Basic Operation section.
+4.	Press the [ENTER] button, then select a Sample to be saved. 
+
+	When a Normal Voice is selected in step No.1: 
+	Specify the Element and Key Bank to call up the Sample assigned to the selected Voice. You can hear the Sample by pressing the [SF1] AUDITION button. Go through the Samples in this way to find the desired Sample.
+<Figure>
+You can hear the selected sample by pressing the [SF1] button. (Audition function)
+This is available only when the cursor is located at the KeyBank. Each press of the [SF2] button calls up a different Key Bank assigned to a specific velocity range (for the same key).
+
+	When a Drum Voice is selected in step No.1: 
+	Specify the Note and Key Bank to call up the Sample assigned to the selected Drum Voice. You can hear the Sample by pressing the [SF1] AUDITION button. Go through the Samples in this way to find the desired Sample.
+<Figure>
+You can hear the selected sample by pressing the [SF1] button. (Audition function)
+
+5..	Press the [ENTER] button to execute the Save operation. 
+	If you are about to overwrite an existing file, the display prompts you for confirmation. Press the [INC/YES] button to execute the Save operation and overwrite the existing file, or press the [DEC/NO] button to cancel it.
+  Saving as a AIFF file.
+You can select a specific Sample from a Waveform and save it as a AIFF file (Macintosh audio format). The procedure for saving is the same as described in "Saving as a WAV file" above with the exception that Type is set  to "AIFF" in step No.2. 
+
+
+Sampling the sound of an audio device to create a Drum Voice.
+In the previous section on page 94, you learned how to record a Sample using a microphone.  Here, you'll learn how to record Samples from an audio device, such as a CD player or MD player, and use the Samples to create a Drum Voice. 
+
+IMPORTANT.	In order to use the Sampling function, DIMM modules must be installed to the instrument.  For details on installing DIMMs, see page 289.
+Depending on the size of the audio (sample) data obtained via the Sampling function, you may not be able to save all of the desired data to a SmartMedia card (maximum capacity: 128MB).  For this reason, we recommend using a large-capacity USB storage device for your Sampling data.
+
+1.	Connect an audio device (CD player, etc.) to the instrument.
+Follow steps No.1 to 8 on page 73.
+2.	Press the [INTEGRATED SAMPLING] button in the Voice mode or Performance mode to enter the Sampling mode. 
+3.	Press the [F2] SOURCE button to call up the display for setting the Sampling Source, then set the parameters as shown below.
+Type: 	sample.
+Source:	A/D.
+Next:	on.
+Mono/Stereo:	stereo.
+Frequency:	44.1k.
+When creating a Drum Voice consisting of many separate Samples, you'll want to quickly be able to record a Sample, assign it to a key, then move on to the next one.  To do this smoothly and easily, set the Next parameter to "on."
+For details about each parameter, see page 251. 
+4.	Press the [F1] DEST button to call up the display for setting the Sampling Destination, then set the parameters as described below. 
+Part.	This is available when entering the Sampling mode from the Performance mode. This parameter determines the Performance Part to which the Voice (below) created by sampling is assigned. 
+Voice.	Set the Bank to "UDR" (User Drum Voice Bank), then select a User Drum Voice Number. After the Sampling is completed, you can hear the created Voice by selecting the Voice number set here. 
+Key.	Here, set this parameter to "C3." After the Sampling is completed, you can hear the sampled sound by pressing the note set here. 
+
+NOTE.	
+If the Voice parameter above is set to "off," you won't be able to play the sampled sound as a Voice after completing this operation.  However, you can call up the sampled sound by selecting a Waveform. For details on how to select a Waveform, see page 174. 
+
+5.	Press the [F6] REC button to call up the Sampling Record display (Sampling Standby status), then set the parameters as required. 
+<Figure>
+You can also change the Keybank (set in step No.4) in this display.
+Turn the Confirm function on or off
+Trigger Level.
+Indicates Sampling Standby status.
+
+  Setting the Confirm function.
+When the [F2] CONFM (Confirm function) is turned on (  is indicated), you can easily listen back to your just-recorded sample and conveniently re-record it if you're not satisfied with the results. Here, set the [F2] CONFM button on. 
+
+  Setting the Trigger mode.
+The Trigger mode lets you determine how the Sampling actually starts. For example, you can start the Sampling simply by pressing the button or when the Song/Pattern playback reaches a specified point. Here, set the TrggrMode (Trigger mode) to "level" which lets you start sampling as soon as the input signal from the audio device exceeds the specified Trigger Level. 
+
+  Setting the Trigger Level.
+When the Trigger mode is set to "level," you'll also need to set the Trigger Level.  This determines when sampling actually starts, depending on the level of the input signal of the audio device.  As the sound plays, notice the movement of the level meter (bar), and when the bar crosses the Trigger Level arrow.  If necessary, select the Trigger Level value and use the  data dial to change it, moving the arrow as low or as high as needed.  
+<Figure>
+Trigger Level
+The section of the bar exceeding the Trigger Level becomes black.
+Indicates Sampling Standby status.
+
+6.	Press the [F6] REC button again to enable Sampling Trigger Waiting. 
+Doing this puts sample recording on standby, waiting for an input signal that exceeds the Trigger level. 
+<Figure>
+Indicates that sample recording is waiting for a signal of an appropriate level.
+
+7.	Start the external audio device. 
+The sampling actually starts as soon as the an input signal exceeding the specified trigger level is received. 
+8.	Press the [F6] STOP button to stop sampling, then stop the external audio device. 
+Press the [F3] AUDITION button to hear the sampled sound. 
+If you're not satisfied with the results and you wish to try again, press the [F4] CANCEL button to return to the Sampling Standby display and try sampling from step No.5 again. If you are satisfied with the results, press the [F5] OK button to store the sampled sound as a "sample" and return to the Sampling Standby display. 
+Keep in mind that if the Confirm function is turned off in step No.5 above, the display shown above will not appear when stopping sampling.  Instead, stopping sampling returns directly to the Sampling Standby display.
+9.	Repeat steps No.5 to 8 above to assign additional Samples to the notes as desired to create your Drum Voice.
+In step No.7, select a different sound (on a CD, for example) for each Sample. Though the Key is automatically set to the note name the next one higher than that just assigned, you can change it in step No.5. 
+By repeating steps No.5 to 8 above, you can create a Drum Voice in which each key has a different sound (as shown below).
+10.	Save your newly created User Voice to a SmartMedia/USB storage device.
+Refer to "Saving a Sample" on page 97. 
+
+<CAUTION> 
+The recorded (edited) sample data resides temporarily in DIMM (page 187). Because data contained in DIMM is lost when the power is turned off, you should always save any data residing in DIMM to a SmartMedia /USB storage device before turning off the power.
+
+Example Sampling sources.
+The examples below show you some of the different audio sources you can use as raw material for your Samples and Sample Voices.
+  Vocals with effects.
+	With a PLG100-VH Plug-in Board installed, you can apply a vocal harmony effect to your voice, and sample the entire processed sound. After setting the PLG100-VH related parameters as required referring to "Using an Effect Plug-in Board" on page 78, execute the Sampling operation.
+ The sound of an mLAN compatible instrument.
+	After setting up referring to page 34, execute the Sampling operation. You should set the [INTEGRATED SAMPLING] -> [F2] SOURCE -> Source parameter to "mLAN1 to 4." 
+  Electric guitar or bass.
+	Instruments such as guitar and bass can also be sampled, using the A/D INPUT jack. After setting up referring to page 33, execute the Sampling operation. You should set the [INTEGRATED SAMPLING] -> [F2] SOURCE -> Source parameter to "A/D." 
+  Digital audio.
+	With an optional AIEB2 interface installed to the instrument, you can connect to the digital out jack on your DAT deck or CD/MD player and directly record digital audio, for the highest possible sound quality.  For details on installing the AIEB2, refer to page 285; for details on connecting digital audio devices to the instrument, refer to page 34. When executing AIEB2, you should set the [INTEGRATED SAMPLING] -> [F2] SOURCE -> Source parameter to "AIEB2." 
+  Resampling the MOTIF ES.
+	You can also resample anything you play on the MOTIF ES itself -- riffs, rhythms, melodies, thick multi-layered chord pads, etc. You should set the [INTEGRATED SAMPLING] -> [F2] SOURCE -> Source parameter to "resample." 
+  WAV or AIFF audio files.
+	Audio data created and edited on a computer can also be used for Samples.  (For details, see the next page.)
+
+[TIP]	Loading WAV or AIFF audio files to create a Waveform/Voice.
+Any audio data created and edited on a computer and saved in the WAV or AIFF format can also be used as material for Samples on the MOTIF ES.  Set up the media containing the desired WAV/AIFF audio files (e.g., insert a SmartMedia card to the CARD slot or connect a USB storage device), then follow the instructions below.
+
+IMPORTANT.	In order to use the Sampling function, DIMM modules must be installed to the instrument.  For details on installing DIMMs, see page 289.
+
+NOTE.	
+Depending on the size of the audio (sample) data obtained via the Sampling function, you may not be able to save all of the desired data to a SmartMedia card (maximum capacity: 128MB).  For this reason, we recommend using a large-capacity USB storage device for your Sampling data.
+NOTE.	
+The instructions here apply when you enter the File mode from the Voice mode. When entering the File mode from the Performance mode, the instructions are the same with the exception that you should set the destination Performance number and Part in step No.4. 
+
+1.	In the Voice mode, press the [FILE] button to enter the File mode, then execute the basic settings. 
+	Refer to "Basic settings for using SmartMedia or a USB storage device" on page 30. 
+2.	Press the [F3] LOAD button to call up the Load display. 
+3.	Select the file type to be loaded. 
+	Set Type to "Waveform." This setting lets you select and load a specific Waveform from a file (extension: W7W) saved as "AllWaveform" or load a WAV file/AIFF file as a Waveform. 
+4.	Select the file (file mark) to be loaded and specify the destination. 
+	When moving the cursor to a WAV file (extension: WAV) or AIFF file (extension: AIF), the destination parameter automatically appears in the display.
+	When assigning a WAV file/AIFF file to a Normal Voice: 
+
+<Table>
+Voice.	When this is set to "on," you can load and assign a WAV file/AIFF file to the destination Voice set below.
+USR1:001 (A01).	This is available when the Voice (above) is set to "on." Select "USR1" or "USR2" as the destination Normal Voice Bank and select a destination Voice number.
+Waveform.	Determines the destination Waveform number.
+KeyBank.	Determines the destination Key Bank of the Waveform set above.
+
+When assigning a WAV file/AIFF file to a Drum Voice: 
+
+<Table>
+Voice.	When this is set to "on," you can load and assign a WAV file/AIFF file to the destination Voice set below
+UDR:001 (A01).	This is available when the Voice (above) is set to "on." Select "UDR" as the destination Drum Voice Bank and select a destination Voice number.
+Note.	Determines the destination key of the Drum Voice set above.
+ 
+NOTE.	
+When assigning a WAV file/AIFF file to a Drum Voice, a Sample from the WAV file/AIFF file is assigned to the empty Waveform automatically. 
+<CAUTION> 
+Loading data to this synthesizer automatically erases and replaces any existing data in the User memory. Make sure to save any important data to a SmartMedia/USB storage device before performing any Load operations.
+
+5.	Press the [ENTER] button to execute the Load operation. 
+	After the data has been loaded, a "Completed" message appears and operation returns to the original display.
+<CAUTION> 
+While the data is being saved, make sure to follow these precautions:
+  Never remove or eject the media from the device (SmartMedia or USB storage).
+  Never unplug or disconnect any of the devices.
+  Never turn off the power of the MOTIF ES or the relevant devices.
+
+6.	Depending on whether you're creating a Normal Voice or a Drum Voice, follow the appropriate instructions below.
+
+	When creating a Normal Voice in steps No.4 to 5.
+	After entering the Sampling Edit mode ([INTEGRATED SAMPLING] -> [EDIT]),  press the [F1] KEYBANK button to call up the Key Bank display. From this display, select a Waveform and Key Bank. To specify the Key Bank, simultaneously hold down the [INFORMATION] button and press the desired note on the keyboard.  To select Waveforms assigned to different velocities, hold down the [INFORMATION] button and press the [SF2] SELECT button.
+	After selecting a Waveform and Key Bank above, press the [F4] RANGE button. 
+	Once you've loaded the sample in step No.5, it can only be sounded by playing the note specified in step No.4.  From this display however, you can expand the note range over which the loaded sample will sound.
+<Figure>
+Determine the Key Range.
+Use the data dial, [INC/YES] and [DEC/NO] buttons or press the note on the keyboard while holding the [INFORMATION] button.
+Play the keyboard within the Key Range set above.
+You can hear the loaded sample following the pitches of the notes you play.
+When creating a Drum Voice in steps No.4 to 5.
+By repeating steps No.5 to 8 above, you can create a Drum Voice in which each key has a different sound (as shown below).
+After creating the Normal or Drum Voice, go on to step No.7 below.
+
+7.	Play the Voice created by the Load operation. 
+	Press the [VOICE] button to enter the Voice Play mode, then select the Vo
+
+
+This is the end of the file.

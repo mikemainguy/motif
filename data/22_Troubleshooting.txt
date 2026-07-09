@@ -1,0 +1,137 @@
+Troubleshooting.
+
+No sound is produced even when playing the keyboard.
+  Are all four Sliders set to appropriate levels (other than zero or minimum)?	page 51
+  Check the value of the [UTILITY] -> [F1] GENERAL -> [SF1] TG -> Volume parameter. 	page 260
+  Check the setting of the [UTILITY] -> [F5] MIDI -> [SF2] SWITCH -> LocalCtrl parameter. If this is set to off, the internal tone generator will not sound. 	page 264
+  Is the power of the MOTIF ES and any external equipment connected to the MOTIF ES turned on?
+  Have you made all the appropriate level settings Ð including the Master Volume on the MOTIF ES and the volume settings on any connected external equipment?
+  Is the Foot Controller pressed down (when it is connected to the FOOT CONTROLLER jack)?	page 42
+  Is the MOTIF ES properly connected to related external equipment (e.g., amplifier or speaker) via audio cables?
+  When the Voice produces no sound, are the effect and filter settings appropriate? (Inappropriate filter cutoff frequency settings can result in no sound.)	page 197
+  When the Voice produces no sound, are all four Elements properly turned on?	page 79
+  When the Voice produces no sound, is the volume parameter set appropriately in the Voice Common Edit?	page 190
+  When the Voice produces no sound, are the parameters in the Voice Element Edit (e.g., Element Switch, Note Limit, Velocity Limit) set appropriately in the Voice Common Edit?	page 195
+  When the Performance produces no sound, has a Voice been assigned to each Part? Check this in the [PERFORM] -> [F2] VOICE display. 	page 71
+  When the Performance produces no sound, are the Note Limit, volume, and output parameters of each Part set appropriately?	page 71
+  When playing the keyboard in the Song/Pattern mode produces no sound, check whether or not the Sample Voice or Mixing Voice is assigned to the current Part. 	page 102
+  When the Song/Pattern playback produces no sound, are any or all of the tracks muted?	page 58
+  When the Song/Pattern playback produces no sound, are the output channel of each track in the play mode and the receive channel of each Part in the Mixing mode set appropriately?	page 164
+  When the Song/Pattern playback produces no sound, is the volume or output setting of each Part in the Mixing mode set appropriately?	page 233
+  When the Song/Pattern playback produces no sound, is the MIDI filter set so that note-on messages are blocked in the [SONG] or [PATTERN] -> [UTILITY] -> [F3] SEQ -> [SF2] FILTER display?	page 262
+
+Playback continues without stopping.
+  When the [ARPEGGIO ON/OFF] button is turned on, press it so that its lamp is turned off. 	page 19
+  When in the Song mode or Pattern mode, press the [  ] (Stop) button. 	page 20
+  When the click sound continues, set the [SONG] or [PATTERN] -> [UTILITY] -> [F3] SEQ -> [SF1] CLICK -> Mode parameter to something other than "all." 	page 262
+
+Sound level is too low.
+  Are the MIDI volume or MIDI expression settings too low (by using the Foot Controller)?	page 42
+  Is the cutoff frequency of the filters set too high/low?	page 161
+  When the Song/Pattern playback produces a soft sound, is the velocity offset in the Groove display set too low?	page 114
+
+Distorted sound.
+  Are the effect settings appropriate?	page 177
+  Are the filter settings appropriate? (Excessively high filter resonance settings can cause distortion.)	page 161
+  Is the MASTER VOLUME set so high that clipping is occurring?	page 18
+  Is the volume of each Element in the Voice mode or the volume of each part in the Performance mode or the volume of each track/Part in the Song/Pattern mode set too high?	page 213
+
+Sound is cut off.
+  Are you exceeding the maximum polyphony of the MOTIF ES?	page 162
+
+Only one note sounds at a time.
+  When this situation occurs in the Voice mode, is the [VOICE] -> [F4] PORTA -> Mono/Poly parameter set to "mono" ?  If you wish to play the chord, set this parameter to "poly." 	page 188
+  When this situation occurs in the Song mode/Pattern mode, is the Mono/Poly parameter set to "mono" in the [SONG] or [PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE display?  If you wish to play chords, set this parameter to "poly." 	page 235
+
+Pitch or intervals are wrong.
+  Is the Master Tune parameter in the [UTILITY] -> [F1] GENERAL -> [SF1] TG display set to a value other than "0"?	page 260
+  Is the Note Shift parameter in the [UTILITY] -> [F1] GENERAL -> [SF1] TG display set to a value other than "0"?	page 260
+  When the Voice produces a wrong pitch, check the Micro Tuning setting in the [VOICE] -> [EDIT] -> [COMMON] -> [F1] GENERAL -> [SF2] PLY MODE display. 	page 190
+  When the Voice produces a wrong pitch, is the LFO Pitch Modulation Depth in the Voice Edit mode set too high?	page 201
+  When the Performance produces a wrong pitch, is the Note Shift parameter of each Part set to a value other than "0"?	page 218
+  When the Performance produces a wrong pitch, is the Detune parameter of each Part set to a value other than "0"?	page 218
+  When the Song/Pattern playback produces a wrong pitch, is the Note Offset parameter in the Groove display set to a value other than "0"?	page 114
+
+No effect is applied.
+  Is the [EFFECT BYPASS] button turned off?	page 177
+  Have the [REVERB] and [CHORUS] knobs been turned fully counter-clockwise (to the minimum)?	page 50
+  Have any or all of the Elements' Effect Output parameters been set to "thru" in the effect setting display in the Voice Edit mode?	page 194
+  Have any or all of the effect types been set to "thru" or "off"?	page 179
+  When this occurs in the Performance mode/Song mode/Pattern mode, check whether the Insertion Switch (INS SW) parameters are set properly or not. 	pages 216, 235
+
+The Edit Indicator appears, even when parameters are not being edited.
+  Keep in mind that even though the Voice Play mode or Performance Play mode is active, simply moving a Knob or Slider changes the current Voice or Performance, automatically displaying the Edit indicator.	 pages 65, 69
+  In the Song Mixing mode or Pattern Mixing mode, keep in mind that simply playing back a Song or Pattern may change the Mixing parameters of the current Song/Pattern, automatically displaying the Edit indicator.	page 104
+
+Arpeggio problems.
+Cannot start the Arpeggio.
+Check whether the [ARPEGGIO ON/OFF] button is turned on or off. When the Arpeggio doesn't start even though the button is  turned on, check the following points. 
+  When the User Arpeggio type is selected, does the currently selected Arpeggio actually contain data?	page 189
+  Are the Arpeggio related parameters such as Note Limit and Velocity Limit set appropriately?	page 191
+  When this situation occurs in the Performance mode, check the ArpSwitch parameters for all Parts in the [PERFORM] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE display. If parameters of all Parts are turned off, the Arpeggio will not be played back even if the [ARPEGGIO ON/OFF] button is turned on. 	page 216
+  When this situation occurs in the Song mode/Pattern mode, check the ArpSwitch parameter in the [SONG] or [PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F1] VOICE -> [SF2] MODE display. If this parameter for the current Part is turned off, Arpeggio playback will not be triggered by your keyboard performance even if the [ARPEGGIO ON/OFF] button is turned on. 	page 235
+Cannot stop the Arpeggio.
+  When Arpeggio playback does not stop even if you release the key, set the Arpeggio Hold parameter to "off." 	page 191
+
+NOTE.
+For details and a list of the Arpeggio related functions, see page 169. 
+
+Song/Pattern problems.
+The Song/Pattern cannot be started even when pressing the [>] (Play) button. 
+  Does the selected Song or Pattern (phrase) actually contain data?	pages 57, 59
+  Is the Remote Control feature turned on?	page 147
+  Is the MIDI sync parameter set to internal (using internal clock) in the [UTILITY] -> [F5] MIDI -> [SF3] SYNC display?	page 264
+Song/Pattern (Phrase) cannot be recorded.
+  Is there enough free memory for recording? The total MOTIF ES memory capacity determines the number of Songs/Patterns (phrases) that can be recorded. For example, if the memory contains Songs/Patterns (phrases) that use up a large amount of memory, the memory may become full even though the available Pattern or Song numbers are not all used.	page 275
+  In the Pattern Record mode, does the specified track to which the Phrase is assigned have preset data? Recording cannot be done to a track that contains preset data.	page 113
+Cannot enter the Pattern Job mode even when pressing the [JOB] button in the Pattern mode. 
+  Check whether the MOTIF ES is in the Pattern Chain mode or not. If so, exit from the Pattern Chain mode, then press the [JOB] button.	page 115 
+Cannot enter the Pattern Mixing mode even when pressing the [MIXING] button in the Pattern mode. 
+  Check whether the MOTIF ES is in the Pattern Chain mode or not. If so, exit from the Pattern Chain mode, then press the [MIXING] button.	page 115
+The drum sound is wrong or unexpected when changing the transpose value. 
+  This is normal. Changing the transpose setting while playing a Drum Voice will produce different sounds for the same keys played. 
+
+Microphone does not work properly.
+  Check the current mode. In the Voice mode and Voice Edit mode, the A/D part which handles the microphone sound cannot be recognized. 	page 165
+  Check whether the Mic/Line parameter is set to "mic" or not in the [UTILITY] -> [F2] I/O -> [SF1] INPUT display. 	page 261
+  Check whether the Gain Knob on the rear panel is set to minimum position or not. 	page 25
+
+Can't record samples.
+  If you cannot enter the Sampling mode, check whether DIMMs have been installed or not. In order to enter the Sampling mode and record Samples, DIMM modules must be installed.	page 289
+  Have you exceeded the maximum allowable number of samples (key banks)?	page 174
+  Is there enough sample memory available?	page 276
+  Is the Sampling Source setting appropriate?	page 172
+  Is the Trigger mode set appropriately?	page 175
+
+Plug-in Board problems.
+A Plug-in Voice cannot be selected even if the Plug-in Board has been installed. 
+  Check whether the SLOT lamp (from SLOT1 to 3) corresponding to the selected PLG button ([PLG1] to [PLG3]) is turned on or off. 	page 21
+  If the User bank is selected in the [VOICE] -> [F2] BANK display, select the preset bank. 	page 188
+  Check whether the PLG which corresponds to the PLG100-XG slot is selected or not. The Voice on the PLG100-XG cannot be selected in the Voice mode or Performance mode. 	page 163
+  Check whether the PLG which corresponds to the PLG100-VH slot is selected or not. The PLG100-VH contains no Voices for selection, since it is an Effect Plug-in Board. 	page 74
+Plug-in board does not work.
+  Is the lamp of the corresponding slot number to which the Plug-in board has been installed lit?	page 21
+  Has the PLG100-VH been installed to slot 2 or 3? (The PLG100-VH should be installed to slot 1.)	page 78
+  Has the PLG100-XG been installed to slot 1 or 2? (The PLG100-XG should be installed to slot 3.)	page 77
+
+Computer/MIDI instrument problems.
+Data communication between the computer and the MOTIF ES does not work properly. 
+  Check whether the Port setting on the computer is appropriate or not. 
+  Check whether the MIDI IN/OUT parameter is set properly in the [UTILITY] -> [F5] MIDI -> [SF4] OTHER display. Set this parameter to "USB" when using a USB cable to connect to the computer. Set this parameter to "mLAN" when using an IEEE 1394 cable to connect to the computer.
+Set this parameter to "MIDI" when using MIDI cables to connect to the computer. 	page 265
+Data communication between the MIDI instrument and the MOTIF ES does not work properly. 
+  Check whether the MIDI IN/OUT parameter is set to "MIDI" or not in the [UTILITY] -> [F5] MIDI -> [SF4] OTHER display. 	page 265
+The MOTIF ES does not sound properly even when playing back the song data on the computer or the MIDI instrument connected to the MOTIF ES. 
+  Make sure to set the MOTIF ES to the Song mode or Pattern mode. The Voice mode or Performance mode may not produce the proper sound even when playing back the Song data on the MIDI instrument or the computer connected to the MOTIF ES. 	page 36
+MIDI bulk data transmission/reception does not work properly.
+  When reception does not work properly, is the Receive Bulk parameter set to "protect" in the [UTILITY] -> [F5] MIDI -> [SF2] SWITCH display?	page 264
+  When transmission does not work properly, is the device number of the MIDI instrument connected to the MOTIF ES set to match the DeviceNo. parameter in the [UTILITY] -> [F5] MIDI -> [SF1] CH display? 	page 263
+Can't save data to the SmartMedia card or the USB storage
+  Is the SmartMedia/USB storage device being used write protected? (Write-protect should be set to off for saving data.)	page 28
+  Is the SmartMedia/USB storage device being used properly formatted?	page 268
+Can't enter the Edit mode
+  Is the Category Search function turned on? After exiting from the Category Search function, press the [EDIT] button. 	page 62
+  Is the MOTIF ES in the File mode? After exiting from the File mode, press the [EDIT] button.	page 266
+
+
+This is the end of the file.

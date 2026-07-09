@@ -1,0 +1,72 @@
+Mixing Voice mode.		
+
+Creating Mixing Voices - basic procedure.		
+"The Mixing Voice mode provides most of the same Normal Voice editing parameters as the Voice mode, with the main exception that these Voices are dedicated for use with the Songs and Patterns, and are stored specifically as Mixing Voices.  The Mixing Voice Job mode lets you use the supplementary functions like Copy and Delete. After completing the Mixing Voice editing, you can store the edited Voice to a User Bank to internal memory (Flash ROM) or you can store it as a part of the current Song/Pattern data to internal memory (DRAM). When storing the edited Mixing Voice as a part of the current Song/Pattern data, make sure to save the data to a SmartMedia/USB storage device in the File mode. "		
+
+Mixing Voice Edit mode.		[SONG] or [PATTERN] -> [MIXING] -> [F2] VOICE ->  Normal Voice selection -> [F5] VCE ED
+
+The Mixing Voice Edit mode is divided into Common Edit, for setting parameters common to all four Elements, and Element Edit, for setting parameters of individual Elements. 		
+
+Common Edit.		[SONG] or [PATTERN] -> [MIXING] -> [F2] VOICE -> Normal Voice selection -> [F5] VCE ED -> [COMMON].
+These parameters are for making global (or common) edits to all four Elements of the selected Normal Voice.		
+
+NOTE.	The Mixing Voice Edit parameters are basically the same as those in the Voice Edit mode.  However, some parameters having the same name as those in the Song Mixing/Pattern Mixing Part Edit mode are not available in the Mixing Voice Edit mode.	
+
+[F1] GENERAL.		
+Same as in the Normal Voice Common Edit mode. See page 189.  Please note that the [SF3] MEQ OFS (Master EQ Offset) display is not available in the Mixing Voice Edit mode. 		
+
+[F2] OUTPUT.		
+Same as in the Normal Voice Common Edit mode. See page 190. 		
+
+[F4] CTL SET (Controller Set).		
+Same as in the Normal Voice Common Edit mode. See page 192.		
+
+[F5] LFO.		
+Same as in the Normal Voice Common Edit mode. See page 192. 		
+
+[F6] EFFECT.		
+Same as in the Normal Voice Common Edit mode. See page 194.  Please note that the [SF4] REVERB and [SF5] CHORUS displays are not available in the Mixing Voice Edit mode. 		
+
+
+
+Element Edit.		[SONG] or [PATTERN] -> [MIXING] -> [F2] VOICE -> Normal Voice selection -> [F5] VCE ED -> Element selection.
+These parameters are for editing the individual Elements that make up a Normal Voice. 		
+
+[F1] OSC (Oscillator).		
+Same as in the Normal Voice Element Edit mode. See page 195. 		
+
+[F2] PITCH.		
+Same as in the Normal Voice Element Edit mode. See page 196. 		
+
+[F3] FILTER.		
+Same as in the Normal Voice Element Edit mode. See page 197. 		
+
+[F4] AMP (Amplitude).		
+Same as in the Normal Voice Element Edit mode. See page 199. 		
+
+[F5] LFO (Low Frequency Oscillator).		
+Same as in the Normal Voice Element Edit mode. See page 201. 		
+
+[F6] EQ (Equalizer).		
+Same as in the Normal Voice Element Edit mode. See page 201. 		
+
+
+Mixing Voice Job mode.		[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED -> [JOB].
+The Mixing Voice Job mode features two basic operations, Copy and Delete.  After setting parameters as required from the selected display, press the [ENTER] button to execute the Job. 		
+
+[F2] RECALL.		
+If you are editing a Mixing Voice and select a different Mixing Voice, Mixing program, Song or Pattern without storing your edited one, all the edits you've made will be erased. Edits are also erased if the current part to which the edited Mixing Voice is assigned receives a program change from an external MIDI instrument.  If this happens, you can use Edit Recall to restore the Mixing Voice with your latest edits intact by pressing the [ENTER] button from the [F2] RECALL display. 	
+
+NOTE.	Since a Recall Buffer for the Mixing Voice is prepared for each Part of the current Song or Pattern, you can specify the Part to which the Mixing Voice to be recalled is assigned before executing the Edit Recall. 	
+
+[F3] COPY.		
+This Job lets you copy the Mixing Voice stored to a specified Part in one Song/Pattern to a Part in another Song/Pattern.		
+[F5] DELETE.		
+This Job lets you delete a Mixing Voice assigned to a specified Song/Pattern's Part. 		
+
+
+Mixing Voice Store mode.		[SONG] or [PATTERN] -> [MIXING] -> [F5] VCE ED -> [STORE].
+This function lets you store your edited Mixing Voice to User memory (Flash ROM or DRAM). For details, refer to page 106 in the Quick Guide section. 		
+
+
+This is the end of the file.

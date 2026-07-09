@@ -1,0 +1,366 @@
+Performance mode.		
+
+Creating Performances - basic procedure.		
+You can create and edit your original Performances by setting various parameters in both the Performance Play mode and Performance Edit mode, while the Performance Job mode provides some basic parameter-related tools, such as Initialize and Copy. Once you've edited a Performance, you can store it to a User Bank in internal memory (Flash ROM) in the Performance Store mode and save all the edited Performances to a SmartMedia/USB storage device in the File mode.		
+		
+		
+		
+Performance Play mode		[PERFORM] -> Performance selection
+		
+The Performance Play mode lets you perform a variety of general editing operations on the selected Performance. For more detailed and comprehensive editing operations, use the Performance Edit mode.		
+
+NOTE.	The parameters that have the same name in the Performance Play mode and in the Performance Edit mode have the same functions and settings.	
+		
+[F1] PLAY. 		
+	TCH (Transmit Channel).	Same as in Voice Play mode.  These parameters are available both in the Voice mode and the Performance mode regardless of the selected Voice or Performance.
+	OCT (Octave).	
+	ASA (ASSIGN A), ASB (ASSIGN B).	
+
+	NOTE.	TCH (Transmit Channel), OCT (Octave), ASA (ASSIGN A), and ASB (ASSIGN B) settings do not belong to each Performance. Because of this, these are not stored as an individual Performance in the Performance Store mode (page 220).
+
+	AS1 (ASSIGN 1), AS2 (ASSIGN 2).	Indicates the values obtained by controlling the respective Knobs (printed "ASSIGN 1" and "ASSIGN 2") when the lamps of both the [PAN/SEND] and [TONE] buttons are turned on. The functions assigned to these knobs depend on the setting of the Voice assigned to each Part of the Performance.
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).		You can register the desired Arpeggio types to these buttons and call them up any time during your keyboard performance. Refer to page 70 in the Quick Guide section.
+
+[F2] VOICE.		
+From this display you can select a Voice for each Part and determine the note range it can be played from.		
+[SF1] ADD INT (Add Internal Voice).		Press this button to assign an internal Voice to the selected Part.
+[SF2] ADD PLG (Add Plug-in Voice).		Press this button to assign a Plug-in Voice to the selected Part. 
+[SF3] DELETE.		Pressing this button deletes the Voice assignment for the selected Part, leaving the Part blank.
+[SF4] LIMIT L (Note Limit Low).		This sets the lowest note of the range over which the Voice of the selected Part sounds. Simultaneously hold down this button and press the desired key on the keyboard to set the note. 
+[SF5] LIMIT H (Note Limit High).		This sets the highest note of the range over which the Voice of the selected Part sounds. Simultaneously hold down this button and press the desired key on the keyboard to set the note.
+
+[F3] EFFECT. 		
+Pressing the [F3] EFFECT button in the Performance Play mode calls up the same EFFECT display in the Performance Edit mode ([PERFORM] -> [EDIT] -> [COMMON] -> [F6] EFFECT). From this display, you can set the effect related parameters for the current Performance. See page 215.		
+
+[F4] PORTA (Portamento).		
+From this display you can set the Portamento parameters. Portamento is used to create a smooth transition in pitch from the first note played on the keyboard to the next.		
+	PortaSw (Portamento Switch).	Determines whether Portamento is on or off for all Parts. (This is a global switch and overrides the individual Part settings in Part Switch below.)
+	Settings:	off, on.
+	PortaTime (Portamento Time).	Determines the pitch transition time. This parameter offsets the same parameter in Part Edit (page 216). Higher values result in longer transition times. 
+	Settings:	minus  64 to 0 to plus 63.
+	PartSwitch. 	Determines whether Portamento is on or off for each individual Part. This is available only when the PortaSw (above) is set to on. 
+
+[F5] EG (Envelope Generator).		
+"This display contains the basic EG settings, both volume and filter, for the Performance, as well as the filter's cutoff frequency and resonance settings. The settings made here are applied as offsets to the AEG and FEG settings in the Performance Edit mode (pages 218, 219). The parameters are same as in Voice Play mode. See page 189."		
+
+[F6] ARP (Arpeggio).		
+"This display contains the basic settings for Arpeggio playback, including Type and Tempo. Note that the Performance mode lets you independently enable or disable Arpeggio playback for each Part.  The parameters are same as in the Voice Play mode (page 189) except for the following one."		
+	PartSw.	Determines whether Arpeggio is on or off for the selected Part. The Parts for which boxes are checkmarked are enabled for Arpeggio play. 
+		
+		
+		
+Performance Edit mode.		[PERFORM] -> Performance selection -> [EDIT].
+		
+Voice Edit parameters are divided into Common Edit (parameters common to all four Parts), and Part Edit (parameters of individual Parts).		
+		
+Common Edit.		[PERFORM] -> Performance selection -> [EDIT] -> [COMMON].
+		
+
+[F1] GENERAL.		
+[SF1] NAME.		From this display you can assign the category (sub and main) of the selected Performance, and create a name for the Performance. The Performance name can contain up to 10 characters. For detailed instructions on naming a Performance, see "Basic Operation" on page 53.
+[SF3] MEQ OFS (Master EQ Offset).		From this display you can adjust the master (global) EQ settings for all Parts of the selected Performance. The level of each of the four bands (with the exception of "MID") can be adjusted. Moreover, you can also tweak these settings directly from the four Knobs on the front panel. Editing by Knobs can be done in the Performance Play mode.
+	Settings:	minus 64 to 0 to plus 63.
+[SF4] PORTA (Portamento).		This display allows you to set the Portamento related parameters.  The parameters are the same as in the Performance Play mode. See page 212."
+[SF5] OTHER.		From this display you can set the control functions for the Knobs and related parameters. With the exception of Pitch Bend, which cannot be set here, these parameters are the same as in the Voice Edit mode (page 190).
+
+[F2] OUT/MEF (Output/Master Effect).		
+[SF1] OUT (Output).		
+	Volume.	Determines the output level of the selected Performance. You can adjust the overall volume, keeping the balance between all Parts.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo pan position of the selected Performance. This parameter offsets the same parameter in the Part Edit setting. You can also adjust this parameter using the PAN knob (with the [PAN/SEND] lamp turned on) on the front panel. Editing by using the Knobs can be done also in the Performance Play mode. 
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+
+	NOTE.	A setting of "C" (center) maintains the individual Pan settings of each Part. 
+
+	RevSend.	Determines the Send level of the signal sent from Insertion Effect A/B (or the bypassed signal) to the Reverb effect. You can also adjust this parameter using the REVERB knob (with the [PAN/SEND] lamp turned on) on the front panel. Editing by using the Knobs can be done also in the Performance Play mode.
+	Settings:	0 to 127.
+	ChoSend.	Determines the Send level of the signal sent from Insertion Effect A/B (or the bypassed signal) to the Chorus effect. You can also adjust this parameter using the [CHORUS] knob (with the [PAN/SEND] lamp turned on) on the front panel. Editing by using the Knobs can be done also in the Performance Play mode. 
+	Settings:	0 to 127.
+
+	NOTE.	For details on Effect connections in the Performance mode, see page 179.
+
+[SF2] MEQ (Master EQ).		From this display you can apply five-band equalization to all Parts of the selected Performance. You can raise or lower the signal level at the Frequency of each band (LOW, LOWMID, MID, HIGHMID, HIGH). 
+	SHAPE.	Determines whether the equalizer type used is Shelving or Peaking. The Peaking type attenuates/boosts the signal at the specified Frequency setting, whereas the Shelving type attenuates/boosts the signal at frequencies above or below the specified Frequency setting. This parameter is available only for the LOW and HIGH frequency bands.
+	Settings:	shelv (Shelving type), peak (Peaking type).
+	FREQ (Frequency).	Determines the center frequency. Frequencies around this point are attenuated/boosted by the Gain setting.
+	Settings:	LOW: Shelving 32Hz to 2.0kHz, Peaking 63Hz to 2.0kHz.
+		LOWMID, MID, HIGHMID: 100Hz to 10.0kHz.
+		HIGH: 500Hz to 16.0kHz.
+	GAIN.	Determines the level gain for the Frequency (set above), or the amount the selected frequency band is attenuated or boosted.
+	Settings:	minus 12dB to 0dB to plus 12dB.
+	Q (Frequency Characteristic).	This varies the signal level at the Frequency setting to create various frequency curve characteristics.
+	Settings:	0.1 to 12.0.
+
+	NOTE.	For details on the EQ,  see page 178.
+
+[SF3] MEF (Master Effect).		From this display you can set the Master Effect related parameters. This display can be called up by pressing and holding the [MASTER EFFECT] button on the front panel.
+	Switch.	Determines whether Master Effect is applied or not to the selected Performance. You can turn it on or off by pressing the [MASTER EFFECT] button on the front panel. 
+	Settings:	off, on.
+	Type.	Determines the Master effect type.
+	Settings:	Refer to the Effect Types list in the separate Data List booklet.
+
+	NOTE.	The available parameters except for the above two differ depending on the currently selected effect type. 
+
+For more information, refer to the separate Data List booklet.
+
+[F3] ARP (Arpeggio).		
+From this display you can set the Arpeggio related parameters.		
+[SF1] TYPE. 		Same as in Normal Voice Common Edit. See page 191.
+[SF2] LIMIT. 		
+[SF3] PLAY FX (Play Effect).		
+[SF4] OUT CH (Output Channel).		From this display you can set a separate MIDI output channel for the Arpeggio playback data, letting you have the Arpeggio sound from an external tone generator or synthesizer.
+	OutputSwitch.	When this is set to on, Arpeggio playback data is output via MIDI.
+	Settings:	on, off.
+	TransmitCh.	Determines the MIDI transmit channel for Arpeggio playback data. When set to "KbdCh," the Arpeggio playback data is output via the MIDI Keyboard Transmit Channel ([UTILITY] -> [F5] MIDI -> KBDTransCh).
+	Settings:	1 to 16, KbdCh (Keyboard Channel).
+
+[F4] CTL ASN (Controller Assign).		
+You can assign Control Change numbers to the controllers listed below, letting you use the hardware controllers on the keyboard to alter the sound of external MIDI devices, via the appropriate MIDI messages.  When the MOTIF ES receives Control Change data corresponding to the settings here, the internal tone generator responds as if the instrument's controllers were used.		
+	BC (Breath Controller).	Determines the Control Change number generated when you apply breath pressure to the Breath Controller connected to the BREATH connector.
+	RB (Ribbon Controller).	Determines the Control Change number generated when you run your finger across the surface of the Ribbon Controller.
+	RBMode (Ribbon Controller Mode).	Determines whether the Ribbon Controller value returns to a center value when you release your finger from the Ribbon Controller (reset), or the value is retained at the value at the last point of contact (hold).
+	AS1 (Assign 1), AS2 (Assign 2).	Determines the Control Change number generated when you control the KN3 (Knob3) and the KN4 (Knob4) with both the [PAN/SEND] and [TONE] lamp turned on. 
+	FC1 (Foot Controller 1), FC2 (Foot Controller 2).	Determines the Control Change number generated when you use the Foot Controller connected to the FOOT CONTROLLER jack. 
+	NOTE	Keep in mind that the functions of these controllers set here are not changed for the internal tone generator. The controller assignments for the MOTIF ES itself depend on the settings of the Voices assigned to each Part.
+
+[F5] AUDIO IN. 		
+The audio signal input from the A/D INPUT jack, mLAN connector (when the optional mLAN16E has been installed to this synthesizer), DIGITAL IN or OPTICAL IN connector (when the optional AIEB2 has been installed to this synthesizer) can be handled as an Audio Input Part. You can apply various parameters such as Effect settings to this Part, just as with the other Parts.		
+
+	NOTE.	For details about the Audio Input Parts, see page 165.
+
+[SF1] OUTPUT. 		
+	Volume.	Determines the output level of the Audio Input Part.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo pan position of the Audio Input Part.
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+	RevSend	Determines the Send level of the Audio Input Part signal sent to the Reverb effect.
+	Settings:	0 to 127.
+	ChoSend	Determines the Send level of the Audio Input Part signal sent to the Chorus effect.
+	Settings:	0 to 127.
+	DryLevel.	Determines the level of the Audio Input Part which has not been processed with the System Effects (Reverb, Chorus).
+	Settings:	0 to 127.
+
+	NOTE.	For details about Effect connection in the Performance mode, see page 179.
+
+	Mono/Stereo.	Determines the signal configuration for the Audio Input Part, or how the signal or signals are routed (stereo or mono).
+	Settings:	stereo, L mono, R mono, L plus R mono.
+		stereo  Both the L and R channels of the audio input are used.
+		L (left) mono Only the L channel of the audio input is used.
+		R (right) mono Only the R channel of the audio input is used.
+		L plus R mono The L and R channels of the audio input are mixed and processed in mono.
+	OutputSel (Output Select).	Determines the output jack assignment for the Audio Input Part.
+	Settings:	See page 31.
+
+[SF2] INS TYPE (Insertion Type).		This display is available only when the AD (A/D Part) is set to on from the [F6] EFFECT -> [SF2] INS SW display. The type and connection of the Insertion Effect applied to the A/D Part can be set from this display.
+	InsEF Connect (Insertion Effect Connection)InsA Ctgry (Insertion A Category)InsA Type (Insertion A Type)InsB Ctgry (Insertion B Category)InsB Type (Insertion B Type).	Same as in the CONNECT display in the Voice Edit mode ([VOICE] -> [EDIT] -> [COMMON] -> [F6] EFFECT -> [SF1] CONNECT). Please note that the InsEF Connect cannot be set to "parallel" here. 
+	
+
+	NOTE.	Insertion effects can be applied only to the A/D Part, among the Audio Input Parts.
+
+[F6] EFFECT.		
+This menu gives you comprehensive control over the effects. For details about the Effect connections in the Performance mode, see page 179. 		
+[SF1] CONNECT (Connection).		
+	EF PART -> PLG-EF (Plug-in Insertion Effect)	Determines the Part to which the Insertion effect is applied. This parameter is available only when a special Effect Plug-in board (PLG100-VH) has been installed.
+	Settings:	Part 1 to 4, PartP2 to P3, AD, off.
+	Chorus Ctg (Category),  Chorus Type.	Determines the Chorus effect type.
+	Settings:	Refer to the Effect Types list in the separate Data List booklet.
+	Chorus Return (Level).	Determines the Return level of the Chorus Effect.
+	Settings:	0 to 127.
+	Chorus Pan. 	Determines the pan position of the Chorus effect sound.
+	Settings:	L63 (far left) to C (center) to R63 (far right).
+	Chorus To Reverb. 	Determines the Send level of the signal sent from the Chorus Effect to the Reverb Effect.
+	Settings:	0 to 127.
+	Reverb Type.	Determines the Reverb effect type.
+	Settings:	Refer to the Effect Types list in the separate Data List booklet.
+	Reverb Return.	Determines the Return level of the Reverb Effect.
+	Settings:	0 to 127.
+	Reverb Pan 	Determines the pan position of the Reverb effect sound.
+	Settings:	L63 (far left) to C (center) to R63 (far right).
+[SF2] INS SW (Insertion Switch).		The Insertion Effects can be applied to up to eight Parts. This display lets you set to which Parts the Insertion Effects are applied. 
+[SF3] PLG-EF (Plug-in Effect).		This display lets you set the Plug-in Insertion Effect related parameters when the Effect Plug-in Board PLG100-VH has been installed to this synthesizer. For details on each parameter, refer to the Owner's Manual included with the PLG100-VH. 
+[SF4] REVERB.		The number of parameters and values available differs depending on the currently selected effect type. For more information, see the Effect Type List in the separate Data List booklet. 
+[SF5] CHORUS. 		
+Part Edit		[PERFORM] -> Performance selection -> [EDIT] -> Part selection.
+"These parameters are for editing the individual Parts that make up a Performance.  To switch between the display for Parts 1 to 4 to which the internal Voices are assigned and the display for Plug-in Parts (PLG1 to 3) to which the Plug-in Voices are assigned, press the [F6] button."		
+
+NOTE.	When a Plug-in Voice is assigned to a Part of the selected Performance, some parameters may not be available depending on the installed Plug-in board.	
+
+[F1] VOICE.		
+[SF1] VOICE. 		
+	PartSw (Part Switch).	Determines whether each Part is on or off. Since a Performance can consist of up to four Parts, you can select four Parts from Parts 1 to 4 and the Plug-in Parts 1 to 3. 
+	Settings:	on, off.
+	Bank.	"Determines the Voice Bank (page 60) for each Part.  For details about the Plug-in Voice Bank, refer to the Owner's Manual included with your Plug-in Board."
+
+	NOTE.	When the cursor is located on the Bank, you can select a Voice via the way explained on page 60. 
+
+	Number.	"Determines the Voice Program number for each Part. For details about the Plug-in Voice Program number, refer to the Owner's Manual included with your Plug-in Board."
+[SF2] MODE. 		
+	Mono/Poly.	Determines the playback method of the Voice for each Part -- monophonic (single notes only) or polyphonic (multiple notes).
+	Settings:	mono, poly.
+	NOTE	This parameter is not available for the Part to which a Drum Voice is assigned.
+	ArpSwitch (Arpeggio Switch).	Determines whether Arpeggio is on or off for the currently selected Part.
+	Settings:	on, off.
+[SF3] LIMIT. 		
+	NoteLimitH (Note Limit High).	Determines the lowest and highest notes of the keyboard range for each Part. Each Part will only sound for notes played within its specified range.
+	Settings:	C-2 to G8.
+
+	NOTE.	If you specify the highest note first and the lowest note second, for example "C5 to C4," then the note range covered will be "C-2 to C4" and "C5 to G8."
+	NOTE.	You can set the note by pressing the keyboard while holding the [INFORMATION] button.
+	NoteLimitL (Note Limit Low).	Determines the minimum and maximum values of the velocity range within which each Part will respond. Each Part will only sound for notes played within its specified velocity range.
+	VelLimitH (Velocity Limit High).	
+	Settings:	1 to 127.
+
+	NOTE.	If you specify the maximum value first and the minimum value second, for example "93 to 34," then the velocity range covered will be "1 to 34" and "93 to 127."
+
+	VelLimitL (Velocity Limit Low).	
+[SF4] PORTA (Portamento).		Determines the Portamento parameters for each Part. Portamento is used to create a smooth transition in pitch from the first note played on the keyboard to the next.
+	Switch.	Determines whether Portamento is on or off.
+	Settings:	off, on.
+	Time.	Determines the pitch transition time. Higher values mean longer transition times.
+	Settings:	0 to 127.
+	Mode. 	Determines the Portamento mode.
+	Settings:	fingr (fingered), full (full time).
+		fingr (fingered) Portamento is only applied when you play legato (playing the next note before releasing the previous one).
+		full (full time) Portamento is always applied.
+
+	NOTE.	The Mode setting is not available for the Plug-in Part.
+	NOTE.	These Portamento parameters above are not available for the Part to which the Drum Voice is assigned.
+
+[SF5] OTHER. 		
+	PB (Pitch Bend) Upper,  PB (Pitch Bend) Lower. 	These two parameters are available for Parts 1 to 4 to which the internal Normal Voices are assigned. These determine the pitch change range (in semitones) of the Pitch Bend wheel for the Part's Voice. For example, a Lower setting of minus 12 would result in the pitch being lowered up to a maximum of one octave (12 semitones) when the Pitch Bend wheel is moved downwards. Similarly, setting the Upper parameter to plus 12 would result in a maximum pitch rise of one octave when the wheel is moved upwards.
+	Settings:	minus 48 to 0 to plus 24.
+	PB (Pitch Bend) Range.	This parameter is available for Parts 1 to 4 to which the internal Drum Voices are assigned and Plug-in Parts 1 to 3. This determines the pitch change range (in semitones) of the Pitch Bend wheel. Unlike the Pitch Bend setting for Parts 1 to 4 to which the internal Normal Voices are assigned described above, the Upper and Lower ranges of the Drum Voice Parts and Plug-in Parts cannot be set independently.
+	Settings:	minus  24 to 0 to plus 24.
+	VelSensDpt (Velocity Sensitivity Depth).	"Determines the degree to which the resulting volume of the tone generator responds to your playing strength.   The higher the value, the more the volume changes in response to your playing strength (as shown at right)."
+	Settings:	0 to 127.
+	VelSensOfst (Velocity Sensitivity Offset).	Determines the amount by which played velocities are adjusted for the actual resulting velocity effect. This lets you raise or lower all velocities by the same amount - allowing you to automatically compensate for playing too strongly or too softly.
+	Settings:	0 to 127.
+
+[F2] OUTPUT.		
+[SF1] VOL/PAN (Volume/Pan).		
+	Volume. 	Determines the volume for each Part, giving you detailed control over the level balance among the Parts.
+	Settings:	0 to 127.
+	Pan. 	Determines the stereo pan position for each Part.
+	Settings:	L63 (far left) to C (center) to R63 (far right).
+	VoiceELPan (Voice Element Pan).	Determines whether the individual pan settings for each Voice (made via [VOICE] -> [EDIT] -> Element selection -> [F4] AMP -> [SF1] LVL/PAN -> Pan) are applied or not. When this is set to "off," the basic pan position for the selected Part is set to center.
+	Settings:	on, off.
+	NOTE	This parameter is not available for the Plug-in Parts.
+[SF2] EF SEND (Effect Send).		From this display you can set the Send Level and Dry Level sent to the System Effects for each Part. For details about the Effect connection in the Performance mode, see page 179.
+	RevSend (Reverb Send).	Determines the send level for the Reverb effect of the selected Part, giving you detailed control over the Reverb balance among the Parts.
+	Settings:	0 to 127.
+	ChoSend (Chorus Send).	Determines the send level for the Chorus effect of the selected Part, giving you detailed control over the Chorus balance among the Parts.
+	Settings:	0 to 127.
+	DryLevel. 	Determines the level of the unprocessed (dry) sound of the selected Part, letting you control the overall effect balance among the Parts.
+	Settings:	0 to 127.
+[SF3] SELECT (Output Select).		From this display you can assign individual Parts to sound from independent output connectors (jacks). 
+	OutputSel (Output Select).	Determines the specific output(s) for the individual Part. You can assign each individual Part's Voice to be output from a specific hardware output jack on the rear panel.
+	Settings:	See page 31.
+	InsEF (Insertion Effect).	Determines whether the Insertion effects are applied to individual Parts or not.
+	Settings:	on, off.
+[F3] EQ (Equalizer).		
+From this display you can adjust the EQ settings for each Part. Note that two different display types listed below are provided and you can switch between them by pressing the [SF5] button. Each display type features the same settings in a different format; use the type you feel most comfortable with. - Display showing four Parts - Display showing all parameters for one Part Keep in mind that since all the available parameters cannot be simultaneously displayed in the four-Part display, you will need to use the cursor controls to scroll the display in order to see and set the other parameters.		
+For details about the Effect connection including the EQ in the Performance mode, see page 179.		
+
+NOTE.	This display is not available for the Plug-in Part.	
+
+	LowFreq (Low Frequency).	Determines the center frequency of the low EQ band that is attenuated/boosted.
+	Settings:	50.1 to 2.00K.
+	LowGain (Low Gain).	Determines the amount of boost or attenuation applied to the low EQ band.
+	Settings:	minus 32 to plus 32.
+	MidFreq (Middle Frequency).	Determines the center frequency of the middle EQ band that is attenuated/boosted.
+	Settings:	139.7 to 10.1K.
+	MidGain (Middle Gain).	Determines the amount of boost or attenuation applied to the middle EQ band.
+	Settings:	minus 32 to plus 32.
+	MidReso (Middle Resonance).	Determines the resonance applied to the center frequency of the middle EQ band. 
+	Settings:	0 to 31.
+	HighFreq (High Frequency).	Determines the center frequency of the high EQ band that is attenuated/boosted.
+	Settings:	503.8 to 14.0K.
+	HighGain (High Gain)	Determines the amount of boost or attenuation applied to the high EQ band.
+	Settings:	minus 32 to plus 32.
+
+[F4] TONE. 		
+You can set parameters related to the pitch and tone for each Part. Keep in mind that the settings made here are applied as offsets to the Voice Edit settings.		
+[SF1] TUNE. 		
+	NoteShift.	Determines the pitch (key transpose) setting for each Part in semitones.
+	Settings:	minus 24 to plus 24.
+	Detune.	Determines the fine tuning for each Part.
+	Settings:	                       minus 12.8Hz to plus 12.7Hz.
+[SF2] FILTER.		
+	Cutoff.	Determines the cutoff frequency for each Part. This parameter is available for the LPF when the filter used by the Part is a combination type of LPF and HPF.
+	Settings:	minus 64 to 0 to plus 63.
+	Resonance.	Determines the amount of filter resonance or emphasis of the Cutoff Frequency for each Part. The setting here attenuates/boosts the resonance applied to the element of the Voice assigned to each Part.
+	Settings:	minus 64 to 0 to plus 63.
+	FEGDepth.	Determines the Filter Envelope Generator depth (amount of cutoff frequency) for each Part.
+	Settings:	minus 64 to 0 to plus 63.
+
+	NOTE.	The FEG Depth setting is not available for the Plug-in Parts.
+	NOTE.	For details about Filter, see page 161. 
+
+[SF3] FEG (Filter Envelope Generator).		From this display you can set the FEG (Filter Envelope Generator) parameters for each Part.
+
+	NOTE.	The FEG settings are not available for Plug-in Parts. 
+
+	Attack (Attack Time) Decay (Decay Time) Sustain (Sustain Level) Release (Release Level).	Determines each parameter of the FEG for each Part.  For details about FEG, see page 161. "
+	Settings:	minus 64 to 0 to plus 63.
+[SF4] AEG (Amplitude Envelope Generator).		From this display you can set the AEG (Amplitude Envelope Generator) parameters for each Part. 
+	"Attack (Attack Time) Decay (Decay Time) Sustain (Sustain Level) Release (Release Level)"	"Determines each parameter of the AEG for each Part. Please note that Sustain Level is not available for the Plug-in Part.  For details about AEG, see page 162."
+	Settings:	minus 64 to 0 to plus 63.
+
+[F5] RCV SW (Receive Switch).		
+From this display you can set how each individual Part responds to various MIDI data, such as Control Change and Program Change messages. When the relevant parameter is set to ""on,"" the corresponding Part responds to the appropriate MIDI data. Note that two different display types listed below are provided and you can switch between them by pressing the [SF5] button. Each display type features the same settings in a different format; use the type you feel most comfortable with.  - Display showing four Parts - Display showing all parameters for one Part Keep in mind that since all the available parameters cannot be simultaneously displayed in the four-Part display, you will need to use the cursor controls to scroll the display in order to see and set the other parameters.		
+	Settings:	See below. Parameters marked with *(asterisk) are not available for the Plug-in Part. 
+	CtrlChange (Control Change).	Indicates all the Control Change messages.
+	PB (Pitch Bend).	MIDI messages generated by using the Pitch Bend Wheel.
+	MW (Modulation Wheel).	MIDI messages generated by using the Modulation Wheel.
+	RB (Ribbon Controller)*(asterisk).	MIDI messages generated by using the Ribbon Controller.
+	ChAT (Channel After Touch).	MIDI messages generated by pressing and holding the note on the keyboard. 
+	FC1 (Foot Controller 1)*(asterisk).	MIDI messages generated by using the optional Foot Controller connected to the rear panel.
+	FC2 (Foot Controller 2)*(asterisk).	
+	Sus (Sustain).	MIDI messages generated by using the optional Footswitch connected to the SUSTAIN jack on the rear panel.
+	FS (Footswitch)*(asterisk).	MIDI messages generated by using the optional Footswitch connected to the ASSIGNABLE jack on the rear panel. 
+	AS1 (Assign1)*(asterisk), AS2 (Assign2)*(asterisk).	MIDI messages generated by using the ASSIGN1 and ASSIGN2 Knobs with both the [PAN/SEND] and [TONE] lamps turned on. 
+	BC (Breath Controller)*(asterisk).	MIDI messages generated by using the optional Breath Controller connected to the BREATH jack on the rear panel.
+	Exp (Expression).	MIDI messages generated by using the optional Foot Controller connected to the rear panel. 
+		
+		
+		
+Performance Job mode.		[PERFORM] -> Performance selection -> [JOB].
+		
+The Performance Job mode features several basic operations, such as Initialize and Copy. After setting parameters as required from the selected display, press the [ENTER] button to execute the Job. 		
+
+NOTE.	Among the Audio Parts shown in the Job display, Audio 1 indicates the A/D Input Part. When the optional AIEB2 has been installed to this synthesizer, Audio 2 indicates the AIEB2 Input Part. When the optional mLAN16E has been installed, Audio 2, 3, 4, and 5 indicate the mLAN Input Parts.	
+
+[F1] INIT (Initialize).		
+This function lets you reset (initialize) all Performance parameters to their default settings. It also allows you to selectively initialize certain parameters, such as Common settings, settings for each Part, and so on - very useful when creating a completely new Performance from scratch.		
+	Type of parameter to be initialized.
+	All (all settings for the selected Performance are initialized)
+  Common (Common parameter settings for the selected Performance are initialized)
+ Part 1 to 4, PLG 1 to 3 (Plug-in Part 1 to 3), Audio 1 to 5
+
+[F2] RECALL (Edit Recall).		
+If you are editing a Performance and select a different Performance without storing your edited one, all the edits you've made will be erased. If this happens, you can use Edit Recall to restore the Performance with your latest edits intact.		
+[F3] COPY.		
+From this display you can copy Part parameter settings from any Performance including the currently edited (but not yet stored) one to a particular Part of the Performance you are editing. This is useful if you are creating a Performance and wish to use some parameter settings from another Performance.		
+<Figure>
+Source Performance/Part.
+Data type of Destination Performance (currently selected Performance)/Part.
+
+	Source Performance/Part.	Determines the Performance and Part to be copied. You can specify "Current" (the Performance you are editing but have not yet stored) as a Source Performance. 
+	Type: 	Part 1 to 4, PartP1 to P3 (Plug-in Part 1 to 3), PartA1 to A5 (Audio Part 1 to 5). 
+	Data type of Destination Performance (currently selected Performance)/Part.	Determines the Part of the destination Performance.
+	Type:	Part 1 to 4, PartP1 to P3, PartA1 to A5, Arp, Effect (Reverb, Chorus).
+
+	NOTE.	If you choose Arp (Arpeggio) or Effect, the Arpeggio data or Effect settings for the Voice assigned to the source Part will be copied.
+
+[F4] BULK (Bulk Dump).		
+This function lets you send all your edited parameter settings for the currently selected Performance to a computer or another MIDI instrument for data archiving. For details, see page 185. 		
+
+	NOTE.	In order to execute Bulk Dump, you'll need to set the correct MIDI Device Number, with the following operation: [UTILITY] -> [F5] MIDI -> [SF1] CH -> DeviceNo. 
+		
+Performance Store mode.		[PERFORM] -> Performance selection -> [STORE].
+		
+This function lets you store your edited Performance to User memory (Flash ROM).		
+For details, refer to page 91 in the Quick Guide section. 		
+
+
+This is the end of the file.

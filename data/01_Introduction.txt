@@ -1,0 +1,116 @@
+MOTIF ES.
+OWNER'S MANUAL.
+
+Introduction.
+Congratulations and thank you for your purchase of the Yamaha MOTIF ES6/MOTIF ES7/MOTIF ES8 Music Production Synthesizer!
+You now own what is perhaps the best-sounding, most versatile, and certainly most powerful synthesizer and total music production instrument on the planet.
+We strove to put virtually all our synthesizer technology and music making know-how into one instrument -- and we succeeded. The new MOTIF ES not only gives you the latest and greatest sounds and rhythms (as well as the ability to create and sample your own), it gives you powerful, easy-to-use tools for playing, combining and controlling these dynamic sounds/rhythms -- in real time, as you perform!
+Take time to look through this manual carefully. It's packed with important information on how to get the most from this amazing instrument.
+Dive in now and enjoy!
+
+Accessories.
+The following items have been included with your MOTIF ES 6/MOTIF ES 7/MOTIF ES 8. Check to see that you have everything listed here.
+  AC Power cord. 
+  CD-ROM times 3.
+  Owner's Manual. (this book) 
+  Data List. 
+  Installation Guide.
+
+About the included CD-ROMs.
+The following three CD-ROMs are included in the MOTIF ES package. 
+
+  TOOLS for MOTIF ES6/MOTIF ES7/MOTIF ES8.
+This CD-ROM contains special software for use with this instrument. 
+It includes the latest version of SQ01 (V2), a full-featured audio/MIDI sequencer/mixer for comprehensive music production, Voice Editor, which gives you comprehensive and intuitive sound editing tools, and Multi Part Editor, for editing the Mixing parameters of Songs and Patterns.
+For details, see the separate Installation Guide or the online manuals included with the software.
+
+  Sound Library for MOTIF ES6/MOTIF ES7/MOTIF ES8.
+This CD-ROM contains various types of data for use with the MOTIF ES. For information on the contents, refer to the List file in the CD-ROM. You can use the data by loading it in the File mode. Insert the CD-ROM into a CD-ROM drive* connected to the USB TO DEVICE connector via USB and execute the Load operation. Alternately, you can access the data from a USB storage device (such as a hard disk) or a SmartMedia card (inserted to the CARD slot) to which the data has been copied.
+For details about how to load each type of data, refer to the following pages. 
+  Voice	extension: W7V	page 87
+  Pattern	extension: W7P	page 133.
+  WAV file	extension: WAV	pages 100 and 109.
+* For information on what USB devices (model name, etc.) can be used with the MOTIF ES, see page 29. 
+NOTE.	
+If you are loading audio WAV files, make sure that DIMM modules are installed to the imt.  (For DIMM compatibility information, see page 289.)  Also, when loading Voice data from this CD-ROM, make sure to install DIMM modules, because the Voice data contains User Waveforms.  If DIMM modules are not installed, an error message appears when you try to load a WAV file or Voice data from this CD-ROM. 
+
+  TOOLS for Modular Synthesis Plug-in System.
+This CD-ROM contains a variety of computer applications, including the Voice Editor for editing Voices of the optional Plug-in Boards. For more information, refer to the "Readme" file in the CD-ROM.
+
+ 	Copying of commercially available music sequence data and/or digital audio files for any purpose other than your own personal use is strictly prohibited.
+
+
+Main Features.
+  Wide range of dynamic and authentic voices. Use the Category Search function to quickly call up the sounds you want, based on their instrument type.	page 60
+  Performance mode lets you use four different voices together -- in layers or in a keyboard split.	page 67
+	
+  Integrated Sampling Sequencer -- seamlessly combines audio and MIDI recording.	page 172
+	 	Full Sample recording and editing features, and up to 512MB of sample memory (with optional DIMM modules).	page 289
+	 	Wide data compatibility lets you load AIFF and WAV files, as well as samples and program/voice data from other popular samplers, such as the Yamaha A-series.	pages 100, 270
+	 	Convenient Resampling function lets you sample the sound of the MOTIF itself directly. Play your own melodies, riffs and rhythms -- and use them as samples.	page 99
+	 	Unique Slice feature automatically chops up your rhythms and riffs into their individual beats and notes. This lets you manipulate the component parts of your sample loops as MIDI data, and gives you the power to easily change tempo and even the rhythmic feel, without disturbing the pitch or sound quality.	page 107
+  Extensive effect processing, with Reverb (20 types), Chorus (49 types), eight separate Insertion blocks each of which has two blocks (total 116 types), Master Effect (8 types), and a digital equalizer (3-band Part EQ and 5-band Master EQ). 	page 177
+	
+  Comprehensive real-time control with four knobs and four sliders -- letting you adjust filter, levels, effects, EG, and more, while you play.	page 50
+  Pattern mode functions let you craft different rhythmic sections and riffs as individual elements -- which you can easily and intuitively combine in real time to create full rhythm tracks.	page 106
+	
+  In addition to being able to create User voices in the Voice mode, you can create special Mixing voices for Songs and Patterns.  These voices can be edited and stored in the Song/Pattern mode, making it exceptionally easy and convenient to create voices for use with Songs and Patterns.	page 105
+	
+  The versatile Arpeggio feature automatically plays a variety of sequenced phrases in response to the keys you play.  This function is especially powerful with drum voices -- letting you easily call up various rhythm patterns at the touch of a key, and providing instant inspiration for song creation and performance.  When used with normal voices, the Arpeggio phrase changes harmonically and melodically with the chords you play, giving you intuitive control over the patterns as you compose or perform.  Arpeggios can be triggered not only according to the keys you play, but also by how strongly you play them -- for even greater performance power.	page 66
+  Once you've collected all the audio samples, loops, MIDI data, and patterns you need for your song, use Pattern Chain to arrange the pieces in real time. This hands-on approach makes it easier than ever to come up with great ideas and amazing songs.	page 115
+	
+  Song Scene is another powerful tool that lets you take "snapshots" of the sequencer track settings (such as pan, volume, track mute and so on). Then, during playback or recording, simply switch among the Scenes for instant, dynamic changes.	page 123
+  Master mode -- for using the MOTIF ES as a master keyboard controller (with independent Zones), and for easily reconfiguring the instrument between Voice/Performance play and Song/Pattern play in live applications.	page 136
+  Exceptionally easy-to-understand interface with two-tiered operation buttons: [F1] to [F6] and [SF1] to [SF5]	page 47
+	
+  Remote Control -- for operating your favorite sequencing software from the panel controls. Mute tracks, control transport (Play, Stop, Record, etc.), mix both MIDI and audio tracks (up to 16) with this instrument's knobs and sliders, pan the tracks, control EQ, and tweak effect sends -- all without ever touching the mouse.	page 147
+	
+  Three Modular Synthesis Plug-in System slots let you upgrade the MOTIF ES with a completely new synthesizer or sound-processing engine. These Plug-in boards give you more voices, more effects, more polyphony and more instrument parts. Plus, special Plug-in voices have already been programmed and stored to the MOTIF ES, ready to be played as soon as you install the proper board.	page 74
+  A full rear panel of input/output connections provides maximum interfacing flexibility.  These include Assignable Outputs, A/D Inputs, MIDI, two USB connectors and a memory card slot.  Moreover, an optional AIEB2 or mLAN16E board can be installed.  The mLAN interface is particularly powerful -- making it possible to transfer both digital audio and MIDI data via a single broadband cable.	page 39
+	
+  The instrument features two USB connectors -- USB TO HOST for connecting to computer, and USB TO DEVICE for connecting to storage devices, such as a hard disk drive or flash disk.	page 29
+	
+  Included software -- the CD-ROM accompanying your instrument (Tools for MOTIF ES) features a variety of convenient and powerful programs for using the MOTIF ES with a computer.  These include the Voice Editor which provides comprehensive, easy-to-use editing features and parameters, and a Multi Part Editor for intuitive editing of Song/Pattern Mixing parameters from your computer screen.	page 142
+
+
+How to use this manual.
+The Controls & Connectors.	Page 16
+Use this section to find out about all of the buttons, controls and connectors of this instrument. 
+Setting Up.	Page 26
+Before going on to any other part of the manual, we strongly suggest you read this section first. It shows you how to get started playing and using your new instrument.
+Application Index.	Page 9
+This special index is organized not by single words, but by functions and applications -- allowing you to quickly and easily find how to perform a particular operation or explore a topic of interest.
+Basic Structure.	Page 154
+This section provides a detailed overview of all of the main functions and features of this instrument, and shows how they fit together.
+Basic Operation.	Page 45
+This section introduces you to the basic operating conventions of this instrument, such as editing values and changing settings.
+Quick Guide.	Page 55
+In this tutorial section, you will take a guided tour through the various functions of this instrument, and get some hands-on experience in playing and using it.
+Reference.	Page 188
+The MOTIF ES encyclopedia. This section explains all parameters, settings, functions, features, modes and operations in full detail.
+Troubleshooting.	Page 279
+If this instrument does not function as expected or you have some problem with the sound or operation, refer to this section before calling your Yamaha dealer or service center. Most common problems and their solutions are covered here in a very simple and easy-to-understand way.
+Appendix.	Page 275
+This section contains detailed information on this instrument such as Specifications and an Alert Message List as well as instructions for installing optional equipment (e.g., DIMM modules, AIEB2, mLAN16E interface, and Plug-in Boards).
+
+Data List. (separate booklet)
+This contains various important lists such as the Voice List, Preset Pattern Phrase List, Effect List, MIDI Data Format, and MIDI Implementation Chart.
+
+Installation Guide. (separate booklet)
+Refer to this for instructions on installing the included software programs (on the "TOOLS for MOTIF ES6/MOTIF ES7/MOTIF ES8" CD-ROM) to your computer.
+
+Various pages and menus appear on the LCD display of this instrument depending the selected mode or function. 
+Throughout this manual, arrows are used in the instructions, indicating in shorthand the process of calling up certain displays and functions.  The example instructions below indicate to 1) press the [VOICE] button, 2) select a Normal Voice, 3) press the [EDIT] button, 4) select an Element, 5) press the [F1] OSC button, and 6) press the [SF2] OUTPUT button.
+[VOICE] -> Normal Voice selection -> [EDIT] -> Element selection -> [F1] OSC -> [SF2] OUTPUT
+
+NOTE.	
+When a confirmation message (page 52) or Control Function window (page 50) is shown in the display, press the [EXIT] button to exit from that condition, then execute the instructions as in the above example.  Likewise, press the REMOTE [ON/OFF] button to exit from the Remote Control mode, then execute the instructions as in the above example when the MOTIF ES is in the Remote Control mode. 
+
+*	Apple and Macintosh are trademarks of Apple Computer, Inc.
+*	Windows is the registered trademark of Microsoft¨ Corporation.
+*	All other trademarks are the property of their respective holders.
+*	The illustrations and LCD screens as shown in this owner's manual are for instructional purposes only, and may appear somewhat different from those on your instrument.
+
+
+
+This is the end of the file.

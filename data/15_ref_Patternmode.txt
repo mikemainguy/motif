@@ -1,0 +1,309 @@
+Pattern mode.		
+
+Creating Patterns - basic procedure.		
+Patterns consist of the following three types of data: 		
+	  MIDI sequence data (created in the Pattern Record mode, Pattern Edit mode, and Pattern Job mode)	
+	  Setup data (created in the Pattern Play mode)	
+	  Mixing data (created in the Pattern Mixing mode/Mixing Edit mode and stored in the Pattern Mixing Store mode)	
+
+After creating the data in these modes described above, store the Mixing settings in the Pattern Mixing Store mode to archive it as Pattern data and save the entire Pattern to the SmartMedia/USB storage device in the File mode. 		
+
+
+NOTE.	Non-note MIDI events (such as Voice number, volume, pan, and effect send level) which are necessary at the start of a Pattern are not recorded as MIDI sequence data, but are stored instead as Mixing data.	
+
+<Caution>	Because Pattern data (MIDI sequence data, Setup data, and Mixing data) is recorded to DRAM (page 187), it will be lost when turning the power off. Make sure to save any Pattern data created via the Record, Edit, Job, and Mixing setting to the SmartMedia/USB storage device in the File mode before turning the power off. For details on saving Pattern data, see page 132. 	
+
+
+
+Pattern Play mode.		[PATTERN] -> Pattern selection.
+
+[F1] PLAY.		Refer to page 56 in the Quick Guide section.
+	Trans (Transpose)	Determines the key transpose setting for the Pattern, and can be adjusted in semitones.
+	Settings:	minus 36 to plus 36.
+
+	NOTE.	If Transpose is applied to a Drum Voice, the results may not be musically appropriate. To ensure proper playback of a Drum Voice, set the Note Shift parameter for the Drum Voice Part to an appropriate value ([PATTERN] -> [MIXING] -> [EDIT] -> Part selection -> [F4] TONE -> [SF1] TUNE -> NoteShift).
+
+	MEAS (Measure).	Indicates the current measure number and beat for the current Pattern. During playback, this indication changes automatically according to the Pattern playback. You can input the desired measure number directly by using the Number Input window called up via the [INFORMATION] button.
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).		You can register the desired Arpeggio types to these buttons and call them up any time during your keyboard performance. 
+
+[F2] GROOVE (Grid Groove).		
+Same as in the Song Play mode. See page 221.		
+
+[F3] TRACK.		
+[SF1] CHANNEL.		Same as in the Song Play mode. See page 221.
+[SF2] OUT SW (Output Switch).		Same as in the Song Play mode. See page 222.
+[SF3] TR VCE (Track Voice). 		Determines whether the program change data contained in the phrase data is effective or not. For most purposes, this should be set to "off." For example, if a phrase has embedded Voice changes (program change messages) but you don't want the Voice to change in the middle of the phrase, set this to "off." Tracks that are set to "off" here automatically play back with the Voice number assigned to the Part set in the Mixing mode.
+
+	NOTE.	The Phrase Voice embedded in the Phrase can be specified from the Voice display in the Pattern Record mode (page 243).
+
+[F4] PATCH.		Refer to page 113 in the Quick Guide section.
+From this display, you can assign a Preset phrase or a User phrase (recorded in the Pattern Record mode) to each track and create a Pattern that contains up to 16 tracks.		
+
+	NOTE.	The Patch function allows you to use only User phrases recorded to a track of the currently selected Pattern. If you wish to use User phrases recorded to tracks of other Patterns, use the Phrase Data Copy function, selected with [SF5] button.
+	Section. 	Shows the current edited section. For details about how to change sections, see page 56. 
+	Meas.	Shows Measure : Beat for current playback location. 
+[SF4] CLEAR. 		This clears the Phrase assignment to the currently selected track and leaves the track empty.
+[SF5] COPY.		
+<Figure>
+When this box is checkmarked, Sample Voices assigned to the source phrase are copied to the destination phrase as Sample Voices, and are assigned to the corresponding tracks in the selected Pattern.
+Source Pattern number,phrase number.
+Destination phrase and track of the current edited Pattern.
+After setting, press the [ENTER] button to copy the phrase.
+
+The User phrases that can be assigned with the Patch function are limited to the ones contained in the currently selected Pattern. This function lets you copy phrases in another Pattern to the selected one. Press the [SF5] button to call up the display shown at left. After setting the parameters as needed, press the [ENTER] button to copy the phrase data.
+
+	<Caution>	The copy operation overwrites any data previously existing in the destination phrase.
+
+[F5] REMIX.		
+This function gives you a variety of semi-random presets for dividing the MIDI sequence data and altering the note lengths, letting you create completely new variations of a Pattern. This function is particularly effective when used on a track which contains a sample voice created by using the Sampling feature with the SLICE plus SEQ sample type or samples sliced using the Sample Slice Job.		
+Set the parameters below, then press the [ENTER] button to execute the Remix operation.  You can press the Play button at this point to hear the results of the Remix.  If you're not satisfied with the results, try another Type/Variation and press [ENTER].  If you want to keep the changes, press [SF5] OK.  (Undo cannot be used with Remix.)  To return to the original display without altering the data, press the [SF4] CANCEL button.		
+
+NOTE.	Since the remixed data is stored as a new phrase and assigned to the current track, the original phrase data remains as an unassigned phrase. 	
+
+	Type.	Determines how the data in the selected track will be divided and rearranged. The division and rearrangement rules are different for each remix type. The type is also shown graphically in the display.
+	Settings:	1 to 16.
+	Variation.	Determines how the original MIDI sequence data will be modified.
+	Settings:	Normal1 to 16, Reverse1 to 16, Break 1 to 16, Pitch 1 to 16, Roll 1 to 16.
+		Normal 1 to 16...	  The original data is only divided and rearranged. 16 variations are provided.
+		Reverse1 to 16...	  In addition to division and rearrangement, some portions of the data may be played in reverse. 16 variations are provided. 
+		Break 1 to 16...	  In addition to division and rearrangement, some portions of the data may be deleted to create breaks. 16 variations are provided. 
+		Pitch 1 to 16...	  In addition to division and rearrangement, some portions of the data may be pitch-shifted. 16 variations are provided. 
+		Roll 1 to 16...	  In addition to division and rearrangement, some portions of the data may be played with a roll effect. 16 variations are provided. 
+
+[F6] CHAIN.		Refer to page 115 in the Quick Guide section.
+Pattern Chain Play mode	.	[PATTERN] -> [F6] This mode lets you play the programmed section chain sequence created in the Pattern Record mode and Pattern Edit mode. The parameters are the same as in the [F1] PLAY display. 
+Pattern Chain Record mode.		[PATTERN] -> [F6] -> [ ] (Record)
+		Recording Standby mode.
+		You can select one of the following tracks for recording. 
+		  patt (Pattern): Records section changes during playback. 
+		  tempo: Records tempo change information during playback .
+		  scene: Records track mute settings during playback.
+		During Recording.		[PATTERN] -> [F6] -> [ ] (Record) -> [>] (Play).
+		When recording the tempo track, you can change the tempo value.  
+		When recording the scene track, you can change the track mute setting.  
+		When recording the Pattern track, you can change the section."
+
+
+Pattern Chain Edit mode.		[PATTERN] -> [F6] -> [EDIT] .
+	[F1] CHANGE.	The Pattern Chain Edit mode makes it possible to edit the order of the sections in a chain, as well as insert tempo, and scene/mute event data.  Call up the desired track display by pressing the [F4] TR SEL button to edit the selected track.
+	Pattern Track Edit.	From this display, you can edit the section changes for each measure. Move the cursor to the "Section" column for the desired measure, and enter the desired section.  To set the end of the chain, enter an END mark at the appropriate measure. (For more information, see page 116.)  To clear the event at the currently selected location, press the [F6] CLEAR button. 
+	Scene Track Edit.	You can edit the track mute change in beats. Use the [F5] INSERT and [F6] DELETE button to insert/delete the event.
+	Tempo Track Edit.	You can edit the tempo change in beats. Use the [F5] INSERT and [F6] DELETE button to insert/delete the event. 
+	[F2] COPY.	This display lets you copy all Pattern chain events from a specified range of measures (source) to a destination location. After specifying the source range in measures, the top measure of the destination location, and NumberOfTimes (number of times the data is copied),  press the [ENTER] button to execute the Copy operation. 
+
+	<Caution>	This operation overwrites any events already existing at the destination.
+
+	[F3] SONG.	This function converts the Pattern chain data to Song data (standard MIDI format) and places the results in the normal Song tracks.  After specifying the desired destination Song and measure number to which the converted data is to be copied, then press the [ENTER] button to execute. 
+
+	<Caution>	This operation overwrites any data already existing at the destination range.
+		
+		
+Pattern Record mode.		[PATTERN] -> Pattern selection -> [ ] (Record).
+		
+Pattern Record Standby mode.		
+		
+[F1] SETUP.		
+	Type (Recording Type).	Determines the recording method. For information on each method, refer to page 168 in the Basic Structure section.
+	Settings:	replace, overdub, step.
+
+	NOTE.	Unlike in the Song Record mode, Punch recording is not available for Pattern recording.
+
+	Loop.	Turns loop recording ON or OFF. When ON, the phrase will play repeatedly during real-time recording. This can be handy when recording drum parts (page 168), allowing you to add different instruments on each pass. When OFF recording stops after one pass through the phrase.
+	Settings:	on, off.
+	Quantize.	Same as in the Song Record mode. See page 222. 
+	Event.	Same as in the Song Record mode. See page 223. 
+	 (Tempo).	Determines the Pattern tempo.
+	Settings:	001.0 to 300.0.
+
+	NOTE.	Unlike in Songs, Scene track and Tempo track are not available for Patterns.
+
+	Meas (Measure).	Determines the measure from which Pattern recording will be started. 
+
+[F2] VOICE.		
+From this display you can set Voice-related parameters for the selected track. The settings made here affect the tone generator parts whose MIDI receive channels match the MIDI transmit channel of the song track. The Voice set here becomes the phrase Voice (page 167).  Parameters are the same as in the Song Record mode. See page 223.	
+
+[F3] ARP (Arpeggio). 		
+From this display you can set parameters related to the Arpeggio of the recording track.  Parameters are the same as in the Song Record mode. See page 223.		
+
+[F4] REC ARP (Record Arpeggio)		
+From this display you can determine whether the sequence data played by Arpeggio is recorded to the Pattern track or not.  Parameters are the same as in the Song Record mode. See page 223.		
+
+[F5] CLICK.		
+Pressing the [F5] button lets you turn the click sound (metronome) on/off for recording.		
+		
+		
+		
+		
+During Pattern Recording.		[PATTERN] -> Pattern selection -> [ ] (Record) -> [>] (Play).
+
+
+		
+Realtime Recording.		Refer to page 110 in the Quick Guide section.
+		
+Step Recording.		Examples of Step Recording are described on page 238.  Parameters in the displays are the same as in the Song Record mode. See page 224.
+		
+		
+Pattern Edit mode.		[PATTERN] -> Pattern selection -> [EDIT].
+Same as in the Song Edit mode. See page 225. 		
+		
+		
+Pattern Job mode.		[PATTERN] -> Pattern selection -> [JOB] .
+The Pattern Job mode contains a comprehensive set of editing tools and functions you can use to change the sound of the Pattern. It also includes a variety of convenient operations, such as copying or erasing data. 		
+After setting parameters as required from the selected display, press the [ENTER] button to execute the Job.		
+
+<Caution>	An "ExecutingÅc" message is shown when it takes a short amount of time to execute the Job. Never attempt to turn off the power while an "ExecutingÅc" message is shown. Turning the power off in this state results in loss of all user data.	
+		
+[F1] UNDO/REDO.		
+The Undo Job cancels the changes you made in your most recent recording session, editing session, or Job, restoring the data to its previous state. This allows you to recover from accidental data loss. Redo is available only after using Undo, and lets you restore the changes you made before undoing them.		
+
+<Caution>	Undo/Redo does not work with Sample Voice and Mixing Voice operations.	
+
+[F2] NOTE (Note data Job).		
+The Note data Jobs in the Pattern mode are basically same as in the Song Job mode. However, unlike in the Song Job mode, Pattern Note data Jobs are applied to the phrases (001 to 256) and a selected range in the phrase (measure : beat : clock). 		
+
+01: Quantize.		Same as in the Song Job mode. See page 227.
+02: Modify Velocity.		Same as in the Song Job mode. See page 227.
+03: Modify Gate Time.		Same as in the Song Job mode. See page 227.
+04: Crescendo. 		Same as in the Song Job mode. See page 228.
+05: Transpose. 		Same as in the Song Job mode. See page 228.
+06: Glide.		Same as in the Song Job mode. See page 228.
+07: Create Roll.		Same as in the Song Job mode. See page 228.
+08: Sort Chord. 		Same as in the Song Job mode. See page 228.
+09: Separate Chord.		Same as in the Song Job mode. See page 229.
+
+[F3] EVENT (Event Job).		
+The Event Jobs in the Pattern mode are basically same as in the Song Job mode. However, unlike in the Song Job mode, Pattern Event Jobs are applied to the phrases (001 to 256) and a selected range in the phrase (measure : beat : clock).  		
+01: Shift Clock.		Same as in the Song Job mode. See page 229.
+02: Copy Event.		Same as in the Song Job mode. See page 229.
+03: Erase Event.		Same as in the Song Job mode. See page 229.
+
+	NOTE.	Unlike in the Song Job mode, "Tempo," "Scene Memory," or "Track Mute" cannot be selected as Event Types. 
+
+04: Extract Event.		Same as in the Song Job mode. See page 230.
+05: Create Continuous Data.		Same as in the Song Job mode. See page 230.
+
+	NOTE.	Unlike in the Song Job mode, "Tempo" cannot be selected as an Event Type.
+
+06: Thin Out.		Same as in the Song Job mode. See page 230.
+07: Modify Control Data.		Same as in the Song Job mode. See page 230.
+	NOTE.	Unlike in the Song Job mode, "Tempo" cannot be selected as an Event Type.
+08: Beat Stretch.		Same as in the Song Job mode. See page 231.
+
+[F4] PHRASE (Phrase Job).		
+01: Copy Phrase.		This Job copies a selected phrase to the designated destination phrase. After specifying the source Pattern and phrase, the destination Pattern and phrase, and setting the checkbox of Copy Sample, press the [ENTER] button to execute this Job.  When the Copy Sample box is checkmarked, Sample Voices used by the source phrase are copied to the destination Pattern as Sample Voices, and are assigned to the destination phrase. This is available only when the Sample Voice is used in the source phrase. 
+
+	NOTE.	When there is no memory available in the destination Pattern for Sample Voice data, an error message will appear on the display and the Sample Voice data will not be copied. If this occurs, use Sample Job 02 "Delete" to delete any unused Sample Voices, then try again. 
+	<Caution> 	Any previous data in the copy destination will be overwritten.
+	<Caution> 	Undo/Redo (page 244) cannot be used to undo/redo a Sample Voice copy operation.
+
+02: Exchange Phrase.		This Job exchanges or "swaps" the contents of two specified phrases ("A" and "B").
+
+	NOTE.	If this Job is applied to phrases which use Sample Voices, the Sample Voices will not be exchanged.
+
+03: Mix Phrase.		This Job mixes all data from two selected user phrases ("A" and "B"), and places the result in phrase B. 
+
+	NOTE.	Keep in mind that applying this Job to phrases with Sample Voices does not mix the Sample Voices.
+
+04: Append Phrase.		This Job appends one phrase (A) to the end of another (B) to create one longer phrase (B).
+
+	NOTE.	If this Job is applied to phrases which use Sample Voices, the Sample Voices will not be appended.
+
+05: Split Phrase.		This Job splits a selected phrase (A) into two separate phrases (A and B). The data before the split point is stored to the original phrase A and the data after the split point is moved and stored to another phrase B. You can also set the Meter of the phrase B after the Split Phrase Job.
+
+	NOTE.	When either Pattern or Phrase is set to "off," the split Phrase B data is erased.
+	NOTE.	If this Job is applied to phrases which use Sample Voices, the Sample Voices will not be split.
+	<Caution> 	The Job overwrites any data already existing in destination phrase B.
+
+06: Get Phrase From Song.		This Job copies a segment of sequence-track data from a Song into the designated destination phrase. After specifying the source Song/track/range of measures to be copied, the destination phrase, and setting the checkbox of Copy Sample, press the [ENTER] button to execute this Job.  When the Copy Sample box is checkmarked, Sample Voices used by the source track are copied to the destination Pattern as Sample Voices, and are assigned to the destination phrase. This parameter has no effect when no Sample Voice is used by the source track.
+
+	NOTE.	When there is no memory available in the destination Pattern for Sample Voice data, an error message will appear on the display and the Sample Voice data will not be copied. If this occurs, use Sample Job 02 "Delete" to delete any unused samples, then try again.
+	<Caution> 	The Job overwrites any data already existing in the destination phrase.
+	<Caution> 	Undo/Redo (page 244) cannot be used to undo/redo a Sample Voice copy operation.
+
+07: Put Phrase To Song.		This Job copies a selected user phrase into a specified area of a selected song. After specifying the source phrase, destination Song/track/top measure, and setting the Copy Sample checkbox, press the [ENTER] button to execute this Job.  When the Copy Sample box is checkmarked, Sample Voices used by the source phrase are copied to the destination Song as Sample Voices, and are assigned to the destination Song track. This parameter has no effect when no Sample Voice is used by the source phrase.
+
+	NOTE.	When there is no memory available in the destination Song for Sample Voice data, an error message will appear on the display and the Sample Voice data will not be copied. If this occurs, use Sample Job "Delete" to delete any unused samples, then try again.
+	<Caution>	The Job overwrites any data already existing in the destination track.
+	<Caution> 	Undo/Redo (page 244) cannot be used to undo/redo a Sample Voice copy operation.
+
+08: Clear Phrase.		This Job deletes all data from the selected phrase. When the Delete Sample box is checkmarked, sample data assigned to the selected phrase will be deleted. This parameter has no effect when no Sample Voice is used by the selected phrase.
+
+	<Caution>	Undo/Redo (page 244) cannot be used to undo/redo a Delete Sample operation.
+
+09: Phrase Name.		This Job lets you assign a name (of up to eight characters) to the selected phrase. For instructions on naming, refer to page 53 in the Basic Operation section. 
+
+[F5] TRACK (Track Job)		
+01: Copy Track.		This Job copies all data from a specified source track to the specified destination track.  The types of data to be copied are the same as in the Song Job mode. See page 231. 
+02: Exchange Track.		This Job exchanges or "swaps" the specified type of data between two specified tracks in the current Pattern and section. The types of data to be exchanged are the same as in the Song Job mode. See page 232. 
+03: Clear Track.		This Job deletes all data of the selected type from the selected Pattern track.  The types of data to be cleared are the same as in the Song Job mode. See page 232. 
+04: Normalize Play Effect.		This Job rewrites the data in the selected track so that it incorporates the current Grid Groove settings. After specifying a track (TR 01 to 16) to which this Job is applied, press the [ENTER] button to execute this Job. 
+05: Divide Drum Track		Separates the note events in a drum performance assigned to a specified track, and places the notes corresponding to different drum instruments in separate tracks (tracks 1 through 8).  After specifying a track (TR 01 to 16) to which this Job is applied, press the [ENTER] button to execute this Job. 
+
+	NOTE.	In order to use this Job, tracks 1 to 8 must be empty. If there aren't enough empty tracks, an error message appears. If this happens, use the Clear Track Job (page 246) to delete tracks 1 to 8, then try the Job again. 
+
+06: Put Track To Arp.		This Job copies data in the specified measures of a section/track for creating Arpeggio data. For details, refer to page 130 in the Quick Guide section. 
+
+[F6] PATTERN (Pattern Job). 		
+01: Copy Pattern.		This Job copies all data from a selected source Pattern to a selected destination Pattern. After specifying the source Pattern/section, and the destination Pattern/section, as well as setting the checkboxes as necessary, press the [ENTER] button to execute this Job. 
+
+	NOTE.	If you set the source section to "all," the destination section is also set to "all" automatically. With this status, execute this Job to copy the entire source Pattern data to the destination. 
+
+	Preset Phrase -> User.	When this box is checkmarked, Preset Phrases (if included in the source Pattern) are copied to the User Phrase, which will be assigned to the destination Pattern. 
+	Duplicate User Phrase.	When this box is checkmarked, User Phrases (if included in the source Pattern) are copied to another User Phrase, which will be assigned to the destination Pattern. 
+	Chain.	When this box is checkmarked, Pattern chain data (if included in the source Pattern) is copied to the destination Pattern. 
+02: Append Pattern.		Appends one Pattern to the end of another to create one longer Pattern with all 16 tracks.
+
+	NOTE.	If this job is applied to Patterns which use Sample Voices, the Sample Voices will not be appended.
+	NOTE.	If the Pattern length becomes greater than 256 measures as a result of the Append Pattern Job, an error message will be displayed and the Job will be aborted.
+
+	Keep Original Phrase.	When this box is checkmarked, the original destination Pattern data is retained in memory, along with the new appended Pattern data. If the box is not checkmarked, the original destination Pattern is erased and replaced with the newly created data.
+
+	NOTE.	When the KEEP ORIGINAL PHRASE checkbox is checked, this Job requires twice the number of empty user phrases as the number of tracks containing data in which to store the appended phrase data. If the required space is unavailable, an alert message will appear and the Job will be aborted. If this occurs use the Clear Phrase Job (page 246) to delete unused phrases and try again.
+
+03: Split Pattern.		This Job splits a selected Pattern (all 16 tracks data) into two Patterns. After the Split Pattern operation, the part of the Pattern before the specified Split Point will remain, and the part following the Split Point will be moved to the destination Pattern. 
+
+	<Caution> 	The Job overwrites any data already existing in the destination Pattern.
+
+	Split Point.	Determines the Split Point by setting a measure number. 
+	Keep Original Phrase.	When this box is checkmarked, the original Source Pattern data is retained in memory and the results of the Split Job are written to empty phrases. When this box is not checkmarked, the original Source Pattern is erased and replaced with the newly created data.
+	Sample. 	When this box is checkmarked, Sample Voices (if included in the source pattern) are copied to the destination Pattern.
+
+	NOTE.	When the KEEP ORIGINAL PHRASE checkbox is checked, this Job requires twice the number of empty user phrases as the number of tracks containing data in which to store the appended phrase data. If the required space is unavailable, an alert message will appear and the job will be aborted. If this occurs use the Clear Phrase Job (page 246) to delete unused phrases and try again.  
+
+04: Clear Pattern.		
+This Job deletes all data from the selected Pattern, or from all Patterns. When the specific section is selected to be cleared, you can unmark the Chain box. If the Chain box is not checkmarked, the Pattern Chain data will be kept even though the Clear Pattern Job is executed.		
+
+05: Pattern Name.		
+This Job lets you assign a name to the selected Pattern.  For instructions on naming, refer to page 53 in the Basic Operation section.		
+		
+		
+Pattern Mixing mode.		[PATTERN] -> Pattern selection -> [MIXING] .
+		
+In this mode, you can set up mixing data for your patterns, and set various parameters for the tone generator parts - including the desired Voice, as well as its level, pan, EQ, effect and other settings. 		
+Pattern Mixing parameters are not actually part of the Pattern sequence data in each track, but rather are settings for the tone generator, as it is played back by the Pattern data. As such, the Pattern Mixing parameter settings are not recorded to the Pattern tracks. 		
+Mixing operations and parameters are the same as those of the Song Mixing mode. See page 236.		
+
+<Caution>	Parameter settings made in the Pattern Mixing mode and Pattern Mixing Edit mode should be stored to internal memory (DRAM) as part of the Pattern data. In addition, make sure to save the entire Pattern data (including the Mixing settings) to the SmartMedia/USB storage device, since the data in DRAM is stored only temporarily (page 187).	
+NOTE.	Parameter settings in the Pattern Mixing mode and Pattern Mixing Edit mode can be stored as a template to internal Flash ROM, as well as being stored as part of a Pattern. See page 104 for details.	
+		
+		
+		
+Pattern Mixing Edit mode.		[PATTERN] -> Pattern selection -> [MIXING] -> [EDIT]. 
+		
+This mode provides more detailed Mixing parameters than in the Pattern Mixing mode. Keep in mind that Pattern Mixing parameters are not actually part of the Pattern sequence data in each track, but rather are settings for the tone generator, as it is played back by the Pattern data. As such, the Pattern Mixing parameter settings are not recorded to the pattern tracks.  Mixing operations and parameters are the same as those of the Song Mixing mode. See page 234.			
+<Caution>	Parameter settings made in the Pattern Mixing mode and Pattern Mixing Edit mode should be stored to internal memory (DRAM) as  part of the Pattern data. In addition, make sure to save the entire Pattern data (including the Mixing settings) to the SmartMedia/USB storage device, since the data in DRAM is stored only temporarily (page 187).	
+NOTE.	Parameter settings in the Pattern Mixing mode and Pattern Mixing Edit mode can be stored as a template to internal Flash ROM, as well as being stored as part of a Pattern. See page 104 for details.	
+		
+		
+Pattern Mixing Job mode.		[PATTERN] -> Pattern selection -> [MIXING] -> [JOB]. 
+		
+Same as in the Song Mixing Job mode. See page 236. 		
+		
+		
+Pattern Mixing Store mode.		[PATTERN] -> Pattern selection -> [MIXING] -> [STORE]
+		
+This function lets you store your edited Pattern Mixing to User memory (DRAM). 		
+For details, refer to page 131 in the Quick Guide section. 		
+
+
+This is the end of the file.

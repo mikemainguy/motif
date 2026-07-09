@@ -1,0 +1,796 @@
+Song mode.		
+
+Creating Songs - basic procedure.		
+Songs consist of the following three types of data: 		
+	  MIDI sequence data (created in the Song Record mode, Song Edit mode, and Song Job mode)	
+	  Setup data (created in the Song Play mode)	
+	  Mixing data (created in the Song Mixing mode/Mixing Edit mode and stored in the Song Mixing Store mode)	
+
+After creating the data in these modes described above, store the Mixing settings in the Song Mixing Store mode to archive it as Song data and save the entire Song to the SmartMedia/USB storage device in the File mode.		
+
+NOTE.	Non-note MIDI events (such as Voice number, volume, pan, and effect send level) which are necessary at the start of a Song are not recorded as MIDI sequence data, but are stored instead as Mixing data. 	
+
+<Caution>	Because Song data (MIDI sequence data, Setup data, and Mixing data) is recorded to DRAM (page 187), it will be lost when turning the power off. Make sure to save any Song data created via the Record, Edit, Job, and Mixing setting to the SmartMedia/USB storage device in the File mode before turning the power off. For details on saving Song data, see page 132.	
+		
+
+Song Play mode.		[SONG] -> Song selection.
+		
+[F1] PLAY.		See page 55. 
+	Loc1 (Location1), Loc2 (Location 2).	Indicates the measure number to which the Song playback can be jumped by using the Location feature (page 58). 
+	Trans (Transpose).	Determines the key transpose setting for the entire Song, and can be adjusted in semitones.
+	Settings:	minus 36 to plus 36.
+
+	NOTE.	If Transpose is applied to a Drum Voice, the results may not be musically appropriate.  To ensure proper playback of a Drum Voice, set the Note Shift parameter for the Drum Voice Part to an appropriate value ([SONG] -> [MIXING] -> [EDIT] -> Part selection -> [F4] TONE -> [SF1] TUNE -> NoteShift).
+
+	MEAS (Measure).	Indicates the current measure number and beat for the current Song. During playback, this indication changes automatically according to the Song playback. You can input the desired measure number directly by using the Number Input window called up via the [INFORMATION] button.
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).		You can register the desired Arpeggio types to these buttons and call them up any time during your keyboard performance. Refer to page 105 in the Quick Guide section.
+
+[F2] GROOVE (Grid Groove).		
+The Grid Groove function makes it possible to adjust the pitch, timing, length, and velocity of notes in a specified track via a 1-measure 16th-note grid to create "grooves" that would not be possible with precise sequencer-like programming. The Grid Groove function affects Song playback without actually changing the sequence data.		
+	NOTE OFST (Note Offset).	Raises or lowers the pitch of the note(s) on the selected grid in semitones.
+	Settings:	minus 99 to plus 99.
+	CLOCK SFT (Clock Shift).	Shifts the timing of the note(s) on the selected grid forward or back ward in clock increments.
+	Settings:	minus 120 to plus 120.
+	GATE OFST (Gate time Offset).	Lengthens or shortens the note(s) on the selected grid in clock increments.
+	Settings:	minus 120 to plus 120.
+	VELO OFST (Velocity Offset).	Increases or decreases the velocity of the note(s) on the selected grid.
+	Settings:	minus 127 to plus 127.
+
+[F3] TRACK.		
+[SF1] CHANNEL.		From this display you can set the MIDI output channel/port for each of the sixteen tracks of the corresponding internal/external tone generator.
+	OUT CH (Output Channel).	Sets up the MIDI output channel for each track. Tracks set to "Off" will not sound.
+	Settings:	1 to 16, off.
+
+	NOTE.	In the Song/Pattern mode, the MIDI message created by playing the keyboard/knobs/wheels is sent to the tone generator block or the external MIDI instruments via the MIDI output channel of the currently selected track.
+
+	PORT.	"Determines the MIDI transmission port for the corresponding track. Playback data of tracks set to off is output without Port signal via MIDI.  When using the internal tone generator block, the Port setting here is available for the tracks assigned to the Plug-in Parts 1 to 3 (when the single Plug-in Board has been installed) and Multi Plug-in Parts 17 to 32 (when the PLG100-XG has been installed) are assigned. Tracks using the internal tone generator parts of this synthesizer are automatically fixed to Port 1."
+	Settings:	off, 1 to 3.
+
+	NOTE.	Port data can be output only through the USB terminal. No port data is transmitted through the MIDI OUT terminal, even if the corresponding track is set to a specific port number. 
+
+[SF2] OUT SW (Output Switch).		
+	INT SW (Internal Switch)	Determines whether playback data is transmitted to the internal tone generator block or not. 
+	Settings:	on, off.
+	EXT SW (External Switch).	Determines whether playback data is output to the external MIDI tone generator via MIDI or not.
+	Settings:	on, off.
+[SF3] TR LOOP (Track Loop).		From this display you can determine whether the data in the selected track loops or not in playback. Using Loop can be an effective way to repeat short patterns and phrases throughout the Song. For details, see page 238.
+	Settings:	off, on.
+
+[F5] PHRASE. 		
+
+You can copy Pattern track data (Phrase) to a Song track. You can also copy preset phrases that are not assigned to the Pattern track by using the Patch function (page 241). For details, refer to page 113 in the Quick Guide section. 		
+<Figure>
+Source Phrase.
+If sample data is included in the original Phrase and you want to copy all of the data, make sure to checkmark this box.  After completing the settings, press the [ENTER] button to execute Copy Phrase.  
+Specify the destination track and measure of the current selected song.		
+
+[F6] CHAIN.		
+This function allows Songs to be "chained" together for automatic sequential playback. For details, refer to the Quick Guide on page 59. 		
+	skip...		Skips past (ignores) the selected chain number and continues playback from the next chain number.
+	stop...		Stops Song chain playback at that chain number. You can restart the Song chain playback from the next chain number by pressing the [>] (Play) button.
+	end...		Indicates the end mark of the Song chain data.
+		
+		
+		
+Song Record mode.		[SONG] -> Song selection -> [ ] (Record).
+		
+Song Record Standby mode.		
+		
+[F1] SETUP.		
+	Type (Recording Type).	Determines the recording method. For details on each method, refer to page 168 in the Basic Structure section.
+	Settings:	When the RecTrack is set to any of 1 to 16: replace, overdub, punch, step.
+		When the RecTrack is set to tempo: replace, punch, step.
+		When the RecTrack is set to scene: replace, punch.
+		When the RecTrack is set to multi: replace, overdub, punch.
+
+	NOTE.	When "punch" is selected, "Punch-in measure: beat" and "Punch-out measure: beat" appear in the display and should be set. If you've set the Locate 1 and 2 points (Loc1, Loc2; see page 58), the punch-in/out points can be set with a single button press.  Move the cursor to the punch-in/out value, and notice that a "COPYLOC" menu item appears.  Press the [SF1] COPYLOC button, and the punch-in/out settings are automatically assigned to the existing Locate points. 
+	NOTE.	When "step" is selected, you should specify the event type to be entered.
+
+	Quantize.	This parameter is available when the Recording Type is set to something other than "step." Record quantize aligns the timing of notes automatically, as you record. You can set this parameter also by using the Note Type selection window called up via the [INFORMATION] button. For details, see page 49. 
+	Settings:	off, 60 (32nd note), 80 (16th note triplet), 120 (16th note), 160 (8th note triplet), 240 (8th note), 320 (1/4 note triplet), 480 (1/4 note).
+	Event.	This parameter is available when the Recording Type is set to "step." This lets you specify the event type to be entered.
+	Settings:	note, p.bend (pitch bend), CC#000 to #119 (Control Change).
+	RecTrack.	Determines the track to be recorded. Pressing the [F6] button lets you switch between Single Track recording and All Track recording.
+	Settings:	tempo, scene, 1 to 16, multi.
+	 (Tempo).	Determines the Song tempo.
+	Settings:	001.0 to 300.0.
+	Meas (Measure).	Determines the measure from which Song recording will be started. 
+
+[F2] VOICE.		
+In this display you can set the voice related parameters for the recording track. The settings here affect the Part for which the receive channel (set in the Mixing mode) matches the transmit (output) channel of the recording track. 		
+	Voice.	Determines the voice used in the recording track. When the cursor is located here, you can select a voice by using the BANK, GROUP, NUMBER buttons and the Category Search function (page 62). You can also select a Sample Voice obtained via the Sampling function. 
+	Volume.	Determines the volume of the recording track.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo pan position of the recording track. 
+	Settings:	L63 (Left) to C (Center) to R63 (Right).
+	InsEF 	(Insertion Effect Part Switch). Determines whether the Insertion effects are applied to the recording track or not. 
+	Settings:	on, off.
+	 (Tempo).	Determines the Song tempo.
+	Settings:	001.0 to 300.0
+	Meas (Measure).	Determines the measure from which Song recording will be started. 
+
+[F3] ARP(Arpeggio).		
+From this display you can set parameters related to the Arpeggio of the recording track.		
+	Bank, Ctgr (Category), Type.	These three parameters determine the Arpeggio Type. The three-letter prefix number before the Type name indicates the number within the selected Category.
+	Settings:	Refer to the separate Data List. 
+	VelLimit (Velocity Limit).	Determines the lowest and highest velocity which can trigger the Arpeggio playback. The Arpeggio plays when you play notes at velocities within this range.
+	Settings:	1 to 127.
+	Hold.	Determines whether the Arpeggio playback is "held" or not. When this is set to "on," the Arpeggio cycles automatically, even if you release your fingers from the keys, and it continues to cycle until the next key is pressed.
+	Settings:	sync-off, off, on.
+
+	NOTE.	About sync-off, see page 191. 
+
+	PartSw (Part Switch).	Determines whether Arpeggio is on or off for the tone generator Part corresponding to the recording track. 
+	Settings:	off, on.
+	Meas (Measure).	Determines the measure from which Song recording will be started. This parameter is same as the Meas parameter in the [F1] SETUP display. 
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).		You can register the desired Arpeggio types to these buttons and call them up any time during your keyboard performance. Refer to page 123 in the Quick Guide section. 
+
+[F4] RECARP (Record Arpeggio).		
+	RecArp (Record Arpeggio).	Determines whether the sequence data played by Arpeggio is recorded to the Song track or not. When this is set to on, the played sequence data is recorded. 
+	Settings:	off, on.
+	OutputSwitch	Determines whether the sequence data played by Arpeggio during recording is output via MIDI or not. When this is set to on, the played sequence data by Arpeggio during recording is output via MIDI.
+	Settings:	off, on.
+	TransmitCh (Transmit Channel).	Determines the MIDI transmit channel of the Arpeggio playback during recording.
+	Settings:	1 to 16, KbdCh.		
+
+[F5] CLICK.				
+Pressing the [F5] button lets you turn the click sound (metronome) on/off for recording.				
+
+[F6] ALL TR (All Track)/1TR (1 track).				
+Pressing the [F6] button lets you switch between Single Track recording and All Track recording.				
+During Song Recording.		[SONG] -> Song selection -> [ ] (Record) -> [>] (Play)		
+				
+Realtime Recording.		Refer to page 118 in the Quick Guide section. 		
+				
+Step Recording.		Examples of Step Recording are described on page 238. 		
+
+[F1] SETUP.				
+<Figure> 
+Pointer indicating the current note position.				
+			
+	Beat Graph.	This is the display in which notes are ""placed"" during step recording. When the meter is 4/4, the display is divided into four beats (one measure). Each diamond-shaped marker in the display represents one 32nd beat (each 1/4 note division is divided into eight 32nd beats). For example, if the following rhythmic pattern """" is entered in 4/4 time, a display like the one shown above right will appear."
+	Pointer 	Determines the data-entry position. The triangular pointer above the beat graph indicates the data-entry position. To move the pointer right or left, use the [INC/YES] and [DEC/NO] buttons or the data dial.
+	Value.	When the Event to be entered ([F1] SETUP -> Event) is set to "note," this value specifies the velocity with which the note will be entered.
+	Settings:	When the Event is set to "note": 1 to 127, kbd, rnd1 to rnd4.
+		When the Event is set to "p.bend": minus 8192 to plus 8191.
+		When the Event is set to "CC (Control Change 001 to 119)": 000 to 127.
+		When the Event is set to "tempo" with the RecTrack equal tempo: 001 to 300.
+
+	NOTE.	You can select "kbd" (keyboard) and "rnd1" to  "rnd4" (random1 to 4) as well as the values 1 to 127 when the Event to be entered is set to "note."  When "kbd" is selected, the actual playing strength will be entered as the velocity value.  When one of the random settings is selected, a random velocity value will be entered.
+
+	StepTime.	The "size" of the current recording step time for the next note to be entered. This determines to what position the pointer will advance after a note has been entered.
+	Settings:	0001 to 0059, 32nd note, 16th note triplet, 16th note, 8th note triplet, 8th note, 1/4 note triplet, 1/4 note, half note, whole note.
+	GateTime.	Sets the gate time to produce slurs, staccato notes, etc. "Gate time" refers to the actual length of time the note sounds. For the same 1/4 note, for example, a long gate time will produce a slur while a short gate time will produce a staccato effect. Gate time is indicated as a percent value of the step time. A setting of 50 percent produces a staccato sound, values between about 80 percent and 90 percent produce normal note length, and a value of 99  percent will produce a slur.
+	Settings:	1 percent to 200 percent.
+
+[F3] REST.		
+Press [F3] to enter a rest as long as the specified step time. The point will move ahead to the next data-entry position. Rests do not appear on the display.		
+
+	NOTE.	There is no actual data representing rests in the MIDI sequencer. When a "rest" is entered the pointer simply moves ahead to the next data-entry position, effectively leaving a rest.  
+
+[F4] TIE.		
+When the [F4] button is pressed to enter a tie, the preceding note is lengthened to the full step time. 		
+For example, in the phrase shown at left, note 1 is entered with 1/4 note step time. If the step time is then changed to an 8th note and [F4] is pressed, note 2 is entered. 		
+Dotted notes can also be entered using the TIE function. To produce a dotted 1/4 note, for example, set the step time to an 8th note, enter a note and then press [F4] twice.		
+
+	NOTE.	　This display is available only when the Event to be entered is set to "note." 
+
+[F5] DELET.		
+Press this to actually delete the note events at the current cursor position.		
+
+[F6] BAK DEL (Back Delete).		
+Moves the pointer backward by one step and deletes all notes at that location.		
+
+	NOTE.	Mistakenly entered notes can be erased by pressing [F6] immediately after they are entered (before changing the step time value). 
+		
+		
+Song Edit mode.		[SONG] -> Song selection -> [EDIT].
+		
+This mode gives you comprehensive, detailed controls for editing the MIDI events of individual Song tracks. MIDI events are messages (such as note on/off, note number, program change number, etc.) that make up the data of a recorded Song.			
+[F1] CHANGE.		
+Shows the Event List of the selected Song track. For information on how to edit the Event List, see page 124. 		
+[F2] VIEW FLT (View Filter).		
+The Event View Filter lets you select the event types that appear on the Event List display ([F1] CHANGE display). For example, if you wish to edit only note events, place a checkmark in the box next to "Note" so that only the note events appear in the Event List display. 		
+	Settings:	Note, PitchBend, ProgramChange, ControlChange, Ch.AfterTouch, PolyAfterTouch, RPN (Registered Parameter Number), NRPN (Non Registered Parameter Number), Exclusive.
+	[F5] CLR ALL (Clear All).	Press the [F5] button to remove all checkmarks at once.
+	[F6] SET ALL.	Press the [F6] button to set checkmarks into all boxes.
+
+[F4] TR SEL (Track Select).		
+You can switch between the display for 1 to 16 tracks, SCN (Scene) track, and TMP (Tempo) track by pressing this button. 		
+[F5] INSERT.		
+When the cursor is located at the desired position in the [F1] CHANGE display (Event List), pressing this button calls up the display for inserting new MIDI events in the Song mode or Pattern mode. 		
+	Note.	This is the most common and prevalent type of data - the individual notes of a Song.
+	　NOTE (Note name).	Determines the note name or the specific keyboard pitch of the note.
+	Settings:	C -2 to G8.
+	  GATE (Gate time).	Determines the length of time that a note actually sounds in beats and clocks.
+	Settings:	000 : 001 to 999 : 479.
+
+	NOTE.	On this synthesizer, one clock is 1/480th of a quarter note.
+
+	  VELO (Velocity).	Determines how strongly the selected note sounds.
+	Settings:	001 to 127.
+	PitchBend.	These are the events that define continuous changes in pitch and these events are generated by Pitch Bend Wheel operation.
+	　DATA.	Determines the Pitch Bend data.
+	Settings:	minus 8192 to plus 8191.
+	ProgramChange.	These events determine the Voice for the selected track. 
+	　BANK.	Determines the Voice bank.
+	Settings:	000 to 127, ***.
+
+	NOTE.	Bank select MSB and LSB are actually part of the Control Change set of messages (below). However, since they apply specifically to Voice selection, they are grouped and described here.
+
+	PC NO (Program Change Number).	Determines the specific Voice (from the bank selected by MSB and LSB above).
+	Settings:	000 to 127.
+
+	NOTE.	For a complete list of the available voice banks and numbers, refer to the Voice List in the separate Data List booklet.
+
+	ControlChange.	These events control the sound and certain response characteristics of the voice, and are usually generated/recorded by moving a controller (such as a modulation wheel, knob, slider or foot controller).
+
+	　CTRL NO (Control Number).	Determines the Control Change number.
+	Settings:	000 to 127.
+
+	NOTE.	For details on the specific functions assigned to each of the numbers, see page 182. 
+	　DATA.	See page 182.
+	Settings:	000 to 127.
+	Ch.AfterTouch (Channel After Touch).	This event is generated when pressure is applied to a key after the note is played.
+	　DATA.	This represents the amount of pressure applied to the key.
+	Settings:	000 to 127.
+	PolyAfterTouch (Polyphonic Aftertouch).	This event is generated when pressure is applied to a key after the note is played. Unlike Channel Aftertouch above, this is recorded and applied independently for each key pressed.
+	　NOTE (Note name).	Determines the key to which aftertouch is applied.
+	Settings:	C -2 to G8.
+	　DATA.	This represents the amount of pressure applied to the key.
+	Settings:	000 to 127.
+	RPN (Registered Parameter Number).	This event changes parameter values for each tone generator Part. This event is used to set Part settings such as Pitch Bend Sensitivity or Tuning. 
+	　MSB-LSB	See page 183.
+	Settings:	000 to 127.
+	DATA (Data Entry MSB-LSB).	See page 182.
+	Settings:	000 to 127, ***.
+
+	NOTE.	Normally three types of control change data are sent: RPN MSB (101), RPN LSB (100), and Data Entry MSB (6). In this synthesizer, Data Entry LSB (38) is added to this and the resulting group of control change events is handled as one in this display. 
+
+	NRPN (Non Registered Parameter Number).	These events are used to change the parameter values for each tone generator Part. They can be is used to edit sounds via MIDI, allowing you to edit filter or EG settings, or adjust the pitch or level for each instrument of a drum voice.
+	　MSB-LSB.	See page 183.
+	Settings:	000 to 127.
+	　DATA (Data Entry MSB-LSB).	See page 183.
+	Settings:	000 to 127, ***.
+
+	NOTE.	Normally three types of control change data are sent: NRPN MSB (99), NRPN LSB (98), and Data Entry MSB (6). In this synthesizer, this group of control change events is handled as one in this display. For a complete list of the available RPN and NRPN numbers and their corresponding controls, refer to the MIDI Data Format in the separate Data List booklet.
+
+	Exclusive (System Exclusive). 	 A type of MIDI message used to exchange data unique to a specific model or type of device. Unlike other MIDI events, these events differ depending on the manufacturer/device, and are incompatible among different devices.
+	　DATA (HEX).	See page 184. 
+	Settings:	00 to 7F, F7 (Data must be entered in hexadecimal format.)
+		
+		
+Song Job mode.		[SONG] -> Song selection -> [JOB] 
+		
+The Song Job mode contains a comprehensive set of editing tools and data transform functions you can use to change the sound of the Song.  It also includes a variety of convenient operations, such as copying or erasing data.  After setting parameters as required from the selected display, press the [ENTER] button to execute the Job. 		
+		
+<Caution>	An "Executing…" message is shown when it takes a short amount of time to execute the Job. Never attempt to turn off the power while an "Executing..." message is shown. Turning the power off in this state results in loss of all user data.	
+		
+[F1] UNDO/REDO.		
+The Undo Job cancels the changes you made in your most recent recording session, editing session, or Job, restoring the data to its previous state. This allows you to recover from accidental data loss. Redo is available only after using Undo, and lets you restore the changes you made before undoing them.		
+
+<Caution>	Undo/Redo does not work with Sample Voice and Mixing Voice operations.	
+
+[F2] NOTE (Note data Job).		
+
+NOTE.	Before executing the Note data Job, make sure that you specify the track (01 to 16, all) and range (measure : beat : clock) to which the Job is applied.	
+
+01: Quantize.		Quantization is the process of adjusting the timing of note events by moving them closer to the nearest exact beat. You can use this feature, for example, to improve the timing of a performance recorded in real time.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	Quantize (Resolution).	Determines to what beats the note data in the specified track will be aligned.
+	Settings:	32nd note, 16th note triplet, 16th note, 8th note triplet, 8th note, 1/4 note triplet, 1/4 note, 16th note plus 16th note triplet, 8th note plus 8th note triplet
+	Strength.	The Strength value sets the "strength" by which note events are pulled toward the nearest quantize beats. A setting of 100 percent produces exact timing. A setting of 0 percent results in no quantization. 
+	Settings:	000 percent to 100 percent.
+	SwingRate..	"Delays notes on even-numbered beats (backbeats) to produce a swing feel. For example, if the meter is 4/4 and the quantize value is quarter notes, the 2nd and 4th beats of the measure will be delayed. When a triplet quantize value is used, the last note of each triplet is delayed. When the quantize value is  even-numbered, beats will be delayed."
+	Settings:	See below.
+		If the quantize value is 1/4 note, 8th note, 16th note, 32nd note: 50 percent to 75 percent.
+		A setting of 100 percent is equivalent to twice the length of the specified quantize value. A setting of 50 percent produces exact timing and therefore no swing feel. Settings above 51 percent increase the amount of swing, with 75 percent being equivalent to a dotted-note delay. 
+		If the quantize value is 1/4 note triplet, 8th note triplet, 16th note triplet: 66 percent to 83 percent.
+		A setting of 100 percent is equivalent to three times the length of the specified quantize value. A setting of 66 percent produces exact timing and therefore no swing feel. Settings above 67 percent increase the amount of swing, with 83 percent being equivalent to a sextuplet delay. 
+		If the quantize value is 8th note plus 8th note triplet, 16th note plus 16th note triplet: 50 percent to 66 percent.
+		A setting of 100 percent is equivalent to twice the length of a 8th note or 16th note. A setting of 50 percent produces exact timing and therefore no swing feel. Settings above 51 percent increase the amount of swing, with 66 percent being equivalent to a triplet delay. 
+
+	NOTE.	If a swing value other than 100 percent results in notes being positioned after other non-swing notes, the latter notes are delayed accordingly.
+
+	GateTime.	Determines the gate time (the length of time a note sounds) of the even-numbered backbeat notes to enhance the swing feel. When a triplet quantize value is used, the gate time of the last note of each triplet is adjusted. When the quantize value is 8th note plus 8th note triplet or 16th note plus 16th note triplet, the gate time of the even-numbered 8th note or 16th note beats will be adjusted. A setting of 100 percent leaves the original gate time unchanged.  If an adjusted gate time value is less than 1, the value is rounded off to 1.
+	Settings:	000 percent to 200 percent.
+
+02: Modify Velocity.		This Job alters the velocity values of the specified range of notes, letting you selectively boost or cut the volume of those notes. Velocity changes are calculated as follows: 
+		　　　Adjusted velocity equal (original velocity x Rate) plus Offset.
+		If the result is 0 or less, the value is set to 1. If the result is higher than 127, the value is set to 127.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	SetAll.	Sets the velocities of all target notes to the same fixed value (1 to 127). When set to "off" the Set All parameter has no effect. When set to a value other than "off" the Rate and Offset parameters are unavailable and appear as "***" on the display.
+	Settings:	off (0), 001 to 127.
+	Rate.	Determines the percentage by which the target notes will be shifted from their original velocities. Settings below 100 percent reduce the velocities, and settings above 100 percent increase the velocities proportionately. When the Set All parameter is not "OFF" this parameter appears as "***" and cannot be changed.
+	Settings:	000 percent to 200 percent, ***.
+	Offset.	Adds a fixed value to the Rate-adjusted velocity values. A setting of 0 produces no change. Settings below 0 reduce the velocities, and settings above 0 increase the velocities. When the Set All parameter is not "OFF" this parameter appears as "***" and cannot be changed.
+	Settings:	minus 127 to plus 127, ***.
+
+03: Modify Gate Time.		This Job alters the gate times of the specified range of notes. Gate time changes are calculated as follows:
+		　　　Adjusted gate time equal (original gate time x Rate) plus Offset.
+		If the result is 0 or less, the value is rounded off to 1. 
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	SetAll.	Sets the gate times of all target notes to the same fixed value. When set to "off" the Set All parameter has no effect. When set to a value other than "off," the Rate and Offset parameters are unavailable and appear as "***" on the display.
+	Settings:	off (0), 0001 to 9999.
+	Rate.	Determines the percentage by which the gate time of the target notes will be changed. Settings below 100 percent shorten the notes, and settings above 100 percent lengthen the notes proportionately. When the Set All parameter (above) is set to something other than "off," this parameter appears as "***" and cannot be changed.
+	Settings:	000 percent to 200 percent, ***.
+	Offset.	Adds a fixed value to the Rate-adjusted gate time values. A setting of 0 produces no change. Settings below 0 shorten the gate time, and settings above 0 lengthen the gate time. When the Set All parameter (above) is set to something other than "off," this parameter appears as "***" and cannot be changed.
+	Settings:	minus 9999 to plus 9999, ***.
+
+04: Crescendo.		This Job lets you create a crescendo or decrescendo over the specified range of notes. (Crescendo is a gradual increase in volume, and decrescendo is a gradual decrease.)
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	VelocityRange.	 Determines the intensity of the crescendo or decrescendo. The velocity values of the notes in the specified range are gradually increased or decreased starting at the first note in the range. The velocity of the last note in the range becomes the original velocity of the note plus the Velocity Range value. If the resultant velocity is outside the 1 to 127 range, it is set to 1 or 127 accordingly. Settings greater than 0 produce a crescendo, and settings less than 0 produce a decrescendo. A setting of 0 produces no effect.
+	Settings:	minus 127 to plus 127
+
+05: Transpose.		Transpose lets you change the key or pitch of the notes in the specified range.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied.
+	Note	Determines the range of note pitches over which the Job is applied. You can also set the Note directly from the Keyboard, by holding down the [INFORMATION] button and pressing the desired key (page 53).
+	Settings:	C -2 to G8.
+	Transpose.	Transposes notes in the specified range (in semitones). A setting of plus 12 transposes up one octave, while a setting of minus 12 transposes down an octave. A setting of 0 produces no change.
+	Settings:	minus 127 to plus 127.
+
+06: Glide.		The Glide Job replaces all notes following the first note in the specified range with pitch bend data, producing smooth glides from note to note. This is ideal for producing guitar-like slide or note-bending effects.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	GlideTime	Determines the length of the glide. Higher values produce a longer glide between notes.
+	Settings:	000 to 100.
+	PBRange (Pitch Bend Range)	Determines the maximum pitch bend range to be applied by the Glide Job (in semitones).
+	Settings:	01 to 24.
+
+07: Create Roll.		This Job creates a series of repeated notes (like a drum roll) in the specified range with the specified continuous changes in clock step and velocity. This is ideal for creating fast staccato rolls and special stuttering effects.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16) and range of measures/beats/clocks over which the Job is applied. 
+	"StartStep (Starting Step) EndStep (Ending Step)"	Determines the size of the step (i.e. the number of clocks) between each note in the roll. Both the starting and ending clock values can be specified, making it easy to create rolls in which the step size varies during the roll. 
+	Settings:	StartStep:  001 to 999, EndStep: 001 to 999
+
+	Note.	Determines the specific note (or instrument in Drum voices) for the roll effect. You can also set the note directly from the Keyboard, by holding down the [INFORMATION] button and pressing the desired key (page 53).
+
+	Settings:	C -2 to G8.
+	StartVelo (Starting Velocity), EndVelo (Ending Velocity).	Determines the velocity of the notes in the roll. Both the starting and ending velocity values can be specified, making it easy to create rolls in which the velocity increases or decreases. This lets you create rolls that gradually increase or decrease in volume (crescendo/decrescendo) - a technique often used in dance music.
+	Settings:	StartVelo: 001 to 127, EndVelo: 001 to 127.
+
+08: Sort Chord. 		This Job sorts chord events (simultaneous note events) by order of pitch. The sort affects the order of the notes in the Event List display (page 124), but does not change the timing of the notes. When used to pre-process chords before using the Separate Chord Job (below), Chord Sort can be used to simulate the "stroke" or strumming sound of guitars and similar instruments.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	Type.	Determines how the chord note data is sorted.
+	Settings:	up, down, up and down, down and up
+		up...		The notes are sorted in ascending order. After executing this Job with this setting, execute the Separate Chord Job to create a guitar-like upstroke strum. 
+		down...	 The notes are sorted in descending order. After executing this Job with this setting, execute the Separate Chord Job to create a guitar-like downstroke strum."
+		up and down...			Sorts chord notes on downbeats in ascending order and chord notes on upbeats in descending order, based on the Grid setting (below).
+		down and up...	 Sorts chord notes on downbeats in descending order and chord notes on upbeats in ascending order, based on the Grid setting (below)."
+		Grid.  Determines the type of note that serves as the basis for the Chord Sort Job.
+	Settings:	32nd note, 16th note triplet, 16th note, 8th note triplet, 8th note, 1/4 note triplet, 1/4 note.
+
+09: Separate Chord.		This Job slightly separates notes in chords within the specified range, inserting a specified number of clocks between each note. Use this Job after the Chord Sort Job above, to create guitar-like upstroke or downstroke effects.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	Clock.	Determines the number of clock cycles inserted between adjacent chord notes.
+	Settings:	000 to 999.
+
+	NOTE.	Note that there are 480 clock cycles per quarter note.
+	NOTE.	It is not possible to separate chords so that they cross the next chord or they overstep the range (set above).
+
+[F3] EVENT (Event Job).		
+
+	NOTE.	Before executing the Event Job, make sure that you specify the track and range (measure : beat : clock) to which the Job is applied. Please note that the track to be specified varies depending on the Job. 
+
+01: Shift Clock.		This Job shifts all data events in the specified range forward or backward by the specified number of clocks.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, TMP, SCN, all) and range of measures/beats/clocks over which the Job is applied. 
+	Clock.	Determines the amount by which the data will be delayed or advanced in measures, beats, and clocks.
+	Settings:	000:0:000 to 999:3:479.
+	Direction.	Determines the direction in which the data will be shifted. ADVANCE moves the data toward the beginning of the sequence, while DELAY shifts the data toward the end of the sequence.
+	Settings:	Advance, Delay.
+
+02: Copy Event.		This Job copies all data from a specified source range to a specified destination location. 
+		Execute this Job after setting: 
+	  Source track (01 to 16, TMP, SCN, all) 
+	  Source range (measure : beat : clock) 
+	  Destination track (01 to 16, TMP, SCN, all) 
+	  Destination range (measure : beat : clock) 	
+	  Top measure of destination   Count (number of times data is to be copied) 
+<Figure>
+Source track and range in measures, beats, and clocks.		
+Destination track and the top (measure, beat, and clock) of the destination.		
+	NumberOfTimes.	Determines the number of times the data is copied.
+	Settings:	x01 to x99.
+
+	<Caution>    When Copy Event is executed, any data already existing at the Destination location will be overwritten.	
+
+03: Erase Event.		This Job clears all specified events from the specified range, effectively producing a segment of silence.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, TMP, SCN, all) and range of measures/beats/clocks over which the Job is applied. 
+	Event Type.	Determines the event type to be erased. All events are cleared when ALL is selected. Individual control change numbers can be specified when erasing control change events.
+	Settings:	When TR is set to 01 to 16: Note (Note events), PC (Program Change), PB (Pitch Bend), CC (Control Change)*, CAT (Channel Aftertouch), PAT (Polyphonic Aftertouch), EXC (System Exclusive), All (all events)
+		When TR is set to "TMP" (Tempo): TMP (tempo)
+		When TR is set to "SCN" (Scene): SceneMemory (Scene change information), TrackMute (Track mute setting change information)
+		* You can also specify the CC No. (Control Change number). 
+
+	NOTE.	Keep in mind that applying this Job to a track with Sample Voices erases the events that trigger the samples, but it does not erase the actual samples themselves. 
+
+04: Extract Event.		This Job moves all instances of specified event data from a specified range of a track to the same range in a different track.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16) and range of measures/beats/clocks over which the Job is applied. 
+	EventType.	Selects the event type to be extracted. Specific note and control change numbers can also be specified as required.
+	Settings:	Note, PC (Program Change), PB (Pitch Bend), CC (Control Change), CAT (Channel Aftertouch), PAT (Polyphonic Aftertouch), EXC (System Exclusive)
+	-> TR.	Determines the destination track (01 to 16). 
+
+05: Create Continuous Data.		This Job creates continuous pitch bend or control change data over the specified range.
+	TR (Track)  001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, TMP, all) and range of measures/beats/clocks over which the Job is applied. 
+	EventType.	Determines the event type to be created.
+	Settings:	PB (Pitch Bend), CC (Control Change)*, CAT (Channel Aftertouch), EXC (System Exclusive), TMP (Tempo).
+		* You can also specify the CC No. (Control Change number). 
+	Data (Data Range).	Determines the lower and upper limits for the data range to be created. The left value is the lower limit, and the right value is the upper limit.
+	Settings:	When Event Type is set to PB: minus 8192 to plus 8191. 
+			When Event Type is set to TMP: 1.0 to 300.0. 	
+			When Event Type is set to other: 0 to 127.
+	Clock.	Determines the number of clocks to be inserted between each created event.
+	Settings:	001 to 999.
+	Curve.	"Determines the ""curve"" of the continuous data.  Refer to the graph for approximate curve shapes."
+	Settings:	minus 16 to plus 16.
+		
+
+	NumberOfTimes.	"Determines the number of times the data creation is to be repeated.  For example, if data is created in the range M001:1:000 to M003:1:000 and this parameter is set to 03, the same data will be created at M003:1:000 to M005:1:000 and M005:1:000 to M007:1:000. This Job lets you insert continuous volume or filter cutoff variations to create tremolo or wah effects."
+	Settings:	01 to 99.
+
+06: Thin Out.		This Job thins out the specified type of continuous data in the specified range - allowing you to free up memory space for other data or further recording.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, TMP, all) and range of measures/beats/clocks over which the Job is applied. 
+	EventType.	Determines the event type to be thinned.
+	Settings:	PB (Pitch Bend), CC (Control Change)*, CAT (Channel Aftertouch), PAT (Polyphonic Aftertouch), TMP (Tempo).
+		* You can also specify the CC No. (Control Change number). 
+
+	NOTE.	The Thin Out Job will not work on continuous data that has a clock interval of greater than 60 clocks per event.
+
+07: Modify Control Data.		This Job lets you change the values of a specified type of control change data - pitch bend, control change, aftertouch, etc. - in the specified range. Data changes are calculated as follows:
+		　　Modified value equal (original value x Rate) plus Offset.
+		The modified value cannot exceed the minimum/maximum limits of the parameter. Any result lower than the minimum is set to the minimum; any result higher than the maximum is set to the maximum.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, TMP, all) and range of measures/beats/clocks over which the Job is applied. 
+	EventType.	Determines the event type to be modified.
+	Settings:	PB (Pitch Bend), CC (Control Change)*, CAT (Channel Aftertouch), PAT (Polyphonic Aftertouch), TMP (Tempo).
+		* You can also specify the CC No. (Control Change number). 
+	SetAll.	Sets all target events to the same fixed value. When set to "off," the Set All parameter has no effect. When set to a value other than "off," the Rate and Offset parameters are unavailable and appear as "***" on the display. 
+	Settings:	off, 000 to 127 (minus 8192 to plus 8191 for pitch bend, 0.1 to 300.0 for tempo).
+	Rate.	Determines the percentage by which the target events will be shifted from their original values. When the Set All parameter (above) is set to something other than "off," this parameter appears as "***" and cannot be changed.
+	Settings:	000 percent to 200 percent, ***.
+	Offset.	Adds a fixed value to the Rate-adjusted event values. When the Set All parameter (above) is set to something other than "off," this parameter appears as "***" and cannot be changed.
+	Settings:	minus 127 to 127 (minus 8192 to plus 8191 for pitch bend, minus 275 to plus 275 for tempo), ***.
+
+08: Beat Stretch.		This Job performs time-expansion or compression over the selected range. Keep in mind that this operation affects all event timing, note step times, and note gate times.
+	TR (Track) 001 : 1 : 000 to 999 : 4 : 479.	Determines the track (01 to 16, all) and range of measures/beats/clocks over which the Job is applied. 
+	Rate.	Determines the amount of time expansion or compression as a percentage. Settings higher than 100 percent produce expansion, and settings below 100 percent produce compression.
+	Settings:	025 percent to 400 percent.
+
+	NOTE.	Only MIDI data is affected by this Job. Sample Voices are not expanded or compressed. However, for samples recorded using the Slice plus Seq feature, the Beat Stretch Job expands or compresses the timing of the note data, step times, and gate times that control playback of the sliced samples. The sample data itself is not affected. 
+
+[F4] MEAS (Measure Job).		
+01: Create Measure.		This Job creates empty measures at the specified location in all tracks.
+<Figure>
+		Meter (time signature) of measures to be inserted.
+		Number of measures to be inserted.
+		Insertion point (measure number).
+		8 measures inserted at measure 5.
+		The inserted 8 measures"
+
+	Meter of measures to be inserted.	Determines the meter or time signature of the measures to be created. You may find it convenient to use this parameter when you need to create a Song that incorporates meter changes.
+	Settings:	1/16 to 16/16, 1/8 to 16/8, 1/4 to 8/4.
+	Insertion point (Measure number).	Determines the insert point (measure number) at which the newly created blank measures will be inserted.
+	Settings:	001 to 999.
+	Number of measures to be inserted.	Determines the number of empty measures to be created and inserted.
+	Settings:	01 to 99.
+
+	NOTE.	When empty measures are inserted, measure and meter data following the insert point are moved forward accordingly.
+	NOTE.	If the insert point is set after the last measure containing data, only the meter data at that point is set without actually inserting the measures. 
+
+02: Delete Measure.		This Job deletes the specified measures. Measure and meter data following the deleted measures are moved backward accordingly.
+		Delete Range. 
+	Settings:	001 to 999.
+
+	NOTE.	Keep in mind that applying this Job to a range of measures with Sample Voices erases the events that trigger the samples, but it does not erase the actual samples themselves.
+
+[F5] TRACK (Track Job).		
+01: Copy Track.		This Job copies all data from a specified source track to the specified destination track. 
+	<Caution>	The copy operation overwrites any data previously existing on the destination track.
+	<Caution>	Undo/Redo cannot be used to undo/redo a sample voice copy operation.
+	Data Type to be copied.	Determines the type(s) of data to be copied. Select the desired type by checkmarking the appropriate box.
+	Settings:	Seq Event (all events in the track), Grid Groove (for the selected track), Mix Part Param (all Mixing Part parameters), Sample (all samples used by the track).
+
+	NOTE.	When there is no memory available in the destination Song for sample voice data, an alert message will appear on the display and the Sample Voice data will not be copied. If this occurs, use Sample Job 02 "Delete" (page 256) to delete any unused samples, then attempt the operation again.
+
+02: Exchange Track.		This Job exchanges or "swaps" the specified type of data between two specified tracks in the current Song.
+	Data Type to be exchanged.	Determines the type(s) of data to be exchanged. Select the desired type by checkmarking the appropriate box.
+	Settings:	Seq Event (all events in the track), Grid Groove (for the selected track), Mix Part Param (all Mixing Part parameters).
+
+03: Mix Track. 		This Job mixes all data from two selected tracks ("A" and "B"), and places the result in track B. One useful application for this would be to free up the data in track A, letting you record new data to it.
+		"Track A (01 to 16) Track B (01 to 16)"
+	Target tracks for the Mix operation.	
+	Settings:	01 to 16.
+
+	NOTE.	Keep in mind that applying this Job to tracks with Sample Voices does not mix the Sample Voices.
+
+04: Clear Track.		This Job deletes all data of the selected type from the selected track, or from all tracks. 
+	<Caution>	Undo/Redo cannot be used to undo/redo a Clear operation for tracks that contain sample data.
+	Data type to be cleared.	Determines the type(s) of data to be cleared. Select the desired type by checkmarking the appropriate box.
+	Settings:	Seq Event (all events in the track), Grid Groove (for the selected track), Mix Part Param (all Mixing Part parameters), Sample (all samples used by the track).
+
+05: Normalize Play Effect.		This Job rewrites the data in the selected track so that it incorporates the current Grid Groove settings.
+	TR (Track).	Determines the Song track to which the Job is applied.
+	Settings:	01 to 16, all.
+
+06: Divide Drum Track.		Separates the note events in a drum performance assigned to a specified track, and places the notes corresponding to different drum instruments in separate tracks (tracks 1 through 8).
+	TR (Track).	Determines the Song track to which the Job is applied.
+	Settings:	01 to 16.
+
+07: Put Track To Arp.		This Job copies data in the specified measures of a track for creating Arpeggio data. For details, refer to page 130 in the Quick Guide section. 
+
+[F6] SONG (Song Job).		
+01: Copy Song.		This Job copies all data from a selected source Song to a selected destination Song. The Sample Voice and Mixing Voice used by the source Song are also copied. 
+	<Caution>	This Job overwrites any data already existing in the destination Song.
+
+02: Split Song To Pattern.		This Job allows you to copy a part of the current Song - all 16 tracks over a specific range of measures - to a specific Pattern, letting you use Song data to create a Pattern.
+	<Caution>	This Job overwrites any data already existing in the destination Pattern and section.
+	Copy Sample.	When this box is checkmarked, sample voices assigned to each track in the source Song are copied to the split destination Pattern as Sample Voices and are assigned to the corresponding tracks in that Pattern. This checkbox has no effect if no Sample Voices are assigned to the tracks in the source Song.
+
+03: Clear Song. 		This Job deletes all data from the selected Song or all Songs, including the Sample Voices and Mixing Voices.
+04: Song Name.		This Job lets you assign a name to the selected Song. See "Basic Operation" on page 53.
+		
+		
+Song Mixing mode.		[SONG] -> Song selection -> [MIXING]
+		
+In this mode, you can set up mixing data for your songs, and set various parameters for the tone generator parts - including the desired Voice, as well as its level, pan, EQ, effect and other settings.  Pressing the [F6] button can switch between the display for the Parts 1 to 16 to which the internal Voices are assigned, the display for Multi Plug-in Parts (17 to 32) to which the PLG100-XG voices are assigned and the display for Plug-in Parts (PLG1 to 3) to which the Plug-in Voices of the single part Plug-in board are assigned.  Song Mixing parameters are not actually part of the Song sequence data in each track, but rather are settings for the tone generator, as it is played back by the Song data. As such, the Song Mixing parameter settings are not recorded to the Song tracks. 		
+
+<Caution>	Parameter settings made in the Song Mixing mode and Song Mixing Edit mode should be stored to internal memory (DRAM) as part of the Song data. In addition, make sure to save the entire Song data (including the Mixing settings) to the SmartMedia/USB storage device, since the data in DRAM is stored only temporarily (page 187). 	
+
+	NOTE.	Parameter settings in the Song Mixing mode and Song Mixing Edit mode can be stored as a template to internal Flash ROM, as well as being stored as part of a Song. See page 104 for details. 
+
+[F1] VOL/PAN.		
+From this display you can set the Pan and Volume for each Part (track).		
+
+	NOTE.	You can select a Part by moving the cursor or by using the NUMBER buttons while the [TRACK SELECT] indicator is on (page 58).
+
+	PAN.	Determines the stereo pan position for each part.
+	Settings:	L63 (far left) to C (center) to R63 (far right).
+	VOLUME.	Determines the volume for each Part, allowing you to set the optimum level balance of all the Parts.
+	Settings:	0 to 127.
+
+	NOTE.	You can also adjust the Volume by using the Control Sliders. See page 130 for details.
+
+[F2] VOICE.		
+From this display you can select a voice for each Part. Sample Voices and Mixing Voices can also be selected.		
+
+	NOTE.	You can select a Part by moving the cursor or by using the NUMBER buttons while the [TRACK SELECT] indicator is on (page 58).
+	NOTE.	The Category Search function can also be used to select Voices here, except for Voices of the Multipart Plug-in Parts 17 to 32 (when the PLG100-XG has been installed), Sample Voices, and Mixing Voices.
+
+[F3] EFFECT. 		
+Pressing the [F3] EFFECT button in the Song Mixing mode calls up the [SONG] -> [MIXING] -> [EDIT] -> [COMMON] -> [F6] EFFECT display in the Song Mixing Edit mode. From this display, you can set the effect related parameters for the current Song. See page 235 for details.		
+
+[F4] EF SEND (Effect Send). 		
+From this display you can make basic effect settings for each Part - Send Level for the System Effect (Reverb, Chorus) as well as the Dry Level for Insertion Effects. 		
+
+	NOTE.	For information on the effect connections in the Song mode, see page 180. 
+
+[F5] VCE ED (Mixing Voice Edit).		
+Press the [F5] VCE ED button in the Song Mixing mode to enter the Mixing Voice Edit mode. Press the [EXIT] button to return to the original display in the Song Mixing mode. For details, see page 105.  Normal Voices can be edited specifically for use with the Song/Pattern modes, creating a dedicated "Mixing Voice."" Refer to ""Mixing Voice mode" on page 249 for details.		
+
+[F6] 17 to 32/PLG1 to 3/1 to 16.		
+You can switch between the displays for three types of parts by pressing this button. 1 to 16 are Parts of the internal tone generator, 17 to 32 are Multi Plug-in Parts of the optionally installed PLG100-XG, and PLG1 to 3 are Plug-in Parts of the optionally installed Single Part Plug-in board.		
+	NOTE.	Please note that the Multi-Part Plug-in Part (17 to 32) settings apply not to one individual Song but to all 64 Songs.
+	NOTE.	If you wish to edit more detailed Mixing parameters, you can enter the Song Mixing Edit mode by pressing the [EDIT] button.
+		
+		
+Song Mixing Edit mode.		[SONG] -> Song selection -> [MIXING] -> [EDIT].
+		
+This mode provides more detailed Mixing parameters than in the Song Mixing mode.  Keep in mind that Song Mixing parameters are not actually part of the Song sequence data in each track, but rather are settings for the tone generator, as it is played back by the Song data. As such, the Song Mixing parameter settings are not recorded to the Song tracks.		
+
+<Caution>	Parameter settings made in the Song Mixing mode and Song Mixing Edit mode should be stored to internal memory (DRAM) as part of the Song data. In addition, make sure to save the entire Song data (including the Mixing settings) to the SmartMedia/USB storage device, since the data in DRAM is stored only temporarily (page 187).  	
+
+NOTE.	Parameter settings in the Song Mixing mode and Song Mixing Edit mode can be stored as a template to internal Flash ROM, as well as being stored as part of a Song. See page 104 for details. 	
+		
+Common Edit. 	[SONG] -> Song selection -> [MIXING] -> [EDIT] -> [COMMON].
+Use Common Edit to edit the settings common to all Parts.		
+
+	NOTE.	Common Edit operations cannot be performed on the Multi-part Plug-in Parts 17 to 32.
+
+[F1] GENERAL.		
+[SF1] MEQ OFS (Master EQ Offset).		The Song Mixing parameters feature global EQ settings for all Parts of the selected Song (see "MEQ," below). The settings made here in this display are applied as offsets to those MEQ settings.
+		minus 64 to plus 63.
+[SF5] OTHER.		
+	KnobAssign	Determines the function for the assignable Knobs (1 to 4). Pressing any of the [KNOB CONTROL FUNCTION] buttons on the panel sets the desired function row, which is automatically stored to memory with the currently selected Song.
+	Settings:	pan, tone, assign, partEQ, MEF, arpFx.
+	Assign A, Assign B,  Assign 1, Assign 2	This lets you directly set and memorize the value for each Assign Knob (A, B, 1, and 2), from the Knob itself. Simply tweak the knob to the desired setting.
+	Settings:	minus 64 to 0 to plus 63 plus C474.
+
+[F2] MEQ/MEF (Master EQ/Master Effect).		
+[SF1] MEQ (Master EQ).		From this display you can apply five-band equalization to all Parts of the selected Song.  The parameters are the same as in Performance Common Edit. See page 214.
+[SF2] MEF (Master Effect).		From this display you can set parameters related to the Master Effect (page 177). The parameters are the same as in Performance Common Edit. See page 214. 
+
+[F3] ARP (Arpeggio).		
+[SF1] TYPE.		The basic parameters (e.g., type) of the Arpeggio are provided in this display. This is the same as in Normal Voice Common Edit (page 191), except that the Tempo setting is not available here, since the Arpeggio plays according to the Song tempo. 
+[SF2] LIMIT.		Same as in Normal Voice Common Edit. See page 191.
+[SF3] PLAY FX (Play Effect).		Same as in Normal Voice Common Edit. See page 192.
+[SF4] OUT CH (Output Channel).		Same as in Performance Common Edit. See page 214.
+
+[F4] CTL ASN (Controller Assign).		
+From this display, you can assign Control Change numbers to the hardware controllers of the instrument (such as the Knobs), for each Song. The parameters are the same as in Performance Common Edit. See page 214.		
+
+[F5] AUDIO IN.		
+From this display, you can set parameters related to the Audio Input Part in the Song mode. The parameters are the same as in Performance Common Edit. See page 214.	
+
+[F6] EFFECT. 		
+
+	NOTE.	For information on the effect connections in the Song mode, see page 180. 
+
+[SF1] CONNECT.		This display gives you comprehensive control over the effect connections. The parameters are the same as in Performance Common Edit. See page 215. 
+[SF2] INS SW (Insertion Switch).		The Insertion Effects can be applied to up to eight parts. This display lets you set to which parts the Insertion Effects are applied. 
+[SF3] PLG EF (Plug-in Effect).		This display lets you set the Plug-in Insertion Effect related parameters when the Effect Plug-in Board PLG100-VH has been installed. For details on each parameter, refer to the Owner's Manual included with the PLG100-VH.
+[SF4] REVERB.		The number of parameters and values available differs depending on the currently selected effect type. For more information, see the Effect Type List in the separate Data List booklet.
+[SF5] CHORUS.		
+		
+Part Edit.		[SONG] -> Song selection -> [MIXING] -> [EDIT] -> Part selection.
+These parameters are for editing the individual Parts that make up a Song Mixing.  Press the [F6] button to switch among the various Part displays - the display for Parts 1 to 16 to which the internal Voices are assigned, the display for Multi-part Plug-in Parts (17 to 32) to which the PLG100-XG voices are assigned, and the display for Plug-in Parts (PLG1 to 3) to which the Plug-in Voices of the single part Plug-in board are assigned. 		
+	NOTE	Please note that the Multi-Part Plug-in Part (17 to 32) settings apply not to one individual Song but to all 64 Songs.
+
+[F1] VOICE. 		
+[SF1] VOICE. 		Determines the Voice for each Part. For details, see page 102. 
+
+	NOTE.	When the cursor is located on the Bank, you can select a Voice (with the exception of Sample Voices, Mixing Voices, and Voices of Multi-part Plug-in Parts) via the method explained in the Quick Guide on page 102.
+
+[SF2] MODE.		
+	Mono/Poly.	Determines the playback method of the Voice for each Part - monophonic (single notes only) or polyphonic (multiple notes).
+	Settings:	mono, poly
+	NOTE.	This parameter is not available for the part to which a Drum Voice is assigned.
+	ArpSwitch (Arpeggio Switch).	Determines whether Arpeggio is on or off for the currently selected Part.
+	Settings:	off, on.
+	NOTE.	Arpeggio Switch is applied to only one Part at the same time. It cannot be applied to multiple Parts simultaneously. 
+	NOTE.	Arpeggio Switch is not available for the Multi-part Plug-in Parts 17 to 32.
+	ReceiveCh (Receive Channel)	Determines the MIDI receive channel for the selected Part. Since MIDI data may be coming from many channels at once, you should set this to match the particular channel over which the desired controlling data is being sent.
+	Settings:	01 to 16, off.
+[SF3] LIMIT		From this display you can determine the note range and velocity range for each Part.  The parameters are the same as in Performance Part Edit. See page 216.
+[SF4] PORTA (Portamento).		Determines the Portamento parameters for each Part.  The parameters are the same as in Performance Part Edit. See page 216.
+
+	NOTE.	The Mode setting is not available for the Multi Plug-in parts 17 to 32 and the Plug-in parts 1 to 3. 
+
+[SF5] OTHER 		Same as in Performance Part Edit. See page 217.
+	NOTE.	For Multi-part Plug-in Parts 17 to 32 and Plug-in Parts 1 to 3, Pitch Bend Upper and Lower become a single parameter: PB Range. Upper and Lower values cannot be set independently for Plug-in Parts. See page 164.
+
+[F2] OUTPUT. 		
+[SF1] VOL/PAN (Volume/Pan).		Same as in Performance Part Edit. See page 217.
+
+	NOTE.	The Voice Element Pan setting is not available for Multi-part Plug-in Parts 17 to 32 and Plug-in Parts 1 to 3.
+
+[SF2] EF SEND (Effect Send).		Same as in Performance Part Edit. See page 217. 
+[SF3] SELECT (Output Select).		From this display you can assign individual Parts to sound from independent output connectors (jacks). The parameters are the same as in Performance Part Edit. See page 218.
+
+[F3] EQ (Equalizer).		
+From this display you can set parameters related to the Part EQ (page 178).  The parameters are the same as in Performance Part Edit. See page 218.	
+
+[F4] TONE.		
+[SF1] TUNE.		Same as in Performance Part Edit. See page 218. 
+[SF2] FILTER. 		Same as in Performance Part Edit. See page 218.
+
+	NOTE.	The FEG Depth setting is not available for Multi-part Plug-in Parts 17 to 32 and Plug-in Parts 1 to 3.
+
+[SF3] FEG (Filter Envelope Generator).		From this display you can set the FEG (Filter Envelope Generator) parameters for each Part. The parameters offset the same parameters of the assigned Voice set in the Voice (Element) Edit mode (page 198).  The parameters are the same as in Performance Part Edit. See page 218. 
+
+	NOTE.	The FEG setting is not available for Multi-part Plug-in Parts 17 to 32, Plug-in Parts 1 to 3, or Parts to which Drum Voices have been assigned.。
+
+[SF4] AEG (Amplitude Envelope Generator).		From this display you can set the AEG (Amplitude Envelope Generator) parameters for each Part. The parameters offset the same parameters of the assigned Voice set in the Voice (Element) Edit mode (page 200).  The parameters are the same as in Performance Part Edit. See page 219.
+	NOTE.	The Sustain setting is not available for Multi-part Plug-in Parts 17 to 32, Plug-in Parts 1 to 3 or Parts to which Drum Voices have been assigned.
+	NOTE.	The Release setting is not available for Parts to which Drum Voices have been assigned.
+
+[F5] RCV SW (Receive Switch).		
+From this display you can set how each individual Part responds to various MIDI data, such as Control Change and Program Change messages. When the relevant parameter is set to "on," the corresponding Part responds to the appropriate MIDI data.  Note that two different display types listed below are provided and you can switch between them by pressing the [SF5] button. Each display type features the same settings in a different format; use the type you feel most comfortable with.		
+	Display showing four Parts.	
+This display type shows the Receive Switch status for four Parts at a time. Set the desired Part on or off, for the corresponding MIDI data type. To view and edit another set of four Parts, press the appropriate [NUMBER] button, [1] to [16]. Keep in mind that since all the available parameters cannot be simultaneously displayed, you will need to use the cursor controls to scroll the display in order to see and set the other parameters."
+	Display showing all parameters for one Part.	
+This display type shows all of the Receive Switch settings for a single selected Part. Set the desired MIDI data type on or off for the selected Part. To select other Parts, use the NUMBER [1] to [16] buttons (making sure that the [TRACK SELECT] button is on). 
+		
+		
+		
+Song Mixing Job mode.		[SONG] -> Song selection -> [MIXING] -> [JOB]. 
+		
+The Song Mixing Job mode features several basic operations, such as Initialize and Copy. After setting parameters as required from the selected display, press the [ENTER] button to execute the Job. 		
+NOTE	Among the Audio Parts shown in the Song Mixing Job display, Audio Part 1 indicates the A/D Input Part. When the optional AIEB2 has been installed, Audio Part 2 indicates the AIEB2 Input Part. When the optional mLAN16E has been installed, Audio Parts 2 to 5 are mLAN Input Parts. 	
+		
+[F1] INIT (Initialize).		
+This function lets you reset (initialize) all Song Mixing parameters to their default settings. It also allows you to selectively initialize certain parameters, such as Common settings, settings for each Part, and so on - very useful when creating a completely new Song Mixing program from scratch.		
+	Type of parameter to be initialized:	All, Common (Common parameter settings for the selected Song Mixing), Part 1 to 16, PLG 1 to 3, Audio1 to 5.
+
+[F2] RECALL (Edit Recall).		
+If you are editing a Song Mixing program and select a different program without storing your edited one, all the edits you've made will be erased. If this happens, you can use Edit Recall to restore the Song Mixing program with your latest edits intact.		
+
+[F3] COPY.		
+From this display you can copy Part parameter settings from any Song Mixing program including the currently edited (but not yet stored) one to a particular Part of the Song Mixing program you are editing. This would come in handy when you want to use some settings from another program.		
+	Source song.	Select a Song and Part to be copied. You can specify "Current" (the Song Mixing program you are editing and have not yet stored) as a Source Song. 
+		Part to be copied (Type): Part 1 to 16, PartP1 to P3 (Plug-in Part 1 to 3), PartA1 to A5 (Audio Part 1 to 5)
+	Data type of Destination Song (current selected song).	Set the Part of the destination Song.
+		Destination part (Type): Part 1 to 16, PartP1 to P3 (Plug-in Part 1 to 3), PartA1 to A5 (Audio Part 1 to 5), Arp, Effect (Reverb, Chorus).
+
+	NOTE.	If you choose Arp (Arpeggio) or Effect, the Arpeggio data or Effect settings for the Voice assigned to the source Part will be copied.
+
+[F4] BULK (Bulk Dump).		
+This function lets you send all your edited parameter settings for the currently selected Song Mixing program to a computer or another MIDI instrument for data archiving.		
+NOTE	In order to execute Bulk Dump, you'll need to set the correct MIDI Device Number. For details, see page 264. 	
+
+[F5] PF COPY (Performance Copy).		
+This convenient operation lets you copy certain settings of the four Parts in a performance to the Song Mixing program currently being edited. This would come in handy when a certain performance has settings that you want to use in your Song Mixing program. Use this Job to simply copy the settings you need.  The MIDI receive channel settings are set to match the basic channel settings (page 263). When the basic channel is set to "omni," the receive channel here is set to 1. To select a group of parameters for copying, checkmark the appropriate box in the display.	
+
+[F6] TEMPLATE.		
+"This convenient function lets you store your mixing settings as a template - allowing you to easily set up similar mixes by calling up the proper template, then tweaking it as needed. Templates are saved as part of the System data (page 186) in the Utility mode and not as data for each song.  After inputting a Template number and name, press the [SF5] PUT button to save the current setting to the Template. After selecting the desired Template number, press the [SF4] GET button to call it up.		
+
+<Caption>  Template Number  Template Name  Pressing the [SF4] button lets you call up the template selected at left.  Press the [SF5] button lets you save the current setting to the template selected at left.	
+
+	NOTE.	Since the Mixing templates are stored as System data (page 186) in Flash ROM, the data is maintained even when the power is turned off. The Mixing template stored here can be called up in the Pattern mode as a Pattern Mixing program. 
+		
+
+Song Mixing Store mode.		[SONG] -> Song selection -> [STORE].
+
+This function lets you store your edited Song Mixing program to User memory (DRAM).  For details, refer to page 131 in the Quick Guide section. 	
+
+
+
+Supplementary information.
+
+Song Track Loop ﾑ setting example.
+[SONG] -> [F3] TRACK -> [SF3] TR LOOP (Track Loop). 	page 222.
+In the example below, a 40-measure song has been recorded and Track 1 is set to play back normally over the 40 measures. Track 2 has been set to loop, and will repeat until the [   ] (Stop) button is pressed.
+When Track Loop has been set to on, you can specify the range to be looped. (Only the end point can be set; the start point of looped playback is fixed to the beginning of the song.) 
+
+<CAUTION> 
+Please note that changing the Track Loop from off to on will delete the data of the area that is not looped. 
+
+1.	Press [F1] to call up the Song Play display. Here, change the change the current measure ﾑ this will be used for the last measure of the loop.
+2.	Call up the [F3] TRACK -> [SF3] TR LOOP display and move the cursor to the track to be looped. 
+3.	Set the selected track to on by using the [INC/YES] and [DEC/NO] buttons or the data dial. (The display prompts you for confirmation.)
+4.	Press the [INC/YES] button. The Loop is set to on and the data after the loop end is deleted
+If you want to restore the deleted data and return the selected track to off, press the [SF5] UNDO button. 
+
+<CAUTION>
+The Undo function can only be used on the last Track Loop operation.  If youﾕve set other tracks to loop, the data of those previous tracks cannot be recovered.
+
+Step Recording ﾑ examples.
+[SONG] or [PATTERN] -> [ ] (Record) -> [F1] SETUP -> Type equal step. 	page 224.
+This section explains how to step-record notes, using three specific examples.
+
+NOTE.	The explanations here using the Song mode display apply also to the Pattern mode. 
+
+  Example 1.
+1.	Set the parameters as illustrated below.
+Press the Record button to call up the display below. Here, we'll set the Step Time to (480) so that quarter notes will be entered, and set the GateTime to 100 percent to have the notes play in legato.
+2.	Play the keys C, D, E, F, G, A, B and C in order.
+Each time you press a key and release it, the pointer moves forward by one step and the played note is recorded. 
+3.	Move the pointer to the top (beginning) of the song and press the [>] (Play) button to hear the note data you just recorded in steps No.1 and 2. 
+
+  Example 2 (Using the Tie function)
+1.	Set the parameters as illustrated below.
+Since the first note is a half note, set the StepTime to the half-note icon (a value of 960), and set the GateTime to 80 percent, since you don't want the notes to play in legato. 
+2.	Enter the first note F.
+	2-1. Press and release F.
+	2-2. Change this to an eighth note (240).
+	2-3. Press the [F4] button to tie the two F notes (half note and 8th note).
+3.	Enter the next 8th notes.
+Keep the display settings unchanged for the remaining notes in the measure, and press/release each key one by one as shown below. 
+<Figure>
+
+4.	Follow the instructions below to enter the next dotted half note.
+	4-1. Change this to a quarter note (480).
+	4-2. Press and release A.
+	4-3. Press the [F4] button twice to expand the quarter note to a dotted half note.
+5.	Enter the last quarter note by pressing and releasing F.
+6.	Move the pointer to the top (beginning) of the song and press the [F] (Play) button to hear the note data you just recorded in steps No.1 to 5. 
+
+  Example 3 (Using the Rest function).
+1.	Set the parameters as illustrated below.
+Set the StepTime to a quarter note (480) and the Gate Time to 80 percent. 
+2.	Enter the first note, F.
+Press and release A.
+3.	Enter the next 8th rest as shown below.
+	3-1. Change this to an eighth note (240), since we'll be entering an eighth-note rest.
+	3-2. Enter the selected rest value (eighth note) by pressing the [F3] button
+4.	Enter the next 8th note A.
+Press and release A.
+5.	Enter the next 4th note C as shown below.
+	5-1. Change this value to 480, since the rest value is a quarter note.
+	5-2. Press and release C.
+6.	Enter the next 8th rest as you did in step No.3 above.
+7.	Enter the last 8th note, F.
+Press and release F.
+8.	Move the pointer to the top (beginning) of the song and press the [>] (Play) button to hear the note data you just recorded in steps No.1 to No.7.
+
+[TIP]  	Entering a chord
+In Step recording, you can also enter chords. Press and hold down each note of the chord in succession, then release them all together to record them as a chord. Keep in mind that notes are not actually recorded to a track until they are released.
+
+
+This is the end of the file.

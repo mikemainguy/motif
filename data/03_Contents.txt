@@ -1,0 +1,165 @@
+Table of Contents.
+
+Introduction.	6
+Accessories.	6
+Main Features.	7
+How to use this manual.	8
+Application Index.	9
+The Controls and Connectors.	16
+Front Panel.	16
+Rear Panel.	22
+Setting Up.	26
+Power Supply.	26
+About data storage to SmartMedia cards and USB storage devices.	27
+Data lost and data retained when power is turned off.	27
+Using the SmartMediaª cards.	28
+Using USB storage devices.	29
+Connections.	31
+Connecting to External Audio Equipment.	31
+Connecting External MIDI Instruments.	34
+Connecting to a Computer.	38
+Connecting Various Controllers.	42
+Turning the power on/off.	43
+Power-on Procedure.	43
+Turning the MOTIF ES on/off.	43
+Resetting the User Memory to the Initial Factory Settings.	44
+Basic Operation.	45
+Modes.	45
+Mode Structure.	45
+Mode table.	46
+Functions and Sub-Functions.	47
+Selecting a Program.	47
+Moving the Cursor and Setting Parameters.	49
+Knob (KN) and Control Slider (CS).	50
+Knob (KN).	50
+Control Slider (CS).	51
+About the editing functions.	51
+Edit Indicator.	51
+Compare Function.	52
+Edit Recall Function.	52
+Confirmation Message.	52
+Information Display.	53
+Note (Key) settings.	53
+Naming.	53
+Quick Guide -- Playing the MOTIF ES.	55
+Playing the Demo Songs/Patterns.	55
+Playing the Keyboard (in the Voice Play mode).	60
+Selecting a Voice.	60
+Using Controllers.	64
+Using the Arpeggio feature.	66
+Playing the Keyboard (in the Performance Play mode). 	67
+Selecting a Performance.	67
+Using Controllers.	69
+Using the Arpeggio feature.	70
+Assigning desired Voices to each part.	70
+Using the A/D input sound.	72
+Using the Plug-in Board.	74
+Available Plug-in Boards.	74
+Using a Single Part Plug-in Board.	75
+Using a Multi Part Plug-in Board.	77
+Using an Effect Plug-in Board.	78
+Quick Guide -- Advanced Course.	79
+Editing a Voice.	79
+Normal Voice Edit.	79
+Drum Voice Edit.	82
+Plug-in Voice Edit.	85
+Storing/Saving the created Voice.	85
+Editing a Performance.	87
+Storing/Saving the created Performance.	91
+Creating a Voice by using the Sampling function.	94
+Sampling your voice with a microphone and creating a Normal Voice.	94
+Sampling the sound of an audio device to create a Drum Voice.	98
+Creating a Song on the MOTIF ES.	102
+Recording your keyboard performance.	102
+Creating a Pattern.	106
+Creating a Song.	117
+Storing/Saving the created Song/Pattern.	131
+Using as a Master Keyboard.	136
+Selecting a Master.	136
+Memorize to a Master.	137
+Using Zones (keyboard area)	137
+Quick Guide -- Computer applications.	142
+Setting up.	142
+Controlling the instrument from a computer.	143
+Using a sequencer to play multiple Voices on the MOTIF ES.	143
+Using the Multi Part Editor to create/edit Mixing settings.	144
+Using the Voice Editor to create/edit a Voice.	145
+Using the TWE Wave Editor to edit Samples.	146
+Controlling a computer from the instrument.	147
+Setting up for Remote Control.	148
+Functions assigned to the panel buttons in the Remote Control mode.	150
+Basic Structure.	154
+Internal Structure (System Overview).	154
+Controller Block.	154
+Tone Generator block.	157
+Sequencer Block.	165
+Sampling Block.	172
+Effect Block.	177
+About MIDI.	181
+MIDI channels.	181
+MIDI Messages Transmitted/Recognized by this synthesizer.	181
+Internal Memory and File Management.	185
+Maintaining data.	185
+Reference.	188
+Voice mode.	188
+Voice Play mode.	188
+Voice Edit mode.	189
+Voice Store mode.	208
+Voice Job mode.	208
+Performance mode.	212
+Performance Play mode.	212
+Performance Edit mode.	213
+Performance Job mode.	219
+Performance Store mode.	220
+Song mode.	221
+Song Play mode.	221
+Song Record mode.	222
+Song Edit mode.	225
+Song Job mode.	226
+Song Mixing mode.	233
+Song Mixing Edit mode.	234
+Song Mixing Job mode.	236
+Song Mixing Store mode.	237
+Pattern mode.	241
+Pattern Play mode.	241
+Pattern Record mode.	243
+Pattern Edit mode.	244
+Pattern Job mode.	244
+Pattern Mixing mode.	248
+Pattern Mixing Edit mode.	248
+Pattern Mixing Job mode.	248
+Pattern Mixing Store mode.	248
+Mixing Voice mode.	249
+Mixing Voice Edit mode.	249
+Mixing Voice Store mode.	250
+Mixing Voice Job mode.	250
+Sampling mode.	251
+Sampling Record mode.	251
+Sampling Edit mode.	255
+Sampling Job mode.	256
+Utility mode.	260
+Utility mode.	260
+Utility Job mode.	265
+File mode.	266
+File mode.	266
+Master mode.	271
+Master Play mode.	271
+Master Edit mode.	271
+Master Job mode.	273
+Master Store mode.	274
+Appendix.	275
+Information Displays.	275
+Display Messages.	277
+Troubleshooting.	279
+Installing Optional Hardware.	282
+Available devices.	282
+Installation locations.	282
+Installation Precautions.	282
+Optional Plug-in Board Installation.	283
+Optional AIEB2 or mLAN16E Installation.	285
+DIMM Installation.	289
+Glossary.	290
+Specifications.	292
+index.	294
+
+This is the end of the file.

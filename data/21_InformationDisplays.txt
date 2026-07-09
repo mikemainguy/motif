@@ -1,0 +1,170 @@
+Appendix.
+
+Information Displays.
+The convenient Information displays let you see at-a-glance some of the more important settings relevant to each mode. Select the desired mode, then press the [INFORMATION] button to call up the Information display for that mode. To exit from the display, press the button again (or any other panel button).
+
+Voice mode.
+Bank.
+Indicates the Bank/Number (page 60) of the currently selected Voice.
+EL 1234.
+Indicates the currently selected Voice, on/off status of the four Elements and mono/poly (page 79) status.
+Porta (Portamento).
+Indicates the Portamento switch on/off status of the currently selected Voice.
+PB (Pitch Bend).
+Indicates the Upper/Lower setting of the Pitch Bend range.
+InsA (Insertion A), InsB (Insertion B), Rev (Reverb), Cho (Chorus).
+Indicates the currently selected effect type for each effect block (page 179).
+
+Performance mode.
+Bank.
+Indicates the Bank/Number (page 67) of the currently selected Performance.
+1 (Plug-in board 1), 2 (Plug-in board 2), 3 (Plug-in board 3).
+Indicates the installation status of the respective Plug-in board. The Plug-in board name is displayed at the right of the corresponding slot number. When PolyExpand (page 265) is set to on in the Utility mode, "P" is indicated at the left of the slot number.
+Ins (Insertion), InsPLG (Plug-in Insertion).
+Indicates the Part number to which the Insertion effect is applied and the Part number to which the Plug-in Insertion effect is applied (when the PLG100-VH is installed).
+Rev (Reverb), Cho (Chorus).
+Indicates the currently selected effect type for each effect block (page 179).
+
+Song mode.
+  Song Play mode.
+Indicates the amount of currently unused (available) memory (DRAM) for song recording.
+  Song Mixing mode.
+
+PlugInfo/Port (Plug-in board installation status).
+Indicates the Plug-in board name and its MIDI port number page 265) at the right of the slot number. When PolyExpand (page 265) is set to on in the Utility mode, "P" is indicated at the left of the slot number.
+Ins (Insertion), InsPLG (Plug-in Insertion).
+Indicates the Part number to which the Insertion effect is applied and the Part number to which the Plug-in Insertion effect is applied (when the PLG100-VH is installed).
+Rev (Reverb), Cho (Chorus).
+Indicates the currently selected effect type for each effect block (page 180).
+
+Pattern mode.
+  Pattern Play mode.
+Indicates the amount of currently unused (available) memory (DRAM) for Pattern Phrase recording.
+  Pattern Mixing mode.
+Same as in the Song Mixing mode.
+  Mixing Voice Edit mode.
+Same as in the Voice mode.
+
+Sampling mode.
+  Sampling mode.
+SampleMemory.
+Indicates the amount of memory used by Sampling.
+RecordableSize.
+Indicates the amount of the available sampling memory (unused memory) and the available sampling time.
+
+NOTE.
+Keep in mind that 320 KB of memory in the installed DIMMs is needed for wave (sample) management, even if no actual samples are contained in memory.
+
+Utility mode.
+PlugInfo/Port (Plug-in board installation status).
+Indicates the Plug-in board name and its MIDI port number (page 265) at the right of the slot number. When PolyExpand (page 265) is set to on in the Utility mode, "P" is indicated at the left of the slot number. 
+MIDI IN/OUT.
+Indicates which physical output terminal(s) will be used for transmitting/receiving MIDI data: MIDI IN/OUT/THRU, USB, or mLAN (when the optional mLAN16E has been installed).
+
+File mode.
+Card Free/USB Free.
+Indicates the amount of currently available (unused) memory of the SmartMedia inserted to the Card slot or the USB storage device connected to the MOTIF ES. 
+Partition.
+Indicates the mounted partition of the connected USB storage device.
+Current Dir (Current Directory).
+Indicates the currently selected directory. 
+
+Master mode.
+Mode.
+Indicates the mode and program number memorized to the currently selected Master.
+ZoneSwitch.
+Indicates the on/off status of the Zone switch.
+ZoneTCH (Zone Transmit Channel).
+Indicates the MIDI transmit channel of each Zone (when the Zone Switch is set to on).
+
+Remote Control mode.
+For details, see page 152.
+
+Display Messages.	
+
+LCD Indication.	Explanation.
+Are you sure ? [YES]/[NO].	Confirms whether you want to execute a specified operation or not. Press [INC/YES] or [DEC/NO] as required.
+Arp memory full.	The internal memory for Arpeggio data is full, preventing storing the recorded sequence data as an Arpeggio.
+Arpeggio type stored.	The current Arpeggio type has been stored to one of the [SF1] to [SF5] buttons. 
+Bad  disk or card.	The SmartMedia or USB storage device is unusable. Format the SmartMedia or USB storage device and try again.
+Bulk protected.	Bulk data was received when RcvBulk was se? to “protect.” (See page 264.)
+Can’t find associated files.	The related voice file cannot be found when loading an AKAI S1000/S3000 format file.  
+Can’t undo OK? [YES]/[NO].	When certain Song/Pattern Jobs are executed, internal memory becomes too full for use of the Undo operation. Press [INC/YES] if this is OK, or [DEC/NO] to abort the operation. Try again after erasing unwanted Songs, Patterns, or User phrases.
+Choose user phrase.	You have attempted to record a Pattern track to which a preset phrase is assigned. If you wish to use a preset phrase as raw material for Pattern recording, copy it to a User phrase before recording.
+Completed.	The specified load, save, format, or other Job has been completed.
+Copy protected.	You have attempted to export or save a copy-protected digital audio source.
+Device number is off.	Bulk data cannot be transmitted/received since the device number is off.
+Device number mismatch.	Bulk data cannot be transmitted/received since the device numbers don’t match.
+Digital in unlocked.	Digital input signal of the AIEB2 is unlocked (not properly received or recorded).
+Disk or card full.	The SmartMedia or USB storage device is full and no more data can be saved. Use a new SmartMedia or USB storage device, or make space by erasing unwanted data from the SmartMedia or USB storage device.
+Disk or card not ready.	A SmartMedia or USB storage device is not properly inserted in or connected to the MOTIF ES.
+Disk or card read/write error.	An error occurred while reading or writing to/from a SmartMedia or USB storage device.
+Disk or card write protected.	The SmartMedia or USB storage device is write protected, or you have attempted to write to a read-only medium such as CD-ROM.
+Effect plug-in is not in slot 1.	The Effect Plug-in board does not work because it has not been installed to slot 1. The Effect Plug-in board should be installed to slot 1.
+Executing...	A format operation or Job is being executed. Please wait. 
+File already exists.	A file having the same name as the one you are about to save already exists.
+File not found.	The file of the specified type cannot be found on the SmartMedia/USB storage device 
+Folder is too deep.	Directories below this level cannot be accessed.
+Illegal check box.	No check boxes have been checked in a Sequencer track Job which requires a check box selection. Check the appropriate check box.
+Illegal file.	The file specified for loading is unusable by the MOTIF ES or cannot be loaded in the current mode. 
+Illegal file name.	The specified file name is invalid. Try entering a different name.
+Illegal input.	An invalid input or value has been specified. Check the input method or value.
+Illegal measure.	An invalid measure number has been specified in the Song/Pattern mode. Select the measure again.
+Illegal phrase number.	An invalid phrase number has been specified in the Pattern mode. Select the phrase again.
+Illegal sample data.	The sample file specified for loading is unusable by the MOTIF ES.
+Illegal track number.	An invalid track number has been specified in the Song/Pattern mode. Select the track again.
+Incompatible USB device.	A USB device which cannot be used with the MOTIF ES has been connected to the USB TO DEVICE connector. 
+Meter mismatch.	In the Pattern Job mode, the meter (time signature) of the destination Pattern is different from the meter of the source Pattern.
+MIDI buffer full.	Failed to process the MIDI data because too much data was received at one time.
+MIDI checksum error.	An error occurred when receiving bulk data.
+MIDI data error.	An error occurred when receiving MIDI data.
+Mixing stored.	In the Song/Pattern mode, the Mixing settings have been loaded from the file. 
+Mixing Voice full.	The Mixing Voice cannot be stored because the number of Voices already stored has exceeded the maximum capacity.
+Multi plug-in is not in slot 3.	The Multi-Part Plug-in board does not work because it has not been installed to slot 3. The Multi-Part Plug-in board should be installed to slot 3.
+No data.	When a Song/Pattern Job is executed, the selected track or range contains no data. Select an appropriate track or range. In addition, this message appears when a Job related to a Mixing Voice cannot be executed because the specified Mixing Voice is not available. 
+No DIMM Memory Installed.	An appropriate pair of expansion DIMMs is not properly installed, or the pair is not properly matched (page 289).
+No F7 (End of Exc.)	Exclusive data has been entered or changed without the necessary “End of Exclusive” byte (F7). Make sure F7 is included.
+No response from USB device.	There is no response from the USB device connected to the USB TO DEVICE terminal.
+No sample data.	This message appears when a sample-related Job cannot be executed because the specified sample is not available. 
+Not empty folder.	You have attempted to delete a folder that contains data.
+Now checking plug-in board.	The MOTIF ES is checking the Plug-in board installation status during power-on.
+Now loading... (xxxx).	Indicates that a file is being loaded.
+Now saving... (xxxx).	Indicates that a file is being saved.
+Now scanning auto loaded files.	Scanning for the files specified for Auto Load.
+Now working...	Executing the memory arrangement after finishing Sampling or canceling the Load/Save operation by pressing the [EXIT] button. 
+Overwrite? [YES]/[NO].	A save operation will overwrite data on the SmartMedia/USB storage device, and this message confirms whether it is OK to continue or not. Press [INC/YES] or [DEC/NO] as required.
+Pattern length mismatch.	A Pattern Job will result in the length of a Pattern being greater than 256 measures.
+Phrase length mismatch.	A Pattern Job will result in the length of a phrase being greater than 256 measures.
+Phrase number overflow.	The maximum number of phrases (256) has been exceeded when recording, executing a Pattern Job, or editing.
+Please keep power on.	"The data is being written to Flash ROM.  Never attempt to turn off the power while data is being written to Flash ROM. Turning the power off while this message is shown results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This may also result in the MOTIF ES  being unable to properly start up the next time the power is turned on."
+Please stop sequencer.	The operation you’ve attempted to execute cannot be done during Song/Pattern playback. 
+PLG100 not supported.	The Plug-in All Bulk Save function does not apply to the PLG100 series boards.
+Plug-in1 communication error.	The Plug-in board that has been installed to slot 1 does not work.
+Plug-in1 type mismatch.	The User Voice created by using the Plug-in board previously installed to slot 1 (but now removed from the slot) has been selected.
+Plug-in2 communication error.	The Plug-in board that has been installed to slot 2 does not work.
+Plug-in2 type mismatch.	The User Voice created by using the Plug-in board previously installed to slot 2 (but now removed from the slot) has been selected.
+Plug-in3 communication error.	The Plug-in board that has been installed to slot 3 does not work.
+Plug-in3 type mismatch.	The User Voice created by using the Plug-in board previously installed to slot 3 (but now removed from the slot) has been selected.
+Power on mode stored.	The setting of the program number automatically selected when turning the power on has been stored. 
+Receiving MIDI bulk.	The MOTIF is receiving MIDI bulk data.
+Sample freq is too low.	The sampling frequency is too low and the Frequency Convert Job cannot be executed.
+Sample is protected.	The sample cannot be overwritten because it is protected. 
+Sample is too long.	The sample size is too large and the Time Stretch Job cannot be executed.
+Sample is too short.	The sample length is too short and the Frequency Convert Job cannot be executed.
+Sample memory full.	The sample memory is full and further sampling operations, Jobs, or load operations cannot be executed.
+Scene and Arpeggio type stored.	The Song Scene and current Arpeggio type has been stored to one of the [SF1] to [SF5] buttons. 
+Seq memory full.	The internal memory for Sequence data is full, preventing any further operation (such as recording, editing, Job execution, MIDI reception/transmission, or loading from the SmartMedia/USB storage device). Try again after erasing unwanted Song, Pattern, or User phrase data.
+System memory crashed.	Writing data to Flash ROM has failed. 
+This performance uses user voices.	The performance you have loaded includes User voice data. Check whether the voice you saved exists at the appropriate User voice bank.
+Too many favorites.	You’ve attempted to assign more than 257 voices to the Favorite category.
+Too many fixed notes.	When converting the song or pattern data to the Arpeggio data, the amount of different notes in the data to be converted has exceeded sixteen. 
+Too many samples.	The maximum overall number of samples (8192) has been exceeded.
+Transmitting MIDI bulk. 	The MOTIF ES is transmitting MIDI bulk data.
+USB connection terminated. Press [ENTER].	A break in the connection with the USB storage device has occurred because of an abnormal electric current.  Disconnect the USB storage device from the USB TO DEVICE connector, then press the [ENTER] button. 
+USB device connecting.	Recognizing the USB storage device connected to the USB TO DEVICE terminal. 
+USB power consumption exceeded. 	The power consumption of the USB storage device connected to the USB TO DEVICE connector exceeds the regulated value. 
+USB transmission error.	An error occurs when communicating with the USB storage device.
+Utility stored.	The settings in the Utility mode have been stored. 
+
+
+This is the end of the file.

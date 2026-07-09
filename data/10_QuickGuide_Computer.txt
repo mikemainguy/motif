@@ -1,0 +1,391 @@
+Quick Guide -- Computer applications.
+
+Although the MOTIF ES is a powerful instrument in its own right and can effectively be used by itself for music creation and production, it is also designed for easy and comprehensive interfacing with a computer system.  In this section, we'll show you how set up the instrument with a computer (via USB) and how to use it with the software provided on the included CD-ROM, "Tools for MOTIF ES."
+
+NOTE.	
+For information on how to install each software and the minimum system requirements, refer to the separate Installation Guide. 
+NOTE.	
+About how to use each software, refer to the relevant documentation (PDF manual or on-line Help). 
+NOTE.	
+By installing an optional mLAN16E board and using the mLAN connection with your computer, you can transfer both audio and MIDI data between the devices over the same mLAN cable. See page 39. 
+
+Setting up.
+1.	Confirm the minimum system requirements of the software you wish to use.
+  For software on the included "Tools for MOTIF ES" CD-ROM (Voice Editor, USB MIDI driver, etc.), refer to the separate Installation Guide.
+ 
+  For other software, refer to the relevant manual or documentation. 
+2.	Connect the computer to the instrument with a USB cable.
+<Figure>
+USB connector.
+A type.
+USB TO HOST connector.
+B type.
+
+NOTE.	
+You can also connect the instrument to a computer by using MIDI cables (page 40) or IEEE1394 cable (page 39).
+
+3.	Start the computer and insert the "Tools for MOTIF ES" CD-ROM into the CD drive of the computer. 
+4.	Turn the power of the MOTIF ES on. 
+5.	Install the USB MIDI driver to the computer.
+  For a computer running Windows, the Add New Hardware Wizard may appear on the computer display. In this case, install the driver following the on-screen instructions. For details, refer to the separate Installation Guide. 
+  For a Macintosh computer, install OMS then install the USB MIDI driver. Refer to the separate Installation Guide.
+
+NOTE.	
+If you have installed the optional mLAN16E and are connecting the instrument to a computer with an IEEE 1394 cable, you'll need to install the mLAN driver.
+
+6.	Install the desired software to the computer.
+  To install software from the included "Tools for MOTIF ES" CD-ROM (Voice Editor, SQ01, etc.), refer to the separate Installation Guide.
+  To install other software, refer to the relevant manual or documentation.
+7.	Set the MIDI IN/OUT parameter to "USB" ([UTILITY] -> [F5] MIDI -> [SF4] OTHER), then press the [ENTER] button to store the Utility settings.
+
+<CAUTION>
+The settings in the Utility mode are stored as system settings to internal Flash ROM. Never attempt to turn off the power while data is being written to Flash ROM (while a "Please keep power on" message is shown). Turning the power off in this state results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This may also result in the MOTIF ES  being unable to properly start up the next time the power is turned on.
+
+Controlling the instrument from a computer.
+Using a sequencer to play multiple Voices on the MOTIF ES.
+The sequence software program SQ01 contained in the included CD-ROM lets you create and edit multi-part song data -- which can be played using the sounds of the MOTIF ES.
+1.	Follow the instructions described in "Setting up for using a computer" (page 142) then install the SQ01 to the computer. 
+Refer to the separate Installation Guide.
+2.	Start the SQ01 on the computer then set all MIDI-related parameters, including synchronization.
+For details on the MIDI settings, refer to the separate Installation Guide.
+For details on synchronization settings, refer to the on-line help of the SQ01. 
+3.	Open the desired song file on the SQ01. 
+From the "File" menus on the SQ01, select "Open" to call up the dialog box. Then select the desired song file. 
+4.	Set the MIDI Sync parameter to "MIDI" and SeqCtrl to "in" in the SYNC display ([UTILITY] -> [F5] MIDI -> [SF3] SYNC).
+These settings make it possible for the Songs and Patterns on the MOTIF ES to start, play and stop in exact synchronization with the external controlling device (in this case, the computer sequencer).
+5.	Press the [SONG] button to enter the Song mode.
+6.	Start the song playback on the SQ01. 
+Click the [>] (Play) button on the SQ01 to start the selected  song. 
+
+[TIP]	Recording sequencer song data to Song tracks on the MOTIF ES
+If you have MIDI sequence data on your computer and want to use it as a Song on the MOTIF ES, you can play back the data on a MIDI sequencer (such as the SQ01) and record it to the MOTIF ES.
+1.	Follow the instructions described in "Setting up for using a computer" (page 142).
+2.	Start the SQ01 on the computer then set all MIDI-related parameters, including synchronization.
+	For details on the MIDI settings, refer to the separate Installation Guide.
+	For details on synchronization settings, refer to the on-line help of the SQ01. 
+3.	Open the desired song file on the SQ01. 
+	From the "File" menus on the SQ01, select "Open" to call up the dialog box. Then select the desired song.
+4.	Set the MIDI Sync parameter to "MIDI" and the SeqCtrl to "in" in the SYNC display ([UTILITY] -> [F5] MIDI -> [SF3] SYNC).
+	These settings make it possible for the Songs and Patterns on the MOTIF ES to start, play and stop in exact synchronization with the SQ01.
+5.	Press the [SONG] button to enter the Song Play mode, then select a Song to be recorded. 
+6.	Press the [ ] (Record) button to enter the Song Record mode. 
+7.	Set RecTrack to "multi." 
+	This setting makes it possible to record MIDI sequence data to 16 tracks simultaneously. 
+8.	Start song playback on the SQ01. 
+	Song recording on the MOTIF ES automatically starts at the same time. 
+9.	Stop the song playback on the SQ01. 
+	Song recording on the MOTIF ES automatically stops at the same time. 
+10.	 Save the recorded song on the MOTIF ES. 
+	Before selecting a different Song, store the Mixing settings as Song data (page 131). 
+	Before turning the power off, save the recorded Song to a SmartMedia/USB storage device (page 132). 
+
+Using the Multi Part Editor to create/edit Mixing settings.
+The Multi Part Editor software (included on the CD-ROM) provides an intuitive way to create and edit the Mixing settings of the currently selected Song or Pattern. Thanks to the easy-to-understand graphical interface, you can edit virtually all of the Mixing parameters right from your computer Ð using the mouse to adjust the virtual knobs, sliders, and buttons and entering values from the computer keyboard. 
+<Figure>
+Edit the Mixing.
+Save a set of Mixing settings as a single file.
+To edit Mixing settings based on data saved to computer, make sure to transfer the Mixing data to the current Song/Pattern on the MOTIF ES (with the Bulk Transmission function) before editing.
+To edit Mixing settings based on data contained on the MOTIF ES, make sure to transfer the Mixing data of the current Song/Pattern to the computer (with the Bulk Dump function) before editing.
+After storing the Mixing settings as a Song Mixing/Pattern Mixing, save all the Songs/Patterns.
+
+NOTE.	
+If you want to assign a User Voice to a Part, make sure to transfer the User Voice data on the MOTIF ES to the computer (with the Bulk Dump function) before editing parameters on the Multi Part Editor.
+NOTE.	
+Parts to which Mixing Voices have been assigned cannot be edited with the Multi Part Editor. 
+
+1.	Follow the instructions described in "Setting up for using a computer" (page 142) then install the Multi Part Editor to the computer. 
+For details about how to install the Multi Part Editor, refer to the separate Installation Guide.
+2.	Enter the Song mode or Pattern mode on the MOTIF ES, then select the desired Song or Pattern. 
+3.	Start the Multi Part Editor on the computer. 
+Refer to the PDF manual of the Multi Part Editor. 
+4.	Set the MIDI related parameters on the Multi Part Editor.
+Refer to the PDF manual of the Multi Part Editor. 
+5.	Edit the parameters on the Multi Part Editor to create your original Mixing.
+Refer to the PDF manual of the Multi Part Editor. 
+6.	Check the results of your edits by playing the Song/Pattern or playing the keyboard on the MOTIF ES. 
+7.	Store the edited Mixing settings to the current Song Mixing/Pattern Mixing.
+Press the [MIXING] button then [STORE] button to enter the Song Mixing mode/Pattern Mixing mode, then press the [ENTER] button to execute the Store operation. 
+8.	Save all the songs or patterns to a SmartMedia/USB storage device.
+
+NOTE.	
+You can store the settings as a Mixing Template. See page 132. 
+
+9.	Also save the edited data as a Multi Part Editor file to your computer's hard disk.
+
+Using the Voice Editor to create/edit a Voice.
+The Voice Editor software (included on the CD-ROM) provides an intuitive way to create and edit Voices for the MOTIF ES. Thanks to the easy-to-understand graphical interface, you can edit virtually all of the Voice parameters right from your computer Ð using the mouse to adjust the virtual knobs, sliders, and buttons and entering values from the computer keyboard. 
+<Figure>
+Edit the Voice.
+Use the Bulk Transmission function to transfer the edited Voice data (in a Voice bank) to the MOTIF ES.
+Use the Bulk Receive function to transfer the specified User Voice bank from the MOTIF ES to the computer.
+Save the result of editing as a Library file (extension: W7E).
+Load a Library file (extension: W7E).
+Library file equal Voice Editor file (extension: W7E)
+All voices stored on internal User memory are saved to a single file which can be loaded to the Voice Editor on the computer.
+Load a Voice Editor file (extension: W7E).
+Save the result of editing as a Voice Editor file (extension: W7E).
+
+1.	Follow the instructions described in "Setting up for using a computer" (page 142) then install the Voice Editor to the computer.
+For details about how to install the Voice Editor, refer to the separate Installation Guide.
+2.	Enter the Voice mode on the MOTIF ES, then start the Voice Editor on the computer.
+Refer to the PDF manual of the Multi Part Editor. 
+3.	Set the MIDI related parameters on the Voice Editor.
+Refer to the PDF manual of the Voice Editor. 
+4.	Call up the Voice data to be edited on the Voice Editor. 
+Create a new Library file or open an existing Library file. To edit data contained on the MOTIF ES, use the Bulk Receive function to transfer User Voice data to the computer.
+For details, refer to the PDF manual of the Voice Editor. 
+5.	Edit the parameters on the Voice Editor to create your original Voice. 
+Refer to the PDF manual of the Voice Editor. 
+6.	After editing the Voice, store the data, then transfer it to the MOTIF ES with the Bulk Transmission function on the Voice Editor. 
+Refer to the PDF manual of the Voice Editor. 
+
+<CAUTION>
+The Bulk Transmission from the computer to the MOTIF ES will erase (overwrite) the destination Voice Bank data on the MOTIF ES. If you wish to maintain the voices of the destination Bank, save the Voice data to a SmartMedia/USB storage device before executing Bulk Transmission. 
+
+7.	Save the edited data as a Library file to your computer's hard disk.
+8.	Check the results of your edits by selecting the User Voice and playing the keyboard in the Voice Play mode. 
+
+Editing Plug-in Voices and Board Voices.
+As described on page 76, the voices of a Plug-in Board installed to the MOTIF ES can be divided into two types: Board voices and Plug-in voices. Plug-in Voices can be edited in the Voice Edit mode on the MOTIF ES or can be edited by using the Voice Editor on the computer. Board Voices, however, are edited using the dedicated editor software contained on the included CD-ROM, "TOOLS for Modular Synthesis Plug-in System."
+<Figure>
+Edit in the Voice Play mode/Voice Edit.
+Use the Voice Editor contained in the included CD-ROM, "TOOLS for MOTIF ES6/7/8."
+* Set the file type to Plugin All Bulk 1, 2 or 3 (file extension: W2B)
+Use the dedicated Editor contained in the included CD-ROM, "TOOLS for Modular Synthesis Plug-in System.".
+
+
+Using the TWE Wave Editor to edit Samples.
+The TWE wave editing software (included on the CD-ROM) lets you edit audio on your computer and save them as samples for use with the MOTIF ES. Thanks to the easy-to-understand graphical interface, you can edit virtually all of the wave parameters right from your computer. 
+<Figure>
+Edit the Wave using TWE.
+Save the result of editing as a WAV file or AIFF file.
+Load a WAV file or AIFF file.
+Load a WAV file or AIFF file (page 100).
+Save the sample as a WAV file or AIFF file (page 97).
+
+NOTE.	
+For details on how to install TWE and the minimum system requirements, refer to the separate Installation Guide. 
+NOTE.	
+For information on how to use TWE, refer to the TWE manual (PDF format) on the CD-ROM.
+
+
+Controlling a computer from the instrument.
+As you've seen in previous sections, the MOTIF ES can be controlled from a computer.  In this section, we'll see how it can do the opposite -- control the operation of music/audio software on the computer.  This powerful feature lets you control two different software programs by using knobs, sliders and buttons on the panel of the MOTIF ES, rather than your computer's mouse and keyboard.  The MOTIF ES can be used to control DAW (digital audio workstation) software, such as Cubase SX and SONAR, as well as the Multi Part Editor program (contained on the included CD-ROM).  The Remote Control function emulates popular hardware controllers such as the Yamaha 01X, letting you use the panel buttons/controllers on the MOTIF ES for controlling your music/audio software.
+As shown in the example below, the MOTIF ES uses two of the four available USB ports to control two different software programs, while the two remaining ports handle MIDI sequence data.  
+<Figure>
+Press the REMOTE [ON/OFF] button (the lamp flashes) to enter the Remote Control mode. Press this button again to exit from the Remote Control mode.
+Mode A- Cubase, Port 4....Panel operations on the MOTIF ES control sequencer (Cubase SX) functions on the computer via MIDI port 4.
+Mode B- General, Port 3....Panel operations on the MOTIF ES control mixing software (Multi Part Editor) functions on the computer via MIDI port 3. The "General" mode setting lets you control Yamaha software.
+Change the software (port) to be controlled.
+The MIDI data played back by the Cubase SX is transferred to the MOTIF ES via the MIDI ports 1 and 2.
+The functions of eight knobs/faders on the emulated hardware controllers (such as the Yamaha 01X) are assigned to the four Knobs/Sliders on the MOTIF ES. Pressing the [SF5] button changes which group's functions (1 to 4 or 5 to 8) are assigned to the four Knobs/Sliders.
+The eight knobs on the emulated hardware controllers (such as the Yamaha 01X) can also be used as switches. However, since the four Knobs on the MOTIF ES do not have switch capability, the [PRE1] to [PRE4] buttons are used instead. While the eight knobs on the emulated devices have "endless" rotary control, the four Knobs on the MOTIF ES stop at certain points. For some parameters this may mean that the value may not reach to the minimum and maximum points. If this occurs, you can use the data dial to adjust the value as desired. The data dial is active for the parameter corresponding to the Knob last turned.
+Among other things, the Remote Control mode lets you start/stop the playback of the DAW software on the computer by using the SEQ TRANSPORT buttons and control the song position on the DAW software by using the data dial, [INC/YES] and [DEC/NO] buttons. For more information about the functions assigned to the panel buttons in the Remote Control mode, see page 151.
+Various functions are assigned to the [F1] to [F6] and [SF1] to [SF5] buttons depending on the DAW software to be controlled. The assigned functions are shown at the bottom of the display. For details, see page 151 and the separate Data List.
+NOTE	
+As with the USB connection explained here, Remote Control can also be used with an IEEE1394 cable connection when the optional mLAN16E has been installed.
+
+
+Computer Software that can be controlled from the instrument.
+  For Windows.
+SQ01 V2.
+Cubase SX.
+SONAR 2.0.
+Multi Part Editor for MOTIF-RACK.
+Multi Part Editor for MOTIF ES6/7/8.
+  For Macintosh.
+Logic 5.5.
+Digital Performer 3.1.
+
+Setting up for Remote Control.
+Setting up on the MOTIF ES.
+
+1.	Set the MIDI IN/OUT parameter to "USB" ([UTILITY] -> [F5] MIDI -> [SF4] OTHER),  When connecting the computer to the MOTIF ES via mLAN (with the optional mLAN16E installed), set this parameter to "mLAN." 
+2.	Call up the Remote Control Setup display by pressing the [F4] CTL ASN button, followed by the [SF4] REMOTE button. 
+3.	Set the software to be controlled and Port number, referring to the illustration on the previous page. 
+4.	Press the [ENTER] button to actually call up the settings made in step No.3 above.
+5.	Press the [STORE] button to store the settings made in steps No.1 and 4 above.
+
+<CAUTION>
+The settings in the Utility mode are actually stored on internal User memory (Flash ROM) by pressing the [STORE] button. Please keep in mind that the settings will be lost if you turn off the power without executing the Store operation.
+<CAUTION> 
+The settings in the Utility mode are stored as system settings to internal Flash ROM. Never attempt to turn off the power while data is being written to Flash ROM (while a "Please keep power on" message is shown). Turning the power off in this state results in loss of all user data and may cause the system to freeze (due to corruption of data in the Flash ROM). This may also result in the MOTIF ES  being unable to properly start up the next time the power is turned on.
+
+Setting up on the computer.
+1.	After following the instructions in "Setting up for using a computer" on page 147, install the desired software to your computer.
+For details on the Yamaha software contained in the included CD-ROM, refer to the separate Installation Guide. 
+2.	Enter the Song mode or Pattern mode on the MOTIF ES, then start the software on the computer. 
+For instructions on how to start the software, refer to the relevant documentation. 
+3.	Set the parameters related to MIDI and Remote Control on the computer software.
+Set the MIDI port, referring to the illustration on the previous page. 
+For details, refer to the documentation of the particular software.  Instructions on how to set up the various software follow on the next page.
+
+Cubase SX.
+1.	Pull down the [Devices] menu and select [Device Setup] to call up the "Device Setup" window. 
+2.	Click the [Add/Remove] tab and add the "Mackie Control." 
+3.	Select the added Mackie Control device and click the [Setup] tab. 
+4.	When setting the Port to "4," for example, in step No.3 of "Setting up on the MOTIF ES," set the MIDI Input to "YAMAHA USB IN 0-4" and the MIDI Output to "YAMAHA USB OUT 0-4."
+
+NOTE.	
+The functions of buttons on the Mackie Control are assigned to the buttons of the MOTIF ES, with the exception of UserA and UserB (FootSw) which are not supported by the MOTIF ES. 
+
+SONAR.
+1.	Pull down the [Options] menu and select [MIDI Devices] to call up the "MIDI Devices" window. 
+2.	When setting the Port to "4" for example in step No.3 of "Setting up on the MOTIF ES," add "YAMAHA USB IN 
+0-4" to the "Inputs" and add "YAMAHA USB OUT 0-4" to the "Outputs."
+3.	Pull down the [Options] menu and select [Control Surfaces] to call up the Control Surface window. 
+4.	Click the "New" icon, select "Mackie Control," then set the Input Port to "YAMAHA USB IN 0-4" and the Output Port to "YAMAHA USB OUT 0-4" (for example, when setting the Port to "4" in step No.3 of "Setting up on the MOTIF ES"). 
+
+Digital Performer.
+1.	Pull down the [Basics] menu and select [Control Surface Setup] to call up the "Control Surface" window. 
+2.	Select "Mackie Control" in the Driver section. 
+	If Mackie Control is not available here, see the supplementary instructions below.
+3.	In the box for setting "Unit" and "MIDI," select "Mackie Control" in the "Unit" section and select the MIDI port in the "MIDI" section. 
+When you cannot select "Mackie Control" in step No.2:
+ 
+1)	Download the Mackie Control Plug-in software from "www.motu.com" and save it to your hard disk. 
+2)	Move the Mackie Control file to the "Plug-ins" folder contained in the folder to which Digital Performer has been installed. 
+3)	Start Digital Performer. 
+* Mackie Control is the trademark of Mackie Designs, Inc.
+
+Logic.
+When turning on the power of the MOTIF ES before starting Logic:
+1.	Set the software to be controlled to "Logic" in the Utility mode, then enter the Remote Control mode. 
+2.	Start Logic on the computer. 
+	Logic automatically recognizes the MOTIF ES and performs the required settings. 
+
+When starting Logic before turning on the power of the MOTIF ES:
+1.	Start Logic on the computer, then turn the power to the MOTIF ES on. 
+	If you have already set the software to be controlled to "Logic" in the Utility mode, you need not perform step No.2 because Logic automatically recognizes the MOTIF ES when this step is performed.
+2.	Set the software to be controlled to "Logic" in the Utility mode, then enter the Remote Control mode. 
+	Logic automatically recognizes the MOTIF ES and performs the required settings. 
+If for some reason Logic fails to recognize the MOTIF ES,  follow the instructions below. 
+1)	Select [Option] -> [Preference] -> [Control Surface] -> [Install] from the menu. 
+2)	Scan Logic Control on the window called up in step No.1). 
+	When the scanning is successful, the Logic recognizes the MOTIF ES and performs the required settings automatically. 
+If Logic still fails to recognize the MOTIF ES even after performing the above instructions, follow the instructions below. 
+1)	Select [Option] -> [Preference] -> [Control Surface] -> [Install] from the menu. 
+2)	Add Logic Control on the window called up in step No.1). 
+3)	Specify the Input Port and Output Port on the CONTROL SURFACE SETUP window called up in step No.2). 
+* Logic Control is the registered trademark of Emagic, Inc.
+
+SQ01.
+For information about how to set the MIDI port, refer to the separate Installation Guide. For information on using Remote Control, follow the instructions below. 
+1.	Select [Setup] -> [Remote Control] to call up the Remote Control Setup window. 
+2.	Select "01X" as mode, then set the Input Device/Output Device to the appropriate port number. 
+
+Functions assigned to the panel buttons in the Remote Control mode.
+To enter the Remote Control mode, press the REMOTE [ON/OFF] button (the lamp flashes).  The REMOTE display appears (like those shown below), and the panel controls are enabled for Remote operation of the computer software (their normal functions are disabled).
+Press this button again to exit from the Remote Control mode.   
+<Figure>
+This button is available when the Mode is set to "General" and is used to switch between editing audio tracks (lamp is red) and MIDI tracks of the sequence software (lamp is green).
+Changing the Mode (Changing the software to be controlled)
+Change the Mode by pressing the REMOTE [ON/OFF] button while holding the [F6] SHIFT button.
+Press the [KNOB CONTROL FUNCTION] button to change the functions assigned to the [F1] to [F6] and [SF1] to [SF5] buttons (shown at the bottom of the display). Refer to the separate Data List.
+This is the cursor which indicates the currently edited track/part by the knob/slider.
+Controlling the knob/slider moves the cursor to the corresponding track/part automatically. You can also move the cursor by using the Cursor [left] and [right] buttons.
+Parameters and their values controlled by knobs/sliders are shown in two rows, in the boxes.
+
+NOTE.	Parameter names are shown according to the information transferred from the DAW software on the computer. The characters may be garbled depending on the DAW software or OS language of your computer.
+
+Controlling the knob may change the [SF4] menu to indicate [DIAL]. When [DIAL] is shown here, the function of the last operated knob is assigned to the data dial, [INC/YES] and [DEC/NO] buttons. If you wish to restore these to the original function (song position control), press the [SF4] button to delete the [DIAL] menu.
+When [<<BANK] and [BANK>>] are shown here, you can use the [F4] and [F5] buttons to change the bank of eight tracks/parts (shown in the display) to be controlled.
+To switch the cursor between the upper and lower row, press the [SF5] button.
+
+
+The following explains which sequencer functions are assigned to which panel controls in the Remote Control mode. 
+
+SEQ TRANSPORT buttons.
+The Remote Control mode lets you start/stop playback of the DAW software on the computer by using the SEQ TRANSPORT buttons and control the song position on the DAW software by using the data dial, [INC/YES] and [DEC/NO] buttons. 
+
+NOTE.	
+When the cursor is shown at any track/part in the boxes of two rows of the LCD display, the data dial, [INC/YES] and [DEC/NO] buttons function as the last operated knob and cannot be used to control the song position. To restore these to the original song position control, press the Cursor [left]/[right] buttons several times or press the [SF4] button (if the [DIAL] menu is shown) to delete the cursor. 
+
+Knob, Data dial, and [PRE1] to [PRE4] buttons.
+The functions of eight knobs on the emulated hardware controllers (such as the Yamaha 01X) are assigned to the four Knobs on the MOTIF ES. Pressing the [SF5] button changes which group's functions (1 to 4 or 5 to 8) are assigned to the four Knobs. When [<<BANK(left)] and [BANK>>(right)] are shown in the display, you can use the [F4] and [F5] buttons to change the bank of eight tracks/parts (shown in the display) to be controlled.
+The eight knobs on the emulated hardware controllers (such as the Yamaha 01X) can also be used as switches. However, since the four Knobs on the MOTIF ES do not have switch capability, the [PRE1] to [PRE4] buttons are used instead. For convenience, the switch function corresponding to the last Knob operated is also assigned automatically to the [ENTER] button.
+While the eight knobs on the emulated devices have "endless" rotary control, the four Knobs on the MOTIF ES stop at certain points. With some parameters this may mean that the value may not reach to the minimum and maximum points. If this occurs, you can use the data dial to adjust the value as desired. For convenience, the data dial is active for the parameter corresponding to the Knob last turned.
+
+NOTE.	
+To restore the function of the data dial, [INC/YES] and [DEC/NO] buttons to the original song position control, press the [SF4] button (if the [DIAL] menu is shown) to delete the cursor. 
+
+Control Sliders.
+The functions of eight faders on the Mackie Control, Logic Control and 01X are assigned to the four Sliders on the MOTIF ES. Pressing the [SF5] button changes which group's functions (1 to 4 or 5 to 8) are assigned to the four Sliders. When [<<BANK(left)] and [BANK>>(right)] are shown in the display, you can use the [F4] and [F5] buttons to change the bank of eight tracks/parts (shown in the display) to be controlled. 
+
+[F1] to [F6] buttons and [SF1] to [SF5] buttons.
+The functions assigned to these buttons depends on the selected Mode (A or B) and the particular software being used (as set in step No.3 in "Setting up on the MOTIF ES" on page 148).
+When the Mode is set to "General," these buttons are assigned to perform the same functions as panel buttons on the Yamaha 01X, for controlling various Yamaha music/audio software.  The corresponding names of the 01X panel buttons are also indicated at the bottom of the display of the MOTIF ES.
+When the Mode is set to "Logic," these buttons are assigned to perform the same functions as panel buttons on the Logic Control, for controlling Logic on the computer.  The corresponding names of the Logic Control panel buttons are also indicated at the bottom of the display of the MOTIF ES.
+When the Mode is set to "Cubase" or "SONAR" or "D.Perf," these buttons are assigned to perform the same functions as panel buttons on the Mackie Control, for controlling the corresponding software on the computer.  The corresponding names of the Mackie Control panel buttons are also indicated at the bottom of the display of the MOTIF ES.
+The function assignment can be changed by pressing the [KNOB CONTROL FUNCTION] buttons. 
+The function assignment tables of the [F1] to [F6] buttons and [SF1] to [SF5] buttons for each DAW software are contained in the separate Data List. 
+
+NOTE.	
+Among the functions assigned to the [F1] to [F6] buttons and [SF1] to [SF5] buttons, the functions indicated with brackets (such as [DIAL]) are not related to the Mackie Control, Logic Control and 01X but are unique to the MOTIF ES. 
+
+Data dial, [INC/YES] and [DEC/NO] buttons.
+Although the data dial and [INC/YES]/[DEC/NO] buttons are generally to change the song position on the DAW software, when you turn one of the Knobs on the MOTIF ES, the control function assigned to that Knob is automatically assigned to these panel controls as well, and the [DIAL] menu appears (at the [SF4] button).  In this condition, these controllers cannot be used to control the song position. To restore the function of the data dial, [INC/YES] and [DEC/NO] buttons to the original song position control, press the [SF4] button (if the [DIAL] menu is shown) to delete the [DIAL] menu. 
+
+Cursor [left] and [right] buttons.
+By moving the cursor left/right, you can change the track or part to controlled by the data dial and [INC/YES]/[DEC/NO] buttons.  For example, when the cursor is at the upper box in the display, pressing the Cursor [right] button moves through the columns in succession (1, 2, 3, 4...).  After 4, the cursor is hidden and wraps around to 1. When the cursor is shown in the display, the parameter at which the cursor is located can be edited by the data dial, [INC/YES] and [DEC/NO] buttons. When the cursor is hidden, the data dial and [INC/YES]/[DEC/NO] buttons can be used for their normal function -- controlling the song position.
+
+Cursor [up] and [down] buttons.
+When the Mode is set to "General," the Cursor [up]/[down] buttons perform the same function as that of the DISPLAY [up]/[down] buttons on the 01X.  
+When the Mode is set to something other than "General," the Cursor [up]/[down] buttons perform the same function as that of the Cursor [up]/[down] buttons on the Mackie Control and Logic Control.
+
+[EXIT] button.
+When the Mode is set to "General," this button performs the same function as that of the [PAGE SHIFT] button on the 01X.  When the Mode is set to something other than "General," the button has no control function.
+BANK, GROUP and NUMBER button
+These buttons are assigned to perform the same functions as the buttons directly over the faders on the 01X, Mackie Control and Logic Control.
+
+<Table>
+[PRE1] to [PRE4] buttons.	The eight knobs on the 01X, Mackie Control and Logic Control can also be used as switches.  However, since the four Knobs on the MOTIF ES do not have switch capability, the [PRE1] to [PRE4] buttons are used instead. 
+[PRE5] to [PLG3] buttons.	The functions of the eight [REC/RDY] buttons on the Mackie Control and Logic Control are assigned to these buttons. Please note that these buttons are not available when the Mode is set to "General."
+[A] to [H] buttons.	The functions of the eight [SOLO] buttons on the Mackie Control and Logic Control are assigned to these buttons. Please note that these buttons are not available when the Mode is set to "General." 
+[1] to [8] and [TRACK SELECT] buttons.	When the Mode is set to "General," the functions of the nine [SEL] buttons on the 01X are assigned to these buttons. When the Mode is set to something other than "General," the functions of the eight [MUTE] buttons on the Mackie Control and Logic Control are assigned to the [1] to [8] buttons. 
+[9] to [16] and [MUTE] buttons.	When the Mode is set to "General," the functions of the nine [ON] buttons on the 01X are assigned to these buttons. When the Mode is set to something other than "General," the functions of the eight [SELECT] buttons on the Mackie Control and Logic Control are assigned to the [9] to [16] buttons. 
+
+
+Checking the Remote Control assignments.
+If you're unsure as to which software function has been assigned to a particular panel control on the MOTIF ES, this convenient feature lets you quickly check it from the display.
+1.	In the Remote Control mode, press the [INFORMATION] button to call up the information display, indicating the function of the last pressed button. 
+2.	Press the button for which you want to check the assignment.
+	This display shown above appears when you press the [>] (Play) button of SEQ TRANSPORT. In this way, you can check each button's control assignment simply by pressing it.
+3.	Press the [INFORMATION] button again to return to the Remote Control mode. 
+
+NOTE.	
+While the Information display is shown, the panel buttons cannot be used to control the computer software. 
+
+
+Recording the sounds of the MOTIF ES to computer via mLAN.
+By using the optional mLAN16E interface and an IEEE 1394 cable connection, you can record multitrack audio from the MOTIF ES to an mLAN-compatible DAW (digital audio workstation) program on your computer.  This lets you transfer the audio data of multi-part Songs on the MOTIF ES to the DAW application for further editing and storage on your computer's hard disk drive.  
+In the example instructions below, Song playback and/or your keyboard performance in the Song mode can be recorded to the computer, on separate tracks of the DAW application.
+<Figure>
+Audio signal of the MOTIF ES sound.
+
+Setup for connecting the computer to the MOTIF ES via mLAN.
+
+Setup on the MOTIF ES.
+1.	Install the optional mLAN16E to the MOTIF ES (page 288). 
+2.	After turning the power on, set the MIDI IN/OUT parameter to "mLAN" ([UTILITY] -> [F5] MIDI -> [SF4] OTHER).
+3.	Press the [SONG] button to enter the Song mode and select the desired Song for playback, or the particular Mixing settings you want to use.
+4.	Set the mLAN MonitorSw parameter to "on" ([UTILITY] -> [F2] I/O -> [SF2] OUTPUT).
+	When this parameter is set to on, the audio signal output via mLAN to the computer is also output to the external audio equipment via the main OUTPUT L/MONO and R jacks. This allows you to monitor the sound going to the computer with a set of headphones.
+5.	Determine the Output connector or channel of audio signal for each part. 
+Make the desired OutputSel parameter settings ([SONG] -> [MIXING] -> [EDIT] -> Part selection -> [F2] OUTPUT -> [SF3] SELECT). For example, set the OutputSel parameter for Part 1 to "as 1 and 2," Part 2 to "as 3 and 4," and Part 3 to "as 5 and 6."
+	These settings (as 1 and 2, as 3 and 4, etc.) indicate the hardware output jacks on the optional AIEB2, when the device has been installed.  When the mLAN16E is installed, these indicate the different audio channels within the single mLAN connection.
+
+Setup on the computer.
+1.	Connect the computer to the MOTIF ES using an IEEE1394 cable. 
+2.	Install all necessary software to the computer, including the mLAN driver.
+	Refer to the relevant documentation for the mLAN16E. 
+3.	Install an mLAN-compatible audio sequencer or DAW application to the computer.
+	Refer to the separate Installation Guide for information on how to install mLAN-compatible Yamaha applications.
+4.	Set the audio related parameters on the DAW software. 
+	Refer to the relevant documentation for the particular software.
+
+Executing the Hard Disk Recording.
+After completing the setup described above, try out to record your keyboard performance to the hard disk of the computer by using the DAW software. For details about how to execute this, refer to the re
+
+
+This is the end of the file.

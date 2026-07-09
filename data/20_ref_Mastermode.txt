@@ -1,0 +1,143 @@
+Master mode.		
+		
+Creating Masters - basic procedure.		
+The Master mode lets you play and edit special program combinations called "Masters." A Master can contain up to four different Voices or Performances, each assigned to a separate MIDI "Zone." Alternately, it can contain specific Songs or Patterns. As such, it lets you set up the instrument just as you need for live performance, switching through the Masters in order as you need them. To create a Master, set the various parameters below in the Master Play and Master Edit modes.  Use the Master Job mode to initialize data or transfer it to another device. Once you've edited a Master, you can store it to a User Bank in internal memory (Flash ROM) and save all the edited Masters to a SmartMedia/USB storage device in the File mode.		
+		
+		
+Master Play mode.		[MASTER] -> Master selection.
+The Master Play mode lets you perform a variety of general editing operations on the selected Master. For more detailed and comprehensive editing operations, use the Master Edit mode. Edited parameters with the exception of some parameters are stored to internal Flash ROM as a User Master. 		
+		
+[F1] PLAY.		
+	OCT (Octave).	Indicates Keyboard Octave setting set via the [OCTAVE] buttons.  This can be changed also with the following operation: [UTILITY] -> [F1] GENERAL -> [SF2] KBD -> Octave.
+	ASA (ASSIGN A),  ASB (ASSIGN B).	Indicates the functions assigned to the respective Knobs (printed "ASSIGN A" and "ASSIGN B") when the lamps of both the [PAN/SEND] and [TONE] buttons are turned on. The functions are assigned from the [UTILITY] -> [F4] CTL ASN -> [SF2] ASSIGN display. 
+
+	NOTE.	OCT (Octave), ASA (ASSIGN A), and ASB (ASSIGN B) settings are not independently assignable for each Master. Because of this, these are not stored as an individual Master in the Master Store mode (page 137). 
+
+	AS1 (ASSIGN 1),  AS2 (ASSIGN 2).	Indicates the values obtained by controlling the respective Knobs (printed "ASSIGN 1" and "ASSIGN 2") when the lamps of both the [PAN/SEND] and [TONE] buttons are turned on. The functions assigned to these knobs depend on the setting of the Voice selected as a Master program.
+[SF1] ARP1 (Arpeggio 1) to [SF5] ARP5 (Arpeggio 5).	You can call up the Arpeggio types by pressing these buttons to which the Arpeggio types are assigned.  The Arpeggio type assigned to each button depends on the program (Voice, Performance, Song, Pattern) selected as a Master. 
+
+[F2] MEMORY.		
+From this display you can set basic parameters for the Master, including the mode that is called up with the Master and the program number. 		
+	Mode.	Determines the mode that is called up when the Master number is selected.
+	Settings:	Voice, Performance, Pattern, Song
+	Memory.	Determines the Program number that is called up when the Master is selected.
+	Settings:	
+		When the Mode is set to Voice: Select a Voice bank and number. Refer to the instructions page 60. 
+		When the Mode is set to Performance:  Select a Performance bank and number. Refer to the instructions on page 67. 
+		When the Mode is set to Pattern: Select a Pattern and section. Refer to the instructions on page 57. 
+		When the Mode is set to Song: Select a Song number. Refer to the instructions on page 56.
+	ZoneSwitch.	Determines whether the Zone function is used (on) or not (off). See page 137 for details about the Zone function.
+
+	NOTE.	When the Mode is set to "Voice" or "Performance" and the Zone Switch is turned on, only Zone 1 can be used in the default setting (playing Zones 2 to 4 will produce no sound). You can use these Zones by setting various parameters in the Master Edit mode. 
+		
+		
+		
+		
+Master Edit mode.		[MASTER] -> Master selection -> [EDIT]. 
+		
+The Master Edit is divided into Common Edit, for setting parameters common to all four Zones, and Zone Edit, for setting parameters of individual Zones.  When Zone Switch is set to on in the [F2] MEMORY display in the Master Play mode, only the Common Edit is available.		
+		
+Common Edit.		[MASTER] -> Master selection -> [EDIT] -> [COMMON].
+These parameters are for making global (or common) edits to all four Zones of the selected Master. 		
+
+[F1] NAME.		
+From this display you can create a name for the Master. For instructions on naming, refer to page 53 in the Basic Operation section.		
+
+[F2] OTHER.		
+	Knob/Slider.	From this display you can set which row of Knob/Slider functions will be lit and selected. 
+	Settings:	
+		pan...	  Selecting the Master lights the [PAN/SEND] lamp, for control over the Pan/Send row.
+		tone...	  Selecting the Master lights the [TONE] lamp, for control over the Tone row. 
+		assign...	  Selecting the Master lights the [PAN/SEND] and [TONE] lamps, for control over the Assign row. 
+		MEQofs or partEQ...	 Selecting the Master lights the [EQ] lamp, for control over the EQ row. When the Mode is set to Voice, MEQofs is available. When the Mode is set to Performance, Song, or Pattern, partEQ is available. 
+		MEF...	 Selecting the Master lights the [ARP FX] and [EQ] lamps, for control over the Master Effects row."
+		arpFx...	 Selecting the Master lights the [ARP FX] lamp, for control over the Arpeggio FX row. 
+		zone...	 Selecting the Master lights no lamp and automatically calls up the Knob/Slider functions specifically set for each respective Zone (page 137). This is available only when the Zone Switch is set to on in the [F2] MEMORY display in the Master Play mode.
+		
+Zone Edit.		[MASTER] -> Master selection -> [EDIT] -> Zone selection.
+These parameters are for editing the individual Zones that make up a Master. Zone Edit is available only when the Zone Switch is turned on in the [F2] MEMORY display in the Master Play mode. 		
+
+[F1] TRANS (Transmit).		
+From this display you can set how each Zone transmits MIDI messages when you play the keyboard.		
+	TransCh (Transmit Channel).	Determines the MIDI Transmit Channel for each Zone.
+	Settings:	1 to 16.
+	TGSwitch  (Tone Generator Switch).	Determines whether or not MIDI data for each Zone is transmitted to the internal tone generator.
+	Settings:	on, off.
+	MIDISwitch.	Determines whether or not MIDI data for each Zone is transmitted to an external MIDI device. 
+	Settings:	on, off.
+
+[F2] NOTE.		
+From this display you can set the pitch- and keyboard-related parameters for each Zone - allowing you to set up Zone splits and determine the pitch range for each Zone.		
+	Octave.	Determines the amount in octaves by which the range of the Zone is shifted up or down.
+	Settings:	minus 3 to 0 (Default) to plus 3.
+	Transpose.	Determines the amount in semitones by which the range of the Zone is shifted up or down.
+	Settings:	minus 11 to 0 (Default) to plus 11.
+	NoteLimitH, L (High, Low).	Determines the lowest and highest notes of the range for each Zone. The selected Zone will sound only when you play notes within this range.
+	Settings:	C -2 to G8
+
+	NOTE.	You can also set the range directly from the keyboard, by holding down the [INFORMATION] button and pressing the desired low and high keys.
+
+[F3] TX SW (Transmit Switch).		
+From this display you can set how the playing of each individual Zone affects transmission of various MIDI messages, such as Control Change and Program Change messages. When the relevant parameter is set to "on," playing the selected Zone will transmit the corresponding MIDI messages.  Note that two different display types are provided (see below). Each display type features the same settings in a different format; use the type you feel most comfortable with.		
+	  Display showing four Zones.	
+	  Display showing all parameters for one Zone.	
+	Keep in mind that since all the available parameters cannot be simultaneously displayed in the four-Zone display, you will need to use the cursor controls to scroll the display in order to see and set the other parameters. 	
+	Settings:	
+	Bank (TG). 	Determines whether or not to transmit Bank Select MSB/LSB messages to the internal tone generator.
+	PC (TG). 	Determines whether or not to transmit Program Change messages to the internal tone generator.
+	Bank (MIDI). 	Determines whether or not to transmit Bank Select MSB/LSB messages to the external tone generator via MIDI. 
+	PC (MIDI). 	Determines whether or not to transmit Program Change messages to the external tone generator via MIDI.
+	PB (Pitch Bend).	Determines whether or not to transmit Pitch Bend messages to the internal and external tone generator.
+	MW (Modulation Wheel).	Determines whether or not to transmit MIDI messages generated by using the Modulation Wheel to the internal and external tone generator.
+	RB (Ribbon Controller).	Determines whether or not to transmit MIDI messages generated by using the Ribbon Controller to the internal and external tone generator.
+	ChAT (Channel Aftertouch).	Determines whether or not to transmit Channel Aftertouch messages generated by pressing the keys to the internal and external tone generator. 
+	FC1 (Foot Controller1), FC2 (Foot Controller2).	Determines whether or not to transmit MIDI messages generated by pressing the optional Foot Controller to the internal and external tone generator. 
+		
+	Sus (Sustain).	Determines whether or not to transmit Sustain messages generated by pressing the Footswitch connected to the SUSTAIN jack to the internal and external tone generator. 
+	FS (Footswitch).	Determines whether or not to transmit MIDI messages generated by pressing the Footswitch connected to the ASSIGNABLE jack to the internal and external tone generator.
+	Knob.	Determines whether or not to transmit MIDI messages generated by using the Knobs to the internal and external tone generator. 
+	Slider.	Determines whether or not to transmit MIDI messages generated by using the Sliders to the internal and external tone generator.
+	BC (Breath Controller).	Determines whether or not to transmit MIDI messages generated by using the Breath controller connected to the BREATH connector to the internal and external tone generator.
+	Vol (Volume).	Determines whether or not to transmit Volume messages to the internal and external tone generator. 
+	Pan.	Determines whether or not to transmit Pan messages to the internal and external tone generator. 
+
+[F4] PRESET. 		
+From this display you can make the Voice-related settings for each Zone, in the selected Master program number. In this way, selecting a different Master automatically calls up a completely different set of Voices and Voice-related settings for the four Zones.		
+	BankMSB, BankLSB, PgmChange (Program Change).	Determines the Voice assignment for each Zone in the selected Master.
+	Settings:	Refer to the Voice List in the separate Data List booklet.
+	Volume.	Determines the output level of the Voice in each Zone.
+	Settings:	0 to 127.
+	Pan.	Determines the stereo pan position of the Voice in each Zone.
+	Settings:	L64 (Left) to C (Center) to R63 (Right).
+
+[F5] KN/CS (Knob/Control Slider).		
+From this display you can determine which Control Change numbers are used for the Knobs and Sliders for each Zone. These settings are available only when the Knob/Slider parameter (in the [F2] OTHER display in Common Edit) is set to "zone."		
+	Settings:	off, 1 to 95.
+		
+		
+		
+Master Job mode.		[MASTER] -> [JOB]. 
+		
+The Master Job mode contains two convenient operations (called "Jobs") - one letting you initialize (reset) the Master data, and the other letting you transmit your edited Master data to an external MIDI device or computer.  After setting parameters as required from the selected display, press the [ENTER] button to execute the Job.		
+		
+[F1] INIT (Initialize).		
+This function lets you reset (initialize) all Master parameters to their default settings. It also allows you to selectively initialize certain parameters, such as Common settings, settings for each Zone, and so on - very useful when creating a completely new Master from scratch.		
+Parameter Types  (for Initializing): 	AllACommonAZone.	
+ALL.		All settings for the selected Master are initialized.
+Common.		Common parameter settings for the selected Master are initialized.
+Zone.		You can initialize the Zone setting to one of the following three types.
+	Split.	Splits the keyboard range using Zone 1 and Zone 2. "UpperCh" determines the MIDI transmit channel of the upper range of the keyboard, "LowerCh" determines the MIDI transmit channel of the lower range of the keyboard, and "SplitPoint" determines the note (C2 to G8) number which separates the upper range and lower range of the keyboard.
+	4Zone.	Initializes all four Zones.
+	Layer. 	Lets you layer two parts using Zone 1 and Zone 2. "UpperCh" and "LowerCh" determine the MIDI transmit channels of the two Zones respectively. 
+		
+[F4] BULK (Bulk Dump).		
+This function lets you send all your edited parameter settings for the currently selected Master to a computer or another MIDI device for data archiving. For details, see page 185.		
+
+NOTE.	In order to execute Bulk Dump, you'll need to set the correct MIDI Device Number, with the following operation: [UTILITY] -> [F5] MIDI -> [SF1] CH -> DeviceNo.	
+		
+Master Store mode.		[MASTER] -> Master selection -> [STORE].
+		
+This function lets you store your edited Master to User memory (Flash ROM). For details, refer to page 137 in the Quick Guide section. 		
+
+
+This is the end of the file.

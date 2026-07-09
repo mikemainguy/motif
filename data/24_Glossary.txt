@@ -1,0 +1,113 @@
+Glossary.
+
+This section explains in detail various words and terms that were not covered in the manual.  Another resource for looking up unfamiliar technical terms related to music, synthesis and audio is a special website we've prepared, the Glossary for Electronic Musical Instruments.  If you come across a musical or technical term you don't know, click on the following URL.
+Glossary for Electronic Musical Instruments 
+http://www2.yamaha.co.jp/manual/english/word/index.html   (This URL and title may be changed without notice.)
+
+A.
+Audition.
+The function or process of hearing the edited sample (in the Sampling function).
+C.
+Channel.
+There are two types of channels: MIDI channels, which are used to transmit MIDI messages, and audio channels, which are used to send audio signals. You can set the MIDI channel in the display of the MOTIF ES. 
+Clock.
+[1]	A unit of note resolution for MIDI Sequence data. 
+	The sequencer determines the playback position of the Song or Pattern (MIDI sequence data) by using the units Measure, Beat, and Clock. 
+[2]	Also referred to as "MIDI Clock" or "Timing Clock" defined as System Realtime Message in MIDI. 
+	This message is transmitted at a fixed interval (24 times per 1/4 note) to synchronize connected MIDI instruments. 
+	On the MOTIF ES, the Utility mode lets you select whether the instrument's internal clock will be used as the Timing Clock, or external Timing Clock messages received via MIDI IN will be used.
+Common.
+This edit related term refers to the editing of parameters that affect all Elements or Parts of a program. For each program, this term is used as listed below.
+  Normal Voice...		Common Edit and Element Edit
+  Plug-in Voice...		Common Edit and Element Edit
+  Drum Voice...		Common Edit and Key Edit
+  Performance...		Common Edit and Part Edit
+  Song Mixing...	Common Edit and Part Edit
+  Pattern Mixing...	 	Common Edit and Part Edit
+  Master...		Common Edit and Zone Edit
+D.
+Destination.
+The MOTIF ES provides the following three types of destination. 
+[1]	In copy operations, this refers to the location to which the original "source" data or file is to be copied.
+[2]	In sampling operations, this refers to the internal memory area to which the external audio "source" is to be recorded.
+[3]	In the Controller Set function, this refers to the parameter adjusted by the controller defined as "Source."
+Directory.
+This is a path created on a data storage device (such as SmartMedia card or hard disk), allowing a tree-like hierarchical organization of data files and folders.  Effectively a virtual file cabinet, this is the place where files are stored and arranged according to type or application.
+F.
+Filter.
+The MOTIF ES provides the following three types of Filter. 
+[1]	A circuit or processor that modifies tone by blocking or passing a specific frequency range of the sound. This is one of the Voice parameters (page 161).
+[2]	A function (referred to as "Event View Filter") that lets you select the event types that appear on the Event List display in the Song Edit/Pattern Edit display (page 225). 
+[3]	A function (referred to as "MIDI Filter") that determines which MIDI events will be transmitted/recognized via the MIDI IN/OUT (page 262).
+Folder.
+This is an organizational feature on a data storage device (such as SmartMedia card or hard disk), allowing you to group data files together according to type or application.  Folders can be nested in hierarchical order for organizing data.  (Also see "Directory.")
+L.
+LSB.
+[1]	An abbreviation for Least Significant Byte, referring to the lower byte of data when MIDI control change data (such as Bank Select and Data Entry) is divided into two bytes (the MSB and LSB) for transmission. 
+[2]	An abbreviation for Least Significant Bit, referring to the lowest bit among eight bits that make up one byte.
+M.
+MSB.
+[1]	An abbreviation for Most Significant Byte, referring to the upper byte of data when MIDI control change data (such as Bank Select and Data Entry) is divided into two bytes (the MSB and LSB) for transmission. 
+[2]	An abbreviation for Most Significant Bit, referring to the uppermost bit among the eight bits that make up one byte. In MIDI, this "bit" is very important because it determines whether the byte to which this "bit" belongs is a status byte or data byte.
+O.
+Offset.
+A type of editing in which a specified value (the "offset") is added to or subtracted from the current parameter value. Unlike normal editing, in which the parameter is given a specific, new value, offset editing changes the parameter relative to its current value.
+P.
+Parameter.
+A setting or data item which you can edit in the various mode and sub mode displays.
+Part.
+This refers to sound producing sections in the tone generator block that make up a Song, Pattern or Performance.  In the Performance mode, all four Parts are set to the same MIDI channel; in the Song/Pattern mode, each Part can be independently assigned to a specific MIDI receive channel.
+Preset.
+This refers to pre-programmed data supplied with the internal memory of the instrument as shipped from the factory. There are various types of Preset data, such as Preset Voices and Preset Phrases. The other type of data, User, is for data you've created or edited on the instrument (or computer), such as User Voices and User Phrases.
+Q.
+Quantize.
+A function that lets you "clean up" or "tighten" the timing of notes. The MOTIF ES provides three different Quantize functions:
+[1]	One of the Jobs provided in the Song Job mode/Pattern Job mode, which lets you "clean up" or "tighten" the timing of notes you've recorded in Realtime recording (page 227).
+[2]	A function in the Song Record mode/Pattern Record mode, which aligns the timing of notes automatically as you record (page 222).
+[3]	A parameter that determines the timing (such as measure, 1/2 note, and 1/4 note) by which the pattern actually switches when changing a pattern during playback (page 262).
+R.
+Record.
+On the MOTIF ES, this term refers to the following operations.
+[1]	Recording of your musical performance using the keyboard or controllers to a Song track as MIDI events. 
+Song Record mode...	page 118.
+[2]	Recording of your musical performance using the keyboard or controllers to a Pattern track as MIDI events. 
+Pattern Record mode...	page 110.
+[3]	Recording the audio signal from a microphone or an external audio source (played back via the audio equipment such as a CD player) to the internal memory as a Sample (Audio data). 
+Sampling Record mode...	pages 94 and 107.
+S.
+Sequencer.
+An instrument or function that records, edits, modifies, and plays back a musical performance in the form of MIDI messages. You can use the MOTIF ES as a sequencer in the Song mode and Pattern mode. 
+Source.
+On the MOTIF ES, "source" has three different meanings or uses:
+[1]	In copy operations, this refers to the original file or data which is to be copied.
+[2]	In sampling operations, this refers to external audio which is to be recorded (to the internal memory "destination" area) (page 172).
+[3]	In the Controller Set function, this refers to the controller that is assigned to adjust a particular parameter (the "destination") (page 155).
+Synchronization.
+Refers to the function or process of "locking" the timing of two devices (for example, two sequencers connected via MIDI), using the timing clock of one to control the other.
+T.
+Track.
+A memory location on the sequencer where musical performance (MIDI event) and audio data is recorded.
+Tune/Tuning.
+A process of matching the pitch of two or more instruments when playing in an ensemble. Normally, A3 is tuned to 440 Hz. There are two types of tune: Coarse Tune that adjusts the tuning in semitones and Fine Tune that adjusts the tuning in cents. In addition, the MOTIF ES has a Voice parameter (Micro Tuning) that lets you set the tuning of each individual note of the keyboard.
+U.
+User.
+Refers to the data you create via various functions on the MOTIF ES (or computer).
+There are various types of User data, such as User Voices and User Phrases.  The other type of data, Preset, refers to data that has been created or pre-programmed for the instrument at the factory, such as Preset Voices and Preset Phrases.
+V.
+Velocity.
+A parameter within the MIDI Note On message that conveys the force of the note. 
+Voice.
+A musical instrument sound built into the MOTIF ES.  The following types of Voices are available on the instrument.
+  Normal Voice...	page 160
+  Drum Voice...		page 160
+  Plug-in Voice...	page 76
+  Board Voice...	page 76
+  Mixing Voice...	page 105
+  Sample Voice...	page 173
+  Phrase Voice...	page 167
+Voice data that is supplied with the internal memory of the instruments shipped from the factory is referred to as a "Preset Voice." Voice data you create or edit via the Voice Edit or the Sampling function, using the preset waves supplied with the instrument or the wave obtained via the Sampling function is referred to as a "User Voice." 
+Volume Label.
+This refers to the name you can assign to storage devices such as a SmartMedia and hard disk.
+
+
+This is the end of the file.
