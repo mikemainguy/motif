@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+if [ "$1" = "purge" ]; then
+    rm -rf /opt/motif-es-manual-mcp
+    userdel motif-mcp 2>/dev/null || true
+fi
+
+systemctl daemon-reload

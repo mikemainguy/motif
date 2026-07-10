@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+systemctl stop motif-es-manual-mcp.service || true
+systemctl disable motif-es-manual-mcp.service || true

@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+# Create system user if it doesn't exist
+if ! getent passwd motif-mcp > /dev/null 2>&1; then
+    useradd --system --no-create-home --shell /usr/sbin/nologin motif-mcp
+fi
+
+# Set ownership
+chown -R motif-mcp:motif-mcp /opt/motif-es-manual-mcp
+
+# Build the search database if it doesn't exist
+DB_PATH="/opt/motif-es-manual-mcp/data/motif.db"
+if [ ! -f "$DB_PATH" ]; then
+    echo "Building search database (this may take a few minutes)..."
+    cd /opt/motif-es-manual-mcp
+    su -s /bin/bash motif-mcp -c "node node_modules/.bin/tsx scripts/ingest.ts" || {
+        echo "Warning: Database build failed. The server will still work with keyword-only search."
+    }
+fi
+
+# Enable and start the service
+systemctl daemon-reload
+systemctl enable motif-es-manual-mcp.service
+systemctl start motif-es-manual-mcp.service
+
+echo "motif-es-manual-mcp installed and started on port 3001"
+echo "MCP endpoint: http://localhost:3001/mcp"

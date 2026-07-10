@@ -19,7 +19,8 @@ export const MCP_SERVER_CONFIG = {
     'Use list_chapters first to discover available content, then read_chapter or search_manual for details.',
 
   transport: {
-    defaultPort: 3001,
+    host: process.env['MCP_HOST'] ?? '0.0.0.0',
+    port: parseInt(process.env['MCP_PORT'] ?? '3001', 10),
     endpoint: '/mcp',
   },
 } as const;

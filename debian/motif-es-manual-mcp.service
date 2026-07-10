@@ -1,0 +1,24 @@
+[Unit]
+Description=Motif ES Manual MCP Server
+After=network.target
+
+[Service]
+Type=simple
+User=motif-mcp
+Group=motif-mcp
+WorkingDirectory=/opt/motif-es-manual-mcp
+ExecStart=/usr/bin/node dist/index.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=PORT=3001
+
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/motif-es-manual-mcp/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

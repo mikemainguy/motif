@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+
+INSTALL_DIR = debian/motif-es-manual-mcp/opt/motif-es-manual-mcp
+SYSTEMD_DIR = debian/motif-es-manual-mcp/etc/systemd/system
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	npm ci --omit=dev
+	npm run build
+
+override_dh_auto_install:
+	mkdir -p $(INSTALL_DIR) $(SYSTEMD_DIR)
+	cp -r dist/ $(INSTALL_DIR)/
+	cp -r node_modules/ $(INSTALL_DIR)/
+	cp -r data/ $(INSTALL_DIR)/
+	cp -r scripts/ $(INSTALL_DIR)/
+	cp package.json $(INSTALL_DIR)/
+	cp debian/motif-es-manual-mcp.service $(SYSTEMD_DIR)/
+
+override_dh_auto_test:
+	# skip tests
+
+override_dh_strip:
+	# skip stripping native modules
+
+override_dh_shlibdeps:
+	# skip shared lib dependency detection for node native addons

@@ -43,11 +43,11 @@ export class MotifMCPServer {
     });
   }
 
-  async start(port: number = MCP_SERVER_CONFIG.transport.defaultPort): Promise<void> {
+  async start(): Promise<void> {
     await loadAllChapters();
     await this.initializeSearch();
     setupRoutes(this.app, this.server);
-    this.startHttpServer(port);
+    this.startHttpServer();
   }
 
   private async initializeSearch(): Promise<void> {
@@ -64,16 +64,17 @@ export class MotifMCPServer {
     }
   }
 
-  private startHttpServer(port: number): void {
-    this.httpServer = this.app.listen(port, () => {
-      this.logServerInfo(port);
+  private startHttpServer(): void {
+    const { host, port } = MCP_SERVER_CONFIG.transport;
+    this.httpServer = this.app.listen(port, host, () => {
+      this.logServerInfo(host, port);
     });
   }
 
-  private logServerInfo(port: number): void {
+  private logServerInfo(host: string, port: number): void {
     console.log(`${MCP_SERVER_CONFIG.name} v${MCP_SERVER_CONFIG.version} running on HTTP`);
-    console.log(`HTTP Server: http://localhost:${port}`);
-    console.log(`MCP Endpoint: http://localhost:${port}/mcp`);
+    console.log(`HTTP Server: http://${host}:${port}`);
+    console.log(`MCP Endpoint: http://${host}:${port}/mcp`);
     console.log('Ready to serve MOTIF ES documentation');
   }
 

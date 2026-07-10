@@ -1,0 +1,11 @@
+Package: motif-es-manual-mcp
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: amd64
+Depends: nodejs (>= 18)
+Maintainer: Michael Mainguy <michael@mainguy.com>
+Description: Yamaha MOTIF ES Owner's Manual MCP Server
+ TypeScript + Express server exposing the Yamaha MOTIF ES Owner's Manual
+ via Model Context Protocol with hybrid semantic and keyword search
+ (SQLite FTS5 + sqlite-vec).
