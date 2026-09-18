@@ -30,6 +30,7 @@ export const CHAPTERS: ChapterInfo[] = [
   { id: '23', filename: '23_InstallingOptional.txt', title: 'Installing Optional Hardware' },
   { id: '24', filename: '24_Glossary.txt', title: 'Glossary' },
   { id: '25', filename: '25_Specifications.txt', title: 'Specifications' },
+  { id: '26', filename: '26_DataList.txt', title: 'Data List' },
 ];
 
 export function findChapter(idOrName: string): ChapterInfo | undefined {
