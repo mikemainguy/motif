@@ -1,4 +1,7 @@
+import { loadLocalEnv } from './load-env.js';
 import { MotifMCPServer } from './mcp/server.js';
+
+loadLocalEnv();
 
 async function main() {
   const server = new MotifMCPServer();

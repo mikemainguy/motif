@@ -4,7 +4,7 @@ import { MCP_SERVER_CONFIG } from './config.js';
 import { setupHandlers } from './handlers/index.js';
 import { setupRoutes } from './routes.js';
 import { loadAllChapters } from '../docs/manual-loader.js';
-import { isDatabaseAvailable } from '../docs/database.js';
+import { assertEmbeddingCompatibility, isDatabaseAvailable } from '../docs/database.js';
 import { initEmbedder } from '../docs/embeddings.js';
 
 export class MotifMCPServer {
@@ -54,6 +54,7 @@ export class MotifMCPServer {
     try {
       if (isDatabaseAvailable()) {
         await initEmbedder();
+        assertEmbeddingCompatibility();
         console.log('RAG search initialized (hybrid FTS5 + vector)');
       } else {
         console.log('Database not found at data/motif.db - using fallback text search');

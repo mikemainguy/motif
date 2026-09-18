@@ -3,6 +3,7 @@ set -e
 
 if [ "$1" = "purge" ]; then
     rm -rf /opt/motif-es-manual-mcp
+    rm -rf /etc/motif-es-manual-mcp
     userdel motif-mcp 2>/dev/null || true
 fi
 

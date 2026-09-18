@@ -19,7 +19,10 @@ TypeScript + Express MCP server exposing the Yamaha MOTIF ES Owner's Manual via 
 ## RAG Search
 - SQLite with sqlite-vec (vector KNN) + FTS5 (keyword BM25)
 - Hybrid search via Reciprocal Rank Fusion
-- Embeddings: Xenova/all-MiniLM-L6-v2 (384 dims, local)
+- Embeddings: Cloudflare Workers AI, `@cf/baai/bge-base-en-v1.5` (768 dims)
+- Requires `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` in the environment
+- Override the model with `CLOUDFLARE_EMBEDDING_MODEL`; changing it requires a re-ingest
+- The model used is recorded in the DB's `meta` table and checked at startup
 - Graceful fallback to keyword search if DB not built
 
 ## Tools Exposed

@@ -9,14 +9,44 @@ fi
 # Set ownership
 chown -R motif-mcp:motif-mcp /opt/motif-es-manual-mcp
 
+# Create the credentials file if it doesn't exist
+ENV_FILE="/etc/motif-es-manual-mcp/env"
+if [ ! -f "$ENV_FILE" ]; then
+    mkdir -p /etc/motif-es-manual-mcp
+    cat > "$ENV_FILE" <<'ENVEOF'
+# Cloudflare Workers AI credentials for embeddings.
+# Token needs both "Workers AI - Read" and "Workers AI - Edit".
+# Easiest: use the "Workers AI" token template at
+# https://dash.cloudflare.com/profile/api-tokens
+CLOUDFLARE_ACCOUNT_ID=
+CLOUDFLARE_API_TOKEN=
+# Optional; must match the model the database was ingested with.
+#CLOUDFLARE_EMBEDDING_MODEL=@cf/baai/bge-base-en-v1.5
+ENVEOF
+    chown root:motif-mcp "$ENV_FILE"
+    chmod 640 "$ENV_FILE"
+fi
+
 # Build the search database if it doesn't exist
 DB_PATH="/opt/motif-es-manual-mcp/data/motif.db"
 if [ ! -f "$DB_PATH" ]; then
-    echo "Building search database (this may take a few minutes)..."
-    cd /opt/motif-es-manual-mcp
-    su -s /bin/bash motif-mcp -c "node node_modules/.bin/tsx scripts/ingest.ts" || {
-        echo "Warning: Database build failed. The server will still work with keyword-only search."
-    }
+    # shellcheck disable=SC1090
+    . "$ENV_FILE"
+    if [ -z "$CLOUDFLARE_ACCOUNT_ID" ] || [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+        echo "Cloudflare credentials not set in $ENV_FILE - skipping database build."
+        echo "Add them, then run: cd /opt/motif-es-manual-mcp && npm run ingest"
+        echo "Until then the server uses keyword-only search."
+    else
+        echo "Building search database (this may take a few minutes)..."
+        cd /opt/motif-es-manual-mcp
+        su -s /bin/bash motif-mcp -c \
+            "CLOUDFLARE_ACCOUNT_ID='$CLOUDFLARE_ACCOUNT_ID' \
+             CLOUDFLARE_API_TOKEN='$CLOUDFLARE_API_TOKEN' \
+             CLOUDFLARE_EMBEDDING_MODEL='${CLOUDFLARE_EMBEDDING_MODEL:-}' \
+             node node_modules/.bin/tsx scripts/ingest.ts" || {
+            echo "Warning: Database build failed. The server will still work with keyword-only search."
+        }
+    fi
 fi
 
 # Enable and start the service

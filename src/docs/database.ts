@@ -2,6 +2,7 @@ import Database from 'better-sqlite3';
 import * as sqliteVec from 'sqlite-vec';
 import path from 'node:path';
 import { existsSync } from 'node:fs';
+import { getEmbeddingDimensions, getEmbeddingModel } from './embeddings.js';
 
 let db: Database.Database | null = null;
 
@@ -45,9 +46,22 @@ export function createDatabase(): Database.Database {
 
   db.exec(`
     CREATE VIRTUAL TABLE IF NOT EXISTS chunks_vec USING vec0(
-      embedding float[384]
+      embedding float[${getEmbeddingDimensions()}]
     );
   `);
+
+  // Record which model produced the vectors so a stale database is caught
+  // rather than silently returning nonsense.
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS meta (
+      key TEXT PRIMARY KEY,
+      value TEXT NOT NULL
+    );
+  `);
+
+  const setMeta = db.prepare('INSERT OR REPLACE INTO meta (key, value) VALUES (?, ?)');
+  setMeta.run('embedding_model', getEmbeddingModel());
+  setMeta.run('embedding_dimensions', String(getEmbeddingDimensions()));
 
   db.exec(`
     CREATE VIRTUAL TABLE IF NOT EXISTS chunks_fts USING fts5(
@@ -57,6 +71,36 @@ export function createDatabase(): Database.Database {
   `);
 
   return db;
+}
+
+/**
+ * Throws if the database was built with a different embedding model than the
+ * one currently configured. Vectors from different models are not comparable,
+ * so the only fix is a re-ingest.
+ */
+export function assertEmbeddingCompatibility(): void {
+  const database = getDatabase();
+  const model = getEmbeddingModel();
+
+  let stored: { key: string; value: string }[];
+  try {
+    stored = database.prepare('SELECT key, value FROM meta').all() as {
+      key: string;
+      value: string;
+    }[];
+  } catch {
+    throw new Error(
+      'Database predates embedding-model tracking. Re-run "npm run ingest".'
+    );
+  }
+
+  const storedModel = stored.find((row) => row.key === 'embedding_model')?.value;
+  if (storedModel !== model) {
+    throw new Error(
+      `Database was built with embedding model "${storedModel ?? 'unknown'}" but ` +
+        `"${model}" is configured. Re-run "npm run ingest".`
+    );
+  }
 }
 
 export function closeDatabase(): void {

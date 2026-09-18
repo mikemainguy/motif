@@ -12,6 +12,8 @@ Restart=on-failure
 RestartSec=5
 Environment=NODE_ENV=production
 Environment=PORT=3001
+# Cloudflare Workers AI credentials for embeddings (created by postinst)
+EnvironmentFile=/etc/motif-es-manual-mcp/env
 
 # Hardening
 NoNewPrivileges=true

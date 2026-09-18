@@ -1,3 +1,4 @@
+import { loadLocalEnv } from '../src/load-env.js';
 import { readFile } from 'node:fs/promises';
 import { unlinkSync, existsSync } from 'node:fs';
 import path from 'node:path';
@@ -8,6 +9,8 @@ import { generateEmbeddings, initEmbedder } from '../src/docs/embeddings.js';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'motif.db');
+
+loadLocalEnv();
 
 async function main() {
   console.log('=== Motif ES Manual Ingestion ===\n');
