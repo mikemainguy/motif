@@ -9,7 +9,7 @@
     "dev": "tsx watch src/index.ts",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
-    "ingest": "tsx scripts/ingest.ts"
+    "ingest": "tsx src/ingest.ts"
   },
   "keywords": [],
   "author": "",

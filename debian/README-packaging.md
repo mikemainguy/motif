@@ -168,16 +168,15 @@ If you need to regenerate the SQLite database with embeddings:
 
 ```bash
 cd /opt/motif-es-manual-mcp
-sudo -u motif-mcp --preserve-env=CLOUDFLARE_ACCOUNT_ID,CLOUDFLARE_API_TOKEN \
-    env $(sudo cat /etc/motif-es-manual-mcp/env | grep -v '^#' | xargs) \
-    npx tsx scripts/ingest.ts
+sudo -u motif-mcp env $(grep -v '^#' /etc/motif-es-manual-mcp/env | xargs) \
+    node dist/ingest.js
 sudo systemctl restart motif-es-manual-mcp
 ```
 
-Note: The ingest script is not included in the installed package by default.
+The ingest script is compiled to `dist/ingest.js` as part of the package build,
+so no TypeScript toolchain is needed on the target machine.
 
 Embeddings are only comparable to other embeddings from the same model, so
 changing `CLOUDFLARE_EMBEDDING_MODEL` requires a full re-ingest. The model name
 is stored in the database's `meta` table and verified at startup; a mismatch is
 logged and the server falls back to keyword-only search.
-To include it, copy `scripts/` into the staging directory during the build step.

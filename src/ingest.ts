@@ -1,11 +1,11 @@
-import { loadLocalEnv } from '../src/load-env.js';
+import { loadLocalEnv } from './load-env.js';
 import { readFile } from 'node:fs/promises';
 import { unlinkSync, existsSync } from 'node:fs';
 import path from 'node:path';
-import { CHAPTERS } from '../src/docs/chapter-index.js';
-import { chunkText } from '../src/docs/chunker.js';
-import { createDatabase, closeDatabase } from '../src/docs/database.js';
-import { generateEmbeddings, initEmbedder } from '../src/docs/embeddings.js';
+import { CHAPTERS } from './docs/chapter-index.js';
+import { chunkText } from './docs/chunker.js';
+import { createDatabase, closeDatabase } from './docs/database.js';
+import { generateEmbeddings, initEmbedder } from './docs/embeddings.js';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'motif.db');

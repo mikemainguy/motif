@@ -15,7 +15,6 @@ override_dh_auto_install:
 	cp -r dist/ $(INSTALL_DIR)/
 	cp -r node_modules/ $(INSTALL_DIR)/
 	cp -r data/ $(INSTALL_DIR)/
-	cp -r scripts/ $(INSTALL_DIR)/
 	cp package.json $(INSTALL_DIR)/
 	cp debian/motif-es-manual-mcp.service $(SYSTEMD_DIR)/
 
